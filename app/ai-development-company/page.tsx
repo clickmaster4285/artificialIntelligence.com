@@ -11,6 +11,9 @@ import { StatsSection } from '@/components/locations/sections/Stats';
 export const metadata = {
   title: 'AI Development Company | ClickMasters AI',
   description: 'AI development company with locations across USA and Canada. Custom AI, RAG systems, LLM integration & AI agents. Fixed-price. Free consultation.',
+  alternates: {
+    canonical: '/ai-development-company/',
+  },
 };
 
 export default function LocationOverviewPage() {

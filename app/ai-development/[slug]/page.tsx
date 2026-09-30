@@ -80,11 +80,11 @@ export async function generateMetadata({ params }: PageProps) {
     openGraph: {
       title: pageData.meta.title,
       description: pageData.meta.description,
-      url: `https://clickmastersai.com${pageData.meta.slug}`,
+      url: pageData.meta.slug,
       type: 'website',
     },
     alternates: {
-      canonical: `https://clickmastersai.com${pageData.meta.slug}`,
+      canonical: pageData.meta.slug,
     },
   };
 }

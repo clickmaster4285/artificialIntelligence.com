@@ -2,19 +2,11 @@ import type {
   DynamicPageData,
   FaqItem,
 } from "@/types/dynamic-page";
+import { SITE_URL } from "@/lib/site";
 
 /* =========================================================
    CONFIGURATION
 ========================================================= */
-
-/**
- * Production mein NEXT_PUBLIC_SITE_URL environment
- * variable set karna recommended hai.
- */
-export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  "https://clickmastersartificialintelligencecompany.com"
-).replace(/\/+$/, "");
 
 const organizationId =
   `${SITE_URL}/#organization`;

@@ -15,6 +15,8 @@ import {
 
 import { GlossaryDetailPage } from "@/content/glossary/GlossaryDetailPage";
 
+import { SITE_URL } from "@/lib/site";
+
 /* =========================================================
    TYPES
 ========================================================= */
@@ -40,10 +42,7 @@ export const dynamicParams = true;
 ========================================================= */
 
 function getSiteUrl(): string {
-  return (
-    process.env.NEXT_PUBLIC_SITE_URL ??
-    "https://clickmastersartificialintelligencecompany.com"
-  ).replace(/\/+$/, "");
+  return SITE_URL;
 }
 
 function serializeSchema(
