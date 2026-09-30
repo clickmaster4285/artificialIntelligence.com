@@ -1,13 +1,14 @@
 // src/lib/schema.ts
 
 import { AIPageData } from '@/data/ai-development-pages-data';
+import { SITE_URL } from '@/lib/site';
 
 /**
  * Generate Service Schema (Product/Services page schema)
  * Used for SEO to describe the service offering
  */
 export function generateServiceSchema(pageData: AIPageData) {
-  const baseUrl = 'https://clickmastersai.com';
+  const baseUrl = SITE_URL;
   const fullUrl = `${baseUrl}${pageData.meta.slug}`;
 
   return {
@@ -121,7 +122,7 @@ export function generateFAQSchema(faqs: { question: string; answer: string }[]) 
  * Used for breadcrumb navigation rich results
  */
 export function generateBreadcrumbSchema(pageData: AIPageData) {
-  const baseUrl = 'https://clickmastersai.com';
+  const baseUrl = SITE_URL;
   const isSubPage = pageData.meta.slug !== '/ai-development/';
   
   const items = [
@@ -170,8 +171,8 @@ export function generateOrganizationSchema() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'ClickMasters Artificial Intelligence Company',
-    url: 'https://clickmastersai.com',
-    logo: 'https://clickmastersai.com/logo.png',
+    url: SITE_URL,
+    logo: `${SITE_URL}/logo.png`,
     description: 'AI development company building custom AI systems for enterprise and startups. USA-based senior engineers. Fixed-price contracts.',
     email: 'hello@clickmastersartificialintelligencecompany.com',
     telephone: '+1-800-555-0199',
@@ -229,7 +230,7 @@ export function generateArticleSchema(
       name: 'ClickMasters Artificial Intelligence Company',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://clickmastersai.com/logo.png'
+        url: `${SITE_URL}/logo.png`
       }
     }
   };

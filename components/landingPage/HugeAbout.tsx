@@ -67,7 +67,7 @@ export function HugeAbout() {
             About us
           </motion.p>
 
-          <motion.h3
+          <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
@@ -75,7 +75,7 @@ export function HugeAbout() {
             className="text-2xl md:text-4xl lg:text-6xl font-semibold tracking-tight max-w-3xl leading-tight"
           >
             We build products people remember.
-          </motion.h3>
+          </motion.h2>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}

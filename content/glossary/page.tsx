@@ -28,6 +28,8 @@ import {
 import { GlossaryHero } from "@/content/glossary/GlossaryHero";
 import { GlossaryExplorer } from "@/content/glossary/GlossaryExplorer";
 
+import { SITE_URL } from "@/lib/site";
+
 /* =========================================================
    TYPES
 ========================================================= */
@@ -56,10 +58,7 @@ function getFirstSearchParam(
 }
 
 function getSiteUrl(): string {
-  return (
-    process.env.NEXT_PUBLIC_SITE_URL ??
-    "https://clickmastersartificialintelligencecompany.com"
-  ).replace(/\/+$/, "");
+  return SITE_URL;
 }
 
 function serializeSchema(

@@ -6,18 +6,17 @@ import "./globals.css";
 import { Navbar } from "@/components/landingPage/Navbar";
 import { GlobalLeadForm } from "@/components/landingPage/GlobalLeadForm";
 import { HugeFooter } from "@/components/landingPage/HugeFooter";
+import { SITE_URL } from "@/lib/site";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const siteUrl = (
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  "https://clickmastersartificialintelligencecompany.com"
-).replace(/\/+$/, "");
-
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(SITE_URL),
   title: "ClickMasters - AI Development Company",
   description: "Custom AI development services from $30K. Chatbots, RAG systems, ML models & enterprise AI platforms.",
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: "/favicon.ico",
   },

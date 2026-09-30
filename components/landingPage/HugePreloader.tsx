@@ -133,7 +133,7 @@ export function HugePreloader({ onComplete }: { onComplete: () => void }) {
             className="absolute inset-0 flex items-center justify-center"
           >
             {phase === "hello" && (
-              <motion.h1
+              <motion.p
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
@@ -153,7 +153,7 @@ export function HugePreloader({ onComplete }: { onComplete: () => void }) {
                 <span className="block mt-5 text-lg md:text-2xl tracking-[0.2em] uppercase text-background/70 font-bold">
                   Intelligence in Every Click
                 </span>
-              </motion.h1>
+              </motion.p>
             )}
 
             {phase === "counting" && (
