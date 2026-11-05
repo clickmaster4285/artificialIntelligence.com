@@ -1,5 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
 import { useRef } from "react";
+import { COMPANY } from "@/lib/company";
 import serviceWeb from "@/assets/service-web.jpg";
 import serviceMobile from "@/assets/service-mobile.jpg";
 import serviceAi from "@/assets/service-ai.jpg";
@@ -50,13 +52,6 @@ const services = [
     img: serviceSecurity.src,
     desc: "Hardening, penetration testing and compliance to make your platform trustworthy at scale.",
   },
-];
-
-const stats = [
-  { k: "120+", v: "Products shipped" },
-  { k: "40+", v: "Engineers & designers" },
-  { k: "9", v: "Years in business" },
-  { k: "18", v: "Countries served" },
 ];
 
 const steps = [
@@ -112,10 +107,6 @@ function ServiceCard({ s, i }: { s: (typeof services)[number]; i: number }) {
 }
 
 export function HugeScrollSection() {
-  const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
-  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
-
   return (
     <>
       {/* Services grid with scroll parallax */}
@@ -192,17 +183,17 @@ export function HugeScrollSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mt-12 flex items-center justify-center gap-4 flex-wrap"
           >
-            <a
-              href="#"
+            <Link
+              href="/contact"
               className="inline-flex items-center gap-3 bg-foreground text-background rounded-full px-8 py-4 text-sm font-medium hover:opacity-90 transition-opacity"
             >
               Start a project <span>→</span>
-            </a>
+            </Link>
             <a
-              href="#"
+              href={`mailto:${COMPANY.email}`}
               className="inline-flex items-center gap-3 border border-border rounded-full px-8 py-4 text-sm font-medium hover:bg-card transition-colors"
             >
-              sales@clickmastersdigitalmarketing.com
+              {COMPANY.email}
             </a>
           </motion.div>
         </div>

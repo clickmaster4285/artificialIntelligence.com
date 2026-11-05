@@ -13,6 +13,7 @@ import { ServiceFAQs } from '@/components/services/Faq';
 import { ServiceCTA } from '@/components/services/Cta';
 import { ServiceDropdownNav } from '@/components/services/ServiceDropdownNav';
 import { generateServiceSchema } from '@/lib/schema';
+import { getRequestSiteUrl, pageAlternates } from '@/lib/site';
 
 interface PageProps {
   params: Promise<{
@@ -35,7 +36,8 @@ export default async function AIDevelopmentSubPage({ params }: PageProps) {
     notFound();
   }
 
-  const schema = generateServiceSchema(pageData);
+  const siteUrl = await getRequestSiteUrl();
+  const schema = generateServiceSchema(pageData, siteUrl);
 
   return (
     <>
@@ -83,8 +85,6 @@ export async function generateMetadata({ params }: PageProps) {
       url: pageData.meta.slug,
       type: 'website',
     },
-    alternates: {
-      canonical: pageData.meta.slug,
-    },
+    alternates: pageAlternates(pageData.meta.slug),
   };
 }

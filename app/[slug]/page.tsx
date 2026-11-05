@@ -17,6 +17,11 @@ import {
   serializeJsonLd,
 } from "@/lib/dynamic-pages/page-schema";
 
+import {
+  getRequestSiteUrl,
+  pageAlternates,
+} from "@/lib/site";
+
 /* =========================================================
    TYPES
 ========================================================= */
@@ -93,8 +98,10 @@ export async function generateMetadata({
     };
   }
 
+  const siteUrl = await getRequestSiteUrl();
+
   const pageUrl =
-    getDynamicPageUrl(page);
+    getDynamicPageUrl(page, siteUrl);
 
   const openGraphImages =
     page.seo.openGraphImage
@@ -121,9 +128,9 @@ export async function generateMetadata({
         .secondaryKeywords ?? []),
     ],
 
-    alternates: {
-      canonical: pageUrl,
-    },
+    alternates: pageAlternates(
+      page.seo.canonical || `/${page.slug}/`,
+    ),
 
     robots: {
       index:
@@ -207,8 +214,10 @@ export default async function DynamicRootPage({
     notFound();
   }
 
+  const siteUrl = await getRequestSiteUrl();
+
   const jsonLd =
-    generateDynamicPageSchema(page);
+    generateDynamicPageSchema(page, siteUrl);
 
   return (
     <>

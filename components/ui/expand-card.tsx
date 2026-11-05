@@ -38,10 +38,12 @@ const ExpandOnHover = ({ items }: Props) => {
                 <Image
                   src={item.image}
                   alt={item.title}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  priority={idx === 0}
+                  width={960}
+                  height={1200}
+                  quality={60}
+                  loading="lazy"
+                  sizes="(max-width: 768px) 92vw, 480px"
+                  className="absolute inset-0 h-full w-full object-cover"
                 />
 
                 <div className="absolute inset-0 bg-black/40" />
@@ -97,9 +99,12 @@ const ExpandOnHover = ({ items }: Props) => {
                   <Image
                     src={item.image}
                     alt={item.title}
-                    fill
-                    className="object-cover"
-                    sizes="100vw"
+                    width={960}
+                    height={720}
+                    quality={60}
+                    loading="lazy"
+                    sizes="92vw"
+                    className="absolute inset-0 h-full w-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
 

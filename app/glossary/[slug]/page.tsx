@@ -15,7 +15,7 @@ import {
 
 import { GlossaryDetailPage } from "@/content/glossary/GlossaryDetailPage";
 
-import { SITE_URL } from "@/lib/site";
+import { getRequestSiteUrl, pageAlternates, absoluteUrl } from "@/lib/site";
 
 /* =========================================================
    TYPES
@@ -40,10 +40,6 @@ export const dynamicParams = true;
 /* =========================================================
    HELPERS
 ========================================================= */
-
-function getSiteUrl(): string {
-  return SITE_URL;
-}
 
 function serializeSchema(
   schema: object,
@@ -98,10 +94,9 @@ export async function generateMetadata({
 
     keywords: term.seo.keywords,
 
-    alternates: {
-      canonical:
-        term.seo.canonical,
-    },
+    alternates: pageAlternates(
+      term.seo.canonical,
+    ),
 
     robots: term.seo.noIndex
       ? {
@@ -162,6 +157,7 @@ export async function generateMetadata({
 
 function generateGlossaryTermSchema(
   slug: string,
+  siteUrl: string,
 ) {
   const term =
     getGlossaryTermBySlug(slug);
@@ -170,13 +166,9 @@ function generateGlossaryTermSchema(
     return null;
   }
 
-  const siteUrl = getSiteUrl();
+  const glossaryUrl = absoluteUrl("/glossary", siteUrl);
 
-  const glossaryUrl =
-    `${siteUrl}/glossary/`;
-
-  const termUrl =
-    `${siteUrl}${term.seo.canonical}`;
+  const termUrl = absoluteUrl(term.seo.canonical, siteUrl);
 
   const graph: Record<
     string,
@@ -362,9 +354,12 @@ export default async function GlossaryDetailRoute({
     term.slug,
   );
 
+  const siteUrl = await getRequestSiteUrl();
+
   const schema =
     generateGlossaryTermSchema(
       term.slug,
+      siteUrl,
     );
 
   return (

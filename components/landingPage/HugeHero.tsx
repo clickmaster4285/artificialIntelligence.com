@@ -4,6 +4,8 @@
 
 import { motion } from 'framer-motion';
 
+const HEADING = "Unlock the Power of Intelligent Automation.";
+
 interface HugeHeroProps {
   visible: boolean;
 }
@@ -20,7 +22,7 @@ export function HugeHero({ visible }: HugeHeroProps) {
         muted
         loop
         playsInline
-        preload="auto"
+        preload="metadata"
         className="absolute inset-0 w-full h-full object-cover z-0"
       />
 
@@ -56,37 +58,23 @@ export function HugeHero({ visible }: HugeHeroProps) {
           Software House · Est. 2018
         </motion.span>
 
-        <h1 className="text-[10vw] lg:text-[6vw] leading-[1.34] font-semibold tracking-tighter max-w-[1100px]">
-          {words.map((w, i) => {
-            const isGradient = i === 4 || i === 5;
-            return (
-              <span
-                key={i}
-                className="inline-block overflow-hidden align-bottom mr-[0.18em] pb-[0.12em]"
-              >
-                <motion.span
-                  className="inline-block"
-                  initial={{ y: "110%", rotateX: -40 }}
-                  animate={visible ? { y: 0, rotateX: 0 } : {}}
-                  transition={{
-                    duration: 1,
-                    delay: 0.25 + i * 0.12,
-                    ease: [0.16, 1, 0.3, 1],
-                  }}
-                  style={{
-                    background: isGradient
-                      ? "linear-gradient(135deg, oklch(0.78 0.22 290), oklch(0.82 0.20 30))"
-                      : undefined,
-                    WebkitBackgroundClip: isGradient ? "text" : undefined,
-                    WebkitTextFillColor: isGradient ? "transparent" : undefined,
-                    backgroundClip: isGradient ? "text" : undefined,
-                  }}
+        <h1
+          aria-label={HEADING}
+          className={`hero-heading text-[10vw] lg:text-[6vw] leading-[1.34] font-semibold tracking-tighter max-w-[1100px]${visible ? " is-in" : ""}`}
+        >
+          {words.map((word, index) => (
+            <span key={word}>
+              <span className="hero-word">
+                <span
+                  className={index >= 4 ? "hero-word-inner hero-word-gradient" : "hero-word-inner"}
+                  style={{ animationDelay: `${0.25 + index * 0.12}s` }}
                 >
-                  {w}
-                </motion.span>
+                  {word}
+                </span>
               </span>
-            );
-          })}
+              {index < words.length - 1 ? " " : null}
+            </span>
+          ))}
         </h1>
 
         <motion.div
@@ -96,7 +84,7 @@ export function HugeHero({ visible }: HugeHeroProps) {
           className="mt-6 flex flex-col md:flex-row md:items-end justify-between gap-6 max-w-4xl"
         >
           <p className="max-w-5xl text-base md:text-xl font-semibold text-justify text-white/80">
-            A software house crafting AI products, web platforms, and mobile experiences for ambitious startups and growing businesses. We combine strategy, design, and engineering to build digital products that launch faster, scale confidently, and deliver experiences users genuinely enjoy. From intelligent AI solutions to high-performance web and mobile applications, we create technology that drives growth and stands the test of time.
+            ClickMasters Artificial Intelligence Company designs and builds AI products, web platforms, and mobile software for teams that need the system in production. Strategy, design, and engineering stay on one New York team.
           </p>
         </motion.div>
       </div>

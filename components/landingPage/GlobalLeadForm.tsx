@@ -7,6 +7,7 @@ import {
   Mail,
   Sparkles,
 } from "lucide-react";
+import { COMPANY } from "@/lib/company";
 import { submitLeadToCrm } from "@/lib/crm";
 
 const projectTypes = [
@@ -73,11 +74,11 @@ export function GlobalLeadForm() {
           </div>
 
           <a
-            href="mailto:sales@clickmastersdigitalmarketing.com"
+            href={`mailto:${COMPANY.email}`}
             className="mt-8 inline-flex items-center gap-3 text-sm font-medium text-foreground/80 transition-colors hover:text-foreground"
           >
             <Mail className="h-4 w-4 text-violet-400" />
-            sales@clickmastersdigitalmarketing.com
+            {COMPANY.email}
           </a>
         </div>
 
@@ -232,7 +233,7 @@ export function GlobalLeadForm() {
 
           {submitted && (
             <div className="mt-5 rounded-2xl border border-emerald-400/25 bg-emerald-400/10 px-4 py-3 text-sm text-emerald-200">
-              Thanks. Your brief is ready for review. For immediate help, email sales@clickmastersdigitalmarketing.com.
+              Thanks. Your brief is ready for review. For immediate help, email {COMPANY.email}.
             </div>
           )}
         </form>

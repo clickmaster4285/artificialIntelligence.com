@@ -3,44 +3,37 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 import Image from "next/image";
+import { ContactDetails } from "@/components/site/ContactDetails";
+import { COMPANY } from "@/lib/company";
 
 const columns = [
   {
     title: "Services",
     links: [
-      "Product Design",
-      "Brand Identity",
-      "Web Platforms",
-      "Mobile Apps",
-      "AI Engineering",
-      "Design Systems",
+      { label: "AI Development", href: "/ai-development" },
+      { label: "Locations", href: "/ai-development-company" },
+      { label: "Glossary", href: "/glossary" },
     ],
   },
   {
     title: "Studio",
     links: [
-      "About",
-      "Process",
-      "Careers",
-      "Press",
-      "Sustainability",
-      "Awards",
+      { label: "Work", href: "/work" },
+      { label: "Process", href: "/process" },
+      { label: "About", href: "/about" },
+      { label: "Careers", href: "/careers" },
+      { label: "Contact", href: "/contact" },
     ],
   },
   {
-    title: "Resources",
+    title: "Legal",
     links: [
-      "Case Studies",
-      "Journal",
-      "Reports",
-      "Newsletter",
-      "FAQ",
-      "Contact",
+      { label: "Privacy", href: "/privacy" },
+      { label: "Terms", href: "/terms" },
+      { label: "Cookies", href: "/cookies" },
     ],
   },
 ];
-
-const social = ["Twitter", "LinkedIn", "Dribbble", "GitHub", "Instagram"];
 
 export function HugeFooter() {
   return (
@@ -76,19 +69,19 @@ export function HugeFooter() {
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <a
-              href="mailto:sales@clickmastersdigitalmarketing.com"
+              href={`mailto:${COMPANY.email}`}
               className="inline-flex items-center gap-3 bg-foreground text-background rounded-full px-7 py-4 text-sm font-medium hover:opacity-90 transition-opacity"
             >
-              sales@clickmastersdigitalmarketing.com
+              {COMPANY.email}
               <span>→</span>
             </a>
 
-            <a
-              href="#"
+            <Link
+              href="/contact"
               className="inline-flex items-center gap-3 border border-foreground/40 rounded-full px-7 py-4 text-sm font-medium hover:bg-foreground hover:text-background transition-colors"
             >
               Book a discovery call
-            </a>
+            </Link>
           </div>
         </motion.div>
 
@@ -114,6 +107,7 @@ export function HugeFooter() {
   alt="ClickMasters mascot"
   width={96}
   height={96}
+  sizes="96px"
   className="object-contain w-20 md:w-24"
 />
               </motion.div>
@@ -124,10 +118,11 @@ export function HugeFooter() {
                 </span>
 
                 <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
-                  A software house crafting AI products, web platforms and
-                  mobile experiences that ship faster and feel unreasonably
-                  good.
+                  An AI studio building products, automation, and the
+                  systems around them.
                 </p>
+
+                <ContactDetails className="mt-6 text-sm text-muted-foreground" />
 
                 <div className="mt-6 flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
@@ -146,23 +141,14 @@ export function HugeFooter() {
               </p>
 
               <ul className="space-y-3">
-                {col.links.map((l) => (
-                  <li key={l}>
-                    {l === "Contact" ? (
-                      <Link
-                       href="/contact"
-                        className="text-sm text-foreground/80 hover:text-foreground transition-colors"
-                      >
-                        {l}
-                      </Link>
-                    ) : (
-                      <a
-                        href="#"
-                        className="text-sm text-foreground/80 hover:text-foreground transition-colors"
-                      >
-                        {l}
-                      </a>
-                    )}
+                {col.links.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="text-sm text-foreground/80 hover:text-foreground transition-colors"
+                    >
+                      {link.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -173,31 +159,19 @@ export function HugeFooter() {
         {/* Bottom row */}
         <div className="pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-muted-foreground">
-            <span>© 2026 ClickMasters. All rights reserved.</span>
+            <span>© 2026 {COMPANY.legalName}. All rights reserved.</span>
 
-            <a href="#" className="hover:text-foreground">
+            <Link href="/privacy" className="hover:text-foreground">
               Privacy
-            </a>
+            </Link>
 
-            <a href="#" className="hover:text-foreground">
+            <Link href="/terms" className="hover:text-foreground">
               Terms
-            </a>
+            </Link>
 
-            <a href="#" className="hover:text-foreground">
+            <Link href="/cookies" className="hover:text-foreground">
               Cookies
-            </a>
-          </div>
-
-          <div className="flex items-center gap-5">
-            {social.map((s) => (
-              <a
-                key={s}
-                href="#"
-                className="text-xs uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {s}
-              </a>
-            ))}
+            </Link>
           </div>
         </div>
 

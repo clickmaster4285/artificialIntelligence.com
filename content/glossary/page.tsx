@@ -28,7 +28,7 @@ import {
 import { GlossaryHero } from "@/content/glossary/GlossaryHero";
 import { GlossaryExplorer } from "@/content/glossary/GlossaryExplorer";
 
-import { SITE_URL } from "@/lib/site";
+import { absoluteUrl, getRequestSiteUrl, pageAlternates } from "@/lib/site";
 
 /* =========================================================
    TYPES
@@ -57,10 +57,6 @@ function getFirstSearchParam(
   return value ?? "";
 }
 
-function getSiteUrl(): string {
-  return SITE_URL;
-}
-
 function serializeSchema(
   schema: object,
 ): string {
@@ -86,11 +82,9 @@ export const metadata: Metadata = {
     glossaryLandingConfig.seo
       .keywords,
 
-  alternates: {
-    canonical:
-      glossaryLandingConfig.seo
-        .canonical,
-  },
+  alternates: pageAlternates(
+    glossaryLandingConfig.seo.canonical,
+  ),
 
   openGraph: {
     title:
@@ -237,9 +231,12 @@ export default async function GlossaryPage({
      STRUCTURED DATA
   --------------------------------------------------------- */
 
-  const siteUrl = getSiteUrl();
+  const siteUrl = await getRequestSiteUrl();
 
-  const canonicalUrl = `${siteUrl}${glossaryLandingConfig.seo.canonical}`;
+  const canonicalUrl = absoluteUrl(
+    glossaryLandingConfig.seo.canonical,
+    siteUrl,
+  );
 
   const schema = {
     "@context": "https://schema.org",
@@ -285,7 +282,7 @@ export default async function GlossaryPage({
                 description:
                   term.shortDefinition,
 
-                url: `${siteUrl}/glossary/${term.slug}/`,
+                url: absoluteUrl(`/glossary/${term.slug}`, siteUrl),
 
                 inDefinedTermSet: `${canonicalUrl}#glossary`,
               }),

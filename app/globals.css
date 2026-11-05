@@ -274,6 +274,46 @@
   position: relative;
 }
 
+.hero-word {
+  display: inline-block;
+  overflow: hidden;
+  padding-bottom: 0.12em;
+  vertical-align: bottom;
+}
+
+.hero-word-inner {
+  display: inline-block;
+  transform: translateY(110%);
+}
+
+.hero-heading.is-in .hero-word-inner {
+  animation: hero-word-rise 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.hero-word-gradient {
+  background: linear-gradient(135deg, oklch(0.78 0.22 290), oklch(0.82 0.2 30));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes hero-word-rise {
+  from {
+    transform: translateY(110%) rotateX(-40deg);
+  }
+  to {
+    transform: translateY(0) rotateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-word-inner,
+  .hero-heading.is-in .hero-word-inner {
+    animation: none;
+    transform: none;
+  }
+}
+
 @utility grain-after {
   content: "";
   position: absolute;

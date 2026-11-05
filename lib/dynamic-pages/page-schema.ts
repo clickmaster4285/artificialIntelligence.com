@@ -2,17 +2,23 @@ import type {
   DynamicPageData,
   FaqItem,
 } from "@/types/dynamic-page";
-import { SITE_URL } from "@/lib/site";
+import {
+  generateOrganizationSchema,
+  generateWebSiteSchema,
+} from "@/lib/schema";
+import {
+  absoluteUrl,
+  fallbackSiteUrl,
+  localeForSite,
+} from "@/lib/site";
 
-/* =========================================================
-   CONFIGURATION
-========================================================= */
+function organizationIdFor(siteUrl: string) {
+  return `${siteUrl}/#organization`;
+}
 
-const organizationId =
-  `${SITE_URL}/#organization`;
-
-const websiteId =
-  `${SITE_URL}/#website`;
+function websiteIdFor(siteUrl: string) {
+  return `${siteUrl}/#website`;
+}
 
 /* =========================================================
    TYPES
@@ -32,30 +38,50 @@ export interface DynamicPageJsonLd {
    URL HELPERS
 ========================================================= */
 
+const OWNED_HOSTS = new Set([
+  "clickmastersartificialintelligencecompany.com",
+  "clickmastersartificialintelligencecompany.co.uk",
+  "clickmasterssoftwaredevelopmentcompany.co.uk",
+]);
+
 export function createAbsoluteUrl(
   path: string,
+  siteUrl: string = fallbackSiteUrl(),
 ): string {
   if (
     path.startsWith("https://") ||
     path.startsWith("http://")
   ) {
-    return path;
+    try {
+      const url = new URL(path);
+      const host = url.hostname.replace(/^www\./, "");
+      const owned =
+        OWNED_HOSTS.has(host) ||
+        host.endsWith(
+          ".clickmasterssoftwaredevelopmentcompany.co.uk",
+        );
+
+      if (!owned) {
+        return path;
+      }
+
+      return absoluteUrl(url.pathname, siteUrl);
+    } catch {
+      return path;
+    }
   }
 
-  const normalizedPath =
-    path.startsWith("/")
-      ? path
-      : `/${path}`;
-
-  return `${SITE_URL}${normalizedPath}`;
+  return absoluteUrl(path, siteUrl);
 }
 
 export function getDynamicPageUrl(
   page: DynamicPageData,
+  siteUrl: string = fallbackSiteUrl(),
 ): string {
   return createAbsoluteUrl(
     page.seo.canonical ||
       `/${page.slug}/`,
+    siteUrl,
   );
 }
 
@@ -88,73 +114,32 @@ export function extractPageFaqs(
    ORGANIZATION SCHEMA
 ========================================================= */
 
-function createOrganizationSchema():
+function createOrganizationSchema(
+  siteUrl: string = fallbackSiteUrl(),
+):
   SchemaObject {
-  return {
-    "@type": "Organization",
-    "@id": organizationId,
+  const { "@context": context, ...node } =
+    generateOrganizationSchema(siteUrl);
 
-    name: "ClickMasters Artificial Intelligence Company",
+  void context;
 
-    alternateName:
-      "ClickMasters AI",
-
-    url: SITE_URL,
-
-    email:
-      "hello@clickmastersartificialintelligencecompany.com",
-
-    description:
-      "ClickMasters builds production-grade artificial intelligence, machine learning, generative AI and large language model systems.",
-
-    logo: {
-      "@type": "ImageObject",
-
-      url: createAbsoluteUrl(
-        "/images/logo.png",
-      ),
-    },
-
-    contactPoint: {
-      "@type": "ContactPoint",
-
-      contactType:
-        "sales and technical consultation",
-
-      email:
-        "hello@clickmastersartificialintelligencecompany.com",
-
-      availableLanguage: [
-        "English",
-      ],
-    },
-  };
+  return node;
 }
 
 /* =========================================================
    WEBSITE SCHEMA
 ========================================================= */
 
-function createWebsiteSchema():
+function createWebsiteSchema(
+  siteUrl: string = fallbackSiteUrl(),
+):
   SchemaObject {
-  return {
-    "@type": "WebSite",
-    "@id": websiteId,
+  const { "@context": context, ...node } =
+    generateWebSiteSchema(siteUrl);
 
-    name:
-      "ClickMasters Artificial Intelligence Company",
+  void context;
 
-    alternateName:
-      "ClickMasters AI",
-
-    url: SITE_URL,
-
-    publisher: {
-      "@id": organizationId,
-    },
-
-    inLanguage: "en-US",
-  };
+  return node;
 }
 
 /* =========================================================
@@ -163,9 +148,10 @@ function createWebsiteSchema():
 
 function createServiceSchema(
   page: DynamicPageData,
+  siteUrl: string = fallbackSiteUrl(),
 ): SchemaObject {
   const pageUrl =
-    getDynamicPageUrl(page);
+    getDynamicPageUrl(page, siteUrl);
 
   return {
     "@type": "Service",
@@ -183,7 +169,7 @@ function createServiceSchema(
       page.seo.primaryKeyword,
 
     provider: {
-      "@id": organizationId,
+      "@id": organizationIdFor(siteUrl),
     },
 
     areaServed: {
@@ -223,9 +209,10 @@ function createServiceSchema(
 
 function createWebPageSchema(
   page: DynamicPageData,
+  siteUrl: string = fallbackSiteUrl(),
 ): SchemaObject {
   const pageUrl =
-    getDynamicPageUrl(page);
+    getDynamicPageUrl(page, siteUrl);
 
   return {
     "@type": "WebPage",
@@ -240,7 +227,7 @@ function createWebPageSchema(
       page.seo.description,
 
     isPartOf: {
-      "@id": websiteId,
+      "@id": websiteIdFor(siteUrl),
     },
 
     about: {
@@ -259,11 +246,12 @@ function createWebPageSchema(
 
             url: createAbsoluteUrl(
               page.seo.openGraphImage,
+              siteUrl,
             ),
           }
         : undefined,
 
-    inLanguage: "en-US",
+    inLanguage: localeForSite(siteUrl),
   };
 }
 
@@ -273,9 +261,10 @@ function createWebPageSchema(
 
 function createBreadcrumbSchema(
   page: DynamicPageData,
+  siteUrl: string = fallbackSiteUrl(),
 ): SchemaObject {
   const pageUrl =
-    getDynamicPageUrl(page);
+    getDynamicPageUrl(page, siteUrl);
 
   return {
     "@type": "BreadcrumbList",
@@ -287,7 +276,7 @@ function createBreadcrumbSchema(
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: SITE_URL,
+        item: siteUrl,
       },
 
       {
@@ -307,9 +296,10 @@ function createBreadcrumbSchema(
 function createFaqSchema(
   page: DynamicPageData,
   faqs: FaqItem[],
+  siteUrl: string = fallbackSiteUrl(),
 ): SchemaObject {
   const pageUrl =
-    getDynamicPageUrl(page);
+    getDynamicPageUrl(page, siteUrl);
 
   return {
     "@type": "FAQPage",
@@ -340,6 +330,7 @@ function createFaqSchema(
 
 export function generateDynamicPageSchema(
   page: DynamicPageData,
+  siteUrl: string = fallbackSiteUrl(),
 ): DynamicPageJsonLd {
   const graph: SchemaObject[] = [];
 
@@ -354,11 +345,11 @@ export function generateDynamicPageSchema(
     false
   ) {
     graph.push(
-      createOrganizationSchema(),
+      createOrganizationSchema(siteUrl),
     );
 
     graph.push(
-      createWebsiteSchema(),
+      createWebsiteSchema(siteUrl),
     );
   }
 
@@ -367,12 +358,12 @@ export function generateDynamicPageSchema(
    */
   if (schemaSettings.service !== false) {
     graph.push(
-      createServiceSchema(page),
+      createServiceSchema(page, siteUrl),
     );
   }
 
   graph.push(
-    createWebPageSchema(page),
+    createWebPageSchema(page, siteUrl),
   );
 
   /*
@@ -383,7 +374,7 @@ export function generateDynamicPageSchema(
     false
   ) {
     graph.push(
-      createBreadcrumbSchema(page),
+      createBreadcrumbSchema(page, siteUrl),
     );
   }
 
@@ -401,7 +392,7 @@ export function generateDynamicPageSchema(
     faqs.length > 0
   ) {
     graph.push(
-      createFaqSchema(page, faqs),
+      createFaqSchema(page, faqs, siteUrl),
     );
   }
 

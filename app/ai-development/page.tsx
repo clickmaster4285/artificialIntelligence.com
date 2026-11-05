@@ -11,6 +11,7 @@ import { ServiceFAQs } from '@/components/services/Faq';
 import { ServiceCTA } from '@/components/services/Cta';
 import { ServiceDropdownNav } from '@/components/services/ServiceDropdownNav';
 import { generateServiceSchema } from '@/lib/schema';
+import { getRequestSiteUrl, pageAlternates } from '@/lib/site';
 
 export const metadata = {
   title: aiDevelopmentLandingData.meta.title,
@@ -19,14 +20,13 @@ export const metadata = {
     aiDevelopmentLandingData.meta.primaryKW,
     ...aiDevelopmentLandingData.meta.secondaryKWs,
   ].join(', '),
-  alternates: {
-    canonical: aiDevelopmentLandingData.meta.slug,
-  },
+  alternates: pageAlternates(aiDevelopmentLandingData.meta.slug),
 };
 
-export default function AIDevelopmentLandingPage() {
+export default async function AIDevelopmentLandingPage() {
   const pageData = aiDevelopmentLandingData;
-  const schema = generateServiceSchema(pageData);
+  const siteUrl = await getRequestSiteUrl();
+  const schema = generateServiceSchema(pageData, siteUrl);
 
   return (
     <>

@@ -37,8 +37,8 @@ export function Navbar({ className }: NavbarProps) {
 
   const navLinks = [
     { name: 'Work', href: '/work' },
-    { name: 'Services', href: '#', hasDropdown: true, dropdownType: 'services' },
-    { name: 'Locations', href: '#', hasDropdown: true, dropdownType: 'locations' },
+    { name: 'Services', href: '/ai-development', hasDropdown: true, dropdownType: 'services' },
+    { name: 'Locations', href: '/ai-development-company', hasDropdown: true, dropdownType: 'locations' },
     { name: 'Process', href: '/process' },
     { name: 'About', href: '/about' },
     { name: 'Careers', href: '/careers' },
@@ -69,7 +69,7 @@ export function Navbar({ className }: NavbarProps) {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center justify-center gap-8 flex-1">
+          <div className="hidden xl:flex items-center justify-center gap-6 2xl:gap-8 flex-1">
             {navLinks.map((link) => (
               <div key={link.name} className="relative">
                 {link.hasDropdown && link.dropdownType === 'services' ? (
@@ -95,7 +95,7 @@ export function Navbar({ className }: NavbarProps) {
           {/* Contact Button */}
           <Link
             href="/contact"
-            className="hidden md:block text-sm font-medium border border-white/40 rounded-full px-5 py-2 hover:bg-white hover:text-black transition-all duration-300 hover:shadow-lg hover:shadow-white/10"
+            className="hidden xl:block text-sm font-medium border border-white/40 rounded-full px-5 py-2 hover:bg-white hover:text-black transition-all duration-300 hover:shadow-lg hover:shadow-white/10"
           >
             Let&apos;s talk
           </Link>
@@ -103,7 +103,7 @@ export function Navbar({ className }: NavbarProps) {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden flex flex-col gap-1.5 p-2 text-white flex-shrink-0"
+            className="xl:hidden flex flex-col gap-1.5 p-2 text-white flex-shrink-0"
             aria-label="Toggle menu"
           >
             <span
@@ -136,7 +136,7 @@ export function Navbar({ className }: NavbarProps) {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-black/95 backdrop-blur-xl border-t border-white/5 overflow-hidden"
+            className="xl:hidden bg-black/95 backdrop-blur-xl border-t border-white/5 overflow-hidden"
           >
             <div className="px-6 py-6 space-y-4">
               {navLinks.map((link) => (

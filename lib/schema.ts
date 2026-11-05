@@ -1,15 +1,16 @@
 // src/lib/schema.ts
 
 import { AIPageData } from '@/data/ai-development-pages-data';
-import { SITE_URL } from '@/lib/site';
+import { COMPANY, companyLogoUrl } from '@/lib/company';
+import { absoluteUrl, fallbackSiteUrl, localeForSite } from '@/lib/site';
 
 /**
  * Generate Service Schema (Product/Services page schema)
  * Used for SEO to describe the service offering
  */
-export function generateServiceSchema(pageData: AIPageData) {
-  const baseUrl = SITE_URL;
-  const fullUrl = `${baseUrl}${pageData.meta.slug}`;
+export function generateServiceSchema(pageData: AIPageData, siteUrl: string = fallbackSiteUrl()) {
+  const baseUrl = siteUrl;
+  const fullUrl = absoluteUrl(pageData.meta.slug, baseUrl);
 
   return {
     '@context': 'https://schema.org',
@@ -19,12 +20,16 @@ export function generateServiceSchema(pageData: AIPageData) {
     url: fullUrl,
     provider: {
       '@type': 'Organization',
-      name: 'ClickMasters Artificial Intelligence Company',
+      '@id': `${baseUrl}/#organization`,
+      name: COMPANY.legalName,
       url: baseUrl,
-      logo: `${baseUrl}/logo.png`,
+      logo: companyLogoUrl(baseUrl),
+      email: COMPANY.email,
+      telephone: COMPANY.telephone,
       contactPoint: {
         '@type': 'ContactPoint',
-        telephone: '+1-800-555-0199',
+        telephone: COMPANY.telephone,
+        email: COMPANY.email,
         contactType: 'sales',
         availableLanguage: ['English'],
         hoursAvailable: {
@@ -33,12 +38,7 @@ export function generateServiceSchema(pageData: AIPageData) {
           opens: '09:00',
           closes: '18:00'
         }
-      },
-      sameAs: [
-        'https://www.linkedin.com/company/clickmasters',
-        'https://twitter.com/clickmasters',
-        'https://github.com/clickmasters'
-      ]
+      }
     },
     serviceType: 'AI Development',
     serviceOutput: pageData.meta.primaryKW,
@@ -121,8 +121,8 @@ export function generateFAQSchema(faqs: { question: string; answer: string }[]) 
  * Generate Breadcrumb Schema
  * Used for breadcrumb navigation rich results
  */
-export function generateBreadcrumbSchema(pageData: AIPageData) {
-  const baseUrl = SITE_URL;
+export function generateBreadcrumbSchema(pageData: AIPageData, siteUrl: string = fallbackSiteUrl()) {
+  const baseUrl = siteUrl;
   const isSubPage = pageData.meta.slug !== '/ai-development/';
   
   const items = [
@@ -136,7 +136,7 @@ export function generateBreadcrumbSchema(pageData: AIPageData) {
       '@type': 'ListItem',
       position: 2,
       name: 'AI Development',
-      item: `${baseUrl}/ai-development/`
+      item: absoluteUrl("/ai-development", baseUrl)
     }
   ];
 
@@ -151,7 +151,7 @@ export function generateBreadcrumbSchema(pageData: AIPageData) {
       '@type': 'ListItem',
       position: 3,
       name: pageTitle,
-      item: `${baseUrl}${pageData.meta.slug}`
+      item: absoluteUrl(pageData.meta.slug, baseUrl)
     });
   }
 
@@ -166,39 +166,67 @@ export function generateBreadcrumbSchema(pageData: AIPageData) {
  * Generate Organization Schema
  * Used for the main organization entity
  */
-export function generateOrganizationSchema() {
+export function generateOrganizationSchema(siteUrl: string = fallbackSiteUrl()) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'ClickMasters Artificial Intelligence Company',
-    url: SITE_URL,
-    logo: `${SITE_URL}/logo.png`,
-    description: 'AI development company building custom AI systems for enterprise and startups. USA-based senior engineers. Fixed-price contracts.',
-    email: 'hello@clickmastersartificialintelligencecompany.com',
-    telephone: '+1-800-555-0199',
+    '@id': `${siteUrl}/#organization`,
+    name: COMPANY.legalName,
+    alternateName: COMPANY.brandName,
+    url: siteUrl,
+    logo: {
+      '@type': 'ImageObject',
+      url: companyLogoUrl(siteUrl)
+    },
+    description:
+      'ClickMasters Artificial Intelligence Company designs and builds AI products, web platforms and mobile software.',
+    email: COMPANY.email,
+    telephone: COMPANY.telephone,
+    foundingDate: COMPANY.foundingYear,
     address: {
       '@type': 'PostalAddress',
-      addressCountry: 'US',
-      addressLocality: 'New York',
-      addressRegion: 'NY'
-    },
-    sameAs: [
-      'https://www.linkedin.com/company/clickmasters',
-      'https://twitter.com/clickmasters',
-      'https://github.com/clickmasters',
-      'https://www.youtube.com/@clickmasters'
-    ],
-    foundingDate: '2016',
-    numberOfEmployees: {
-      '@type': 'QuantitativeValue',
-      value: 50
+      addressLocality: COMPANY.address.locality,
+      addressRegion: COMPANY.address.region,
+      addressCountry: COMPANY.address.country
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+1-800-555-0199',
+      telephone: COMPANY.telephone,
+      email: COMPANY.email,
       contactType: 'sales',
       availableLanguage: ['English']
     }
+  };
+}
+
+export function generateWebSiteSchema(siteUrl: string = fallbackSiteUrl()) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${siteUrl}/#website`,
+    name: COMPANY.legalName,
+    alternateName: COMPANY.brandName,
+    url: siteUrl,
+    publisher: {
+      '@id': `${siteUrl}/#organization`
+    },
+    inLanguage: localeForSite(siteUrl)
+  };
+}
+
+function withoutContext(schema: Record<string, unknown>) {
+  const node = { ...schema };
+  delete node["@context"];
+  return node;
+}
+
+export function generateSiteJsonLd(siteUrl: string = fallbackSiteUrl()) {
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      withoutContext(generateOrganizationSchema(siteUrl)),
+      withoutContext(generateWebSiteSchema(siteUrl))
+    ]
   };
 }
 
@@ -230,7 +258,7 @@ export function generateArticleSchema(
       name: 'ClickMasters Artificial Intelligence Company',
       logo: {
         '@type': 'ImageObject',
-        url: `${SITE_URL}/logo.png`
+        url: `${fallbackSiteUrl()}/logo.png`
       }
     }
   };
@@ -297,12 +325,12 @@ export function generateReviewSchema(
 /**
  * Generate all schemas for a page
  */
-export function generateAllSchemas(pageData: AIPageData) {
+export function generateAllSchemas(pageData: AIPageData, siteUrl: string = fallbackSiteUrl()) {
   return {
-    service: generateServiceSchema(pageData),
+    service: generateServiceSchema(pageData, siteUrl),
     faq: generateFAQSchema(pageData.faqs),
-    breadcrumb: generateBreadcrumbSchema(pageData),
-    organization: generateOrganizationSchema()
+    breadcrumb: generateBreadcrumbSchema(pageData, siteUrl),
+    organization: generateOrganizationSchema(siteUrl)
   };
 }
 

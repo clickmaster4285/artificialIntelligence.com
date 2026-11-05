@@ -14,6 +14,7 @@ import {
   getAllLocationPageSlugs, 
   getLocationPageDataBySlug 
 } from '@/data/ai-development-company-pages-data';
+import { pageAlternates } from '@/lib/site';
 
 export async function generateStaticParams() {
   const slugs = getAllLocationPageSlugs();
@@ -36,9 +37,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: location.meta.title,
     description: location.meta.description,
-    alternates: {
-      canonical: location.meta.slug,
-    },
+    alternates: pageAlternates(location.meta.slug),
   };
 }
 

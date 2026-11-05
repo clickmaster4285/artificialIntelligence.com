@@ -191,7 +191,7 @@ const trustItems = [
 ] as const;
 
 const ctaEmail =
-  "sales@clickmastersdigitalmarketing.com";
+  "hello@clickmastersartificialintelligencecompany.com";
 
 /* =========================================================
    MAIN SECTION
@@ -215,7 +215,7 @@ export function NeuralCtaSection({
   const text =
     section.text ??
     section.description ??
-    "A software house crafting AI products, web platforms and mobile experiences that ship faster and feel unreasonably good.";
+    "An AI studio building products, automation, and the systems around them.";
 
   const emailFromSecondary =
     section.secondaryCta?.href.startsWith(
@@ -552,7 +552,8 @@ export function NeuralCtaSection({
                   src="/images/footer-robo.png"
                   alt="ClickMasters mascot"
                   fill
-                  sizes="(min-width: 1024px) 260px, 70vw"
+                  sizes="260px"
+                  quality={60}
                   className="object-contain"
                   priority={false}
                 />

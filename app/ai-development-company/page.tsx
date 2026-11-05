@@ -7,13 +7,12 @@ import { PricingSection } from '@/components/locations/sections/PricingTable';
 import { FAQSection } from '@/components/locations/sections/Faq';
 import { CTASection } from '@/components/locations/sections/Cta';
 import { StatsSection } from '@/components/locations/sections/Stats';
+import { pageAlternates } from '@/lib/site';
 
 export const metadata = {
   title: 'AI Development Company | ClickMasters AI',
   description: 'AI development company with locations across USA and Canada. Custom AI, RAG systems, LLM integration & AI agents. Fixed-price. Free consultation.',
-  alternates: {
-    canonical: '/ai-development-company/',
-  },
+  alternates: pageAlternates('/ai-development-company/'),
 };
 
 export default function LocationOverviewPage() {

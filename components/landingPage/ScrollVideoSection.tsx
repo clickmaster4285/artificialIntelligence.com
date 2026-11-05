@@ -181,6 +181,7 @@ We build with scalability in mind so products grow without losing quality.
             muted
             loop
             playsInline
+            preload="metadata"
             className="h-full w-full object-cover mix-blend-luminosity opacity-90"
           />
           

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { useRef, useState } from "react";
 
 
@@ -10,6 +11,7 @@ type Project = {
   colSpan: string;
   aspect: string;
   video: string;
+  href: string;
 };
 const projects: Project[] = [
   {
@@ -20,6 +22,7 @@ const projects: Project[] = [
     colSpan: "md:col-span-8",
     aspect: "aspect-[16/10]",
     video: "/video/hero.mp4",
+    href: "/ai-development",
   },
   {
     name: "App Develop-ment",
@@ -29,6 +32,7 @@ const projects: Project[] = [
     colSpan: "md:col-span-4",
     aspect: "aspect-[4/5]",
     video: "/video/mobile.mp4",
+    href: "/work",
   },
   {
     name: "Machine Learning",
@@ -38,6 +42,7 @@ const projects: Project[] = [
     colSpan: "md:col-span-4",
     aspect: "aspect-[4/5]",
     video: "/video/ai.mp4",
+    href: "/ai-development",
   },
   {
     name: "Web Development",
@@ -47,6 +52,7 @@ const projects: Project[] = [
     colSpan: "md:col-span-8",
     aspect: "aspect-[16/10]",
     video: "/video/web.mp4",
+    href: "/work",
   },
 ];
 
@@ -69,16 +75,16 @@ function ProjectCard({ p, i }: { p: Project; i: number }) {
   };
 
   return (
-    <motion.a
-      href="#"
+    <motion.div
       initial={{ opacity: 0, y: 140, scale: 0.96 }}
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: true, margin: "-120px" }}
       transition={{ duration: 1, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
       onMouseEnter={onEnter}
       onMouseLeave={onLeave}
-      className={`group relative block ${p.colSpan} col-span-12`}
+      className={`group relative ${p.colSpan} col-span-12`}
     >
+      <Link href={p.href} className="block">
       <div
         className={`relative ${p.aspect} w-full overflow-hidden rounded-3xl`}
         style={{ background: p.bg }}
@@ -146,7 +152,7 @@ function ProjectCard({ p, i }: { p: Project; i: number }) {
             animate={{ x: hover ? 6 : 0 }}
             className="text-sm font-medium text-white/90 flex items-center gap-2"
           >
-            View case <span>→</span>
+            View <span>→</span>
           </motion.span>
         </div>
 
@@ -171,7 +177,8 @@ function ProjectCard({ p, i }: { p: Project; i: number }) {
           0{i + 1} / 0{projects.length}
         </span>
       </div>
-    </motion.a>
+      </Link>
+    </motion.div>
   );
 }
 
@@ -192,7 +199,7 @@ export function HugeLogos() {
               Selected work
             </p>
             <h2 className="text-5xl md:text-7xl font-semibold tracking-tighter leading-[0.95]">
-              Crafted with the{" "}
+              Systems we can{" "}
               <span
                 style={{
                   background:
@@ -201,17 +208,17 @@ export function HugeLogos() {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                brands you know
+                actually ship
               </span>
               .
             </h2>
           </div>
-          <a
-            href="#"
+          <Link
+            href="/work"
             className="shrink-0 inline-flex items-center gap-3 text-sm font-medium border-b border-foreground pb-1 self-start md:self-end"
           >
-            All case studies <span>→</span>
-          </a>
+            See the work <span>→</span>
+          </Link>
         </motion.div>
 
         {/* Grid */}

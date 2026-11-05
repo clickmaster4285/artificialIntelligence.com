@@ -1,3 +1,4 @@
+import { COMPANY } from "@/lib/company";
 import {
   motion,
   useScroll,
@@ -84,12 +85,16 @@ export function HugeAbout() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="mt-8 text-base md:text-lg text-muted-foreground max-w-2xl leading-relaxed text-justify"
           >
-          We&apos;re a software house of engineers, designers and product thinkers.
-For over eight years, we&apos;ve partnered with ambitious startups and global brands to design, build and scale digital products that don&apos;t just work they feel effortless, intuitive, and alive.
+          We&apos;re an AI studio of engineers, designers and product thinkers
+          based in New York. Founded in 2018, we design and build AI products,
+          web platforms and mobile applications for teams that need the system
+          in production.
 
-From early-stage MVPs to large-scale platforms serving millions of users, we focus on crafting systems that balance clarity, performance, and long-term scalability. Every product we touch is shaped with a deep respect for detail, user experience, and engineering precision.
-
-We don&apos;t just ship features we build experiences that people return to, trust, and remember. Our work lives at the intersection of design thinking, modern engineering, and product strategy, where simplicity is engineered and complexity is hidden beneath the surface.
+          The work starts from the constraint in front of us: the data that
+          exists, the workflow that has to change, and the date a first version
+          has to be usable. Interface, architecture and implementation stay on
+          one team so a decision made early is still visible in the code that
+          ships.
           </motion.p>
 
  
@@ -103,10 +108,10 @@ We don&apos;t just ship features we build experiences that people return to, tru
             className="mt-10 grid grid-cols-2 gap-6 max-w-md"
           >
             {[
-              { k: "Founded", v: "2018" },
-              { k: "Team", v: "42 people" },
-              { k: "HQ", v: "Berlin · Remote" },
+              { k: "Founded", v: COMPANY.foundingYear },
+              { k: "Studio", v: `${COMPANY.address.locality}, ${COMPANY.address.region}` },
               { k: "Focus", v: "Product · AI" },
+              { k: "Delivery", v: "Fixed scope" },
             ].map((row) => (
               <div key={row.k} className="border-t border-border/40 pt-3">
                 <p className="text-sm uppercase tracking-widest font-medium text-muted-foreground">
@@ -149,6 +154,7 @@ We don&apos;t just ship features we build experiences that people return to, tru
       muted
       loop
       playsInline
+      preload="metadata"
       className="relative w-full h-full object-cover rounded-2xl"
       style={{
         transform: "translateZ(40px)",
