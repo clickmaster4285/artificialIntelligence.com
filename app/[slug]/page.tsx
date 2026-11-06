@@ -11,6 +11,8 @@ import {
   getPublishedPageBySlug,
 } from "@/lib/dynamic-pages/page-loader";
 
+import { isDuplicateFlatCityPage } from "@/lib/duplicate-city-urls";
+
 import {
   generateDynamicPageSchema,
   getDynamicPageUrl,
@@ -18,7 +20,7 @@ import {
 } from "@/lib/dynamic-pages/page-schema";
 
 import {
-  getRequestSiteUrl,
+  fallbackSiteUrl,
   pageAlternates,
 } from "@/lib/site";
 
@@ -65,11 +67,11 @@ export const revalidate = false;
  * /llm-development-company/
  */
 export function generateStaticParams() {
-  return getAllPublishedSlugs().map(
-    (slug) => ({
+  return getAllPublishedSlugs()
+    .filter((slug) => !isDuplicateFlatCityPage(slug))
+    .map((slug) => ({
       slug,
-    }),
-  );
+    }));
 }
 
 /* =========================================================
@@ -98,7 +100,7 @@ export async function generateMetadata({
     };
   }
 
-  const siteUrl = await getRequestSiteUrl();
+  const siteUrl = fallbackSiteUrl();
 
   const pageUrl =
     getDynamicPageUrl(page, siteUrl);
@@ -214,7 +216,7 @@ export default async function DynamicRootPage({
     notFound();
   }
 
-  const siteUrl = await getRequestSiteUrl();
+  const siteUrl = fallbackSiteUrl();
 
   const jsonLd =
     generateDynamicPageSchema(page, siteUrl);

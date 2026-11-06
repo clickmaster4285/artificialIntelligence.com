@@ -2,6 +2,11 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
 import { PageLayout } from '@/components/locations/PageLayout';
+import { BreadcrumbTrail, RelatedPages } from '@/components/site/PageContextLinks';
+import {
+  locationBreadcrumbs,
+  locationRelatedLinks,
+} from '@/lib/related-content';
 import { HeroSection } from '@/components/locations/sections/Hero';
 import { OverviewSection } from '@/components/locations/sections/Overview';
 import { PricingSection } from '@/components/locations/sections/PricingTable';
@@ -53,6 +58,10 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
 
   return (
     <PageLayout withGrain>
+      <BreadcrumbTrail
+        className="pt-8"
+        items={locationBreadcrumbs(locationName)}
+      />
       <HeroSection
         tagline={location.hero.tagline}
         title={location.h1}
@@ -97,6 +106,11 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
       )}
 
       <FAQSection items={location.faqs} />
+
+      <RelatedPages
+        className="py-16"
+        links={locationRelatedLinks(slug, location.internalLinks)}
+      />
 
       <CTASection
         title={location.cta.title}

@@ -12,6 +12,11 @@ import { cn } from "@/lib/utils";
 import { PageScrollIndicator } from "../shared/PageScrollIndicator";
 
 import { NeuralCanvasHero } from "./NeuralCanvasHero";
+import { BreadcrumbTrail, RelatedPages } from "@/components/site/PageContextLinks";
+import {
+  dynamicBreadcrumbs,
+  dynamicRelatedLinks,
+} from "@/lib/related-content";
 
 import {
   getNeuralNavigationItems,
@@ -218,6 +223,10 @@ export function NeuralCanvasTemplate({
         </>
       )}
 
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-8">
+        <BreadcrumbTrail items={dynamicBreadcrumbs(page)} />
+      </div>
+
       {/* Cinematic hero */}
       <NeuralCanvasHero
         hero={page.hero}
@@ -229,6 +238,10 @@ export function NeuralCanvasTemplate({
         <NeuralSectionRenderer
           page={page}
         />
+      </div>
+
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-16">
+        <RelatedPages links={dynamicRelatedLinks(page)} />
       </div>
     </article>
   );

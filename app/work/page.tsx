@@ -5,7 +5,7 @@ import { SitePage } from "@/components/site/SitePage";
 import { pageAlternates } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Work by ClickMasters",
+  title: "Work by the ClickMasters AI Studio",
   description:
     "AI systems, web platforms and mobile products built by ClickMasters. Named case studies are published only with client permission.",
   alternates: pageAlternates("/work"),

@@ -7,38 +7,29 @@ import { Navbar } from "@/components/landingPage/Navbar";
 import { GlobalLeadForm } from "@/components/landingPage/GlobalLeadForm";
 import { HugeFooter } from "@/components/landingPage/HugeFooter";
 import { generateSiteJsonLd } from "@/lib/schema";
-import {
-  AI_UK_ORIGIN,
-  getRequestSiteUrl,
-  pageAlternates,
-} from "@/lib/site";
+import { fallbackSiteUrl, pageAlternates } from "@/lib/site";
 
 const inter = Inter({ subsets: ["latin"] });
+const siteUrl = fallbackSiteUrl();
 
-export async function generateMetadata(): Promise<Metadata> {
-  const siteUrl = await getRequestSiteUrl();
+export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  title: "ClickMasters - AI Development Company",
+  description:
+    "ClickMasters designs and builds AI products, web platforms, and mobile software for production teams.",
+  alternates: pageAlternates("/"),
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
 
-  return {
-    metadataBase: new URL(siteUrl),
-    title: "ClickMasters - AI Development Company",
-    description:
-      "Custom AI development services from $30K. Chatbots, RAG systems, ML models & enterprise AI platforms.",
-    alternates: pageAlternates("/"),
-    icons: {
-      icon: "/favicon.ico",
-    },
-  };
-}
-
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const siteUrl = await getRequestSiteUrl();
-
   return (
-    <html lang={siteUrl === AI_UK_ORIGIN ? "en-GB" : "en-US"}>
+    <html lang="en">
       <body className={`${inter.className} min-h-screen flex flex-col`}>
         <script
           type="application/ld+json"

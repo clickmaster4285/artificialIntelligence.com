@@ -112,7 +112,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
   'new-york': {
     meta: {
       title: 'AI Development Company New York | ClickMasters AI',
-      description: 'AI development company in New York from $20K. Custom AI, RAG systems, LLM integration & AI agents. USA-based senior engineers. HIPAA & SOC2. Free NYC consultation.',
+      description: 'AI development company in New York from $20K. Custom AI, RAG systems, LLM integration & AI agents. USA-based senior engineers. HIPAA & SOC2.',
       slug: '/ai-development-company/new-york/',
       primaryKW: 'ai development company new york',
       secondaryKWs: ['ai development company nyc', 'ai development new york', 'artificial intelligence development company new york', 'ai software development new york', 'ai app development new york']
@@ -242,7 +242,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
   'san-francisco': {
     meta: {
       title: 'AI Development Company San Francisco | ClickMasters',
-      description: 'AI development company in San Francisco from $20K. Custom AI, RAG, LLM & AI agents for SF startups & enterprises. Fixed-price. Full IP. Free SF AI consultation.',
+      description: 'AI development company in San Francisco from $20K. Custom AI, RAG, LLM & AI agents for SF startups & enterprises. Fixed-price. Full IP.',
       slug: '/ai-development-company/san-francisco/',
       primaryKW: 'ai development company san francisco',
       secondaryKWs: ['ai development san francisco', 'ai software development company san francisco', 'ai app development san francisco', 'machine learning development san francisco', 'llm development san francisco', 'generative ai development san francisco']
@@ -565,7 +565,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
   'boston': {
     meta: {
       title: 'AI Development Company Boston | ClickMasters AI',
-      description: 'AI development company in Boston from $20K. Custom AI for biotech, MedTech, FinTech & SaaS. MIT & Harvard ecosystem. HIPAA-ready. Free Boston AI consultation.',
+      description: 'AI development company in Boston from $20K. Custom AI for biotech, MedTech, FinTech & SaaS. MIT & Harvard ecosystem. HIPAA-ready.',
       slug: '/ai-development-company/boston/',
       primaryKW: 'ai development company boston',
       secondaryKWs: ['ai development boston', 'ai software development company boston', 'machine learning development boston', 'ai consulting boston', 'ai development cambridge ma']
@@ -669,7 +669,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
   'seattle': {
     meta: {
       title: 'AI Development Company Seattle | ClickMasters AI',
-      description: 'AI development company in Seattle from $20K. Custom AI for tech, healthcare, retail & aerospace. Amazon & Microsoft ecosystem. Fixed-price. Free Seattle AI call.',
+      description: 'AI development company in Seattle from $20K. Custom AI for tech, healthcare, retail & aerospace. Amazon & Microsoft ecosystem. Fixed-price.',
       slug: '/ai-development-company/seattle/',
       primaryKW: 'ai development company seattle',
       secondaryKWs: ['ai development seattle', 'ai software development company seattle', 'machine learning development seattle', 'ai app development seattle', 'ai consulting seattle']
@@ -774,7 +774,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
   'austin': {
     meta: {
       title: 'AI Development Company Austin | ClickMasters AI',
-      description: 'AI development company in Austin from $20K. Custom AI for tech, SaaS, FinTech & healthcare. Fixed-price. Full IP. US Central timezone. Free Austin AI consultation.',
+      description: 'AI development company in Austin from $20K. Custom AI for tech, SaaS, FinTech & healthcare. Fixed-price. Full IP. US Central timezone.',
       slug: '/ai-development-company/austin/',
       primaryKW: 'ai development company austin',
       secondaryKWs: ['ai development austin', 'ai software development austin texas', 'machine learning development austin', 'ai consulting austin texas']
@@ -995,7 +995,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
   'denver': {
     meta: {
       title: 'AI Development Company Denver | ClickMasters AI',
-      description: 'AI development company in Denver from $20K. Custom AI for energy, healthcare, tech & SaaS. Colorado market. Fixed-price. Full IP. Free Denver AI consultation.',
+      description: 'AI development company in Denver from $20K. Custom AI for energy, healthcare, tech & SaaS. Colorado market. Fixed-price. Full IP.',
       slug: '/ai-development-company/denver/',
       primaryKW: 'ai development company denver',
       secondaryKWs: ['ai development denver', 'ai software development denver colorado', 'machine learning development denver', 'ai consulting denver', 'ai development colorado']
@@ -1105,7 +1105,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
   'atlanta': {
     meta: {
       title: 'AI Development Company Atlanta | ClickMasters AI',
-      description: 'AI development company in Atlanta from $20K. Custom AI for FinTech, logistics, healthcare & enterprise. Fixed-price. HIPAA & SOC2. Free Atlanta AI consultation.',
+      description: 'AI development company in Atlanta from $20K. Custom AI for FinTech, logistics, healthcare & enterprise. Fixed-price. HIPAA & SOC2.',
       slug: '/ai-development-company/atlanta/',
       primaryKW: 'ai development company atlanta',
       secondaryKWs: ['ai development atlanta', 'ai software development atlanta georgia', 'machine learning development atlanta', 'ai consulting atlanta', 'ai development atlanta georgia']
@@ -1214,7 +1214,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
   'houston': {
     meta: {
       title: 'AI Development Company Houston | ClickMasters AI',
-      description: 'AI development company in Houston from $20K. Custom AI for energy, petrochemical, healthcare & logistics. Fixed-price. HIPAA & SOC2. Free Houston AI consultation.',
+      description: 'AI development company in Houston from $20K. Custom AI for energy, petrochemical, healthcare & logistics. Fixed-price. HIPAA & SOC2.',
       slug: '/ai-development-company/houston/',
       primaryKW: 'ai development company houston',
       secondaryKWs: ['ai development houston', 'ai software development houston texas', 'machine learning development houston', 'ai consulting houston', 'ai development houston texas']
@@ -1333,7 +1333,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
   'washington-dc': {
     meta: {
       title: 'AI Development Company Washington DC | ClickMasters',
-      description: 'AI development company in Washington DC from $20K. Custom AI for government contractors, healthcare, finance & nonprofits. FedRAMP-aware. Free DC AI consultation.',
+      description: 'AI development company in Washington DC from $20K. Custom AI for government contractors, healthcare, finance & nonprofits. FedRAMP-aware.',
       slug: '/ai-development-company/washington-dc/',
       primaryKW: 'ai development company washington dc',
       secondaryKWs: ['ai development washington dc', 'ai software development dc', 'machine learning development washington dc', 'ai consulting washington dc', 'ai development virginia maryland dc']
@@ -1443,7 +1443,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
   'toronto': {
     meta: {
       title: 'AI Development Company Toronto | ClickMasters AI',
-      description: 'AI development company in Toronto from $20K CAD-equivalent. Custom AI for FinTech, healthcare & enterprise. PIPEDA & GDPR-ready. USA-based team. Free Toronto call.',
+      description: 'AI development company in Toronto from $20K CAD-equivalent. Custom AI for FinTech, healthcare & enterprise. PIPEDA & GDPR-ready. USA-based team.',
       slug: '/ai-development-company/toronto/',
       primaryKW: 'ai development company toronto',
       secondaryKWs: ['ai development toronto', 'ai software development toronto', 'machine learning development toronto', 'ai consulting toronto', 'ai development company canada']
@@ -1547,7 +1547,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
   'miami': {
     meta: {
       title: 'AI Development Company Miami | ClickMasters AI',
-      description: 'AI development company in Miami from $20K. Custom AI for FinTech, real estate, healthcare & Latin America enterprise. Fixed-price. Free Miami AI consultation.',
+      description: 'AI development company in Miami from $20K. Custom AI for FinTech, real estate, healthcare & Latin America enterprise. Fixed-price.',
       slug: '/ai-development-company/miami/',
       primaryKW: 'ai development company miami',
       secondaryKWs: ['ai development miami', 'ai software development miami florida', 'machine learning development miami', 'ai consulting miami', 'ai development miami beach']
@@ -1650,7 +1650,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
   'phoenix': {
     meta: {
       title: 'AI Development Company Phoenix | ClickMasters AI',
-      description: 'AI development company in Phoenix from $20K. Custom AI for financial services, healthcare, logistics & tech. Fixed-price. HIPAA & SOC2. Free Phoenix AI call.',
+      description: 'AI development company in Phoenix from $20K. Custom AI for financial services, healthcare, logistics & tech. Fixed-price. HIPAA & SOC2.',
       slug: '/ai-development-company/phoenix/',
       primaryKW: 'ai development company phoenix',
       secondaryKWs: ['ai development phoenix', 'ai software development phoenix arizona', 'machine learning development phoenix', 'ai consulting phoenix', 'ai development scottsdale']
@@ -2053,7 +2053,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
   'san-diego': {
     meta: {
       title: 'AI Development Company San Diego | ClickMasters AI',
-      description: 'AI development company in San Diego from $20K. Custom AI for biotech, defense tech, telecom & healthcare. Fixed-price. Free San Diego AI consultation today.',
+      description: 'AI development company in San Diego from $20K. Custom AI for biotech, defense tech, telecom & healthcare. Fixed-price.',
       slug: '/ai-development-company/san-diego/',
       primaryKW: 'ai development company san diego',
       secondaryKWs: ['ai development san diego', 'ai software development san diego', 'machine learning san diego', 'ai consulting san diego', 'san diego ai company']
@@ -2154,7 +2154,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
   'calgary': {
     meta: {
       title: 'AI Development Company Calgary | ClickMasters AI',
-      description: 'AI development company in Calgary from $20K USD. Custom AI for energy, oil & gas, agriculture & finance. SR&ED credits. Fixed-price. Free Calgary AI consult.',
+      description: 'AI development company in Calgary from $20K USD. Custom AI for energy, oil & gas, agriculture & finance. SR&ED credits. Fixed-price.',
       slug: '/ai-development-company/calgary/',
       primaryKW: 'ai development company calgary',
       secondaryKWs: ['ai development calgary', 'ai software development calgary', 'machine learning calgary', 'ai consulting calgary', 'calgary ab ai company']
@@ -2254,7 +2254,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
   'nashville': {
     meta: {
       title: 'AI Development Company Nashville | ClickMasters AI',
-      description: 'AI development company in Nashville from $20K. Custom AI for healthcare, music tech, logistics & finance. Fixed-price. Free Nashville AI consultation today.',
+      description: 'AI development company in Nashville from $20K. Custom AI for healthcare, music tech, logistics & finance. Fixed-price.',
       slug: '/ai-development-company/nashville/',
       primaryKW: 'ai development company nashville',
       secondaryKWs: ['ai development nashville', 'ai software development nashville', 'machine learning nashville tn', 'ai consulting nashville', 'nashville ai company']
@@ -2753,7 +2753,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
   'sacramento': {
     meta: {
       title: 'AI Development Company Sacramento | ClickMasters AI',
-      description: 'AI development company in Sacramento from $20K. Custom AI for government, healthcare, agritech & clean energy. CA capital. Fixed-price. Free Sacramento AI consult.',
+      description: 'AI development company in Sacramento from $20K. Custom AI for government, healthcare, agritech & clean energy. CA capital. Fixed-price.',
       slug: '/ai-development-company/sacramento/',
       primaryKW: 'ai development company sacramento',
       secondaryKWs: ['ai development sacramento', 'ai software development sacramento ca', 'machine learning sacramento', 'ai consulting sacramento', 'sacramento california ai company']
@@ -2853,7 +2853,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
   'st-louis': {
     meta: {
       title: 'AI Development Company St Louis | ClickMasters AI',
-      description: 'AI development company in St Louis from $20K. Custom AI for healthcare, aviation, agriculture & finance. Boeing & BJC. Fixed-price. Free St Louis AI consult.',
+      description: 'AI development company in St Louis from $20K. Custom AI for healthcare, aviation, agriculture & finance. Boeing & BJC. Fixed-price.',
       slug: '/ai-development-company/st-louis/',
       primaryKW: 'ai development company st louis',
       secondaryKWs: ['ai development st louis', 'ai software development st louis mo', 'machine learning st louis', 'ai consulting st louis', 'saint louis ai company']
@@ -3053,7 +3053,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
   'cincinnati': {
     meta: {
       title: 'AI Development Company Cincinnati | ClickMasters AI',
-      description: 'AI development company in Cincinnati from $20K. Custom AI for consumer goods, healthcare, finance & logistics. P&G HQ. Fixed-price. Free Cincinnati AI consult.',
+      description: 'AI development company in Cincinnati from $20K. Custom AI for consumer goods, healthcare, finance & logistics. P&G HQ. Fixed-price.',
       slug: '/ai-development-company/cincinnati/',
       primaryKW: 'ai development company cincinnati',
       secondaryKWs: ['ai development cincinnati', 'ai software development cincinnati ohio', 'machine learning cincinnati', 'ai consulting cincinnati', 'cincinnati ohio ai company']
@@ -3153,7 +3153,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
   'montreal': {
     meta: {
       title: 'AI Development Company Montreal | ClickMasters AI',
-      description: 'AI development company in Montreal from $20K USD. Bilingual AI for tech, finance, gaming & AI startups. SR&ED credits. Fixed-price. Free Montreal AI consult.',
+      description: 'AI development company in Montreal from $20K USD. Bilingual AI for tech, finance, gaming & AI startups. SR&ED credits. Fixed-price.',
       slug: '/ai-development-company/montreal/',
       primaryKW: 'ai development company montreal',
       secondaryKWs: ['ai development montreal', 'ai software development montreal', 'machine learning montreal', 'ai consulting montreal', 'montreal ai company']

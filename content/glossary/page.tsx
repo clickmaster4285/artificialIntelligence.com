@@ -28,7 +28,7 @@ import {
 import { GlossaryHero } from "@/content/glossary/GlossaryHero";
 import { GlossaryExplorer } from "@/content/glossary/GlossaryExplorer";
 
-import { absoluteUrl, getRequestSiteUrl, pageAlternates } from "@/lib/site";
+import { absoluteUrl, fallbackSiteUrl, pageAlternates } from "@/lib/site";
 
 /* =========================================================
    TYPES
@@ -70,69 +70,47 @@ function serializeSchema(
    METADATA
 ========================================================= */
 
-export const metadata: Metadata = {
-  title:
-    glossaryLandingConfig.seo.title,
+export async function generateMetadata({
+  searchParams,
+}: GlossaryPageProps): Promise<Metadata> {
+  const resolvedSearchParams = await searchParams;
+  const hasParameter = [
+    resolvedSearchParams.search,
+    resolvedSearchParams.letter,
+    resolvedSearchParams.category,
+    resolvedSearchParams.page,
+  ].some((value) => {
+    const first = Array.isArray(value) ? value[0] : value;
+    return Boolean(first && first.trim());
+  });
 
-  description:
-    glossaryLandingConfig.seo
-      .description,
-
-  keywords:
-    glossaryLandingConfig.seo
-      .keywords,
-
-  alternates: pageAlternates(
-    glossaryLandingConfig.seo.canonical,
-  ),
-
-  openGraph: {
-    title:
-      glossaryLandingConfig.seo
-        .title,
-
-    description:
-      glossaryLandingConfig.seo
-        .description,
-
-    url: glossaryLandingConfig.seo
-      .canonical,
-
-    type: "website",
-
-    images:
-      glossaryLandingConfig.seo
-        .ogImage
-        ? [
-            {
-              url: glossaryLandingConfig
-                .seo.ogImage,
-            },
-          ]
+  return {
+    title: glossaryLandingConfig.seo.title,
+    description: glossaryLandingConfig.seo.description,
+    keywords: glossaryLandingConfig.seo.keywords,
+    alternates: pageAlternates("/glossary"),
+    robots: hasParameter
+      ? { index: false, follow: true }
+      : { index: true, follow: true },
+    openGraph: {
+      title: glossaryLandingConfig.seo.title,
+      description: glossaryLandingConfig.seo.description,
+      url: "/glossary",
+      type: "website",
+      images: glossaryLandingConfig.seo.ogImage
+        ? [{ url: glossaryLandingConfig.seo.ogImage }]
         : undefined,
-  },
-
-  twitter: {
-    card: "summary_large_image",
-
-    title:
-      glossaryLandingConfig.seo
-        .title,
-
-    description:
-      glossaryLandingConfig.seo
-        .description,
-
-    images:
-      glossaryLandingConfig.seo
-        .ogImage
-        ? [
-            glossaryLandingConfig.seo
-              .ogImage,
-          ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: glossaryLandingConfig.seo.title,
+      description: glossaryLandingConfig.seo.description,
+      images: glossaryLandingConfig.seo.ogImage
+        ? [glossaryLandingConfig.seo.ogImage]
         : undefined,
-  },
-};
+    },
+  };
+}
 
 /* =========================================================
    PAGE
@@ -231,7 +209,7 @@ export default async function GlossaryPage({
      STRUCTURED DATA
   --------------------------------------------------------- */
 
-  const siteUrl = await getRequestSiteUrl();
+  const siteUrl = fallbackSiteUrl();
 
   const canonicalUrl = absoluteUrl(
     glossaryLandingConfig.seo.canonical,

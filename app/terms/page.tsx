@@ -7,7 +7,7 @@ import { COMPANY } from "@/lib/company";
 import { pageAlternates } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Terms of use",
+  title: "Website Terms of Use | ClickMasters",
   description:
     "Terms for using the ClickMasters Artificial Intelligence Company website.",
   alternates: pageAlternates("/terms"),
@@ -87,8 +87,8 @@ export default function TermsPage() {
           Law
         </h2>
         <p className="mt-3">
-          These website terms are governed by the laws of the State of New
-          York, without regard to conflict-of-law rules. Contact{" "}
+          A paid project is governed by the written agreement for that
+          project. This page does not name a court. Contact{" "}
           <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a> before
           starting a dispute about the site. See also the{" "}
           <Link className="border-b border-foreground pb-0.5" href="/privacy">

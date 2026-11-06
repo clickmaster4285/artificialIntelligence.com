@@ -7,9 +7,9 @@ import { COMPANY } from "@/lib/company";
 import { pageAlternates } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Contact ClickMasters",
+  title: "Contact the ClickMasters AI Studio",
   description:
-    "Email, phone and New York address for ClickMasters Artificial Intelligence Company.",
+    "Email ClickMasters or call the UK, US, or Pakistan number. A senior engineer replies from this domain.",
   alternates: pageAlternates("/contact"),
 };
 
@@ -50,9 +50,7 @@ export default function ContactPage() {
         </Link>
       </p>
 
-      <p className="text-sm text-muted-foreground">
-        {COMPANY.legalName}. Founded {COMPANY.foundingYear}.
-      </p>
+      <p className="text-sm text-muted-foreground">{COMPANY.legalName}.</p>
     </SitePage>
   );
 }

@@ -7,9 +7,9 @@ import { COMPANY } from "@/lib/company";
 import { pageAlternates } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About ClickMasters",
+  title: "About ClickMasters AI Development",
   description:
-    "ClickMasters Artificial Intelligence Company designs and builds AI products, web platforms and mobile software from New York.",
+    "ClickMasters Artificial Intelligence Company designs and builds AI products, web platforms, and mobile software.",
   alternates: pageAlternates("/about"),
 };
 
@@ -18,7 +18,7 @@ export default function AboutPage() {
     <SitePage
       eyebrow="About"
       title="A software studio for AI products."
-      lede={`${COMPANY.legalName} was founded in ${COMPANY.foundingYear}. We design, engineer and ship software for teams that need a product, not a slide deck.`}
+      lede={`${COMPANY.legalName} designs, engineers and ships software for teams that need a product, not a slide deck.`}
     >
       <p>
         The studio works across custom AI systems, web platforms and mobile
@@ -52,18 +52,9 @@ export default function AboutPage() {
           </div>
           <div>
             <dt className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
-              Founded
+              Contact
             </dt>
-            <dd>{COMPANY.foundingYear}</dd>
-          </div>
-          <div>
-            <dt className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
-              Location
-            </dt>
-            <dd>
-              {COMPANY.address.locality}, {COMPANY.address.region},{" "}
-              {COMPANY.address.countryName}
-            </dd>
+            <dd>United Kingdom, United States, and Pakistan</dd>
           </div>
         </dl>
       </section>

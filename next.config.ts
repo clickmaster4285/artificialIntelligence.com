@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { duplicateCityRedirects } from "./lib/duplicate-city-urls";
 
 const isProduction = process.env.NODE_ENV === "production";
 
@@ -80,6 +81,7 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       ...legacyRedirects,
+      ...duplicateCityRedirects(),
       {
         source: "/:path*",
         has: [

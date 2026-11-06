@@ -74,14 +74,14 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
   index: {
     meta: {
       title: 'AI Development Company | Custom AI Solutions | ClickMasters',
-      description: 'Custom AI development services from $30K. Chatbots, RAG systems, ML models & enterprise AI platforms. USA-based senior engineers. Fixed-price. Free consultation.',
+      description: 'Custom AI development for chatbots, RAG systems, machine learning models, and enterprise platforms. Fixed-price projects. Free consultation.',
       slug: '/ai-development/',
       primaryKW: 'ai development company',
       secondaryKWs: ['custom ai development', 'ai application development', 'enterprise ai solutions', 'ai software development'],
     },
     h1: 'AI Development Services — Custom AI Solutions for Enterprise & Startups',
     hero: {
-      tagline: 'Production AI Systems Built by USA-Based Senior Engineers',
+      tagline: 'Production AI Systems Built by Senior Engineers',
       description: 'ClickMasters builds custom AI systems that solve real business problems — chatbots, RAG systems, computer vision, ML models, and enterprise AI platforms. Fixed-price milestone contracts. Full IP transfer. From $30,000.',
       ctaText: 'Get a Free AI Project Assessment',
       ctaLink: '/contact',
@@ -265,7 +265,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
   fintech: {
     meta: {
       title: 'AI Development for FinTech | SOC2 & GDPR | ClickMasters',
-      description: 'FinTech AI development from $40K. Fraud detection, credit scoring, AML, document processing. SOC2, PCI DSS & GDPR-ready. USA-based senior engineers. Free call.',
+      description: 'FinTech AI development from $40K. Fraud detection, credit scoring, AML, document processing. SOC2, PCI DSS & GDPR-ready. USA-based senior engineers.',
       slug: '/ai-development/fintech/',
       primaryKW: 'ai development company fintech',
       secondaryKWs: ['fintech ai development', 'ai development financial services', 'fraud detection ai', 'credit scoring ai'],
@@ -387,7 +387,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
   healthcare: {
     meta: {
       title: 'Healthcare AI Development | HIPAA-Certified | ClickMasters',
-      description: 'HIPAA-compliant healthcare AI from $40K. Clinical decision support, EHR AI, patient engagement & medical imaging. BAA included. USA-based. Free compliance call.',
+      description: 'HIPAA-compliant healthcare AI from $40K. Clinical decision support, EHR AI, patient engagement & medical imaging. BAA included. USA-based.',
       slug: '/ai-development/healthcare/',
       primaryKW: 'healthcare ai development company',
       secondaryKWs: ['hipaa compliant ai development', 'clinical ai development', 'medical ai development', 'medtech ai development'],
@@ -516,7 +516,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
   ecommerce: {
     meta: {
       title: 'AI Development for eCommerce | ClickMasters AI',
-      description: 'eCommerce AI development from $30K. Recommendation engines, visual search, demand forecasting & personalization. USA-based. Fixed-price. Free eCommerce AI call.',
+      description: 'eCommerce AI development from $30K. Recommendation engines, visual search, demand forecasting & personalization. USA-based. Fixed-price.',
       slug: '/ai-development/ecommerce/',
       primaryKW: 'ai development company ecommerce',
       secondaryKWs: ['ecommerce ai development', 'recommendation engine development', 'visual search ai', 'personalization ai ecommerce'],
@@ -735,7 +735,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
   insurance: {
     meta: {
       title: 'AI Development for Insurance | ClickMasters AI',
-      description: 'AI development for insurance from $40K. Claims automation, fraud detection, underwriting AI & chatbots. HIPAA & SOC2-ready. USA-based. Fixed-price. Free call.',
+      description: 'AI development for insurance from $40K. Claims automation, fraud detection, underwriting AI & chatbots. HIPAA & SOC2-ready. USA-based. Fixed-price.',
       slug: '/ai-development/insurance/',
       primaryKW: 'ai development insurance',
       secondaryKWs: ['insurance ai development', 'claims automation ai', 'underwriting ai', 'fraud detection insurance ai'],
@@ -842,8 +842,8 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
   // ============================================
   logistics: {
     meta: {
-      title: 'AI Development for Logistics | Supply Chain AI | ClickMasters',
-      description: 'AI development for logistics from $40K. Demand forecasting, route optimization, warehouse AI & supply chain visibility. Fixed-price. Free logistics AI call.',
+      title: 'AI Development for Logistics | ClickMasters',
+      description: 'AI development for logistics from $40K. Demand forecasting, route optimization, warehouse AI & supply chain visibility. Fixed-price.',
       slug: '/ai-development/logistics/',
       primaryKW: 'ai development logistics',
       secondaryKWs: ['logistics ai solutions', 'ai route optimization', 'warehouse ai development', 'supply chain machine learning'],
@@ -949,7 +949,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
   'hr-technology': {
     meta: {
       title: 'AI Development for HR | HRTech AI Solutions | ClickMasters',
-      description: 'AI development for HR from $30K. Candidate screening, attrition prediction, HR chatbots & workforce analytics. EEOC-compliant. Fixed-price. Free HR AI call.',
+      description: 'AI development for HR from $30K. Candidate screening, attrition prediction, HR chatbots & workforce analytics. EEOC-compliant. Fixed-price.',
       slug: '/ai-development/hr-technology/',
       primaryKW: 'ai development hr',
       secondaryKWs: ['hrtech ai', 'attrition prediction ai', 'workforce analytics ai', 'hr chatbot development'],
@@ -1059,7 +1059,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
   'real-estate': {
     meta: {
       title: 'AI Development for Real Estate | PropTech AI | ClickMasters',
-      description: 'AI development for real estate from $35K. Property valuation, lead scoring, document AI & predictive analytics. Fair Housing compliant. Fixed-price. Free PropTech AI consultation.',
+      description: 'AI development for real estate from $35K. Property valuation, lead scoring, document AI & predictive analytics. Fair Housing compliant. Fixed-price.',
       slug: '/ai-development/real-estate/',
       primaryKW: 'ai development real estate',
       secondaryKWs: ['proptech ai', 'property valuation ai', 'real estate predictive analytics', 'ai lead scoring real estate'],
@@ -1167,8 +1167,8 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
   // ============================================
   retail: {
     meta: {
-      title: 'AI Development for Retail | Retail AI Solutions | ClickMasters',
-      description: 'AI development for retail from $35K. Demand forecasting, personalization, inventory optimization & computer vision. Fixed-price. Free retail AI consultation.',
+      title: 'AI Development for Retail | ClickMasters',
+      description: 'AI development for retail from $35K. Demand forecasting, personalization, inventory optimization & computer vision. Fixed-price.',
       slug: '/ai-development/retail/',
       primaryKW: 'ai development retail',
       secondaryKWs: ['retail ai development', 'ai demand forecasting retail', 'inventory optimization ai', 'retail machine learning development'],
@@ -1507,7 +1507,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
   'customer-service': {
     meta: {
       title: 'AI Development for Customer Service | ClickMasters AI',
-      description: 'Customer service AI from $30K. AI chatbots, agent assist, ticket routing & sentiment analysis. Zendesk, Salesforce, ServiceNow integration. Free AI consult.',
+      description: 'Customer service AI from $30K. AI chatbots, agent assist, ticket routing & sentiment analysis. Zendesk, Salesforce, ServiceNow integration.',
       slug: '/ai-development/customer-service/',
       primaryKW: 'ai development customer service',
       secondaryKWs: ['ai agent assist', 'customer service chatbot development', 'contact center ai development', 'ticket routing ai'],
@@ -1614,7 +1614,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
   // ============================================
   cybersecurity: {
     meta: {
-      title: 'AI Development for Cybersecurity | Security AI | ClickMasters',
+      title: 'AI Development for Cybersecurity | ClickMasters',
       description: 'AI for cybersecurity from $40K. Threat detection, anomaly detection, SIEM AI & security copilots. SOC 2-ready. Fixed-price. Free security AI consultation.',
       slug: '/ai-development/cybersecurity/',
       primaryKW: 'ai development cybersecurity',
@@ -1831,7 +1831,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
   // ============================================
   'supply-chain': {
     meta: {
-      title: 'AI Development for Supply Chain | Supply Chain AI | ClickMasters',
+      title: 'AI Development for Supply Chain | ClickMasters',
       description: 'Supply chain AI development from $40K. Demand sensing, supplier risk, inventory optimization & S&OP AI. Fixed-price. Free supply chain AI consultation.',
       slug: '/ai-development/supply-chain/',
       primaryKW: 'ai development supply chain',
@@ -1941,8 +1941,8 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
   // ============================================
   energy: {
     meta: {
-      title: 'AI Development for Energy | Energy AI Solutions | ClickMasters',
-      description: 'AI development for energy from $40K. Grid optimization, renewable forecasting, predictive maintenance & energy trading AI. Fixed-price. Free energy AI consult.',
+      title: 'AI Development for Energy | ClickMasters',
+      description: 'AI development for energy from $40K. Grid optimization, renewable forecasting, predictive maintenance & energy trading AI. Fixed-price.',
       slug: '/ai-development/energy/',
       primaryKW: 'ai development energy',
       secondaryKWs: ['energy ai', 'grid optimization ai', 'renewable energy ai', 'energy trading ai'],
@@ -2036,7 +2036,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
   // ============================================
   telecommunications: {
     meta: {
-      title: 'AI Development for Telecommunications | Telecom AI | ClickMasters',
+      title: 'AI Development for Telecommunications | ClickMasters',
       description: 'AI for telecom from $40K. Network optimization, 5G AI, churn prediction, fraud detection & NLP for customer service. Fixed-price. Free telecom AI consult.',
       slug: '/ai-development/telecommunications/',
       primaryKW: 'ai development telecommunications',
@@ -2142,7 +2142,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
   government: {
     meta: {
       title: 'AI Development for Government | GovTech AI | ClickMasters',
-      description: 'AI development for government from $50K. Federal AI, state government AI, fraud detection & citizen services. FedRAMP advisory. Fixed-price. Free gov AI consult.',
+      description: 'AI development for government from $50K. Federal AI, state government AI, fraud detection & citizen services. FedRAMP advisory. Fixed-price.',
       slug: '/ai-development/government/',
       primaryKW: 'ai development government',
       secondaryKWs: ['government ai development', 'federal ai development', 'state government ai', 'govtech ai company'],
@@ -2238,7 +2238,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
   construction: {
     meta: {
       title: 'AI Development for Construction | ConTech AI | ClickMasters',
-      description: 'AI development for construction from $40K. Safety monitoring, progress tracking, cost estimation & predictive risk AI. Fixed-price. Free construction AI consult.',
+      description: 'AI development for construction from $40K. Safety monitoring, progress tracking, cost estimation & predictive risk AI. Fixed-price.',
       slug: '/ai-development/construction/',
       primaryKW: 'ai development construction',
       secondaryKWs: ['construction ai', 'construction safety ai', 'contech ai development', 'construction cost estimation ai'],

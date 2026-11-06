@@ -8,23 +8,22 @@ export function ContactDetails({
   return (
     <address className={`not-italic ${className}`}>
       <p className="font-semibold text-foreground">{COMPANY.legalName}</p>
-      <p className="mt-2">
-        {COMPANY.address.locality}, {COMPANY.address.region}
-      </p>
-      <p>{COMPANY.address.countryName}</p>
       <p className="mt-3">
-        <a
-          className="hover:text-foreground"
-          href={`mailto:${COMPANY.email}`}
-        >
+        <a className="hover:text-foreground" href={`mailto:${COMPANY.email}`}>
           {COMPANY.email}
         </a>
       </p>
-      <p>
-        <a className="hover:text-foreground" href={`tel:${COMPANY.telephone}`}>
-          {COMPANY.telephone}
-        </a>
-      </p>
+      <ul className="mt-3 space-y-2">
+        {COMPANY.phones.map((phone) => (
+          <li key={phone.tel}>
+            <span className="text-foreground/80">{phone.region}</span>
+            {": "}
+            <a className="hover:text-foreground" href={`tel:${phone.tel}`}>
+              {phone.display}
+            </a>
+          </li>
+        ))}
+      </ul>
     </address>
   );
 }

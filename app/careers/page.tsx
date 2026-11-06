@@ -6,7 +6,7 @@ import { COMPANY } from "@/lib/company";
 import { pageAlternates } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Careers at ClickMasters",
+  title: "Careers at ClickMasters AI Studio",
   description:
     "How to apply to ClickMasters Artificial Intelligence Company. Send work you can walk through, not a generic portfolio dump.",
   alternates: pageAlternates("/careers"),

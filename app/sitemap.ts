@@ -4,6 +4,7 @@ import { getPublishedGlossaryTerms } from "@/content/glossary";
 import { getAllLocationPageSlugs } from "@/data/ai-development-company-pages-data";
 import { getAllPageSlugs } from "@/data/ai-development-pages-data";
 import { getAllPublishedPages } from "@/lib/dynamic-pages/page-loader";
+import { isDuplicateFlatCityPage } from "@/lib/duplicate-city-urls";
 import { getRequestSiteUrl } from "@/lib/site";
 
 const STATIC_PATHS = [
@@ -50,6 +51,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   for (const page of getAllPublishedPages()) {
     if (page.seo?.noIndex) continue;
+    if (isDuplicateFlatCityPage(page.slug)) continue;
     addPath(paths, `/${page.slug}`);
   }
 

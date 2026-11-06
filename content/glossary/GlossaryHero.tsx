@@ -455,6 +455,7 @@ export function GlossaryHero({
                       href={`/glossary?search=${encodeURIComponent(
                         term,
                       )}`}
+                      rel="nofollow"
                       className={cn(
                         "rounded-full",
                         "border border-white/[0.07]",

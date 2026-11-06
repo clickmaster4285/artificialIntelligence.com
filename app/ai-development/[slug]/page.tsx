@@ -12,8 +12,10 @@ import { ServiceCompliance } from '@/components/services/ServiceCompliance';
 import { ServiceFAQs } from '@/components/services/Faq';
 import { ServiceCTA } from '@/components/services/Cta';
 import { ServiceDropdownNav } from '@/components/services/ServiceDropdownNav';
+import { BreadcrumbTrail, RelatedPages } from '@/components/site/PageContextLinks';
 import { generateServiceSchema } from '@/lib/schema';
-import { getRequestSiteUrl, pageAlternates } from '@/lib/site';
+import { serviceBreadcrumbs, serviceRelatedLinks } from '@/lib/related-content';
+import { fallbackSiteUrl, pageAlternates } from '@/lib/site';
 
 interface PageProps {
   params: Promise<{
@@ -36,7 +38,7 @@ export default async function AIDevelopmentSubPage({ params }: PageProps) {
     notFound();
   }
 
-  const siteUrl = await getRequestSiteUrl();
+  const siteUrl = fallbackSiteUrl();
   const schema = generateServiceSchema(pageData, siteUrl);
 
   return (
@@ -47,6 +49,9 @@ export default async function AIDevelopmentSubPage({ params }: PageProps) {
       />
       <ServiceLayout>
         <ServiceDropdownNav />
+        <div className="mx-auto max-w-7xl px-4 pt-8 sm:px-6 lg:px-8">
+          <BreadcrumbTrail items={serviceBreadcrumbs(pageData.meta.title)} />
+        </div>
         <ServiceHero data={pageData.hero} h1={pageData.h1} />
         <ServiceOverview data={pageData.overview} />
         <ServicePricing data={pageData.pricing} />
@@ -58,6 +63,9 @@ export default async function AIDevelopmentSubPage({ params }: PageProps) {
           <ServiceCompliance data={pageData.compliance} />
         )}
         <ServiceFAQs data={pageData.faqs} />
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+          <RelatedPages links={serviceRelatedLinks(slug, pageData.internalLinks)} />
+        </div>
         <ServiceCTA data={pageData.cta} />
       </ServiceLayout>
     </>

@@ -10,6 +10,7 @@ import type {
 import { cn } from "@/lib/utils";
 
 import { GlossaryDetailHero } from "./detail/GlossaryDetailHero";
+import { BreadcrumbTrail } from "@/components/site/PageContextLinks";
 import { GlossaryTableOfContents } from "./detail/GlossaryTableOfContents";
 import { GlossaryArticle } from "./detail/GlossaryArticle";
 import { GlossaryFaqSection } from "./detail/GlossaryFaqSection";
@@ -183,6 +184,15 @@ export function GlossaryDetailPage({
         "text-white",
       )}
     >
+      <BreadcrumbTrail
+        className="px-5 pt-6 text-white/70 sm:px-8 lg:px-12 [&_span]:text-white"
+        items={[
+          { href: "/", label: "Home" },
+          { href: "/glossary", label: "AI Glossary" },
+          { label: term.title },
+        ]}
+      />
+
       {/* Detail hero */}
       <GlossaryDetailHero
         term={term}

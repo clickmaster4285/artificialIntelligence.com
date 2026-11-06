@@ -281,6 +281,7 @@ export function GlossaryFilters({
               category:
                 activeCategory,
             })}
+            rel="nofollow"
             aria-current={
               normalizedActiveLetter ===
               "ALL"
@@ -360,6 +361,7 @@ export function GlossaryFilters({
                     category:
                       activeCategory,
                   })}
+                  rel="nofollow"
                   aria-current={
                     isActive
                       ? "page"
@@ -429,6 +431,7 @@ export function GlossaryFilters({
                       activeLetter,
                     category,
                   })}
+                  rel="nofollow"
                   aria-current={
                     isActive
                       ? "page"

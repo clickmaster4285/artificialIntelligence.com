@@ -6,7 +6,7 @@ import { COMPANY } from "@/lib/company";
 import { pageAlternates } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Cookie notice",
+  title: "Cookie Notice for ClickMasters AI",
   description:
     "Cookies used by the ClickMasters Artificial Intelligence Company website.",
   alternates: pageAlternates("/cookies"),
@@ -61,8 +61,14 @@ export default function CookiesPage() {
       <p>
         Questions:{" "}
         <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>
-        {" · "}
-        <a href={`tel:${COMPANY.telephone}`}>{COMPANY.telephone}</a>
+        {COMPANY.phones.map((phone) => (
+          <span key={phone.tel}>
+            {" · "}
+            <a href={`tel:${phone.tel}`}>
+              {phone.region} {phone.display}
+            </a>
+          </span>
+        ))}
       </p>
     </SitePage>
   );

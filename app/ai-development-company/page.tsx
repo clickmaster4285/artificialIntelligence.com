@@ -8,6 +8,8 @@ import { FAQSection } from '@/components/locations/sections/Faq';
 import { CTASection } from '@/components/locations/sections/Cta';
 import { StatsSection } from '@/components/locations/sections/Stats';
 import { pageAlternates } from '@/lib/site';
+import { getAllLocationPageData } from '@/data/ai-development-company-pages-data';
+import { CrawlableIndex } from '@/components/site/PageContextLinks';
 
 export const metadata = {
   title: 'AI Development Company | ClickMasters AI',
@@ -25,11 +27,11 @@ export default function LocationOverviewPage() {
         ctaText="Get a Free AI Consultation"
         ctaLink="/contact"
         startingPrice="$20,000"
-        badge="Fixed-Price | Full IP | USA-Based"
+        badge="Fixed-Price | Full IP"
         stats={[
           { label: 'Project Start', value: '$20,000', description: 'Focused integrations' },
           { label: 'Locations', value: '35+', description: 'Across US and Canada' },
-          { label: 'Senior Engineers', value: '100%', description: 'USA & Canada based' },
+          { label: 'IP transfer', value: 'Full', description: 'You own the build' },
         ]}
       />
 
@@ -85,9 +87,18 @@ export default function LocationOverviewPage() {
           },
           {
             question: 'Where is ClickMasters located?',
-            answer: 'ClickMasters serves clients across the United States and Canada with remote-first engineering teams operating in Eastern, Central, Mountain, and Pacific timezones. We have served clients in every major US and Canadian tech hub.'
+            answer: 'ClickMasters can be reached in the United Kingdom, the United States, and Pakistan. Teams work remotely with clients. City pages describe markets we build for. They are not a claim that the company has an office in that city.'
           },
         ]}
+      />
+
+      <CrawlableIndex
+        title="Cities we build for"
+        intro="Each city page covers the industries and project types we deliver in that market."
+        links={getAllLocationPageData().map(({ slug, data }) => ({
+          href: `/ai-development-company/${slug}`,
+          label: data.h1.split(" — ")[0].replace("AI Development Company in ", ""),
+        }))}
       />
 
       <CTASection

@@ -172,10 +172,11 @@ function createServiceSchema(
       "@id": organizationIdFor(siteUrl),
     },
 
-    areaServed: {
-      "@type": "Country",
-      name: "United States",
-    },
+    areaServed: [
+      { "@type": "Country", name: "United Kingdom" },
+      { "@type": "Country", name: "United States" },
+      { "@type": "Country", name: "Pakistan" },
+    ],
 
     availableChannel: {
       "@type":

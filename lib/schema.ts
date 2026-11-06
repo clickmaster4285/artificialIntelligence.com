@@ -1,8 +1,25 @@
 // src/lib/schema.ts
 
 import { AIPageData } from '@/data/ai-development-pages-data';
-import { COMPANY, companyLogoUrl } from '@/lib/company';
+import { COMPANY, companyContactPoints, companyLogoUrl } from '@/lib/company';
 import { absoluteUrl, fallbackSiteUrl, localeForSite } from '@/lib/site';
+
+function offerFromStartingPrice(startingPrice?: string) {
+  if (!startingPrice) return {};
+
+  const price = startingPrice.replace(/[$,\s]/g, "");
+
+  if (!/^\d+(\.\d+)?$/.test(price)) return {};
+
+  return {
+    offers: {
+      '@type': 'Offer',
+      price,
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+    },
+  };
+}
 
 /**
  * Generate Service Schema (Product/Services page schema)
@@ -25,27 +42,15 @@ export function generateServiceSchema(pageData: AIPageData, siteUrl: string = fa
       url: baseUrl,
       logo: companyLogoUrl(baseUrl),
       email: COMPANY.email,
-      telephone: COMPANY.telephone,
-      contactPoint: {
-        '@type': 'ContactPoint',
-        telephone: COMPANY.telephone,
-        email: COMPANY.email,
-        contactType: 'sales',
-        availableLanguage: ['English'],
-        hoursAvailable: {
-          '@type': 'OpeningHoursSpecification',
-          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-          opens: '09:00',
-          closes: '18:00'
-        }
-      }
+      contactPoint: companyContactPoints()
     },
     serviceType: 'AI Development',
     serviceOutput: pageData.meta.primaryKW,
-    areaServed: {
-      '@type': 'Country',
-      name: 'United States'
-    },
+    areaServed: [
+      { '@type': 'Country', name: 'United Kingdom' },
+      { '@type': 'Country', name: 'United States' },
+      { '@type': 'Country', name: 'Pakistan' },
+    ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'AI Development Services',
@@ -62,30 +67,7 @@ export function generateServiceSchema(pageData: AIPageData, siteUrl: string = fa
         position: index + 1
       }))
     },
-    offers: {
-      '@type': 'Offer',
-      price: pageData.hero.startingPrice?.replace('$', '').replace(',', '') || '30000',
-      priceCurrency: 'USD',
-      availability: 'https://schema.org/InStock',
-      validFrom: new Date().toISOString().split('T')[0],
-      priceSpecification: {
-        '@type': 'PriceSpecification',
-        price: pageData.hero.startingPrice?.replace('$', '').replace(',', '') || '30000',
-        priceCurrency: 'USD',
-        unitText: 'project'
-      }
-    },
-    potentialAction: {
-      '@type': 'ContactAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${baseUrl}/contact`,
-        actionPlatform: [
-          'http://schema.org/DesktopWebPlatform',
-          'http://schema.org/MobileWebPlatform'
-        ]
-      }
-    },
+    ...(offerFromStartingPrice(pageData.hero.startingPrice)),
     about: {
       '@type': 'Thing',
       name: 'AI Development Services',
@@ -181,21 +163,7 @@ export function generateOrganizationSchema(siteUrl: string = fallbackSiteUrl()) 
     description:
       'ClickMasters Artificial Intelligence Company designs and builds AI products, web platforms and mobile software.',
     email: COMPANY.email,
-    telephone: COMPANY.telephone,
-    foundingDate: COMPANY.foundingYear,
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: COMPANY.address.locality,
-      addressRegion: COMPANY.address.region,
-      addressCountry: COMPANY.address.country
-    },
-    contactPoint: {
-      '@type': 'ContactPoint',
-      telephone: COMPANY.telephone,
-      email: COMPANY.email,
-      contactType: 'sales',
-      availableLanguage: ['English']
-    }
+    contactPoint: companyContactPoints()
   };
 }
 

@@ -1,5 +1,5 @@
 export {
-  metadata,
+  generateMetadata,
 } from "@/content/glossary/page";
 
 export {

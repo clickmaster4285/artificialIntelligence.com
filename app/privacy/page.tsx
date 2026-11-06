@@ -4,34 +4,39 @@ import Link from "next/link";
 import { ContactDetails } from "@/components/site/ContactDetails";
 import { SitePage } from "@/components/site/SitePage";
 import { COMPANY } from "@/lib/company";
-import { getRequestSiteUrl, pageAlternates } from "@/lib/site";
+import { pageAlternates } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Privacy notice",
+  title: "Privacy Notice | ClickMasters AI",
   description:
     "How ClickMasters Artificial Intelligence Company collects, uses and deletes information submitted through this website.",
   alternates: pageAlternates("/privacy"),
 };
 
-export default async function PrivacyPage() {
-  const siteUrl = await getRequestSiteUrl();
-
+export default function PrivacyPage() {
   return (
     <SitePage
       eyebrow="Privacy"
       title="Privacy notice"
-      lede={`This notice describes what ${COMPANY.legalName} collects on ${siteUrl.replace("https://", "")} and what we do with it. It was last updated on 5 November 2026.`}
+      lede={`This notice describes what ${COMPANY.legalName} collects on this website and what we do with it. It was last updated on 5 November 2026.`}
     >
       <section>
         <h2 className="text-2xl font-semibold tracking-tight text-foreground">
           Who is responsible
         </h2>
         <p className="mt-3">
-          {COMPANY.legalName}, {COMPANY.address.locality}, {COMPANY.address.region},{" "}
-          {COMPANY.address.countryName}, is the business that operates this
-          website. Questions about this notice go to{" "}
-          <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a> or{" "}
-          <a href={`tel:${COMPANY.telephone}`}>{COMPANY.telephone}</a>.
+          {COMPANY.legalName} is the business that operates this website.
+          Questions about this notice go to{" "}
+          <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>
+          {COMPANY.phones.map((phone) => (
+            <span key={phone.tel}>
+              {", "}
+              <a href={`tel:${phone.tel}`}>
+                {phone.region} {phone.display}
+              </a>
+            </span>
+          ))}
+          .
         </p>
       </section>
 

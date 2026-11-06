@@ -55,7 +55,7 @@ export function HugeHero({ visible }: HugeHeroProps) {
           className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-white/70 mb-6"
         >
           <span className="w-8 h-px bg-white/70" />
-          Software House · Est. 2018
+          AI development studio
         </motion.span>
 
         <h1
@@ -84,7 +84,7 @@ export function HugeHero({ visible }: HugeHeroProps) {
           className="mt-6 flex flex-col md:flex-row md:items-end justify-between gap-6 max-w-4xl"
         >
           <p className="max-w-5xl text-base md:text-xl font-semibold text-justify text-white/80">
-            ClickMasters Artificial Intelligence Company designs and builds AI products, web platforms, and mobile software for teams that need the system in production. Strategy, design, and engineering stay on one New York team.
+            ClickMasters Artificial Intelligence Company designs and builds AI products, web platforms, and mobile software for teams that need the system in production. Strategy, design, and engineering stay on one team.
           </p>
         </motion.div>
       </div>

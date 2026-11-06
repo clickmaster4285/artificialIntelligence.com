@@ -1,4 +1,3 @@
-import { COMPANY } from "@/lib/company";
 import {
   motion,
   useScroll,
@@ -85,10 +84,11 @@ export function HugeAbout() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="mt-8 text-base md:text-lg text-muted-foreground max-w-2xl leading-relaxed text-justify"
           >
-          We&apos;re an AI studio of engineers, designers and product thinkers
-          based in New York. Founded in 2018, we design and build AI products,
-          web platforms and mobile applications for teams that need the system
-          in production.
+          We&apos;re an AI studio of engineers, designers and product thinkers.
+          We design and build AI products, web platforms and mobile
+          applications for teams that need the system in production. You can
+          reach the studio in the United Kingdom, the United States, and
+          Pakistan.
 
           The work starts from the constraint in front of us: the data that
           exists, the workflow that has to change, and the date a first version
@@ -108,10 +108,10 @@ export function HugeAbout() {
             className="mt-10 grid grid-cols-2 gap-6 max-w-md"
           >
             {[
-              { k: "Founded", v: COMPANY.foundingYear },
-              { k: "Studio", v: `${COMPANY.address.locality}, ${COMPANY.address.region}` },
+              { k: "Reach", v: "UK · US · Pakistan" },
               { k: "Focus", v: "Product · AI" },
               { k: "Delivery", v: "Fixed scope" },
+              { k: "Contact", v: "Phone · Email" },
             ].map((row) => (
               <div key={row.k} className="border-t border-border/40 pt-3">
                 <p className="text-sm uppercase tracking-widest font-medium text-muted-foreground">

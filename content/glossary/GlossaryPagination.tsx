@@ -265,6 +265,7 @@ export function GlossaryPagination({
               category:
                 activeCategory,
             })}
+            rel="nofollow"
             aria-label="Go to previous glossary page"
             className={cn(
               "group/previous",
@@ -363,6 +364,7 @@ export function GlossaryPagination({
                   category:
                     activeCategory,
                 })}
+                rel="nofollow"
                 aria-label={`Go to glossary page ${item}`}
                 aria-current={
                   isCurrent
@@ -430,6 +432,7 @@ export function GlossaryPagination({
               category:
                 activeCategory,
             })}
+            rel="nofollow"
             aria-label="Go to next glossary page"
             className={cn(
               "group/next",

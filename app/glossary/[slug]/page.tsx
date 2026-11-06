@@ -15,7 +15,8 @@ import {
 
 import { GlossaryDetailPage } from "@/content/glossary/GlossaryDetailPage";
 
-import { getRequestSiteUrl, pageAlternates, absoluteUrl } from "@/lib/site";
+import { companyLogoUrl } from "@/lib/company";
+import { fallbackSiteUrl, pageAlternates, absoluteUrl } from "@/lib/site";
 
 /* =========================================================
    TYPES
@@ -32,10 +33,10 @@ interface GlossaryDetailRouteProps {
 ========================================================= */
 
 /**
- * Allows newly added glossary JSON files to resolve during development and
- * on-demand server rendering without touching this route file.
+ * Glossary terms are generated at build time. A new term is available
+ * after the next build, which keeps these pages on the static cache.
  */
-export const dynamicParams = true;
+export const dynamicParams = false;
 
 /* =========================================================
    HELPERS
@@ -124,14 +125,12 @@ export async function generateMetadata({
       modifiedTime:
         term.updatedAt,
 
-      images: term.seo.ogImage
-        ? [
-            {
-              url: term.seo
-                .ogImage,
-            },
-          ]
-        : undefined,
+      images: [
+        {
+          url: term.seo.ogImage || "/logo.png",
+          alt: term.title,
+        },
+      ],
     },
 
     twitter: {
@@ -142,11 +141,9 @@ export async function generateMetadata({
       description:
         term.seo.description,
 
-      images: term.seo.ogImage
-        ? [
-            term.seo.ogImage,
-          ]
-        : undefined,
+      images: [
+        term.seo.ogImage || "/logo.png",
+      ],
     },
   };
 }
@@ -235,6 +232,11 @@ function generateGlossaryTermSchema(
         term.updatedAt ??
         term.publishedAt,
 
+      image: {
+        "@type": "ImageObject",
+        url: companyLogoUrl(siteUrl),
+      },
+
       inLanguage: "en",
 
       author: {
@@ -251,6 +253,11 @@ function generateGlossaryTermSchema(
         name: "ClickMasters",
 
         url: siteUrl,
+
+        logo: {
+          "@type": "ImageObject",
+          url: companyLogoUrl(siteUrl),
+        },
       },
     },
 
@@ -354,7 +361,7 @@ export default async function GlossaryDetailRoute({
     term.slug,
   );
 
-  const siteUrl = await getRequestSiteUrl();
+  const siteUrl = fallbackSiteUrl();
 
   const schema =
     generateGlossaryTermSchema(

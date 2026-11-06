@@ -5,7 +5,7 @@ import { SitePage } from "@/components/site/SitePage";
 import { pageAlternates } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "How ClickMasters works",
+  title: "How a ClickMasters Project Works",
   description:
     "The ClickMasters delivery process, from discovery and architecture through launch and support.",
   alternates: pageAlternates("/process"),

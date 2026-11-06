@@ -26,8 +26,16 @@ const glossaryTermsDirectory = join(
   "terms",
 );
 
+let glossaryTermCache: GlossaryTerm[] | null = null;
+let publishedGlossaryCache: GlossaryTerm[] | null = null;
+let glossaryTermMap: Map<string, GlossaryTerm> | null = null;
+
 function readGlossaryTermFiles(): GlossaryTerm[] {
-  return readdirSync(
+  if (glossaryTermCache) {
+    return glossaryTermCache;
+  }
+
+  glossaryTermCache = readdirSync(
     glossaryTermsDirectory,
   )
     .filter((fileName) =>
@@ -70,6 +78,8 @@ function readGlossaryTermFiles(): GlossaryTerm[] {
         );
       }
     });
+
+  return glossaryTermCache;
 }
 
 /* =========================================================
@@ -85,7 +95,11 @@ export function getGlossaryTerms(): GlossaryTerm[] {
 ========================================================= */
 
 export function getPublishedGlossaryTerms(): GlossaryTerm[] {
-  return getGlossaryTerms()
+  if (publishedGlossaryCache) {
+    return publishedGlossaryCache;
+  }
+
+  publishedGlossaryCache = getGlossaryTerms()
     .filter(
       (term) =>
         term.status === "published",
@@ -99,6 +113,15 @@ export function getPublishedGlossaryTerms(): GlossaryTerm[] {
         },
       ),
     );
+
+  glossaryTermMap = new Map(
+    publishedGlossaryCache.map((term) => [
+      normalizeGlossarySlug(term.slug),
+      term,
+    ]),
+  );
+
+  return publishedGlossaryCache;
 }
 
 /* =========================================================
@@ -110,16 +133,11 @@ export function getPublishedGlossaryTerms(): GlossaryTerm[] {
  */
 
 function getGlossaryTermMap() {
-  return new Map<string, GlossaryTerm>(
-    getPublishedGlossaryTerms().map(
-      (term) => [
-        normalizeGlossarySlug(
-          term.slug,
-        ),
-        term,
-      ],
-    ),
-  );
+  if (!glossaryTermMap) {
+    getPublishedGlossaryTerms();
+  }
+
+  return glossaryTermMap ?? new Map();
 }
 
 /* =========================================================
