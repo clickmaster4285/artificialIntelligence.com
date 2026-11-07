@@ -267,7 +267,7 @@
     },
     {
       "label": "Pinecone Documentation — Vector Database for AI",
-      "href": "https://docs.pinecone.io/",
+      "href": "https://docs.pinecone.io/guides/get-started/overview",
       "publisher": "Pinecone"
     }
   ],
@@ -283,7 +283,7 @@
     },
     {
       "label": "What is RAG? (Retrieval-Augmented Generation)",
-      "href": "/glossary/rag-retrieval-augmented-generation/"
+      "href": "/glossary/retrieval-augmented-generation/"
     }
   ],
 

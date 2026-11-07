@@ -256,7 +256,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
       ctaText: 'Book Your Free 30-Min AI Project Scoping Call',
       ctaLink: '/contact',
     },
-    internalLinks: ['/ai-development-cost/', '/custom-ai-development-company/', '/ai-consulting-company/'],
+    internalLinks: ['/ai-development-cost/', '/custom-ai-development/', '/ai-consulting-services/'],
   },
 
   // ============================================
@@ -378,7 +378,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
       ctaText: 'Book Your Free FinTech AI Consultation',
       ctaLink: '/contact',
     },
-    internalLinks: ['/ai-development-cost/', '/custom-ai-development-company/', '/ai-consulting/fintech/', '/rag-development-services/'],
+    internalLinks: ['/ai-development-cost/', '/custom-ai-development/', '/ai-consulting-services/', '/rag-development-services/'],
   },
 
   // ============================================
@@ -507,7 +507,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
       ctaText: 'Book Your Free Healthcare AI Compliance Assessment',
       ctaLink: '/contact',
     },
-    internalLinks: ['/ai-development-cost/', '/custom-ai-development-company/', '/rag-development-services/'],
+    internalLinks: ['/ai-development-cost/', '/custom-ai-development/', '/rag-development-services/'],
   },
 
   // ============================================
@@ -625,7 +625,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
       ctaText: 'Book Your Free eCommerce AI Consultation',
       ctaLink: '/contact',
     },
-    internalLinks: ['/ai-development-cost/', '/custom-ai-development-company/', '/ai-development/retail/'],
+    internalLinks: ['/ai-development-cost/', '/custom-ai-development/', '/ai-development/retail/'],
   },
 
   // ============================================
@@ -726,7 +726,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
       ctaText: 'Book Your Free Legal AI Consultation',
       ctaLink: '/contact',
     },
-    internalLinks: ['/ai-development-cost/', '/custom-ai-development-company/', '/rag-development-services/'],
+    internalLinks: ['/ai-development-cost/', '/custom-ai-development/', '/rag-development-services/'],
   },
 
   // ============================================
@@ -940,7 +940,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
       ctaText: 'Get a Free Logistics AI Assessment',
       ctaLink: '/contact',
     },
-    internalLinks: ['/ai-development-cost/', '/custom-ai-development-company/', '/ai-development/manufacturing/'],
+    internalLinks: ['/ai-development-cost/', '/custom-ai-development/', '/ai-development/manufacturing/'],
   },
 
   // ============================================
@@ -1050,7 +1050,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
       ctaText: 'Get a Free HR AI Assessment',
       ctaLink: '/contact',
     },
-    internalLinks: ['/ai-development-cost/', '/custom-ai-development-company/', '/ai-chatbot-development-company/'],
+    internalLinks: ['/ai-development-cost/', '/custom-ai-development/', '/ai-chatbot-development/'],
   },
 
   // ============================================
@@ -1159,7 +1159,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
       ctaText: 'Get a Free PropTech AI Assessment',
       ctaLink: '/contact',
     },
-    internalLinks: ['/ai-development-cost/', '/custom-ai-development-company/', '/rag-development-services/'],
+    internalLinks: ['/ai-development-cost/', '/custom-ai-development/', '/rag-development-services/'],
   },
 
   // ============================================
@@ -1264,7 +1264,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
       ctaText: 'Get a Free Retail AI Assessment',
       ctaLink: '/contact',
     },
-    internalLinks: ['/ai-development/ecommerce/', '/ai-development-cost/', '/custom-ai-development-company/'],
+    internalLinks: ['/ai-development/ecommerce/', '/ai-development-cost/', '/custom-ai-development/'],
   },
 
   // ============================================
@@ -1385,7 +1385,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
       ctaText: 'Get a Free EdTech AI Assessment',
       ctaLink: '/contact',
     },
-    internalLinks: ['/ai-development-cost/', '/custom-ai-development-company/', '/ai-chatbot-development-company/'],
+    internalLinks: ['/ai-development-cost/', '/custom-ai-development/', '/ai-chatbot-development/'],
   },
 
   // ============================================
@@ -1498,7 +1498,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
       ctaText: 'Get a Free Media AI Assessment',
       ctaLink: '/contact',
     },
-    internalLinks: ['/ai-development/ecommerce/', '/ai-development-cost/', '/custom-ai-development-company/'],
+    internalLinks: ['/ai-development/ecommerce/', '/ai-development-cost/', '/custom-ai-development/'],
   },
 
   // ============================================
@@ -1606,7 +1606,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
       ctaText: 'Get a Free CS AI Assessment',
       ctaLink: '/contact',
     },
-    internalLinks: ['/ai-chatbot-development-company/', '/ai-development-cost/', '/custom-ai-development-company/'],
+    internalLinks: ['/ai-chatbot-development/', '/ai-development-cost/', '/custom-ai-development/'],
   },
 
   // ============================================
@@ -1711,7 +1711,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
       ctaText: 'Get a Free Security AI Assessment',
       ctaLink: '/contact',
     },
-    internalLinks: ['/ai-development-cost/', '/custom-ai-development-company/', '/ai-nlp-development-services/'],
+    internalLinks: ['/ai-development-cost/', '/custom-ai-development/', '/natural-language-processing-services/'],
   },
 
   // ============================================
@@ -1823,7 +1823,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
       ctaText: 'Get a Free AgTech AI Assessment',
       ctaLink: '/contact',
     },
-    internalLinks: ['/ai-development-cost/', '/custom-ai-development-company/', '/ai-development/logistics/'],
+    internalLinks: ['/ai-development-cost/', '/custom-ai-development/', '/ai-development/logistics/'],
   },
 
   // ============================================
@@ -1933,7 +1933,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
       ctaText: 'Get a Free Supply Chain AI Assessment',
       ctaLink: '/contact',
     },
-    internalLinks: ['/ai-development/logistics/', '/ai-development-cost/', '/custom-ai-development-company/'],
+    internalLinks: ['/ai-development/logistics/', '/ai-development-cost/', '/custom-ai-development/'],
   },
 
   // ============================================
@@ -2028,7 +2028,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
       ctaText: 'Get a Free Energy AI Assessment',
       ctaLink: '/contact',
     },
-    internalLinks: ['/ai-development-cost/', '/custom-ai-development-company/', '/ai-development/manufacturing/'],
+    internalLinks: ['/ai-development-cost/', '/custom-ai-development/', '/ai-development/manufacturing/'],
   },
 
   // ============================================
@@ -2133,7 +2133,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
       ctaText: 'Get a Free Telecom AI Assessment',
       ctaLink: '/contact',
     },
-    internalLinks: ['/ai-development-cost/', '/custom-ai-development-company/', '/ai-development/customer-service/'],
+    internalLinks: ['/ai-development-cost/', '/custom-ai-development/', '/ai-development/customer-service/'],
   },
 
   // ============================================
@@ -2229,7 +2229,7 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
       ctaText: 'Get a Free Government AI Assessment',
       ctaLink: '/contact',
     },
-    internalLinks: ['/ai-development-cost/', '/custom-ai-development-company/', '/responsible-ai-consulting/'],
+    internalLinks: ['/ai-development-cost/', '/custom-ai-development/', '/responsible-ai-compliance/'],
   },
 
   // ============================================
@@ -2326,7 +2326,103 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
       ctaText: 'Get a Free Construction AI Assessment',
       ctaLink: '/contact',
     },
-    internalLinks: ['/ai-development-cost/', '/custom-ai-development-company/', '/ai-computer-vision-services/'],
+    internalLinks: ['/ai-development-cost/', '/custom-ai-development/', '/computer-vision-development/'],
+  },
+
+  // ============================================
+  // 21. MANUFACTURING AI
+  // ============================================
+  manufacturing: {
+    meta: {
+      title: 'AI Development for Manufacturing | Industrial AI | ClickMasters',
+      description: 'AI development for manufacturing from $35K. Computer vision quality inspection, predictive maintenance, process optimization & demand forecasting. Fixed-price.',
+      slug: '/ai-development/manufacturing/',
+      primaryKW: 'ai development manufacturing',
+      secondaryKWs: ['manufacturing ai', 'industrial ai development', 'ai quality inspection', 'predictive maintenance ai'],
+    },
+    h1: 'AI Development for Manufacturing — Quality Inspection, Predictive Maintenance & Industrial AI',
+    hero: {
+      tagline: 'Production AI Systems for Manufacturers and Industrial Operations',
+      description: 'ClickMasters builds production AI systems for discrete and process manufacturers — computer vision that inspects parts on the line, predictive maintenance models that flag equipment failures before they stop production, process optimization AI that tunes parameters for yield and throughput, demand forecasting tied to your ERP, and document intelligence for quality records and work instructions. Systems are designed for the plant floor: edge inference where latency or connectivity demands it, OT/IT integration with existing PLCs, historians and MES, and review interfaces that keep quality engineers in control. Manufacturing AI projects start at $35,000. Fixed-price. Full IP. USA-based senior engineers.',
+      ctaText: 'Get a Free Manufacturing AI Assessment',
+      ctaLink: '/contact',
+      startingPrice: '$35,000',
+      badge: 'Edge + Cloud | MES/ERP Integration | Full IP',
+    },
+    overview: {
+      title: 'Manufacturing AI: From Pilot Line to Production Floor',
+      content: 'Manufacturing generates the structured, high-volume data that machine learning depends on — sensor streams from equipment, images from inspection stations, process parameters from historians, and transactional data from ERP and MES systems. The challenge is rarely whether AI can work in a lab; it is whether it keeps working on the production floor, under changing lighting, new product variants, sensor drift and shift-to-shift variation. ClickMasters engineers manufacturing AI for those conditions: models validated on held-out production data, deployment to edge hardware or cloud depending on latency requirements, integration with the systems operators already use, and monitoring that detects drift before it affects quality or uptime.',
+      stats: [
+        { label: 'Project Start', value: '$35,000', description: 'Manufacturing document intelligence' },
+        { label: 'Quality Inspection CV', value: '$55,000–$150,000', description: 'Edge + cloud deployment' },
+        { label: 'Typical Timeline', value: '10–24 weeks', description: 'Depending on system type' },
+      ],
+    },
+    pricing: {
+      title: 'Manufacturing AI Pricing',
+      description: 'Fixed-price ranges by system type. Cameras, sensors and edge hardware are scoped separately when required.',
+      items: [
+        { systemType: 'Computer vision QC inspection', priceRange: '$55,000–$150,000', timeline: '12–24 weeks', primaryOutcome: 'Defect detection, scrap and rework reduction' },
+        { systemType: 'Predictive maintenance', priceRange: '$50,000–$130,000', timeline: '12–22 weeks', primaryOutcome: 'Unplanned downtime reduction' },
+        { systemType: 'Process optimization AI', priceRange: '$50,000–$120,000', timeline: '12–22 weeks', primaryOutcome: 'Yield and throughput improvement' },
+        { systemType: 'Demand forecasting / supply chain', priceRange: '$45,000–$110,000', timeline: '10–20 weeks', primaryOutcome: 'Inventory and production planning accuracy' },
+        { systemType: 'Manufacturing document intelligence', priceRange: '$35,000–$90,000', timeline: '10–18 weeks', primaryOutcome: 'Quality records, work instructions, compliance documents' },
+      ],
+      note: 'Ranges reflect ClickMasters fixed-price project fees. Regulated manufacturing (FDA GxP, AS9100) adds validation and documentation scope assessed during Discovery.',
+    },
+    applications: {
+      title: 'Manufacturing AI Applications in Depth',
+      description: 'Each application is built for plant-floor conditions and integrated with existing industrial systems.',
+      items: [
+        {
+          title: 'Computer Vision Quality Inspection',
+          description: 'Visual inspection is one of the most repetitive and fatigue-prone tasks on the line. Computer vision inspection systems detect surface defects, dimensional deviations, missing components and assembly errors in real time, routing uncertain cases to a human reviewer rather than forcing a pass/fail guess. ClickMasters trains models on your own part imagery — including rare defect classes supplemented with active learning and synthetic data — and validates precision and recall on a held-out production set before go-live.',
+          technicalApproach: 'Object detection and segmentation models optimized for edge inference (TensorRT / ONNX Runtime on NVIDIA Jetson or industrial PCs)',
+          typicalOutcome: 'Real-time inspection with human review for low-confidence results',
+        },
+        {
+          title: 'Predictive Maintenance',
+          description: 'Unplanned equipment failures halt production and cascade into missed shipments. Predictive maintenance models learn normal operating patterns from vibration, temperature, current and process signals, then flag anomalies and estimate remaining useful life so maintenance can be scheduled before failure. Models are integrated with your historian and CMMS so alerts become work orders, not dashboards nobody checks.',
+          technicalApproach: 'Time-series anomaly detection and remaining-useful-life models on historian and sensor data',
+          typicalOutcome: 'Earlier failure warnings integrated with maintenance workflows',
+        },
+        {
+          title: 'Process Optimization',
+          description: 'Process parameters — temperatures, pressures, speeds, feed rates — interact in ways that are hard to tune by experience alone. Process optimization AI models the relationship between parameters and quality or yield outcomes, then recommends settings within engineering-approved limits. Recommendations are advisory by default, with operator approval before any change reaches the line.',
+          technicalApproach: 'Supervised models on historical process and quality data with constrained optimization',
+        },
+        {
+          title: 'Demand Forecasting and Manufacturing Document Intelligence',
+          description: 'Demand forecasting models combine order history, seasonality and external signals to improve production planning and inventory levels, integrated with your ERP. Document intelligence extracts and organizes information from quality records, inspection reports, work instructions and supplier documents, making it searchable and reducing manual data entry for quality and compliance teams.',
+          technicalApproach: 'Time-series forecasting with ERP integration; OCR and LLM-based extraction for documents',
+        },
+      ],
+    },
+    faqs: [
+      {
+        question: 'How much does manufacturing AI development cost?',
+        answer: 'Manufacturing AI at ClickMasters starts at $35,000 for manufacturing document intelligence. Computer vision quality inspection costs $55,000–$150,000, predictive maintenance $50,000–$130,000, process optimization $50,000–$120,000, and demand forecasting $45,000–$110,000.',
+      },
+      {
+        question: 'Can manufacturing AI run on the plant floor without cloud connectivity?',
+        answer: 'Yes. Inspection and anomaly-detection models can be optimized to run on edge hardware such as NVIDIA Jetson devices or industrial PCs, with results synchronized to cloud or on-premise systems when connectivity is available.',
+      },
+      {
+        question: 'Which industrial systems do you integrate with?',
+        answer: 'ClickMasters integrates with MES, ERP, historians, CMMS and PLC/SCADA data sources through their available APIs, OPC UA, databases or file exports. Integration requirements are scoped during Discovery.',
+      },
+      {
+        question: 'Do you support regulated manufacturing?',
+        answer: 'Yes. For regulated environments such as FDA GxP or aerospace AS9100, ClickMasters adds the validation and documentation scope those environments require. This is assessed during Discovery and reflected in the fixed quote.',
+      },
+    ],
+    cta: {
+      title: 'Start Your Manufacturing AI Project',
+      description: 'ClickMasters manufacturing AI: computer vision quality inspection, predictive maintenance, process optimization, demand forecasting and manufacturing document intelligence — built for plant-floor conditions with edge deployment and MES/ERP integration. From $35,000. Fixed-price. Full IP.',
+      ctaText: 'Get a Free Manufacturing AI Assessment',
+      ctaLink: '/contact',
+    },
+    internalLinks: ['/ai-development-cost/', '/custom-ai-development/', '/computer-vision-development/', '/predictive-analytics-services/', '/ai-development-manufacturing-chicago/'],
   },
 };
 
@@ -2406,6 +2502,7 @@ function getIconForSlug(slug: string): string {
     telecommunications: '📡',
     government: '🏛️',
     construction: '🏗️',
+    manufacturing: '🏭',
   };
   return icons[slug] || '🤖';
 }

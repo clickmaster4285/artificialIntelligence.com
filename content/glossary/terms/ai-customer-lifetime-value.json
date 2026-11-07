@@ -267,13 +267,13 @@
 
   "references": [
     {
-      "label": "Customer Lifetime Value Prediction: A Comprehensive Review",
-      "href": "https://arxiv.org/abs/2612.09876",
+      "label": "A Deep Probabilistic Model for Customer Lifetime Value Prediction",
+      "href": "https://arxiv.org/abs/1912.07753",
       "publisher": "arXiv"
     },
     {
-      "label": "CLV AI Best Practices and Implementation Guide",
-      "href": "https://www.gartner.com/en/clv-ai",
+      "label": "Definition of Customer Lifetime Value (Gartner Glossary)",
+      "href": "https://www.gartner.com/en/information-technology/glossary/customer-lifetime-value",
       "publisher": "Gartner"
     }
   ],

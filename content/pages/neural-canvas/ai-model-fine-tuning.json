@@ -1,0 +1,437 @@
+{
+  "slug": "ai-model-fine-tuning",
+  "status": "published",
+  "seo": {
+    "title": "AI Model Fine-Tuning Services | ClickMasters AI",
+    "description": "AI model fine-tuning services: LoRA/QLoRA, full fine-tuning, instruction tuning and embedding fine-tuning on your data. From $5K. Fixed-price, you own the weights.",
+    "canonical": "/ai-model-fine-tuning/",
+    "primaryKeyword": "ai model fine-tuning services",
+    "secondaryKeywords": [
+      "llm fine-tuning services",
+      "fine-tune llama 3",
+      "lora fine-tuning",
+      "custom llm fine-tuning company",
+      "embedding model fine-tuning"
+    ],
+    "noIndex": false,
+    "noFollow": false
+  },
+  "schema": {
+    "service": true,
+    "organization": true,
+    "breadcrumbs": true,
+    "faq": true
+  },
+  "appearance": {
+    "template": "neural-canvas",
+    "accent": "violet",
+    "background": "neural-grid",
+    "grain": true,
+    "glow": true,
+    "scrollProgress": true,
+    "customCursor": true
+  },
+  "hero": {
+    "eyebrow": "Models Adapted to Your Domain",
+    "title": "AI Model Fine-Tuning Services",
+    "highlightedText": "From $5K · You Own the Weights",
+    "description": "ClickMasters fine-tunes open-weight and API-hosted language models on your data so they produce your formats, follow your style and use your domain vocabulary reliably. We handle the part that determines most of the cost and most of the quality — training data preparation — and pair every model with an evaluation suite that proves it beats the baseline before it ships.",
+    "primaryCta": {
+      "label": "Get a Free Fine-Tuning Assessment",
+      "href": "#consultation",
+      "ariaLabel": "Get a free AI model fine-tuning assessment with 24-hour response"
+    },
+    "secondaryCta": {
+      "label": "Explore Fine-Tuning Methods",
+      "href": "#capabilities"
+    },
+    "trustText": "Fixed-price · Full IP including model weights · Self-hosted options",
+    "metrics": [
+      {
+        "value": "$8,000–$25,000",
+        "label": "LoRA / QLoRA 7B",
+        "description": "Parameter-efficient fine-tuning"
+      },
+      {
+        "value": "$40,000–$120,000",
+        "label": "Full fine-tuning 70B+",
+        "description": "Enterprise-scale adaptation"
+      },
+      {
+        "value": "4–20 weeks",
+        "label": "Typical timeline",
+        "description": "From dataset prep to deployment"
+      }
+    ],
+    "visual": {
+      "type": "neural-sphere",
+      "label": "Fine-tuning stack",
+      "modelNames": [
+        "LoRA",
+        "QLoRA",
+        "Llama",
+        "Mistral",
+        "GPT-4o"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "capabilities",
+      "type": "feature-grid",
+      "eyebrow": "What We Fine-Tune",
+      "title": "Fine-tuning methods matched to your task, data and budget",
+      "description": "We recommend the lightest method that meets your quality target — and tell you when prompting or RAG will do the job instead.",
+      "tone": "default",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "bento",
+      "columns": 2,
+      "items": [
+        {
+          "title": "Parameter-Efficient Fine-Tuning (LoRA / QLoRA)",
+          "description": "Adapt 7B–70B open-weight models such as Llama 3 and Mistral by training only a small fraction of parameters — lower GPU cost, faster iteration and deployable on modest hardware.",
+          "icon": "layers",
+          "label": "Most Common",
+          "metric": "$8K–$60K · 4–14 weeks",
+          "link": {
+            "label": "What is PEFT?",
+            "href": "/glossary/parameter-efficient-fine-tuning-peft/"
+          }
+        },
+        {
+          "title": "Full Fine-Tuning",
+          "description": "Update all model weights when a task needs deeper adaptation than LoRA can deliver — for small models on focused datasets or large models at enterprise scale.",
+          "icon": "brain",
+          "label": "Deep Adaptation",
+          "metric": "$15K–$120K · 6–20 weeks"
+        },
+        {
+          "title": "Instruction Fine-Tuning",
+          "description": "Train a custom chat or task model to follow your instructions, output formats and tone consistently — useful when prompting alone produces inconsistent structure.",
+          "icon": "bot",
+          "label": "Custom Chat Models",
+          "metric": "$15K–$50K · 5–12 weeks",
+          "link": {
+            "label": "What is instruction tuning?",
+            "href": "/glossary/instruction-tuning/"
+          }
+        },
+        {
+          "title": "API Model Fine-Tuning",
+          "description": "Fine-tune hosted models such as GPT-4o through the provider's fine-tuning API when you want managed serving and accept provider-side data handling.",
+          "icon": "cloud",
+          "label": "Managed",
+          "metric": "$15K–$45K · 5–10 weeks"
+        },
+        {
+          "title": "Embedding Model Fine-Tuning",
+          "description": "Improve retrieval quality for RAG and semantic search by adapting embedding models to your domain's vocabulary and relevance judgments.",
+          "icon": "search",
+          "label": "For RAG",
+          "metric": "$8K–$25K · 4–8 weeks",
+          "link": {
+            "label": "Explore RAG development",
+            "href": "/rag-development-services/"
+          }
+        },
+        {
+          "title": "Classifier Fine-Tuning and Domain Pre-Training",
+          "description": "Fine-tune BERT/RoBERTa-class models for high-volume classification, or continue pre-training on domain corpora when vocabulary differs sharply from general text.",
+          "icon": "chart",
+          "label": "Specialized",
+          "metric": "$5K–$120K · 3–20 weeks"
+        }
+      ]
+    },
+    {
+      "id": "fine-tuning-vs-rag",
+      "type": "rich-text",
+      "eyebrow": "Choosing the Approach",
+      "title": "When fine-tuning is the right tool — and when it isn't",
+      "tone": "surface",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Fine-tuning is better when",
+          "paragraphs": [
+            "You need a consistent style, tone or persona, a specific output format that prompting does not reliably produce, or task-specific behaviour learned from many high-quality examples."
+          ]
+        },
+        {
+          "heading": "RAG is better when",
+          "paragraphs": [
+            "Your knowledge changes frequently, answers must cite sources, or you work across large and varied document collections. Fine-tuning improves format and style more reliably than it improves factual accuracy."
+          ],
+          "links": [
+            {
+              "label": "RAG vs. fine-tuning explained",
+              "href": "/glossary/rag-vs-fine-tuning/"
+            }
+          ]
+        },
+        {
+          "heading": "Both together",
+          "paragraphs": [
+            "For the highest performance, fine-tune the model for style, format and task behaviour while RAG supplies the knowledge to retrieve from."
+          ],
+          "links": [
+            {
+              "label": "Read the RAG vs. fine-tuning enterprise guide",
+              "href": "/rag-vs-fine-tuning-enterprise/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing-reference",
+      "type": "table",
+      "eyebrow": "Transparent Investment",
+      "title": "AI model fine-tuning pricing reference",
+      "description": "Fixed-price ranges by method and model size. Training data preparation is usually the largest cost component.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "pricing",
+      "columns": [
+        {
+          "key": "scenario",
+          "label": "Fine-Tuning Scenario",
+          "align": "left",
+          "width": "40%"
+        },
+        {
+          "key": "cost",
+          "label": "Cost Range",
+          "align": "left",
+          "width": "30%"
+        },
+        {
+          "key": "timeline",
+          "label": "Timeline",
+          "align": "left",
+          "width": "30%"
+        }
+      ],
+      "rows": [
+        {
+          "id": "lora-7b",
+          "cells": {
+            "scenario": "LoRA / QLoRA on 7B model (e.g. Llama 3 8B)",
+            "cost": "$8,000 – $25,000",
+            "timeline": "4–8 weeks"
+          },
+          "highlighted": true,
+          "badge": "Most common"
+        },
+        {
+          "id": "lora-13b",
+          "cells": {
+            "scenario": "LoRA / QLoRA on 13B model",
+            "cost": "$12,000 – $35,000",
+            "timeline": "5–10 weeks"
+          }
+        },
+        {
+          "id": "lora-70b",
+          "cells": {
+            "scenario": "LoRA / QLoRA on 70B model",
+            "cost": "$20,000 – $60,000",
+            "timeline": "8–14 weeks"
+          }
+        },
+        {
+          "id": "full-small",
+          "cells": {
+            "scenario": "Full fine-tuning (7B–13B, small dataset)",
+            "cost": "$15,000 – $40,000",
+            "timeline": "6–12 weeks"
+          }
+        },
+        {
+          "id": "full-large",
+          "cells": {
+            "scenario": "Full fine-tuning (70B+, enterprise)",
+            "cost": "$40,000 – $120,000",
+            "timeline": "10–20 weeks"
+          }
+        },
+        {
+          "id": "gpt4o",
+          "cells": {
+            "scenario": "OpenAI GPT-4o fine-tuning (API)",
+            "cost": "$15,000 – $45,000",
+            "timeline": "5–10 weeks"
+          }
+        },
+        {
+          "id": "embedding",
+          "cells": {
+            "scenario": "Embedding model fine-tuning (for RAG)",
+            "cost": "$8,000 – $25,000",
+            "timeline": "4–8 weeks"
+          }
+        },
+        {
+          "id": "classifier",
+          "cells": {
+            "scenario": "Classifier fine-tuning (BERT, RoBERTa)",
+            "cost": "$5,000 – $20,000",
+            "timeline": "3–7 weeks"
+          }
+        },
+        {
+          "id": "instruction",
+          "cells": {
+            "scenario": "Instruction fine-tuning (custom chat model)",
+            "cost": "$15,000 – $50,000",
+            "timeline": "5–12 weeks"
+          }
+        },
+        {
+          "id": "continued-pretraining",
+          "cells": {
+            "scenario": "Continued pre-training (domain adaptation)",
+            "cost": "$30,000 – $120,000",
+            "timeline": "10–20 weeks"
+          }
+        }
+      ],
+      "note": "Ranges reflect ClickMasters' fixed-price project fees. GPU compute and API fees are separate and estimated during discovery.",
+      "cta": {
+        "label": "See the full fine-tuning cost breakdown",
+        "href": "/ai-model-fine-tuning-cost/"
+      }
+    },
+    {
+      "id": "delivery-process",
+      "type": "process",
+      "eyebrow": "How We Deliver",
+      "title": "From baseline to a fine-tuned model that measurably wins",
+      "tone": "default",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "vertical-timeline",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Baseline and method selection",
+          "description": "We measure how well prompting and RAG perform on your task, agree quantitative targets, and choose the fine-tuning method and base model.",
+          "deliverables": [
+            "Baseline evaluation",
+            "Agreed performance targets",
+            "Fixed-price proposal"
+          ]
+        },
+        {
+          "number": "02",
+          "title": "Dataset preparation",
+          "description": "We collect, clean, label or synthesize training examples and hold out an evaluation set that reflects real usage.",
+          "deliverables": [
+            "Training dataset",
+            "Held-out evaluation set"
+          ]
+        },
+        {
+          "number": "03",
+          "title": "Training and evaluation",
+          "description": "We train, compare runs against the baseline and targets, and diagnose gaps in data quality or method before sign-off.",
+          "deliverables": [
+            "Model weights or adapters",
+            "Evaluation report"
+          ]
+        },
+        {
+          "number": "04",
+          "title": "Deployment and retraining plan",
+          "description": "We deploy the model to your infrastructure or provider and define the triggers for retraining as tasks, data or base models change.",
+          "deliverables": [
+            "Serving setup",
+            "Retraining triggers and pipeline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fine-tuning-faqs",
+      "type": "faq",
+      "eyebrow": "Frequently Asked",
+      "title": "Questions about AI model fine-tuning",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "variant": "indexed",
+      "items": [
+        {
+          "question": "How much does AI model fine-tuning cost?",
+          "answer": "$5,000–$120,000 depending on model size and method. LoRA fine-tuning on 7B–13B models: $8,000–$35,000. Full fine-tuning on large models: $40,000–$120,000. Training data collection usually represents the largest cost component."
+        },
+        {
+          "question": "Do we need fine-tuning or will prompt engineering and RAG work?",
+          "answer": "Try prompt engineering and RAG first — they're cheaper and faster. Fine-tuning adds the most value when the model needs to learn a specific style or output format that prompting doesn't reliably produce."
+        },
+        {
+          "question": "How long does fine-tuning take?",
+          "answer": "3–20 weeks depending on dataset preparation and model size. Dataset preparation is typically the longest phase."
+        },
+        {
+          "question": "How many training examples does fine-tuning require?",
+          "answer": "Depends on the task. Classification: 500–2,000 per class. Instruction following: 1,000–10,000. Domain adaptation: 500–5,000."
+        },
+        {
+          "question": "Can fine-tuning work with proprietary data that can't leave our servers?",
+          "answer": "Yes — self-hosted LoRA fine-tuning on Llama 3 or Mistral keeps all training data within your infrastructure, on your cloud account or on-premises GPU servers."
+        },
+        {
+          "question": "Who owns the fine-tuned model weights?",
+          "answer": "You do — ClickMasters transfers model weights, training code, evaluation scripts and dataset preparation pipelines at project close."
+        }
+      ]
+    },
+    {
+      "id": "consultation",
+      "type": "cta",
+      "eyebrow": "Start With a Free Assessment",
+      "heading": "Find out whether fine-tuning will beat your baseline",
+      "text": "Describe your task and the data you have. An engineer will reply within one business day with a recommended method, data requirements and a budget range.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "fade-scale",
+      "primaryCta": {
+        "label": "Get Your Free Fine-Tuning Assessment",
+        "href": "/contact/"
+      },
+      "secondaryCta": {
+        "label": "Email the Engineering Team",
+        "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
+      },
+      "contactEmail": "hello@clickmastersartificialintelligencecompany.com",
+      "variant": "orbital"
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "AI Model Fine-Tuning Cost",
+      "description": "Detailed pricing by method and model size.",
+      "href": "/ai-model-fine-tuning-cost/"
+    },
+    {
+      "title": "RAG vs. Fine-Tuning for Enterprise",
+      "description": "How to choose between retrieval and training.",
+      "href": "/rag-vs-fine-tuning-enterprise/"
+    },
+    {
+      "title": "LLM Development Company",
+      "description": "Production LLM integration, RAG and fine-tuning.",
+      "href": "/llm-development-company/"
+    },
+    {
+      "title": "Fine-Tuning Glossary Entry",
+      "description": "What fine-tuning is and how it works.",
+      "href": "/glossary/fine-tuning/"
+    }
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "slug": "sentiment-analysis-services",
+  "status": "published",
+  "seo": {
+    "title": "Sentiment Analysis Services | ClickMasters AI",
+    "description": "Sentiment analysis services: standard and aspect-based sentiment models for reviews, surveys, tickets and social data, tuned to your domain. From $20K. Fixed-price.",
+    "canonical": "/sentiment-analysis-services/",
+    "primaryKeyword": "sentiment analysis services",
+    "secondaryKeywords": [
+      "sentiment analysis development",
+      "custom sentiment analysis model",
+      "aspect based sentiment analysis",
+      "customer feedback analysis ai",
+      "review sentiment analysis"
+    ],
+    "noIndex": false,
+    "noFollow": false
+  },
+  "schema": {
+    "service": true,
+    "organization": true,
+    "breadcrumbs": true,
+    "faq": true
+  },
+  "appearance": {
+    "template": "neural-canvas",
+    "accent": "orange",
+    "background": "neural-grid",
+    "grain": true,
+    "glow": true,
+    "scrollProgress": true,
+    "customCursor": true
+  },
+  "hero": {
+    "eyebrow": "Understand What Customers Actually Mean",
+    "title": "Sentiment Analysis Services",
+    "highlightedText": "From $20K",
+    "description": "ClickMasters builds sentiment analysis systems adapted to your domain's language — measuring not just whether feedback is positive or negative, but which product features, service moments and issues drive it. We deliver models, dashboards and integrations that turn reviews, surveys, support conversations and social posts into decisions.",
+    "primaryCta": {
+      "label": "Get a Free Sentiment Analysis Consultation",
+      "href": "#consultation",
+      "ariaLabel": "Get a free sentiment analysis consultation with 24-hour response"
+    },
+    "secondaryCta": {
+      "label": "Explore Capabilities",
+      "href": "#capabilities"
+    },
+    "trustText": "Fixed-price · Full IP ownership · Domain-adapted models",
+    "metrics": [
+      {
+        "value": "$20K",
+        "label": "Starting investment",
+        "description": "For standard sentiment analysis"
+      },
+      {
+        "value": "6–10",
+        "label": "Weeks to launch",
+        "description": "For standard sentiment analysis"
+      },
+      {
+        "value": "24h",
+        "label": "Initial response",
+        "description": "Free consultation within one business day"
+      }
+    ],
+    "visual": {
+      "type": "neural-sphere",
+      "label": "Sentiment stack",
+      "modelNames": [
+        "Sentiment",
+        "Aspects",
+        "Classification",
+        "Dashboards",
+        "LLMs"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "capabilities",
+      "type": "feature-grid",
+      "eyebrow": "What We Build",
+      "title": "Sentiment analysis that understands your domain",
+      "description": "Generic sentiment tools miss industry vocabulary, sarcasm and mixed opinions. Domain-adapted models do not.",
+      "tone": "default",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "bento",
+      "columns": 2,
+      "items": [
+        {
+          "title": "Standard Sentiment Analysis",
+          "description": "Positive, negative and neutral classification — or finer-grained scales — adapted to your domain's vocabulary and validated on your own data.",
+          "icon": "chart",
+          "label": "Sentiment",
+          "metric": "$20K–$45K · 6–10 weeks",
+          "link": {
+            "label": "What is sentiment analysis?",
+            "href": "/glossary/sentiment-analysis/"
+          }
+        },
+        {
+          "title": "Aspect-Based Sentiment Analysis",
+          "description": "Sentiment measured per product feature, service step or topic, using an aspect taxonomy built with your team — so you know what to fix, not just how people feel.",
+          "icon": "layers",
+          "label": "Aspects",
+          "metric": "$30K–$65K · 8–14 weeks"
+        },
+        {
+          "title": "Feedback Topic Classification",
+          "description": "Multi-class classification that tags feedback by topic, product or issue category alongside sentiment, for routing and trend reporting.",
+          "icon": "search",
+          "label": "Classification",
+          "metric": "$25K–$60K · 8–14 weeks"
+        },
+        {
+          "title": "Support and Conversation Analytics",
+          "description": "Sentiment and topic signals extracted from tickets, chats and call transcripts to flag escalations and measure customer experience.",
+          "icon": "bot",
+          "label": "Support",
+          "link": {
+            "label": "Customer service AI",
+            "href": "/ai-development/customer-service/"
+          }
+        },
+        {
+          "title": "LLM-Based Sentiment for Complex Text",
+          "description": "LLM-based analysis for nuanced, long-form or low-volume text where training a dedicated model is not worth it.",
+          "icon": "sparkles",
+          "label": "LLM",
+          "metric": "$20K–$90K · 8–18 weeks"
+        }
+      ]
+    },
+    {
+      "id": "sentiment-engineering",
+      "type": "rich-text",
+      "eyebrow": "How We Engineer It",
+      "title": "Accuracy depends on domain adaptation and granularity",
+      "tone": "surface",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Domain adaptation",
+          "paragraphs": [
+            "The same word can be positive in one industry and negative in another. We adapt models to your domain's language using labeled examples from your own data, and validate them on a held-out evaluation set."
+          ]
+        },
+        {
+          "heading": "Choosing the right granularity",
+          "paragraphs": [
+            "Overall document sentiment is quick to deliver; aspect-based sentiment takes longer but tells you exactly which features and moments drive satisfaction. We recommend the level that matches the decisions you need to make."
+          ]
+        },
+        {
+          "heading": "Cost at volume",
+          "paragraphs": [
+            "For high-volume feedback streams, fine-tuned models are usually far cheaper to run than large LLM APIs. We model running costs at your expected volume during discovery."
+          ],
+          "links": [
+            {
+              "label": "Natural language processing services",
+              "href": "/natural-language-processing-services/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing-reference",
+      "type": "table",
+      "eyebrow": "Transparent Investment",
+      "title": "Sentiment analysis pricing reference",
+      "description": "Typical fixed-price ranges for sentiment and related classification projects.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "pricing",
+      "columns": [
+        {
+          "key": "project",
+          "label": "Project Type",
+          "align": "left",
+          "width": "40%"
+        },
+        {
+          "key": "cost",
+          "label": "Cost Range",
+          "align": "left",
+          "width": "30%"
+        },
+        {
+          "key": "timeline",
+          "label": "Timeline",
+          "align": "left",
+          "width": "30%"
+        }
+      ],
+      "rows": [
+        {
+          "id": "standard",
+          "cells": {
+            "project": "Sentiment analysis (standard)",
+            "cost": "$20,000 – $45,000",
+            "timeline": "6–10 weeks"
+          },
+          "highlighted": true,
+          "badge": "Most common"
+        },
+        {
+          "id": "aspect",
+          "cells": {
+            "project": "Aspect-based sentiment analysis",
+            "cost": "$30,000 – $65,000",
+            "timeline": "8–14 weeks"
+          }
+        },
+        {
+          "id": "multi-class",
+          "cells": {
+            "project": "Multi-class classification (5–20 categories)",
+            "cost": "$25,000 – $60,000",
+            "timeline": "8–14 weeks"
+          }
+        },
+        {
+          "id": "llm-nlp",
+          "cells": {
+            "project": "LLM-based NLP (GPT-4/Claude, complex tasks)",
+            "cost": "$20,000 – $90,000",
+            "timeline": "8–18 weeks"
+          }
+        }
+      ],
+      "note": "Ranges reflect ClickMasters' fixed-price project fees. Inference and monitoring costs are separate and modeled during discovery.",
+      "cta": {
+        "label": "See the full NLP development cost breakdown",
+        "href": "/nlp-development-cost/"
+      }
+    },
+    {
+      "id": "sentiment-faqs",
+      "type": "faq",
+      "eyebrow": "Frequently Asked",
+      "title": "Questions about sentiment analysis",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "variant": "indexed",
+      "items": [
+        {
+          "question": "How much does a custom sentiment analysis system cost?",
+          "answer": "Standard sentiment analysis typically costs $20,000–$45,000 and takes 6–10 weeks. Aspect-based sentiment analysis costs $30,000–$65,000 and takes 8–14 weeks."
+        },
+        {
+          "question": "What is aspect-based sentiment analysis?",
+          "answer": "Aspect-based sentiment analysis measures sentiment toward specific features or topics within a piece of text — for example, positive about delivery speed but negative about packaging — rather than assigning one overall score."
+        },
+        {
+          "question": "Why not use an off-the-shelf sentiment API?",
+          "answer": "Generic APIs are trained on general text and often misread industry vocabulary, product names and context. A domain-adapted model validated on your own data is typically more accurate, and can also be cheaper to run at high volume."
+        },
+        {
+          "question": "What data sources can you analyze?",
+          "answer": "Product and app reviews, survey free-text, support tickets and chat logs, call transcripts, emails and social media posts — any text source you can provide access to."
+        },
+        {
+          "question": "Who owns the sentiment model?",
+          "answer": "You do — model weights, code, labeled datasets and documentation are transferred at completion."
+        }
+      ]
+    },
+    {
+      "id": "consultation",
+      "type": "cta",
+      "eyebrow": "Start With a Free Consultation",
+      "heading": "Find out what is driving customer sentiment",
+      "text": "Share a sample of the feedback you collect and the decisions you need to make. An engineer will reply within one business day with an approach and budget range.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "fade-scale",
+      "primaryCta": {
+        "label": "Get Your Free Sentiment Analysis Consultation",
+        "href": "/contact/"
+      },
+      "secondaryCta": {
+        "label": "Email the Engineering Team",
+        "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
+      },
+      "contactEmail": "hello@clickmastersartificialintelligencecompany.com",
+      "variant": "orbital"
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "Natural Language Processing Services",
+      "description": "Classification, extraction, summarization and search.",
+      "href": "/natural-language-processing-services/"
+    },
+    {
+      "title": "NLP Development Cost",
+      "description": "Detailed NLP pricing by project type and volume.",
+      "href": "/nlp-development-cost/"
+    },
+    {
+      "title": "AI Chatbot Development",
+      "description": "Customer service and knowledge assistants.",
+      "href": "/ai-chatbot-development/"
+    },
+    {
+      "title": "Sentiment Analysis Glossary Entry",
+      "description": "How AI measures opinion and emotion in text.",
+      "href": "/glossary/sentiment-analysis/"
+    }
+  ]
+}

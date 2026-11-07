@@ -3,7 +3,7 @@
   "status": "published",
   "seo": {
     "title": "Predictive Analytics Chicago | ClickMasters AI Services",
-    "description": "ClickMasters builds predictive analytics for Chicago enterprises — fraud detection, churn, demand, credit scoring. SR 11-7 compliant. From $35K.",
+    "description": "ClickMasters builds predictive analytics for Chicago enterprises — fraud detection, churn, demand, credit scoring. SR 26-2 compliant. From $35K.",
     "canonical": "/predictive-analytics-chicago/",
     "primaryKeyword": "predictive analytics chicago",
     "secondaryKeywords": [
@@ -36,7 +36,7 @@
     "eyebrow": "Chicago Predictive Analytics",
     "title": "Predictive Analytics — Chicago",
     "highlightedText": "Fraud Detection · Credit Scoring · Demand Forecasting · Churn Prediction",
-    "description": "ClickMasters builds custom predictive analytics systems for Chicago's enterprise organizations — fraud detection for Chicago's derivatives and payment markets, credit risk scoring with SR 11-7 validation for Illinois banks, demand forecasting for Chicago's logistics and retail hub, and churn prediction for Chicago's insurance and SaaS companies — with production deployment into the workflows where Chicago's decision-makers act on predictions. From $35,000. Fixed-price. Full IP. 24-hour response.",
+    "description": "ClickMasters builds custom predictive analytics systems for Chicago's enterprise organizations — fraud detection for Chicago's derivatives and payment markets, credit risk scoring with SR 26-2 validation for Illinois banks, demand forecasting for Chicago's logistics and retail hub, and churn prediction for Chicago's insurance and SaaS companies — with production deployment into the workflows where Chicago's decision-makers act on predictions. From $35,000. Fixed-price. Full IP. 24-hour response.",
     "primaryCta": {
       "label": "Get a Free Predictive Analytics Consultation — Chicago — 24-Hour Response",
       "href": "#cta",
@@ -46,7 +46,7 @@
       "label": "Explore Predictive Analytics Services",
       "href": "/predictive-analytics-services/"
     },
-    "trustText": "SR 11-7 · FCRA · HIPAA · Fixed-price · Full IP · 24-hour response",
+    "trustText": "SR 26-2 · FCRA · HIPAA · Fixed-price · Full IP · 24-hour response",
     "metrics": [
       {
         "value": "From $35,000",
@@ -54,7 +54,7 @@
         "description": "Fraud · Churn · Demand · Credit"
       },
       {
-        "value": "SR 11-7 · FCRA",
+        "value": "SR 26-2 · FCRA",
         "label": "Regulatory compliance",
         "description": "Financial services standard"
       },
@@ -91,7 +91,7 @@
       "items": [
         {
           "title": "Financial Services: Fraud and Risk Prediction",
-          "description": "Chicago's financial markets — CME Group, CBOE, banking, derivatives clearing, and the broader Midwest financial services sector — generate predictive analytics requirements that reflect the specific dynamics of derivatives trading, options market-making, and commercial banking. Transaction fraud detection: real-time scoring of payment transactions, futures margin calls, and trading anomalies — trained on Chicago-specific transaction patterns and the fraud signatures distinctive to derivatives market manipulation vs. retail payment fraud. Credit risk scoring: commercial and consumer credit models for Chicago's community banks, credit unions, and commercial lenders — with FCRA adverse action reason codes and SR 11-7 model validation documentation. Counterparty risk analytics: credit exposure modeling for Chicago's clearing and prime brokerage operations — ML on financial counterparty data for dynamic credit limit optimization. Cost: $50,000–$135,000 | Timeline: 12–24 weeks | SR 11-7 documentation standard.",
+          "description": "Chicago's financial markets — CME Group, CBOE, banking, derivatives clearing, and the broader Midwest financial services sector — generate predictive analytics requirements that reflect the specific dynamics of derivatives trading, options market-making, and commercial banking. Transaction fraud detection: real-time scoring of payment transactions, futures margin calls, and trading anomalies — trained on Chicago-specific transaction patterns and the fraud signatures distinctive to derivatives market manipulation vs. retail payment fraud. Credit risk scoring: commercial and consumer credit models for Chicago's community banks, credit unions, and commercial lenders — with FCRA adverse action reason codes and SR 26-2 model validation documentation. Counterparty risk analytics: credit exposure modeling for Chicago's clearing and prime brokerage operations — ML on financial counterparty data for dynamic credit limit optimization. Cost: $50,000–$135,000 | Timeline: 12–24 weeks | SR 26-2 documentation standard.",
           "icon": "building",
           "label": "Financial Services",
           "metric": "$50K–$135K"
@@ -146,10 +146,10 @@
       "columns": 4,
       "items": [
         {
-          "title": "SR 11-7 (OCC / Federal Reserve)",
-          "description": "ClickMasters delivers model validation documentation aligned with Federal Reserve SR 11-7 requirements for all Chicago banking ML models — validation methodology, champion/challenger test results, backtesting evidence, and monitoring design.",
+          "title": "SR 26-2 (OCC / Federal Reserve)",
+          "description": "ClickMasters delivers model validation documentation aligned with Federal Reserve SR 26-2 requirements for all Chicago banking ML models — validation methodology, champion/challenger test results, backtesting evidence, and monitoring design.",
           "icon": "file-check",
-          "label": "SR 11-7",
+          "label": "SR 26-2",
           "metric": "Model validation"
         },
         {
@@ -219,7 +219,7 @@
             "use_case": "Fraud detection (financial)",
             "price": "$50,000 – $135,000",
             "timeline": "12–24 weeks",
-            "compliance": "SR 11-7, BSA/AML"
+            "compliance": "SR 26-2, BSA/AML"
           }
         },
         {
@@ -228,7 +228,7 @@
             "use_case": "Credit risk model",
             "price": "$55,000 – $135,000",
             "timeline": "14–22 weeks",
-            "compliance": "SR 11-7, FCRA"
+            "compliance": "SR 26-2, FCRA"
           }
         },
         {
@@ -283,17 +283,17 @@
       "items": [
         {
           "title": "How much does predictive analytics cost in Chicago?",
-          "description": "$35,000–$135,000 for most Chicago enterprise predictive analytics applications. Financial services models with SR 11-7 documentation at the higher end; SaaS churn and demand forecasting at the lower end.",
+          "description": "$35,000–$135,000 for most Chicago enterprise predictive analytics applications. Financial services models with SR 26-2 documentation at the higher end; SaaS churn and demand forecasting at the lower end.",
           "icon": "message-circle",
           "label": "Cost",
           "metric": "$35K–$135K"
         },
         {
           "title": "Our models need to pass OCC examination — can ClickMasters deliver that?",
-          "description": "ClickMasters delivers SR 11-7 aligned model validation documentation as a standard deliverable for Illinois banking clients — including methodology, validation results, and monitoring design. Regulatory examination strategy requires qualified financial services legal counsel.",
+          "description": "ClickMasters delivers SR 26-2 aligned model validation documentation as a standard deliverable for Illinois banking clients — including methodology, validation results, and monitoring design. Regulatory examination strategy requires qualified financial services legal counsel.",
           "icon": "file-check",
           "label": "OCC Examination",
-          "metric": "SR 11-7 docs"
+          "metric": "SR 26-2 docs"
         },
         {
           "title": "How long does predictive analytics development take in Chicago?",
@@ -322,8 +322,8 @@
       "animation": "stagger",
       "items": [
         {
-          "question": "Can ClickMasters provide SR 11-7 model validation documentation for our Chicago bank?",
-          "answer": "Yes — SR 11-7 aligned validation documentation is a standard deliverable for all ClickMasters banking ML engagements in Chicago and Illinois."
+          "question": "Can ClickMasters provide SR 26-2 model validation documentation for our Chicago bank?",
+          "answer": "Yes — SR 26-2 aligned validation documentation is a standard deliverable for all ClickMasters banking ML engagements in Chicago and Illinois."
         },
         {
           "question": "How do FCRA adverse action reason codes work for Chicago credit models?",
@@ -352,7 +352,7 @@
       "type": "cta",
       "eyebrow": "Ready to Start",
       "title": "Ready to Build Predictive Analytics for Your Chicago Organization?",
-      "description": "ClickMasters builds prediction systems for Chicago's most regulated and most data-rich industries — with the SR 11-7, FCRA, and HIPAA compliance that Chicago's financial, insurance, and healthcare sectors require.",
+      "description": "ClickMasters builds prediction systems for Chicago's most regulated and most data-rich industries — with the SR 26-2, FCRA, and HIPAA compliance that Chicago's financial, insurance, and healthcare sectors require.",
       "tone": "accent",
       "width": "wide",
       "animation": "fade",
@@ -364,7 +364,7 @@
         "label": "Email Us Directly",
         "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
       },
-      "trustText": "Predictive analytics from $35,000 | Fixed-price | Full IP | SR 11-7, FCRA, HIPAA | 24-hour response"
+      "trustText": "Predictive analytics from $35,000 | Fixed-price | Full IP | SR 26-2, FCRA, HIPAA | 24-hour response"
     }
   ]
 }

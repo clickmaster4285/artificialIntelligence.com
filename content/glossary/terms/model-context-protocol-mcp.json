@@ -274,8 +274,8 @@
   "references": [
     {
       "label": "MCP (Model Context Protocol) Specification",
-      "href": "https://docs.anthropic.com/mcp",
-      "publisher": "Anthropic"
+      "href": "https://modelcontextprotocol.io/specification/2026-07-28",
+      "publisher": "Model Context Protocol"
     }
   ],
 

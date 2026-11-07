@@ -273,7 +273,7 @@
     },
     {
       "label": "Predictive Coding in E-Discovery: Best Practices",
-      "href": "https://www.edrm.net/resources/",
+      "href": "https://edrm.net/resources/",
       "publisher": "EDRM"
     }
   ],
@@ -293,7 +293,7 @@
     },
     {
       "label": "What is RAG?",
-      "href": "/glossary/rag-retrieval-augmented-generation/"
+      "href": "/glossary/retrieval-augmented-generation/"
     }
   ],
 

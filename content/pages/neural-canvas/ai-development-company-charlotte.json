@@ -46,7 +46,7 @@
       "label": "Explore Custom AI Development",
       "href": "/custom-ai-development/"
     },
-    "trustText": "SR 11-7, HIPAA, FCRA compliant · Fixed-price · Full IP · Eastern Time · 24-hour response",
+    "trustText": "SR 26-2, HIPAA, FCRA compliant · Fixed-price · Full IP · Eastern Time · 24-hour response",
     "metrics": [
       {
         "value": "From $20,000",
@@ -98,7 +98,7 @@
         },
         {
           "title": "Financial Services AI",
-          "description": "Fraud detection, credit risk scoring, AML monitoring, and financial document intelligence for Charlotte's banking headquarters — with SR 11-7 model validation documentation and FCRA compliance as standard for banking ML. From $50,000.",
+          "description": "Fraud detection, credit risk scoring, AML monitoring, and financial document intelligence for Charlotte's banking headquarters — with SR 26-2 model validation documentation and FCRA compliance as standard for banking ML. From $50,000.",
           "icon": "building",
           "label": "Financial Services",
           "metric": "From $50K"
@@ -147,7 +147,7 @@
       "items": [
         {
           "title": "Banking and Financial Services (Charlotte's Dominant Industry)",
-          "description": "Charlotte is the US's second-largest banking center — Bank of America (Charlotte HQ), Wells Fargo (Charlotte as key operational hub), Truist Financial (Charlotte HQ after the SunTrust-BB&T merger), and LPL Financial. The concentration of major banking headquarters creates the most important AI market in Charlotte by far: fraud detection (real-time ML models for card fraud, ACH fraud, wire fraud, and check fraud with the latency and throughput requirements of consumer banking scale); credit risk (consumer and commercial credit scoring models with SR 11-7 validation documentation and FCRA adverse action compliance); AML compliance (ML-based suspicious activity detection for BSA/AML programs — reducing false positive burden while improving detection); financial document intelligence (LLM and NLP systems processing loan applications, credit memos, compliance filings, and customer correspondence).",
+          "description": "Charlotte is the US's second-largest banking center — Bank of America (Charlotte HQ), Wells Fargo (Charlotte as key operational hub), Truist Financial (Charlotte HQ after the SunTrust-BB&T merger), and LPL Financial. The concentration of major banking headquarters creates the most important AI market in Charlotte by far: fraud detection (real-time ML models for card fraud, ACH fraud, wire fraud, and check fraud with the latency and throughput requirements of consumer banking scale); credit risk (consumer and commercial credit scoring models with SR 26-2 validation documentation and FCRA adverse action compliance); AML compliance (ML-based suspicious activity detection for BSA/AML programs — reducing false positive burden while improving detection); financial document intelligence (LLM and NLP systems processing loan applications, credit memos, compliance filings, and customer correspondence).",
           "icon": "building",
           "label": "Banking",
           "metric": "BofA · Wells Fargo · Truist"
@@ -179,8 +179,8 @@
       "id": "banking-ai",
       "type": "feature-grid",
       "eyebrow": "Charlotte Banking AI",
-      "title": "Charlotte Banking AI — SR 11-7 Compliance Standard",
-      "description": "Charlotte's OCC-regulated banks require ML model validation documentation aligned with Federal Reserve / OCC SR 11-7 guidance.",
+      "title": "Charlotte Banking AI — SR 26-2 Compliance Standard",
+      "description": "Charlotte's OCC-regulated banks require ML model validation documentation aligned with Federal Reserve / OCC SR 26-2 guidance.",
       "tone": "default",
       "width": "wide",
       "animation": "stagger",
@@ -191,7 +191,7 @@
           "title": "Model Validation Documentation",
           "description": "ClickMasters delivers validation methodology, champion/challenger test results, backtesting evidence, and performance monitoring design as standard for Charlotte banking ML.",
           "icon": "file-check",
-          "label": "SR 11-7",
+          "label": "SR 26-2",
           "metric": "Full documentation"
         },
         {
@@ -321,7 +321,7 @@
       "items": [
         {
           "title": "North Carolina Financial Regulation",
-          "description": "North Carolina's Commissioner of Banks (NCCOB) regulates state-chartered banks and non-bank lenders — AI used in credit decisions by NC-regulated institutions faces NCCOB examination alongside OCC oversight. ClickMasters designs Charlotte banking AI with both federal (SR 11-7, FCRA) and North Carolina state banking regulatory contexts in mind.",
+          "description": "North Carolina's Commissioner of Banks (NCCOB) regulates state-chartered banks and non-bank lenders — AI used in credit decisions by NC-regulated institutions faces NCCOB examination alongside OCC oversight. ClickMasters designs Charlotte banking AI with both federal (SR 26-2, FCRA) and North Carolina state banking regulatory contexts in mind.",
           "icon": "scale",
           "label": "NCCOB",
           "metric": "State + Federal"
@@ -405,7 +405,7 @@
         },
         {
           "title": "How much does AI development cost in Charlotte?",
-          "description": "From $20,000 for focused projects; most Charlotte banking AI engagements run $50,000–$145,000 including SR 11-7 validation documentation scope.",
+          "description": "From $20,000 for focused projects; most Charlotte banking AI engagements run $50,000–$145,000 including SR 26-2 validation documentation scope.",
           "icon": "dollar-sign",
           "label": "Cost",
           "metric": "$20K–$145K"
@@ -437,8 +437,8 @@
       "animation": "stagger",
       "items": [
         {
-          "question": "Can ClickMasters provide SR 11-7 model validation documentation for Charlotte banks?",
-          "answer": "Yes — SR 11-7 aligned validation documentation is standard for all ClickMasters banking ML engagements in Charlotte and North Carolina."
+          "question": "Can ClickMasters provide SR 26-2 model validation documentation for Charlotte banks?",
+          "answer": "Yes — SR 26-2 aligned validation documentation is standard for all ClickMasters banking ML engagements in Charlotte and North Carolina."
         },
         {
           "question": "Can ClickMasters build AI for Duke Energy's grid operations?",
@@ -467,7 +467,7 @@
       "type": "cta",
       "eyebrow": "Ready to Start",
       "title": "Ready to Start Your Charlotte AI Development Project?",
-      "description": "ClickMasters builds production AI for Charlotte's banking, healthcare, and energy organizations — with the SR 11-7 compliance depth that America's second-largest banking center requires.",
+      "description": "ClickMasters builds production AI for Charlotte's banking, healthcare, and energy organizations — with the SR 26-2 compliance depth that America's second-largest banking center requires.",
       "tone": "accent",
       "width": "wide",
       "animation": "fade",
@@ -479,7 +479,7 @@
         "label": "Email Us Directly",
         "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
       },
-      "trustText": "AI development from $20,000 | Fixed-price | Full IP | SR 11-7, HIPAA, FCRA | Eastern Time | 24-hour response"
+      "trustText": "AI development from $20,000 | Fixed-price | Full IP | SR 26-2, HIPAA, FCRA | Eastern Time | 24-hour response"
     }
   ]
 }

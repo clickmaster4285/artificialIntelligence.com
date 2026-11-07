@@ -271,8 +271,8 @@
       "publisher": "arXiv"
     },
     {
-      "label": "Customer Service Automation Best Practices",
-      "href": "https://www.gartner.com/en/customer-service/ai-automation",
+      "label": "Gartner Says the Most Valuable AI Use Cases for Customer Service and Support Fall into Four Areas",
+      "href": "https://www.gartner.com/en/newsroom/press-releases/2025-10-08-gartner-says-the-most-valuable-ai-use-cases-for-customer-service-and-support-fall-into-four-areas",
       "publisher": "Gartner"
     }
   ],
@@ -292,7 +292,7 @@
     },
     {
       "label": "What is RAG?",
-      "href": "/glossary/rag-retrieval-augmented-generation/"
+      "href": "/glossary/retrieval-augmented-generation/"
     }
   ],
 

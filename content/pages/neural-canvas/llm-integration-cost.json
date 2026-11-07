@@ -43,7 +43,7 @@
     },
     "secondaryCta": {
       "label": "Explore LLM Integration Services",
-      "href": "/llm-integration-services/"
+      "href": "/llm-development-company/"
     },
     "trustText": "Fixed-price · Full IP ownership · USA-based engineers",
     "metrics": [
@@ -519,7 +519,7 @@
     {
       "title": "LLM Integration Services",
       "description": "Integrate large language models into your existing products and workflows.",
-      "href": "/llm-integration-services/"
+      "href": "/llm-development-company/"
     },
     {
       "title": "RAG Development Services",
@@ -529,7 +529,7 @@
     {
       "title": "AI Model Fine-Tuning Services",
       "description": "Adapt language models for narrow domain-specific tasks.",
-      "href": "/ai-model-fine-tuning-services/"
+      "href": "/ai-model-fine-tuning/"
     },
     {
       "title": "AI Consulting Services",

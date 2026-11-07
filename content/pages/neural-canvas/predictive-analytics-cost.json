@@ -182,7 +182,7 @@
             "use_case": "Credit risk scoring",
             "cost": "$55,000 – $130,000",
             "timeline": "14–22 weeks",
-            "driver": "FCRA/SR 11-7 compliance"
+            "driver": "FCRA/SR 26-2 compliance"
           }
         },
         {
@@ -240,7 +240,7 @@
         },
         {
           "title": "4. Explainability Requirements",
-          "description": "Standard ML models produce predictions without built-in explanations. For regulated applications requiring individual-level explanations: SHAP value integration: +$8,000–$15,000. Adverse action reason code generation (FCRA): +$10,000–$20,000. SR 11-7 model validation documentation: +$20,000–$50,000.",
+          "description": "Standard ML models produce predictions without built-in explanations. For regulated applications requiring individual-level explanations: SHAP value integration: +$8,000–$15,000. Adverse action reason code generation (FCRA): +$10,000–$20,000. SR 26-2 model validation documentation: +$20,000–$50,000.",
           "icon": "scale",
           "label": "Explainability",
           "metric": "+$8K–$50K"

@@ -45,7 +45,7 @@
       "label": "Explore Responsible AI Services",
       "href": "/responsible-ai-compliance/"
     },
-    "trustText": "EU AI Act · NIST AI RMF · FCRA · HIPAA · SR 11-7 · Fixed-price · 24-hour response",
+    "trustText": "EU AI Act · NIST AI RMF · FCRA · HIPAA · SR 26-2 · Fixed-price · 24-hour response",
     "metrics": [
       {
         "value": "$30K–$80K",
@@ -71,7 +71,7 @@
         "EU AI Act",
         "NIST AI RMF",
         "Governance",
-        "SR 11-7"
+        "SR 26-2"
       ]
     }
   },
@@ -179,7 +179,7 @@
         {
           "id": "sr11-7",
           "cells": {
-            "component": "SR 11-7 model risk documentation",
+            "component": "SR 26-2 model risk documentation",
             "cost": "$20,000 – $65,000",
             "timeline": "4–10 weeks",
             "addresses": "US banking model risk mgmt"
@@ -228,7 +228,7 @@
       "items": [
         {
           "title": "1. Regulatory Framework Scope",
-          "description": "Voluntary frameworks (NIST AI RMF, ISO 42001): $25,000–$65,000. FCRA/ECOA: $15,000–$50,000 per model. SR 11-7: $20,000–$65,000 per model. HIPAA: $15,000–$40,000 per system. NYC Local Law 144: $20,000–$50,000 per tool per year. EU AI Act (high-risk): $50,000–$180,000+ for a single high-risk AI system full compliance package.",
+          "description": "Voluntary frameworks (NIST AI RMF, ISO 42001): $25,000–$65,000. FCRA/ECOA: $15,000–$50,000 per model. SR 26-2: $20,000–$65,000 per model. HIPAA: $15,000–$40,000 per system. NYC Local Law 144: $20,000–$50,000 per tool per year. EU AI Act (high-risk): $50,000–$180,000+ for a single high-risk AI system full compliance package.",
           "icon": "file-check",
           "label": "Regulatory Scope",
           "metric": "$15K–$180K+"
@@ -422,11 +422,11 @@
         },
         {
           "question": "What's the difference between a bias audit and a model validation?",
-          "answer": "A bias audit focuses specifically on fairness and protected class impact. A model validation (SR 11-7 context) covers a broader scope including accuracy validation, stress testing, model risk documentation, and monitoring design — with fairness assessment as one component."
+          "answer": "A bias audit focuses specifically on fairness and protected class impact. A model validation (SR 26-2 context) covers a broader scope including accuracy validation, stress testing, model risk documentation, and monitoring design — with fairness assessment as one component."
         },
         {
           "question": "How often does responsible AI compliance need to be refreshed?",
-          "answer": "NYC Local Law 144 requires annual bias audits. EU AI Act requires ongoing post-market monitoring. US banking SR 11-7 requires periodic revalidation. NIST AI RMF alignment is assessed periodically as AI programs evolve."
+          "answer": "NYC Local Law 144 requires annual bias audits. EU AI Act requires ongoing post-market monitoring. US banking SR 26-2 requires periodic revalidation. NIST AI RMF alignment is assessed periodically as AI programs evolve."
         },
         {
           "question": "Can ClickMasters help us respond to a CFPB or EEOC inquiry about our AI?",
@@ -451,7 +451,7 @@
         "label": "Email Us Directly",
         "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
       },
-      "trustText": "Responsible AI from $15,000 per component | Fixed-price | EU AI Act, NIST AI RMF, FCRA, HIPAA, SR 11-7"
+      "trustText": "Responsible AI from $15,000 per component | Fixed-price | EU AI Act, NIST AI RMF, FCRA, HIPAA, SR 26-2"
     }
   ]
 }

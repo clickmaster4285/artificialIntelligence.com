@@ -273,8 +273,8 @@
       "publisher": "arXiv"
     },
     {
-      "label": "Elasticsearch with Vector Search Capabilities",
-      "href": "https://www.elastic.co/guide/en/elasticsearch/reference/current/vector.html",
+      "label": "Vector Search in Elasticsearch",
+      "href": "https://www.elastic.co/docs/solutions/search/vector",
       "publisher": "Elastic"
     }
   ],

@@ -36,7 +36,7 @@
     "eyebrow": "New York Predictive Analytics",
     "title": "Predictive Analytics — New York",
     "highlightedText": "Fraud Detection · Churn · Demand Forecasting · CLV · Risk Stratification",
-    "description": "ClickMasters builds custom predictive analytics systems for New York's enterprise and growth-stage organizations — fraud detection, credit risk scoring, customer churn prediction, CLV forecasting, and demand analytics — with the SR 11-7, FCRA, and HIPAA compliance documentation that New York's most regulated industries require. From $35,000. Fixed-price. Full IP. 24-hour response.",
+    "description": "ClickMasters builds custom predictive analytics systems for New York's enterprise and growth-stage organizations — fraud detection, credit risk scoring, customer churn prediction, CLV forecasting, and demand analytics — with the SR 26-2, FCRA, and HIPAA compliance documentation that New York's most regulated industries require. From $35,000. Fixed-price. Full IP. 24-hour response.",
     "primaryCta": {
       "label": "Get a Free Predictive Analytics Consultation — New York — 24-Hour Response",
       "href": "#cta",
@@ -46,7 +46,7 @@
       "label": "Explore Predictive Analytics Services",
       "href": "/predictive-analytics-services/"
     },
-    "trustText": "SR 11-7 · FCRA · HIPAA compliant · Fixed-price · Full IP · 24-hour response",
+    "trustText": "SR 26-2 · FCRA · HIPAA compliant · Fixed-price · Full IP · 24-hour response",
     "metrics": [
       {
         "value": "From $35,000",
@@ -91,7 +91,7 @@
       "items": [
         {
           "title": "Financial Services Predictive Analytics",
-          "description": "New York is the US financial capital — ClickMasters' largest predictive analytics market. We build fraud detection models (reducing fraud losses 25–40%), credit risk scoring with FCRA adverse action reason codes, AML suspicious transaction prediction, and portfolio risk analytics with SR 11-7 model validation documentation. Cost: $50,000–$135,000 | Timeline: 12–24 weeks.",
+          "description": "New York is the US financial capital — ClickMasters' largest predictive analytics market. We build fraud detection models (reducing fraud losses 25–40%), credit risk scoring with FCRA adverse action reason codes, AML suspicious transaction prediction, and portfolio risk analytics with SR 26-2 model validation documentation. Cost: $50,000–$135,000 | Timeline: 12–24 weeks.",
           "icon": "building",
           "label": "Financial Services",
           "metric": "$50K–$135K"
@@ -126,7 +126,7 @@
         },
         {
           "title": "Credit Risk Model + FCRA Compliance",
-          "description": "ML models for commercial and consumer credit risk scoring with FCRA adverse action reason codes and ECOA fair lending disparate impact testing. SR 11-7 model validation documentation included. Cost: $55,000–$135,000 | Timeline: 14–22 weeks.",
+          "description": "ML models for commercial and consumer credit risk scoring with FCRA adverse action reason codes and ECOA fair lending disparate impact testing. SR 26-2 model validation documentation included. Cost: $55,000–$135,000 | Timeline: 14–22 weeks.",
           "icon": "scale",
           "label": "Credit Risk",
           "metric": "$55K–$135K"
@@ -147,10 +147,10 @@
       "items": [
         {
           "title": "Regulatory Expertise",
-          "description": "New York's dominant industries — financial services, healthcare, insurance — have compliance requirements for ML models that general analytics firms don't understand. ClickMasters delivers SR 11-7, FCRA, HIPAA, and NY DFS documentation as standard.",
+          "description": "New York's dominant industries — financial services, healthcare, insurance — have compliance requirements for ML models that general analytics firms don't understand. ClickMasters delivers SR 26-2, FCRA, HIPAA, and NY DFS documentation as standard.",
           "icon": "file-check",
           "label": "Regulatory",
-          "metric": "SR 11-7 · FCRA · HIPAA"
+          "metric": "SR 26-2 · FCRA · HIPAA"
         },
         {
           "title": "Production Deployment",
@@ -270,7 +270,7 @@
         },
         {
           "title": "Explainability",
-          "description": "SHAP for individual-prediction explanations — required for FCRA adverse action reason codes in New York consumer credit applications, and for SR 11-7 model validation documentation.",
+          "description": "SHAP for individual-prediction explanations — required for FCRA adverse action reason codes in New York consumer credit applications, and for SR 26-2 model validation documentation.",
           "icon": "chart",
           "label": "Explainability",
           "metric": "SHAP"
@@ -387,8 +387,8 @@
       "animation": "stagger",
       "items": [
         {
-          "question": "Does ClickMasters provide SR 11-7 model validation documentation for New York banking predictive models?",
-          "answer": "Yes — SR 11-7 aligned validation documentation is a standard deliverable for all banking and financial services ML engagements in New York."
+          "question": "Does ClickMasters provide SR 26-2 model validation documentation for New York banking predictive models?",
+          "answer": "Yes — SR 26-2 aligned validation documentation is a standard deliverable for all banking and financial services ML engagements in New York."
         },
         {
           "question": "Can predictive analytics integrate with our existing Salesforce in New York?",
@@ -429,7 +429,7 @@
         "label": "Email Us Directly",
         "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
       },
-      "trustText": "Predictive analytics from $35,000 | Fixed-price | Full IP | SR 11-7, FCRA, HIPAA compliant | 24-hour response"
+      "trustText": "Predictive analytics from $35,000 | Fixed-price | Full IP | SR 26-2, FCRA, HIPAA compliant | 24-hour response"
     }
   ]
 }

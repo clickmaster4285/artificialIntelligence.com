@@ -243,7 +243,7 @@
       "items": [
         {
           "title": "FinTech",
-          "description": "Fraud detection, credit scoring, AML monitoring, financial document processing — with SR 11-7 model validation documentation and FCRA adverse action compliance built in.",
+          "description": "Fraud detection, credit scoring, AML monitoring, financial document processing — with SR 26-2 model validation documentation and FCRA adverse action compliance built in.",
           "icon": "shield",
           "label": "Regulated"
         },
@@ -423,7 +423,7 @@
         },
         {
           "objection": "Can you handle our industry's specific compliance requirements?",
-          "answer": "Regulated industry compliance is a stated competency — SR 11-7, HIPAA, FCRA, EU AI Act, and NYC Local Law 144 are all specifically addressed in our project methodology."
+          "answer": "Regulated industry compliance is a stated competency — SR 26-2, HIPAA, FCRA, EU AI Act, and NYC Local Law 144 are all specifically addressed in our project methodology."
         }
       ]
     },
@@ -527,7 +527,7 @@
     {
       "title": "LLM Integration Services",
       "description": "Integrate large language models into your existing products and workflows.",
-      "href": "/llm-integration-services/"
+      "href": "/llm-development-company/"
     },
     {
       "title": "Machine Learning Model Development",

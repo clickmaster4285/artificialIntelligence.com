@@ -1,0 +1,369 @@
+{
+  "slug": "rag-development-services",
+  "status": "published",
+  "seo": {
+    "title": "RAG Development Services | ClickMasters AI",
+    "description": "RAG development services: document Q&A, hybrid search, conversational and agentic RAG grounded in your knowledge with citations. From $25K. Fixed-price, full IP.",
+    "canonical": "/rag-development-services/",
+    "primaryKeyword": "rag development services",
+    "secondaryKeywords": [
+      "rag development company",
+      "retrieval augmented generation development",
+      "enterprise rag system",
+      "rag chatbot development",
+      "knowledge base ai development"
+    ],
+    "noIndex": false,
+    "noFollow": false
+  },
+  "schema": {
+    "service": true,
+    "organization": true,
+    "breadcrumbs": true,
+    "faq": true
+  },
+  "appearance": {
+    "template": "neural-canvas",
+    "accent": "violet",
+    "background": "neural-grid",
+    "grain": true,
+    "glow": true,
+    "scrollProgress": true,
+    "customCursor": true
+  },
+  "hero": {
+    "eyebrow": "Grounded Answers From Your Own Knowledge",
+    "title": "RAG Development Services",
+    "highlightedText": "From $25K",
+    "description": "ClickMasters builds retrieval-augmented generation (RAG) systems that answer questions from your documents, policies, tickets and databases — with source citations, permission-aware retrieval and measured answer quality. We engineer the parts that decide whether RAG works in production: document parsing and chunking, embedding and hybrid search, re-ranking, evaluation and access control.",
+    "primaryCta": {
+      "label": "Get a Free RAG Consultation",
+      "href": "#consultation",
+      "ariaLabel": "Get a free RAG development consultation with 24-hour response"
+    },
+    "secondaryCta": {
+      "label": "Explore RAG Architectures",
+      "href": "#capabilities"
+    },
+    "trustText": "Fixed-price · Full IP ownership · Citations and access control built in",
+    "metrics": [
+      {
+        "value": "$25K",
+        "label": "Starting investment",
+        "description": "For single knowledge base Q&A"
+      },
+      {
+        "value": "$25K–$60K",
+        "label": "Most common range",
+        "description": "For standard enterprise RAG"
+      },
+      {
+        "value": "24h",
+        "label": "Initial response",
+        "description": "Free consultation within one business day"
+      }
+    ],
+    "visual": {
+      "type": "neural-sphere",
+      "label": "RAG stack",
+      "modelNames": [
+        "Embeddings",
+        "Vector DB",
+        "Hybrid Search",
+        "Re-ranking",
+        "LLM"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "capabilities",
+      "type": "feature-grid",
+      "eyebrow": "What We Build",
+      "title": "RAG systems engineered for answer quality, not demos",
+      "description": "The right RAG architecture depends on your sources, query patterns and risk tolerance. We build the one that fits.",
+      "tone": "default",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "bento",
+      "columns": 2,
+      "items": [
+        {
+          "title": "Single Knowledge Base Q&A",
+          "description": "Document question answering over one well-defined corpus — policies, manuals, product documentation — with chunking and embedding pipelines tuned to your content.",
+          "icon": "database",
+          "label": "Document Q&A",
+          "metric": "$25K–$55K · 8–14 weeks",
+          "link": {
+            "label": "What is retrieval-augmented generation?",
+            "href": "/glossary/retrieval-augmented-generation/"
+          }
+        },
+        {
+          "title": "Multi-Source RAG",
+          "description": "Retrieval across three or more document types and systems, with source connectors and schema normalization so answers draw on the right source.",
+          "icon": "network",
+          "label": "Multi-Source",
+          "metric": "$40K–$90K · 10–18 weeks"
+        },
+        {
+          "title": "Hybrid Search RAG",
+          "description": "Vector and keyword (BM25) retrieval combined and re-ranked, so exact identifiers, product codes and terminology are found as reliably as meaning.",
+          "icon": "search",
+          "label": "Hybrid Retrieval",
+          "metric": "$35K–$80K · 10–16 weeks",
+          "link": {
+            "label": "How re-ranking works",
+            "href": "/glossary/reranking/"
+          }
+        },
+        {
+          "title": "Conversational RAG",
+          "description": "Multi-turn assistants that keep conversation history and session state while still grounding every answer in retrieved sources.",
+          "icon": "bot",
+          "label": "Conversational",
+          "metric": "$35K–$75K · 10–16 weeks"
+        },
+        {
+          "title": "Agentic RAG",
+          "description": "Multi-hop, adaptive retrieval where a planning loop decides what to search next and which tools to call before answering complex questions.",
+          "icon": "workflow",
+          "label": "Agentic",
+          "metric": "$55K–$130K · 14–24 weeks",
+          "link": {
+            "label": "AI agent development",
+            "href": "/ai-agent-development-company/"
+          }
+        },
+        {
+          "title": "Multi-Tenant Enterprise RAG Platforms",
+          "description": "Organization-wide or customer-facing RAG platforms with tenant isolation, document-level access controls and usage billing.",
+          "icon": "shield",
+          "label": "Enterprise",
+          "metric": "$100K–$300K · 20–36 weeks"
+        }
+      ]
+    },
+    {
+      "id": "rag-engineering",
+      "type": "rich-text",
+      "eyebrow": "How We Engineer It",
+      "title": "RAG quality is decided by retrieval, not by the model",
+      "tone": "surface",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Parsing and chunking",
+          "paragraphs": [
+            "Tables, headings, scanned PDFs and long contracts each need different handling. We design chunking around document structure so retrieved passages carry enough context to answer the question."
+          ],
+          "links": [
+            {
+              "label": "What is semantic chunking?",
+              "href": "/glossary/semantic-chunking/"
+            }
+          ]
+        },
+        {
+          "heading": "Retrieval you can measure",
+          "paragraphs": [
+            "We build an evaluation set from real questions and measure retrieval recall, answer faithfulness and citation accuracy before launch — then track the same metrics in production so changes never silently degrade quality."
+          ],
+          "links": [
+            {
+              "label": "Retrieval quality metrics explained",
+              "href": "/glossary/retrieval-quality-metrics/"
+            }
+          ]
+        },
+        {
+          "heading": "Access control and compliance",
+          "paragraphs": [
+            "Retrieval respects the permissions of the person asking, so users only see answers drawn from documents they are allowed to read. Regulated deployments add audit logging and compliance documentation."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing-reference",
+      "type": "table",
+      "eyebrow": "Transparent Investment",
+      "title": "RAG development pricing reference",
+      "description": "Typical fixed-price ranges by RAG project type. Your final quote is fixed after discovery.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "pricing",
+      "columns": [
+        {
+          "key": "project",
+          "label": "RAG Project Type",
+          "align": "left",
+          "width": "40%"
+        },
+        {
+          "key": "cost",
+          "label": "Cost Range",
+          "align": "left",
+          "width": "30%"
+        },
+        {
+          "key": "timeline",
+          "label": "Timeline",
+          "align": "left",
+          "width": "30%"
+        }
+      ],
+      "rows": [
+        {
+          "id": "single-kb",
+          "cells": {
+            "project": "Single knowledge base Q&A (docs → answers)",
+            "cost": "$25,000 – $55,000",
+            "timeline": "8–14 weeks"
+          },
+          "highlighted": true,
+          "badge": "Most common"
+        },
+        {
+          "id": "multi-source",
+          "cells": {
+            "project": "Multi-source RAG (3+ document types)",
+            "cost": "$40,000 – $90,000",
+            "timeline": "10–18 weeks"
+          }
+        },
+        {
+          "id": "hybrid",
+          "cells": {
+            "project": "Hybrid search RAG (vector + keyword)",
+            "cost": "$35,000 – $80,000",
+            "timeline": "10–16 weeks"
+          }
+        },
+        {
+          "id": "conversational",
+          "cells": {
+            "project": "Conversational RAG (multi-turn history)",
+            "cost": "$35,000 – $75,000",
+            "timeline": "10–16 weeks"
+          }
+        },
+        {
+          "id": "agentic",
+          "cells": {
+            "project": "Agentic RAG (multi-hop, adaptive retrieval)",
+            "cost": "$55,000 – $130,000",
+            "timeline": "14–24 weeks"
+          }
+        },
+        {
+          "id": "enterprise",
+          "cells": {
+            "project": "Multi-tenant enterprise RAG platform",
+            "cost": "$100,000 – $300,000",
+            "timeline": "20–36 weeks"
+          }
+        },
+        {
+          "id": "compliance",
+          "cells": {
+            "project": "RAG with compliance documentation",
+            "cost": "+$15,000 – $40,000",
+            "timeline": "+3–6 weeks"
+          }
+        }
+      ],
+      "note": "Ranges reflect ClickMasters' fixed-price project fees. LLM API, vector database, embedding and hosting costs are separate and modeled during discovery.",
+      "cta": {
+        "label": "See the full RAG development cost breakdown",
+        "href": "/rag-development-cost/"
+      }
+    },
+    {
+      "id": "rag-faqs",
+      "type": "faq",
+      "eyebrow": "Frequently Asked",
+      "title": "Questions about RAG development",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "variant": "indexed",
+      "items": [
+        {
+          "question": "What is a RAG system?",
+          "answer": "Retrieval-augmented generation (RAG) is an architecture that retrieves relevant passages from your own knowledge sources and gives them to a language model, so answers are grounded in your content and can cite their sources instead of relying only on what the model learned in training."
+        },
+        {
+          "question": "How much does RAG development cost?",
+          "answer": "RAG development typically costs $25,000–$300,000. A single knowledge base Q&A system runs $25,000–$55,000, multi-source RAG $40,000–$90,000, agentic RAG $55,000–$130,000 and multi-tenant enterprise platforms $100,000–$300,000."
+        },
+        {
+          "question": "How long does it take to build a RAG system?",
+          "answer": "A single knowledge base Q&A system takes 8–14 weeks. Multi-source and hybrid search systems take 10–18 weeks, and enterprise platforms 20–36 weeks."
+        },
+        {
+          "question": "What does RAG cost to run each month?",
+          "answer": "Ongoing costs for LLM API, vector database, embeddings and compute typically total $600–$1,500 per month at small scale, $1,000–$3,300 at medium scale and $2,500–$10,000 at enterprise scale."
+        },
+        {
+          "question": "Should we use RAG or fine-tuning?",
+          "answer": "RAG is the better fit when answers must come from changing, proprietary knowledge and cite sources. Fine-tuning is better for teaching a model a style, format or narrow task. Many production systems combine both."
+        },
+        {
+          "question": "Who owns the RAG system?",
+          "answer": "You do — source code, ingestion pipelines, vector indices, evaluation datasets and documentation are transferred at completion."
+        }
+      ]
+    },
+    {
+      "id": "consultation",
+      "type": "cta",
+      "eyebrow": "Start With a Free Consultation",
+      "heading": "Ground your AI in the knowledge your business already has",
+      "text": "Tell us what questions people need answered and where the knowledge lives. An engineer will reply within one business day with a recommended RAG architecture and budget range.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "fade-scale",
+      "primaryCta": {
+        "label": "Get Your Free RAG Consultation",
+        "href": "/contact/"
+      },
+      "secondaryCta": {
+        "label": "Email the Engineering Team",
+        "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
+      },
+      "contactEmail": "hello@clickmastersartificialintelligencecompany.com",
+      "variant": "orbital"
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "RAG Development Cost",
+      "description": "Detailed pricing by RAG project type and operating costs.",
+      "href": "/rag-development-cost/"
+    },
+    {
+      "title": "LLM Development Company",
+      "description": "Production LLM integration, RAG and fine-tuning.",
+      "href": "/llm-development-company/"
+    },
+    {
+      "title": "Semantic Search Development",
+      "description": "Meaning-based search over your content.",
+      "href": "/semantic-search-development/"
+    },
+    {
+      "title": "RAG vs. Fine-Tuning for Enterprise",
+      "description": "How to choose the right approach for your use case.",
+      "href": "/rag-vs-fine-tuning-enterprise/"
+    },
+    {
+      "title": "Vector Database Glossary Entry",
+      "description": "How vector databases store and search embeddings.",
+      "href": "/glossary/vector-database/"
+    }
+  ]
+}

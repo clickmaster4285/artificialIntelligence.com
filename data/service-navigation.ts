@@ -121,6 +121,14 @@ export const serviceNavigationItems: ServiceNavItem[] = [
     category: 'Industry Specific'
   },
   {
+    slug: 'manufacturing',
+    title: 'Manufacturing AI',
+    description: 'Quality inspection, predictive maintenance, process optimization',
+    icon: '🏭',
+    path: '/ai-development/manufacturing',
+    category: 'Industry Specific'
+  },
+  {
     slug: 'energy',
     title: 'Energy AI',
     description: 'Grid optimization, renewable forecasting, energy trading',

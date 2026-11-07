@@ -98,8 +98,8 @@
           "label": "Foundation",
           "metric": "6–10 weeks",
           "link": {
-            "label": "Explore LLM integration",
-            "href": "/llm-integration-services/"
+            "label": "See LLM integration costs",
+            "href": "/llm-integration-cost/"
           }
         },
         {
@@ -121,7 +121,7 @@
           "metric": "Task-specific accuracy",
           "link": {
             "label": "Explore model fine-tuning",
-            "href": "/ai-model-fine-tuning-services/"
+            "href": "/ai-model-fine-tuning/"
           }
         },
         {
@@ -470,7 +470,7 @@
           "links": [
             {
               "label": "Explore AI model fine-tuning",
-              "href": "/ai-model-fine-tuning-services/"
+              "href": "/ai-model-fine-tuning/"
             }
           ]
         }
@@ -692,9 +692,9 @@
   ],
   "relatedPages": [
     {
-      "title": "LLM Integration Services",
-      "description": "Integrate leading language models into your existing products and workflows.",
-      "href": "/llm-integration-services/"
+      "title": "LLM Integration Cost",
+      "description": "What it costs to integrate leading language models into your existing products and workflows.",
+      "href": "/llm-integration-cost/"
     },
     {
       "title": "RAG Development Services",
@@ -704,12 +704,12 @@
     {
       "title": "AI Model Fine-Tuning",
       "description": "Adapt language models for narrow domain-specific tasks.",
-      "href": "/ai-model-fine-tuning-services/"
+      "href": "/ai-model-fine-tuning/"
     },
     {
       "title": "Generative AI Development",
       "description": "Build production generative AI products and internal platforms.",
-      "href": "/generative-ai-development-company/"
+      "href": "/generative-ai-development/"
     }
   ]
 }

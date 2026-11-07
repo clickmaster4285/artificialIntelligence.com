@@ -280,13 +280,13 @@
 
   "references": [
     {
-      "label": "EEOC Guidance on AI in Employment Decisions",
-      "href": "https://www.eeoc.gov/ai",
+      "label": "EEOC Launches Initiative on Artificial Intelligence and Algorithmic Fairness",
+      "href": "https://www.eeoc.gov/newsroom/eeoc-launches-initiative-artificial-intelligence-and-algorithmic-fairness",
       "publisher": "EEOC"
     },
     {
-      "label": "NYC Local Law 144: AI Bias Audit Requirements",
-      "href": "https://www.nyc.gov/site/dca/about/ai-bias-audit.page",
+      "label": "Automated Employment Decision Tools (AEDT): NYC Local Law 144",
+      "href": "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page",
       "publisher": "NYC Department of Consumer Affairs"
     }
   ],

@@ -1,0 +1,377 @@
+{
+  "slug": "computer-vision-development",
+  "status": "published",
+  "seo": {
+    "title": "Computer Vision Development Services | ClickMasters AI",
+    "description": "Computer vision development: object detection, visual quality inspection, image segmentation and edge deployment trained on your imagery. From $40K. Fixed-price.",
+    "canonical": "/computer-vision-development/",
+    "primaryKeyword": "computer vision development services",
+    "secondaryKeywords": [
+      "computer vision development company",
+      "custom computer vision solutions",
+      "object detection development",
+      "visual inspection ai",
+      "edge ai computer vision"
+    ],
+    "noIndex": false,
+    "noFollow": false
+  },
+  "schema": {
+    "service": true,
+    "organization": true,
+    "breadcrumbs": true,
+    "faq": true
+  },
+  "appearance": {
+    "template": "neural-canvas",
+    "accent": "cyan",
+    "background": "neural-grid",
+    "grain": true,
+    "glow": true,
+    "scrollProgress": true,
+    "customCursor": true
+  },
+  "hero": {
+    "eyebrow": "Production Visual Intelligence",
+    "title": "Computer Vision Development Services",
+    "highlightedText": "From $40K",
+    "description": "ClickMasters builds custom computer vision systems that detect, classify, segment and measure what cameras see — trained on your own imagery, validated against your accuracy targets and deployed to the cloud, on-premise servers or edge devices on the production floor. We handle the full lifecycle: data collection and labeling, model training, real-time inference, integration and drift monitoring.",
+    "primaryCta": {
+      "label": "Get a Free Computer Vision Consultation",
+      "href": "#consultation",
+      "ariaLabel": "Get a free computer vision development consultation with 24-hour response"
+    },
+    "secondaryCta": {
+      "label": "Explore Our Capabilities",
+      "href": "#capabilities"
+    },
+    "trustText": "Fixed-price · Full IP ownership · Edge and cloud deployment",
+    "metrics": [
+      {
+        "value": "$40K",
+        "label": "Starting investment",
+        "description": "For single-class object detection"
+      },
+      {
+        "value": "12–26",
+        "label": "Weeks to launch",
+        "description": "Depending on data and accuracy targets"
+      },
+      {
+        "value": "24h",
+        "label": "Initial response",
+        "description": "Free consultation within one business day"
+      }
+    ],
+    "visual": {
+      "type": "neural-sphere",
+      "label": "Computer vision stack",
+      "modelNames": [
+        "Detection",
+        "Segmentation",
+        "OCR",
+        "VLMs",
+        "Edge"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "capabilities",
+      "type": "feature-grid",
+      "eyebrow": "What We Build",
+      "title": "Computer vision systems for real-world operating conditions",
+      "description": "Models that hold up under changing lighting, camera angles and product variation — not just on a curated test set.",
+      "tone": "default",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "bento",
+      "columns": 2,
+      "items": [
+        {
+          "title": "Object Detection and Classification",
+          "description": "Detect, count and classify objects in images and video streams — inventory, vehicles, people flow, PPE compliance and product recognition — with YOLO-family or transformer-based detectors.",
+          "icon": "search",
+          "label": "Detection",
+          "metric": "$40K–$80K · 12–18 weeks"
+        },
+        {
+          "title": "Visual Quality Inspection",
+          "description": "Real-time defect detection on production lines with sub-200ms inference, human review interfaces for uncertain cases and SPC integration.",
+          "icon": "shield",
+          "label": "Manufacturing",
+          "metric": "$60K–$130K · 14–22 weeks",
+          "link": {
+            "label": "AI for manufacturing",
+            "href": "/glossary/ai-for-manufacturing/"
+          }
+        },
+        {
+          "title": "Image Segmentation and Measurement",
+          "description": "Pixel-level segmentation for medical imaging, agriculture, damage assessment and dimensional measurement where bounding boxes are not precise enough.",
+          "icon": "layers",
+          "label": "Segmentation",
+          "metric": "$60K–$130K · 14–24 weeks",
+          "link": {
+            "label": "What is image segmentation?",
+            "href": "/glossary/image-segmentation/"
+          }
+        },
+        {
+          "title": "Document and Multimodal Vision",
+          "description": "OCR, layout understanding and vision-language models that read forms, invoices, drawings and screenshots and answer questions about images.",
+          "icon": "sparkles",
+          "label": "Multimodal",
+          "metric": "$25K–$90K · 8–16 weeks",
+          "link": {
+            "label": "Vision-language models explained",
+            "href": "/glossary/vision-language-model-vlm/"
+          }
+        },
+        {
+          "title": "Edge Deployment",
+          "description": "Optimized models (quantization, TensorRT, ONNX Runtime) running on NVIDIA Jetson, industrial PCs and smart cameras where latency, bandwidth or privacy rule out the cloud.",
+          "icon": "cloud",
+          "label": "Edge AI",
+          "metric": "Scoped per deployment",
+          "link": {
+            "label": "What is edge AI?",
+            "href": "/glossary/edge-ai/"
+          }
+        },
+        {
+          "title": "Medical Imaging AI",
+          "description": "HIPAA-compliant clinical decision support and, where required, FDA SaMD documentation support with PACS integration and sensitivity/specificity reporting.",
+          "icon": "brain",
+          "label": "Healthcare",
+          "metric": "$90K–$200K+"
+        }
+      ]
+    },
+    {
+      "id": "pricing-reference",
+      "type": "table",
+      "eyebrow": "Transparent Investment",
+      "title": "Computer vision development pricing reference",
+      "description": "Typical fixed-price ranges by system type. Training data situation is the largest variable — we assess it during discovery.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "pricing",
+      "columns": [
+        {
+          "key": "system",
+          "label": "System Type",
+          "align": "left",
+          "width": "40%"
+        },
+        {
+          "key": "cost",
+          "label": "Cost Range",
+          "align": "left",
+          "width": "30%"
+        },
+        {
+          "key": "scope",
+          "label": "Typical Scope",
+          "align": "left",
+          "width": "30%"
+        }
+      ],
+      "rows": [
+        {
+          "id": "detection-single",
+          "cells": {
+            "system": "Object detection — single class, controlled environment",
+            "cost": "$40,000 – $60,000",
+            "scope": "2K–5K labeled images, API or edge"
+          }
+        },
+        {
+          "id": "detection-multi",
+          "cells": {
+            "system": "Object detection — multi-class, variable conditions",
+            "cost": "$60,000 – $80,000",
+            "scope": "5K–15K images, active learning"
+          }
+        },
+        {
+          "id": "inspection",
+          "cells": {
+            "system": "Quality inspection — standard manufacturing",
+            "cost": "$60,000 – $90,000",
+            "scope": "1–2 lines, real-time <200ms"
+          },
+          "highlighted": true,
+          "badge": "Most common"
+        },
+        {
+          "id": "inspection-gmp",
+          "cells": {
+            "system": "Quality inspection — GMP / high-precision",
+            "cost": "$90,000 – $130,000",
+            "scope": "IQ/OQ/PQ, 99%+ precision"
+          }
+        },
+        {
+          "id": "medical",
+          "cells": {
+            "system": "Medical imaging AI",
+            "cost": "$90,000 – $200,000+",
+            "scope": "HIPAA, PACS, optional FDA SaMD"
+          }
+        },
+        {
+          "id": "autonomous",
+          "cells": {
+            "system": "Autonomous and navigation vision",
+            "cost": "$80,000 – $180,000",
+            "scope": "Depth, sensor fusion, <50ms"
+          }
+        }
+      ],
+      "note": "Ranges reflect ClickMasters' fixed-price project fees. Labeling, image collection, cameras and GPU infrastructure are scoped separately when needed.",
+      "cta": {
+        "label": "See the full computer vision cost breakdown",
+        "href": "/computer-vision-development-cost/"
+      }
+    },
+    {
+      "id": "delivery-process",
+      "type": "process",
+      "eyebrow": "How We Deliver",
+      "title": "From camera feed to validated production model",
+      "tone": "default",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "vertical-timeline",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Visual task definition and feasibility",
+          "description": "We define exactly what must be detected or measured, the acceptable error rates, latency and hardware constraints, and review sample imagery to confirm feasibility.",
+          "duration": "1–2 weeks",
+          "deliverables": [
+            "Task and accuracy specification",
+            "Camera and hardware assessment",
+            "Fixed-price proposal"
+          ]
+        },
+        {
+          "number": "02",
+          "title": "Data collection and labeling",
+          "description": "We capture or curate imagery that reflects real operating conditions, label it with documented guidelines and hold out a representative test set.",
+          "duration": "2–6 weeks",
+          "deliverables": [
+            "Labeled dataset and guidelines",
+            "Held-out evaluation set"
+          ]
+        },
+        {
+          "number": "03",
+          "title": "Model training and validation",
+          "description": "We train and compare architectures, then validate precision, recall and latency on the held-out set — including edge cases and failure analysis.",
+          "duration": "3–8 weeks",
+          "deliverables": [
+            "Trained model weights",
+            "Validation report with failure analysis"
+          ]
+        },
+        {
+          "number": "04",
+          "title": "Deployment, integration and monitoring",
+          "description": "Optimized inference on cloud or edge, integration with MES, ERP, PACS or your application, plus drift monitoring and an active-learning loop for retraining.",
+          "duration": "3–10 weeks",
+          "deliverables": [
+            "Production inference service",
+            "Integrations and review UI",
+            "Monitoring and retraining pipeline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "computer-vision-faqs",
+      "type": "faq",
+      "eyebrow": "Frequently Asked",
+      "title": "Questions about computer vision development",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "variant": "indexed",
+      "items": [
+        {
+          "question": "How much does computer vision development cost?",
+          "answer": "Simple object detection starts at $40,000–$60,000. Manufacturing quality inspection typically runs $60,000–$130,000, and medical imaging AI $90,000–$200,000+. The training data situation is the biggest variable."
+        },
+        {
+          "question": "How many images do we need?",
+          "answer": "A single-class detector in a controlled environment can often be trained on 2,000–5,000 labeled images. Multi-class detection in variable conditions usually needs 5,000–15,000. Rare defects can be supplemented with synthetic data and active learning."
+        },
+        {
+          "question": "Can the model run on edge devices?",
+          "answer": "Yes. We optimize models with quantization and runtimes such as TensorRT and ONNX Runtime to run on NVIDIA Jetson, industrial PCs and smart cameras when latency, connectivity or privacy require on-device inference."
+        },
+        {
+          "question": "What accuracy can we expect?",
+          "answer": "It depends on task difficulty and data quality. Well-defined detection tasks in controlled environments commonly reach 90–96% accuracy; high-precision inspection can exceed 99% precision with appropriate imaging. We agree on target metrics before build and report them on a held-out test set."
+        },
+        {
+          "question": "Do you use existing models or train from scratch?",
+          "answer": "Usually we fine-tune proven pretrained architectures on your data, which reduces data requirements and cost. For document and open-ended visual questions we may use vision-language models instead of training a dedicated detector."
+        },
+        {
+          "question": "Who owns the trained model?",
+          "answer": "You do — model weights, training code, labeled datasets and deployment configuration are transferred at completion."
+        }
+      ]
+    },
+    {
+      "id": "consultation",
+      "type": "cta",
+      "eyebrow": "Start With a Free Consultation",
+      "heading": "Find out what computer vision can measure in your operation",
+      "text": "Share a few sample images and describe what you need to detect. An engineer will reply within one business day with feasibility notes and a budget range.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "fade-scale",
+      "primaryCta": {
+        "label": "Get Your Free Computer Vision Consultation",
+        "href": "/contact/"
+      },
+      "secondaryCta": {
+        "label": "Email the Engineering Team",
+        "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
+      },
+      "contactEmail": "hello@clickmastersartificialintelligencecompany.com",
+      "variant": "orbital"
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "Computer Vision Development Cost",
+      "description": "Detailed pricing by computer vision system type.",
+      "href": "/computer-vision-development-cost/"
+    },
+    {
+      "title": "Custom AI Development",
+      "description": "Custom ML, LLM and automation systems built around your data.",
+      "href": "/custom-ai-development/"
+    },
+    {
+      "title": "Computer Vision Glossary Entry",
+      "description": "How machines interpret images and video.",
+      "href": "/glossary/computer-vision/"
+    },
+    {
+      "title": "Image Classification Glossary Entry",
+      "description": "Assigning labels to whole images.",
+      "href": "/glossary/image-classification/"
+    },
+    {
+      "title": "Edge AI Glossary Entry",
+      "description": "Running AI models on local devices.",
+      "href": "/glossary/edge-ai/"
+    }
+  ]
+}

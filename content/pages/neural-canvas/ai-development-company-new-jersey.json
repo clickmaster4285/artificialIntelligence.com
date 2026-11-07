@@ -105,7 +105,7 @@
         },
         {
           "title": "Financial Services AI",
-          "description": "Fraud detection, credit risk, and financial analytics for New Jersey's large financial services operations — with SR 11-7 validation and FCRA compliance for OCC-regulated institutions. From $45,000.",
+          "description": "Fraud detection, credit risk, and financial analytics for New Jersey's large financial services operations — with SR 26-2 validation and FCRA compliance for OCC-regulated institutions. From $45,000.",
           "icon": "trending-up",
           "label": "Financial specialty",
           "metric": "From $45K"
@@ -154,7 +154,7 @@
         },
         {
           "title": "Financial Services",
-          "description": "Morgan Stanley (NJ operations campus), Goldman Sachs (Jersey City), Deutsche Bank (US operations), and the broader Jersey City/Hoboken financial services community adjacent to Wall Street. The regulatory compliance requirements for NJ financial services AI are effectively identical to New York — SR 11-7, FCRA, ECOA, and FINRA standards apply.",
+          "description": "Morgan Stanley (NJ operations campus), Goldman Sachs (Jersey City), Deutsche Bank (US operations), and the broader Jersey City/Hoboken financial services community adjacent to Wall Street. The regulatory compliance requirements for NJ financial services AI are effectively identical to New York — SR 26-2, FCRA, ECOA, and FINRA standards apply.",
           "icon": "building",
           "label": "Financial services",
           "metric": "From $45K"
@@ -252,7 +252,7 @@
         {
           "id": "financial",
           "cells": {
-            "project": "Financial services AI (SR 11-7, FCRA)",
+            "project": "Financial services AI (SR 26-2, FCRA)",
             "price": "$45,000 – $135,000",
             "timeline": "12–24 weeks"
           }
@@ -361,7 +361,7 @@
         },
         {
           "question": "Can ClickMasters build financial services AI for Jersey City operations?",
-          "answer": "Yes — SR 11-7 model validation, FCRA adverse action, and financial analytics for Morgan Stanley, Goldman Sachs, and other NJ financial operations are ClickMasters capabilities."
+          "answer": "Yes — SR 26-2 model validation, FCRA adverse action, and financial analytics for Morgan Stanley, Goldman Sachs, and other NJ financial operations are ClickMasters capabilities."
         },
         {
           "question": "Does ClickMasters work Eastern Time for New Jersey clients?",
@@ -382,7 +382,7 @@
       "type": "cta",
       "eyebrow": "Ready to Start",
       "title": "Ready to Start Your New Jersey AI Development Project?",
-      "description": "ClickMasters builds production AI for New Jersey's pharmaceutical giants, financial services operations, healthcare networks, and logistics infrastructure — with the FDA, GxP, and SR 11-7 compliance depth that NJ's most regulated industries require.",
+      "description": "ClickMasters builds production AI for New Jersey's pharmaceutical giants, financial services operations, healthcare networks, and logistics infrastructure — with the FDA, GxP, and SR 26-2 compliance depth that NJ's most regulated industries require.",
       "tone": "accent",
       "width": "wide",
       "animation": "fade",
@@ -394,7 +394,7 @@
         "label": "Email Us Directly",
         "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
       },
-      "trustText": "AI development from $20,000 | Fixed-price | Full IP | Pharma AI, FDA SaMD, GxP | SR 11-7 | Eastern Time | 24-hr response"
+      "trustText": "AI development from $20,000 | Fixed-price | Full IP | Pharma AI, FDA SaMD, GxP | SR 26-2 | Eastern Time | 24-hr response"
     }
   ]
 }

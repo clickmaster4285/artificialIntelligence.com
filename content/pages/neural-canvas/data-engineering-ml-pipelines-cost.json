@@ -378,7 +378,7 @@
         },
         {
           "title": "Data Lineage Gaps",
-          "description": "Unable to answer 'which training data produced which model version?' — a requirement for regulated industries (SR 11-7, HIPAA, EU AI Act) and increasingly a general governance expectation.",
+          "description": "Unable to answer 'which training data produced which model version?' — a requirement for regulated industries (SR 26-2, HIPAA, EU AI Act) and increasingly a general governance expectation.",
           "icon": "file-check",
           "label": "Lineage Gaps",
           "metric": "Governance requirement"

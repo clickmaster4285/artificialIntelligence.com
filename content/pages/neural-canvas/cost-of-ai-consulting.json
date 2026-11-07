@@ -44,7 +44,7 @@
     },
     "secondaryCta": {
       "label": "Explore AI Consulting Services",
-      "href": "/ai-consulting-company/"
+      "href": "/ai-consulting-services/"
     },
     "trustText": "Fixed-fee or hourly · Vendor-neutral · Senior USA-based practitioners",
     "metrics": [
@@ -213,7 +213,7 @@
         },
         {
           "title": "4. Industry-Specific Compliance Requirements",
-          "description": "AI governance for regulated industries (healthcare, financial services) typically costs 20–40% more, reflecting the additional regulatory framework knowledge (HIPAA, GDPR, EU AI Act, NIST AI RMF, SR 11-7) required to give genuinely useful guidance.",
+          "description": "AI governance for regulated industries (healthcare, financial services) typically costs 20–40% more, reflecting the additional regulatory framework knowledge (HIPAA, GDPR, EU AI Act, NIST AI RMF, SR 26-2) required to give genuinely useful guidance.",
           "icon": "shield",
           "label": "Compliance"
         }
@@ -329,7 +329,7 @@
         },
         {
           "objection": "Can you handle our specific industry's regulatory requirements?",
-          "answer": "Yes. ClickMasters' AI consulting practice covers HIPAA, GDPR, the EU AI Act, NIST AI Risk Management Framework, and SR 11-7-aligned governance guidance for financial services—applied based on your specific regulatory exposure during initial scoping."
+          "answer": "Yes. ClickMasters' AI consulting practice covers HIPAA, GDPR, the EU AI Act, NIST AI Risk Management Framework, and SR 26-2-aligned governance guidance for financial services—applied based on your specific regulatory exposure during initial scoping."
         }
       ]
     },
@@ -401,7 +401,7 @@
           "cells": {
             "industry": "Financial services",
             "premium": "+25–35%",
-            "driver": "SR 11-7 model risk management, explainability requirements"
+            "driver": "SR 26-2 model risk management, explainability requirements"
           }
         },
         {
@@ -655,22 +655,22 @@
     {
       "title": "AI Consulting Company",
       "description": "Strategic AI advisory from senior practitioners who build production systems.",
-      "href": "/ai-consulting-company/"
+      "href": "/ai-consulting-services/"
     },
     {
       "title": "Hire AI Consultant",
       "description": "Engage senior AI consultants for strategy, assessment, and roadmap.",
-      "href": "/hire-ai-consultant/"
+      "href": "/ai-consulting-services/"
     },
     {
       "title": "AI Strategy Consulting",
       "description": "Develop a prioritized, actionable AI roadmap for your organization.",
-      "href": "/ai-strategy-consulting/"
+      "href": "/ai-consulting-services/"
     },
     {
       "title": "Generative AI Consulting",
       "description": "Strategic guidance for generative AI adoption and implementation.",
-      "href": "/generative-ai-consulting-company/"
+      "href": "/generative-ai-development/"
     },
     {
       "title": "AI Development Cost",
@@ -680,7 +680,7 @@
     {
       "title": "Responsible AI Consulting",
       "description": "Governance, compliance, and ethical AI framework development.",
-      "href": "/responsible-ai-consulting/"
+      "href": "/responsible-ai-compliance/"
     }
   ]
 }

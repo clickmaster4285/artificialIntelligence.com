@@ -258,11 +258,11 @@
   "additionalResources": [
     {
       "label": "LLM Integration Services at ClickMasters",
-      "href": "/llm-integration-services/"
+      "href": "/llm-development-company/"
     },
     {
       "label": "RAG vs. Fine-tuning — which to choose?",
-      "href": "/glossary/rag-retrieval-augmented-generation/"
+      "href": "/glossary/rag-vs-fine-tuning/"
     },
     {
       "label": "AI Chatbot Development with LLMs",

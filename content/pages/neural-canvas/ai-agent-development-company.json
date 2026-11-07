@@ -1,0 +1,409 @@
+{
+  "slug": "ai-agent-development-company",
+  "status": "published",
+  "seo": {
+    "title": "AI Agent Development Company | ClickMasters AI",
+    "description": "AI agent development company: single and multi-agent systems with tool integration, approval gates, memory and security hardening. From $45K. Fixed-price, full IP.",
+    "canonical": "/ai-agent-development-company/",
+    "primaryKeyword": "ai agent development company",
+    "secondaryKeywords": [
+      "ai agent development services",
+      "custom ai agents",
+      "multi-agent system development",
+      "enterprise ai agents",
+      "agentic ai development"
+    ],
+    "noIndex": false,
+    "noFollow": false
+  },
+  "schema": {
+    "service": true,
+    "organization": true,
+    "breadcrumbs": true,
+    "faq": true
+  },
+  "appearance": {
+    "template": "neural-canvas",
+    "accent": "orange",
+    "background": "neural-grid",
+    "grain": true,
+    "glow": true,
+    "scrollProgress": true,
+    "customCursor": true
+  },
+  "hero": {
+    "eyebrow": "Agents That Act Reliably and Safely",
+    "title": "AI Agent Development Company",
+    "highlightedText": "From $45K",
+    "description": "ClickMasters builds AI agents that plan and carry out multi-step work across your systems — calling APIs, updating records and coordinating with people — with the reliability engineering, approval gates, audit trails and security hardening that production agents need. We scope every agent around a defined workflow and a task-completion test suite, so you know what it can do before it touches real data.",
+    "primaryCta": {
+      "label": "Get a Free Agent Scoping Session",
+      "href": "#consultation",
+      "ariaLabel": "Get a free AI agent scoping session with 24-hour response"
+    },
+    "secondaryCta": {
+      "label": "Explore Agent Types",
+      "href": "#capabilities"
+    },
+    "trustText": "Fixed-price · Full IP ownership · Human-in-the-loop by design",
+    "metrics": [
+      {
+        "value": "$45K",
+        "label": "Starting investment",
+        "description": "For single agent with defined scope"
+      },
+      {
+        "value": "$60K–$120K",
+        "label": "Most common range",
+        "description": "For single-agent with 5–8 tools"
+      },
+      {
+        "value": "24h",
+        "label": "Initial response",
+        "description": "Free estimate within one business day"
+      }
+    ],
+    "visual": {
+      "type": "neural-sphere",
+      "label": "Agent stack",
+      "modelNames": [
+        "Planning",
+        "Tools",
+        "Memory",
+        "Approvals",
+        "Guardrails"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "capabilities",
+      "type": "feature-grid",
+      "eyebrow": "What We Build",
+      "title": "AI agents engineered for production, not demos",
+      "description": "Agents execute real actions, so we design for failure modes, permissions and oversight from day one.",
+      "tone": "default",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "bento",
+      "columns": 2,
+      "items": [
+        {
+          "title": "Single-Agent Workflows",
+          "description": "One agent with a defined tool set — CRM, ERP, search, internal APIs — handling a well-scoped workflow end to end with validation at every step.",
+          "icon": "bot",
+          "label": "Most Common",
+          "metric": "$45K–$150K · 12–24 weeks",
+          "link": {
+            "label": "What is an AI agent?",
+            "href": "/glossary/ai-agent/"
+          }
+        },
+        {
+          "title": "Multi-Agent Systems",
+          "description": "A supervisor agent that decomposes complex tasks and delegates to specialist agents, with shared state management and per-agent tracing.",
+          "icon": "network",
+          "label": "Coordination",
+          "metric": "$100K–$250K · 18–32 weeks",
+          "link": {
+            "label": "What is a multi-agent system?",
+            "href": "/glossary/multi-agent-system/"
+          }
+        },
+        {
+          "title": "Human-in-the-Loop Agents",
+          "description": "Approval gates for irreversible actions, with approval UI, notifications, timeout handling and a complete audit trail.",
+          "icon": "shield",
+          "label": "Oversight",
+          "metric": "$70K–$160K · 14–26 weeks"
+        },
+        {
+          "title": "Agents with Persistent Memory",
+          "description": "Long-running agents that remember prior sessions and context through vector-backed episodic and semantic memory with careful retrieval logic.",
+          "icon": "database",
+          "label": "Memory",
+          "metric": "$80K–$180K · 16–28 weeks",
+          "link": {
+            "label": "What is agentic memory?",
+            "href": "/glossary/agentic-memory/"
+          }
+        },
+        {
+          "title": "Enterprise Agent Platforms",
+          "description": "Shared orchestration, monitoring and security for many agent workflows across departments.",
+          "icon": "cloud",
+          "label": "Platform",
+          "metric": "$200K–$500K+ · 24–40 weeks"
+        },
+        {
+          "title": "Agent Security and Red Teaming",
+          "description": "Prompt injection testing, tool-permission and access review, and output validation for agents you already run or plan to launch.",
+          "icon": "search",
+          "label": "Security",
+          "metric": "$30K–$70K · 6–14 weeks",
+          "link": {
+            "label": "What is agentic security?",
+            "href": "/glossary/agentic-security/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "agent-vs-automation",
+      "type": "rich-text",
+      "eyebrow": "Choosing the Approach",
+      "title": "AI agent or AI automation workflow?",
+      "tone": "surface",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "AI automation workflow ($15,000–$60,000)",
+          "paragraphs": [
+            "A pre-defined sequence of steps with fixed decision logic. It handles variable inputs such as documents and unstructured text but follows a fixed process path — lower cost and predictable behaviour. Best for document processing, email triage, report generation and data extraction."
+          ],
+          "links": [
+            {
+              "label": "Explore AI automation services",
+              "href": "/ai-automation-services/"
+            }
+          ]
+        },
+        {
+          "heading": "AI agent ($45,000–$200,000+)",
+          "paragraphs": [
+            "Dynamically decides which steps to take based on intermediate results and can handle situations the developer did not anticipate. It costs more and needs more reliability engineering, but suits open-ended work such as research, complex customer-service cases and multi-step resolution."
+          ]
+        },
+        {
+          "heading": "What makes agents expensive to get right",
+          "paragraphs": [
+            "Each tool integration needs authentication, rate limiting, retries and tests. Reliability engineering — step validation, error classification and fallback behaviour — adds 20–35% to scope. Approval workflows, memory and security hardening are scoped explicitly so there are no surprises."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing-reference",
+      "type": "table",
+      "eyebrow": "Transparent Investment",
+      "title": "AI agent development pricing reference",
+      "description": "Fixed-price ranges by agent type. Your final quote is fixed after a free scoping conversation.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "pricing",
+      "columns": [
+        {
+          "key": "agent",
+          "label": "Agent Type",
+          "align": "left",
+          "width": "40%"
+        },
+        {
+          "key": "cost",
+          "label": "Cost Range",
+          "align": "left",
+          "width": "30%"
+        },
+        {
+          "key": "timeline",
+          "label": "Timeline",
+          "align": "left",
+          "width": "30%"
+        }
+      ],
+      "rows": [
+        {
+          "id": "single-small",
+          "cells": {
+            "agent": "Single agent, 3–5 tools, defined scope",
+            "cost": "$45,000 – $90,000",
+            "timeline": "12–20 weeks"
+          },
+          "highlighted": true,
+          "badge": "Most common"
+        },
+        {
+          "id": "single-large",
+          "cells": {
+            "agent": "Single agent, 8+ tools, complex workflows",
+            "cost": "$70,000 – $150,000",
+            "timeline": "14–24 weeks"
+          }
+        },
+        {
+          "id": "multi-agent",
+          "cells": {
+            "agent": "Multi-agent system (supervisor + specialists)",
+            "cost": "$100,000 – $250,000",
+            "timeline": "18–32 weeks"
+          }
+        },
+        {
+          "id": "hitl",
+          "cells": {
+            "agent": "Human-in-the-loop agent with approval gates",
+            "cost": "$70,000 – $160,000",
+            "timeline": "14–26 weeks"
+          }
+        },
+        {
+          "id": "memory",
+          "cells": {
+            "agent": "Long-running agent with persistent memory",
+            "cost": "$80,000 – $180,000",
+            "timeline": "16–28 weeks"
+          }
+        },
+        {
+          "id": "platform",
+          "cells": {
+            "agent": "Enterprise agent platform (multi-workflow)",
+            "cost": "$200,000 – $500,000+",
+            "timeline": "24–40 weeks"
+          }
+        },
+        {
+          "id": "security",
+          "cells": {
+            "agent": "Agent security and red team assessment",
+            "cost": "$30,000 – $70,000",
+            "timeline": "6–14 weeks"
+          }
+        }
+      ],
+      "note": "Ranges reflect ClickMasters' fixed-price project fees. LLM API, tool API and infrastructure costs are separate and modeled during discovery.",
+      "cta": {
+        "label": "See the full AI agent cost breakdown",
+        "href": "/ai-agent-development-cost/"
+      }
+    },
+    {
+      "id": "delivery-process",
+      "type": "process",
+      "eyebrow": "How We Deliver",
+      "title": "From workflow definition to a tested production agent",
+      "tone": "default",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "vertical-timeline",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Scoping and tool inventory",
+          "description": "We define the workflow, the tools and permissions the agent needs, which actions require approval, and the success criteria.",
+          "deliverables": [
+            "Workflow and tool specification",
+            "Fixed-price proposal"
+          ]
+        },
+        {
+          "number": "02",
+          "title": "Task-completion test suite",
+          "description": "We build a set of representative tasks with defined success criteria before the agent is built, so progress is measured objectively.",
+          "deliverables": [
+            "Test suite and success criteria"
+          ]
+        },
+        {
+          "number": "03",
+          "title": "Build and harden",
+          "description": "Orchestration, tool wrappers, error recovery, approval gates and prompt-injection defenses, evaluated against the test suite throughout.",
+          "deliverables": [
+            "Production agent",
+            "Security assessment results"
+          ]
+        },
+        {
+          "number": "04",
+          "title": "Launch and monitor",
+          "description": "Staged rollout with per-step tracing, cost monitoring and alerting, plus documentation and handover.",
+          "deliverables": [
+            "Monitoring dashboards",
+            "Runbooks and IP transfer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ai-agent-faqs",
+      "type": "faq",
+      "eyebrow": "Frequently Asked",
+      "title": "Questions about AI agent development",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "variant": "indexed",
+      "items": [
+        {
+          "question": "What's the minimum budget for a useful AI agent?",
+          "answer": "$45,000 for a single agent with a defined tool set and well-scoped workflow. Simpler automation workflows that don't need adaptive decision-making are achievable for $15,000–$30,000."
+        },
+        {
+          "question": "How long does AI agent development take?",
+          "answer": "12–40 weeks depending on complexity. Single-agent: 12–24 weeks. Multi-agent enterprise platform: 24–40 weeks."
+        },
+        {
+          "question": "What frameworks do you use?",
+          "answer": "LangGraph for stateful multi-step agents, LangChain agents, AutoGen for multi-agent coordination, and custom orchestration where specific reliability requirements call for it. Framework choice follows the agent's complexity."
+        },
+        {
+          "question": "Can you build an agent that works with Salesforce, SAP or ServiceNow?",
+          "answer": "Yes — CRM and ERP integration is one of the most common agent tool types. We scope the specific API capabilities needed during discovery."
+        },
+        {
+          "question": "How do you test that an agent works before deployment?",
+          "answer": "With a task-completion test suite: representative tasks with defined success criteria, evaluated for end-to-end completion rate, step accuracy, error handling and prompt-injection resistance."
+        },
+        {
+          "question": "What's the difference between a single agent and a multi-agent system?",
+          "answer": "A single agent performs all tasks with its own tool set. A multi-agent system uses a supervisor agent that decomposes tasks and delegates to specialist agents. Multi-agent systems cost 2–3x more but handle significantly more complex work."
+        }
+      ]
+    },
+    {
+      "id": "consultation",
+      "type": "cta",
+      "eyebrow": "Start With a Free Scoping Session",
+      "heading": "Scope your first production AI agent",
+      "text": "Describe the workflow you want an agent to handle and the systems it must touch. An engineer will reply within one business day with an architecture outline and a budget range.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "fade-scale",
+      "primaryCta": {
+        "label": "Get Your Free Agent Scoping Session",
+        "href": "/contact/"
+      },
+      "secondaryCta": {
+        "label": "Email the Engineering Team",
+        "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
+      },
+      "contactEmail": "hello@clickmastersartificialintelligencecompany.com",
+      "variant": "orbital"
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "AI Agent Development Cost",
+      "description": "Detailed pricing by agent type and complexity.",
+      "href": "/ai-agent-development-cost/"
+    },
+    {
+      "title": "AI Automation Services",
+      "description": "Fixed-path automation for document and ticket workflows.",
+      "href": "/ai-automation-services/"
+    },
+    {
+      "title": "LLM Development Company",
+      "description": "Production LLM integration, RAG and fine-tuning.",
+      "href": "/llm-development-company/"
+    },
+    {
+      "title": "Agentic AI Workflow Glossary Entry",
+      "description": "How AI agents carry out multi-step workflows.",
+      "href": "/glossary/agentic-ai-workflow/"
+    }
+  ]
+}

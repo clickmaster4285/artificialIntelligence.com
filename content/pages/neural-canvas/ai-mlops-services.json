@@ -1,0 +1,356 @@
+{
+  "slug": "ai-mlops-services",
+  "status": "published",
+  "seo": {
+    "title": "MLOps Services | ClickMasters AI",
+    "description": "MLOps services: experiment tracking, model registry, CI/CD for ML, drift monitoring, feature stores and automated retraining. From $15K. Fixed-price, full IP.",
+    "canonical": "/ai-mlops-services/",
+    "primaryKeyword": "mlops services",
+    "secondaryKeywords": [
+      "mlops consulting",
+      "mlops platform implementation",
+      "ml model monitoring",
+      "ci/cd for machine learning",
+      "mlops company"
+    ],
+    "noIndex": false,
+    "noFollow": false
+  },
+  "schema": {
+    "service": true,
+    "organization": true,
+    "breadcrumbs": true,
+    "faq": true
+  },
+  "appearance": {
+    "template": "neural-canvas",
+    "accent": "blue",
+    "background": "neural-grid",
+    "grain": true,
+    "glow": true,
+    "scrollProgress": true,
+    "customCursor": true
+  },
+  "hero": {
+    "eyebrow": "Operate ML Like Software",
+    "title": "MLOps Services",
+    "highlightedText": "From Tracking to Full Platform",
+    "description": "ClickMasters builds the MLOps infrastructure that keeps machine learning reliable after launch — experiment tracking and model registries for reproducibility, CI/CD pipelines for safe model releases, drift monitoring that catches accuracy decay, feature stores for training-serving consistency and automated retraining. We scope MLOps to your team's stage and maintenance capacity, from a first tracking server to a full enterprise platform.",
+    "primaryCta": {
+      "label": "Get a Free MLOps Assessment",
+      "href": "#consultation",
+      "ariaLabel": "Get a free MLOps assessment with 24-hour response"
+    },
+    "secondaryCta": {
+      "label": "Explore MLOps Components",
+      "href": "#capabilities"
+    },
+    "trustText": "Fixed-price · Full IP ownership · MLflow, SageMaker, Vertex AI",
+    "metrics": [
+      {
+        "value": "$40K–$80K",
+        "label": "Typical enterprise project",
+        "description": "Experiment tracking + registry + CI/CD"
+      },
+      {
+        "value": "$20K–$250K",
+        "label": "Total cost range",
+        "description": "Minimal → Enterprise platform"
+      },
+      {
+        "value": "24h",
+        "label": "Initial response",
+        "description": "Talk to an AI engineer within one business day"
+      }
+    ],
+    "visual": {
+      "type": "neural-sphere",
+      "label": "MLOps stack",
+      "modelNames": [
+        "Tracking",
+        "Registry",
+        "CI/CD",
+        "Monitoring",
+        "Retraining"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "capabilities",
+      "type": "feature-grid",
+      "eyebrow": "What We Build",
+      "title": "MLOps components that keep models accurate in production",
+      "description": "Adopt components incrementally — start where the pain is greatest.",
+      "tone": "default",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "bento",
+      "columns": 2,
+      "items": [
+        {
+          "title": "Experiment Tracking",
+          "description": "MLflow-based tracking of parameters, metrics, datasets and artifacts so every model result can be reproduced and compared.",
+          "icon": "chart",
+          "label": "Reproducibility",
+          "metric": "$20K–$40K · 5–9 weeks"
+        },
+        {
+          "title": "Model Registry and Versioning",
+          "description": "A single source of truth for which model version is in which environment, with approval workflow and audit history.",
+          "icon": "layers",
+          "label": "Governance",
+          "metric": "$15K–$35K · 4–8 weeks",
+          "link": {
+            "label": "What is model versioning?",
+            "href": "/glossary/model-versioning/"
+          }
+        },
+        {
+          "title": "CI/CD Pipelines for ML",
+          "description": "Automated testing, validation gates and staged rollout for model releases — the same discipline as software delivery.",
+          "icon": "workflow",
+          "label": "Releases",
+          "metric": "$25K–$55K · 6–12 weeks"
+        },
+        {
+          "title": "Drift Monitoring and Alerting",
+          "description": "Data and prediction drift detection with alerts when production accuracy is at risk, before business metrics suffer.",
+          "icon": "shield",
+          "label": "Monitoring",
+          "metric": "$20K–$50K · 6–12 weeks",
+          "link": {
+            "label": "What is model drift?",
+            "href": "/glossary/model-drift/"
+          }
+        },
+        {
+          "title": "Feature Stores",
+          "description": "Feast or custom feature stores that serve the same feature definitions to training and inference, eliminating training-serving skew.",
+          "icon": "database",
+          "label": "Consistency",
+          "metric": "$30K–$75K · 8–16 weeks",
+          "link": {
+            "label": "What is a feature store?",
+            "href": "/glossary/feature-store/"
+          }
+        },
+        {
+          "title": "Automated Retraining Pipelines",
+          "description": "Retraining pipelines triggered by schedule or drift, with validation gates before a new model version is promoted — model freshness without manual work.",
+          "icon": "cloud",
+          "label": "Automation",
+          "metric": "$25K–$60K · 7–14 weeks"
+        }
+      ]
+    },
+    {
+      "id": "scoping-mlops",
+      "type": "rich-text",
+      "eyebrow": "Right-Sized MLOps",
+      "title": "Scope MLOps to your stage, not to a vendor diagram",
+      "tone": "surface",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Start with the fastest-ROI component",
+          "paragraphs": [
+            "Experiment tracking typically delivers the fastest return at the lowest implementation cost — hours recovered every week from reproducibility work. For teams with no MLOps today, we usually start here."
+          ]
+        },
+        {
+          "heading": "MLflow or cloud-native?",
+          "paragraphs": [
+            "Cloud-native MLOps (SageMaker, Vertex AI) reduces engineering overhead and integrates with managed services; MLflow is cloud-agnostic with broad community support. We model total cost of ownership for your usage patterns before recommending one."
+          ]
+        },
+        {
+          "heading": "Designed for your maintenance capacity",
+          "paragraphs": [
+            "Managed cloud MLOps needs less ongoing maintenance than self-hosted open-source stacks. We design for the platform engineering capacity your team realistically has."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing-reference",
+      "type": "table",
+      "eyebrow": "Transparent Investment",
+      "title": "MLOps services pricing reference",
+      "description": "Fixed-price ranges by MLOps component.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "pricing",
+      "columns": [
+        {
+          "key": "component",
+          "label": "MLOps Component",
+          "align": "left",
+          "width": "40%"
+        },
+        {
+          "key": "cost",
+          "label": "Cost Range",
+          "align": "left",
+          "width": "30%"
+        },
+        {
+          "key": "timeline",
+          "label": "Timeline",
+          "align": "left",
+          "width": "30%"
+        }
+      ],
+      "rows": [
+        {
+          "id": "tracking",
+          "cells": {
+            "component": "Experiment tracking (MLflow setup)",
+            "cost": "$20,000 – $40,000",
+            "timeline": "5–9 weeks"
+          }
+        },
+        {
+          "id": "registry",
+          "cells": {
+            "component": "Model registry + versioning",
+            "cost": "$15,000 – $35,000",
+            "timeline": "4–8 weeks"
+          }
+        },
+        {
+          "id": "cicd",
+          "cells": {
+            "component": "CI/CD pipeline for ML models",
+            "cost": "$25,000 – $55,000",
+            "timeline": "6–12 weeks"
+          },
+          "highlighted": true,
+          "badge": "Most common"
+        },
+        {
+          "id": "drift",
+          "cells": {
+            "component": "Drift monitoring + alerting",
+            "cost": "$20,000 – $50,000",
+            "timeline": "6–12 weeks"
+          }
+        },
+        {
+          "id": "feature-store",
+          "cells": {
+            "component": "Feature store (Feast/custom)",
+            "cost": "$30,000 – $75,000",
+            "timeline": "8–16 weeks"
+          }
+        },
+        {
+          "id": "cloud-mlops",
+          "cells": {
+            "component": "Cloud platform MLOps (SageMaker/Vertex)",
+            "cost": "$40,000 – $120,000",
+            "timeline": "10–20 weeks"
+          }
+        },
+        {
+          "id": "audit",
+          "cells": {
+            "component": "MLOps audit + remediation",
+            "cost": "$15,000 – $45,000",
+            "timeline": "4–10 weeks"
+          }
+        },
+        {
+          "id": "platform",
+          "cells": {
+            "component": "Full MLOps platform (all components)",
+            "cost": "$80,000 – $250,000",
+            "timeline": "16–32 weeks"
+          }
+        }
+      ],
+      "note": "Ranges reflect ClickMasters' fixed-price project fees. Ongoing hosting and tooling costs are separate and modeled during discovery.",
+      "cta": {
+        "label": "See the full MLOps cost breakdown",
+        "href": "/mlops-services-cost/"
+      }
+    },
+    {
+      "id": "mlops-faqs",
+      "type": "faq",
+      "eyebrow": "Frequently Asked",
+      "title": "Questions about MLOps services",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "variant": "indexed",
+      "items": [
+        {
+          "question": "How much do MLOps services cost?",
+          "answer": "$20,000–$250,000 depending on scope. The most common enterprise engagement — experiment tracking, a model registry and basic CI/CD for ML — runs $40,000–$80,000; a full platform with drift monitoring and automated retraining runs $80,000–$250,000."
+        },
+        {
+          "question": "How long does MLOps implementation take?",
+          "answer": "4–32 weeks depending on scope."
+        },
+        {
+          "question": "Does MLOps cost scale with the number of models?",
+          "answer": "Some components scale with model count (pipeline configuration per model); others are largely fixed (tracking server, serving infrastructure). We estimate the incremental per-model cost during architecture design."
+        },
+        {
+          "question": "Can you take over existing MLOps that isn't working?",
+          "answer": "Yes. MLOps audits and remediation are a specific engagement type: we diagnose what is failing and either remediate or propose a targeted rebuild."
+        },
+        {
+          "question": "Do we need dedicated platform engineers to maintain MLOps?",
+          "answer": "Managed cloud MLOps (SageMaker, Vertex AI) requires less ongoing maintenance than self-hosted stacks. We design for the maintenance capacity your team actually has."
+        }
+      ]
+    },
+    {
+      "id": "consultation",
+      "type": "cta",
+      "eyebrow": "Start With a Free Assessment",
+      "heading": "Make your models reproducible, monitored and easy to release",
+      "text": "Tell us how many models you run and where releases or accuracy break down. An ML engineer will reply within one business day with a recommended MLOps scope and budget range.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "fade-scale",
+      "primaryCta": {
+        "label": "Get Your Free MLOps Assessment",
+        "href": "/contact/"
+      },
+      "secondaryCta": {
+        "label": "Email the Engineering Team",
+        "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
+      },
+      "contactEmail": "hello@clickmastersartificialintelligencecompany.com",
+      "variant": "orbital"
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "MLOps Services Cost",
+      "description": "Detailed pricing by MLOps component and team stage.",
+      "href": "/mlops-services-cost/"
+    },
+    {
+      "title": "Machine Learning Model Development",
+      "description": "Custom production ML models built on your data.",
+      "href": "/machine-learning-model-development/"
+    },
+    {
+      "title": "AI Data Engineering Services",
+      "description": "Pipelines and feature stores that feed your models.",
+      "href": "/ai-data-engineering-services/"
+    },
+    {
+      "title": "MLOps Glossary Entry",
+      "description": "What MLOps is and why production ML needs it.",
+      "href": "/glossary/mlops/"
+    }
+  ]
+}

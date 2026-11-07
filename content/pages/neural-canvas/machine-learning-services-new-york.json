@@ -36,7 +36,7 @@
     "eyebrow": "New York Machine Learning Services",
     "title": "Machine Learning Services — New York",
     "highlightedText": "Fraud Detection · Credit Risk · Churn · Demand Forecasting",
-    "description": "ClickMasters builds custom machine learning models for New York's enterprise organizations — fraud detection and credit risk for Wall Street and FinTech, patient risk stratification for NYC health systems, demand forecasting for New York's massive retail and logistics operations, and NLP classification for New York's legal and media sectors — with the SR 11-7 validation documentation, FCRA compliance, and HIPAA-compliant data handling that New York's regulated industries require. From $30,000. Fixed-price. Full IP. 24-hour response.",
+    "description": "ClickMasters builds custom machine learning models for New York's enterprise organizations — fraud detection and credit risk for Wall Street and FinTech, patient risk stratification for NYC health systems, demand forecasting for New York's massive retail and logistics operations, and NLP classification for New York's legal and media sectors — with the SR 26-2 validation documentation, FCRA compliance, and HIPAA-compliant data handling that New York's regulated industries require. From $30,000. Fixed-price. Full IP. 24-hour response.",
     "primaryCta": {
       "label": "Get a Free Machine Learning Consultation — New York — 24-Hour Response",
       "href": "#cta",
@@ -46,7 +46,7 @@
       "label": "Explore ML Model Development",
       "href": "/machine-learning-model-development/"
     },
-    "trustText": "SR 11-7 · FCRA · HIPAA compliant · Fixed-price · Full IP · 24-hour response",
+    "trustText": "SR 26-2 · FCRA · HIPAA compliant · Fixed-price · Full IP · 24-hour response",
     "metrics": [
       {
         "value": "From $30,000",
@@ -54,7 +54,7 @@
         "description": "Fraud · Credit · Churn · Forecasting"
       },
       {
-        "value": "SR 11-7 · FCRA · HIPAA",
+        "value": "SR 26-2 · FCRA · HIPAA",
         "label": "Regulatory compliance",
         "description": "NYC enterprise standards"
       },
@@ -91,7 +91,7 @@
       "items": [
         {
           "title": "Financial Services ML — New York's Largest ML Market",
-          "description": "New York's financial services sector — investment banks, commercial banks, hedge funds, asset managers, insurance companies, and FinTech — is the US's most ML-active industry segment. Fraud detection: real-time ML scoring transactions, card-not-present fraud, account takeover attempts, and synthetic identity fraud — trained on New York-specific transaction patterns. Credit risk scoring: ML models for commercial and consumer credit decision support with FCRA adverse action reason code integration (SHAP-based), ECOA disparate impact testing, and SR 11-7 model validation documentation for OCC-regulated institutions. Market risk and portfolio analytics: ML models for VaR estimation, portfolio stress testing, and factor exposure analysis. Anti-money laundering: ML-based transaction monitoring augmenting rules-based systems. *All New York financial services ML models delivered with SR 11-7 aligned validation documentation as standard for banking clients.* Cost: $50,000–$145,000 | Timeline: 12–26 weeks.",
+          "description": "New York's financial services sector — investment banks, commercial banks, hedge funds, asset managers, insurance companies, and FinTech — is the US's most ML-active industry segment. Fraud detection: real-time ML scoring transactions, card-not-present fraud, account takeover attempts, and synthetic identity fraud — trained on New York-specific transaction patterns. Credit risk scoring: ML models for commercial and consumer credit decision support with FCRA adverse action reason code integration (SHAP-based), ECOA disparate impact testing, and SR 26-2 model validation documentation for OCC-regulated institutions. Market risk and portfolio analytics: ML models for VaR estimation, portfolio stress testing, and factor exposure analysis. Anti-money laundering: ML-based transaction monitoring augmenting rules-based systems. *All New York financial services ML models delivered with SR 26-2 aligned validation documentation as standard for banking clients.* Cost: $50,000–$145,000 | Timeline: 12–26 weeks.",
           "icon": "building",
           "label": "Financial Services",
           "metric": "$50K–$145K"
@@ -139,10 +139,10 @@
       "columns": 4,
       "items": [
         {
-          "title": "SR 11-7",
+          "title": "SR 26-2",
           "description": "Federal Reserve and OCC model risk management guidance for ML models at New York banks — model validation methodology, champion/challenger tests, backtesting, monitoring design, and documentation that supports OCC examination. Standard deliverable for all ClickMasters banking ML engagements.",
           "icon": "file-check",
-          "label": "SR 11-7",
+          "label": "SR 26-2",
           "metric": "Model validation"
         },
         {
@@ -212,7 +212,7 @@
             "project": "Financial fraud detection",
             "price": "$50,000 – $145,000",
             "timeline": "12–26 weeks",
-            "compliance": "SR 11-7, BSA/AML"
+            "compliance": "SR 26-2, BSA/AML"
           }
         },
         {
@@ -221,7 +221,7 @@
             "project": "Credit risk scoring + FCRA",
             "price": "$55,000 – $145,000",
             "timeline": "14–24 weeks",
-            "compliance": "SR 11-7, FCRA, ECOA"
+            "compliance": "SR 26-2, FCRA, ECOA"
           }
         },
         {
@@ -275,10 +275,10 @@
       "columns": 2,
       "items": [
         {
-          "title": "We need SR 11-7 model documentation that will pass OCC examination — can ClickMasters deliver that?",
-          "description": "SR 11-7 model validation documentation is a standard ClickMasters deliverable for New York banking ML. The technical documentation covers validation methodology, test results, monitoring design, and backtesting evidence.",
+          "title": "We need SR 26-2 model documentation that will pass OCC examination — can ClickMasters deliver that?",
+          "description": "SR 26-2 model validation documentation is a standard ClickMasters deliverable for New York banking ML. The technical documentation covers validation methodology, test results, monitoring design, and backtesting evidence.",
           "icon": "message-circle",
-          "label": "SR 11-7",
+          "label": "SR 26-2",
           "metric": "Standard deliverable"
         },
         {
@@ -290,7 +290,7 @@
         },
         {
           "title": "How long does ML development take for New York financial services clients?",
-          "description": "12–26 weeks for most financial services ML, which reflects the extended validation and documentation scope that SR 11-7 requires.",
+          "description": "12–26 weeks for most financial services ML, which reflects the extended validation and documentation scope that SR 26-2 requires.",
           "icon": "clock",
           "label": "Timeline",
           "metric": "12–26 weeks"
@@ -316,7 +316,7 @@
       "items": [
         {
           "question": "Can ClickMasters provide ML models that our New York banking regulators will accept?",
-          "answer": "ClickMasters provides technically accurate validation documentation aligned with SR 11-7. Regulatory strategy and legal interpretation of examination outcomes require qualified financial services counsel."
+          "answer": "ClickMasters provides technically accurate validation documentation aligned with SR 26-2. Regulatory strategy and legal interpretation of examination outcomes require qualified financial services counsel."
         },
         {
           "question": "Does ClickMasters sign a BAA for NYC healthcare ML projects?",
@@ -345,7 +345,7 @@
       "type": "cta",
       "eyebrow": "Ready to Start",
       "title": "Ready to Build Machine Learning Models for Your New York Organization?",
-      "description": "ClickMasters builds ML systems for New York's most regulated industries — with SR 11-7, FCRA, HIPAA, and NYC Local Law 144 compliance built into every applicable engagement.",
+      "description": "ClickMasters builds ML systems for New York's most regulated industries — with SR 26-2, FCRA, HIPAA, and NYC Local Law 144 compliance built into every applicable engagement.",
       "tone": "accent",
       "width": "wide",
       "animation": "fade",
@@ -357,7 +357,7 @@
         "label": "Email Us Directly",
         "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
       },
-      "trustText": "ML development from $30,000 | Fixed-price | Full IP | SR 11-7, FCRA, HIPAA compliant | 24-hour response"
+      "trustText": "ML development from $30,000 | Fixed-price | Full IP | SR 26-2, FCRA, HIPAA compliant | 24-hour response"
     }
   ]
 }

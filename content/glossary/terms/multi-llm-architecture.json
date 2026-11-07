@@ -299,8 +299,8 @@
       "publisher": "arXiv"
     },
     {
-      "label": "LLM Routing Strategies and Best Practices",
-      "href": "https://www.gartner.com/en/multi-llm-architecture",
+      "label": "Market Overview for AI Gateways",
+      "href": "https://www.gartner.com/en/documents/7855181",
       "publisher": "Gartner"
     }
   ],
@@ -308,7 +308,7 @@
   "additionalResources": [
     {
       "label": "LLM Integration Services",
-      "href": "/llm-integration-services/"
+      "href": "/llm-development-company/"
     },
     {
       "label": "What is Prompt Routing?",

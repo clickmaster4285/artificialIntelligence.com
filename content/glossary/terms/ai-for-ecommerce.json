@@ -270,8 +270,8 @@
 
   "references": [
     {
-      "label": "Amazon's Recommendation Engine: A Case Study",
-      "href": "https://www.amazon.science/publications/amazon-recommendation-engine",
+      "label": "The History of Amazon's Recommendation Algorithm",
+      "href": "https://www.amazon.science/the-history-of-amazons-recommendation-algorithm",
       "publisher": "Amazon Science"
     },
     {

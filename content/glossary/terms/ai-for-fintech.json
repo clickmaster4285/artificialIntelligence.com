@@ -19,7 +19,7 @@
   ],
   "readingTime": "6 min read",
   "publishedAt": "2026-08-13",
-  "updatedAt": "2026-08-13",
+  "updatedAt": "2026-11-07",
 
   "seo": {
     "title": "What is AI for FinTech? Applications Guide",
@@ -67,16 +67,16 @@
       "id": "regulatory-requirements",
       "eyebrow": "Compliance",
       "title": "FinTech-specific model validation requirements",
-      "description": "SR 11-7, OCC guidance, and FCRA require documented validation, ongoing monitoring, and explainability for credit and risk decisions.",
+      "description": "Model risk management guidance (Federal Reserve SR 26-2, which replaced SR 11-7 in April 2026), OCC guidance, and FCRA shape how credit and risk models must be validated, monitored, and explained.",
       "content": [
         {
           "type": "paragraph",
-          "text": "Financial services AI faces regulatory model risk management obligations (Federal Reserve SR 11-7, OCC guidance) requiring documented model validation, ongoing performance monitoring, and explainability for consequential credit and risk decisions. These requirements mean FinTech AI must include more extensive documentation, validation evidence, and explainability tooling than AI deployed in less regulated contexts — ClickMasters builds these requirements into FinTech AI development from the start, not retrofitted during a regulatory exam."
+          "text": "Financial services AI faces regulatory model risk management obligations (Federal Reserve SR 26-2 — the April 2026 interagency guidance from the Federal Reserve, OCC, and FDIC that superseded SR 11-7 — and related OCC guidance) requiring documented model validation, ongoing performance monitoring, and explainability for consequential credit and risk decisions. These requirements mean FinTech AI must include more extensive documentation, validation evidence, and explainability tooling than AI deployed in less regulated contexts — ClickMasters builds these requirements into FinTech AI development from the start, not retrofitted during a regulatory exam."
         },
         {
           "type": "bullet-list",
           "items": [
-            "SR 11-7 — Federal Reserve and OCC model risk management guidance.",
+            "SR 26-2 — Federal Reserve, OCC, and FDIC revised model risk management guidance (superseded SR 11-7 in April 2026).",
             "FCRA compliance — adverse action reasons for consumer credit decisions.",
             "BSA/AML — transaction monitoring and suspicious activity reporting.",
             "SEC oversight — market manipulation detection and surveillance.",
@@ -98,12 +98,12 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "ClickMasters builds FinTech AI with regulatory compliance integrated into development — SR 11-7 aligned model validation documentation, FCRA compliance for credit model inputs, BSA/AML regulatory context for transaction monitoring, and SEC market manipulation detection contexts. Every FinTech AI project includes explainability tooling appropriate to the regulatory context and the consequence of the decisions the model influences."
+          "text": "ClickMasters builds FinTech AI with regulatory compliance integrated into development — SR 26-2 aligned model validation documentation, FCRA compliance for credit model inputs, BSA/AML regulatory context for transaction monitoring, and SEC market manipulation detection contexts. Every FinTech AI project includes explainability tooling appropriate to the regulatory context and the consequence of the decisions the model influences."
         },
         {
           "type": "bullet-list",
           "items": [
-            "SR 11-7 aligned — validation documentation built from the start.",
+            "SR 26-2 aligned — validation documentation built from the start.",
             "FCRA compliance — credit model inputs and adverse action reasons.",
             "BSA/AML context — transaction monitoring with regulatory requirements.",
             "SEC oversight — market manipulation and surveillance detection.",
@@ -123,7 +123,7 @@
           "headers": ["Project Type", "Price Range", "Timeline"],
           "rows": [
             ["Fraud detection or AML transaction monitoring model", "$40,000 – $100,000", "12–20 weeks"],
-            ["Credit risk scoring model with SR 11-7 validation documentation", "$55,000 – $130,000", "14–22 weeks"],
+            ["Credit risk scoring model with SR 26-2 validation documentation", "$55,000 – $130,000", "14–22 weeks"],
             ["LLM-powered financial guidance or personalization system", "$45,000 – $110,000", "12–20 weeks"]
           ]
         },
@@ -143,7 +143,7 @@
         {
           "type": "bullet-list",
           "items": [
-            "\"How do we explain AI credit decisions to regulators and applicants?\" — ClickMasters builds SHAP-based explainability as standard for credit models, producing adverse action reason codes and model documentation that satisfies SR 11-7 and FCRA obligations.",
+            "\"How do we explain AI credit decisions to regulators and applicants?\" — ClickMasters builds SHAP-based explainability as standard for credit models, producing adverse action reason codes and model documentation that supports SR 26-2 and FCRA obligations.",
             "\"How much will this cost?\" — $40,000–$130,000 depending on use case and regulatory documentation requirements. Fixed quote after Discovery.",
             "\"Can ML models replace our rules-based AML system?\" — Often augment rather than replace is the right answer — ClickMasters frequently builds hybrid systems where ML risk scoring supplements existing rules, improving coverage of novel patterns while maintaining the documented, auditable logic regulators expect.",
             "\"Is explainability required for all FinTech AI, or only credit decisions?\" — Explainability requirements are strongest for consumer credit decisions (FCRA adverse action reasons); other FinTech AI contexts have varying documentation and auditability requirements that ClickMasters scopes for your specific regulatory context."
@@ -218,8 +218,8 @@
     "title": "Frequently asked questions about AI for FinTech",
     "items": [
       {
-        "question": "What is SR 11-7 and why does it matter for FinTech AI?",
-        "answer": "SR 11-7 is the Federal Reserve and OCC's model risk management guidance, requiring banks to validate, document, and monitor model performance for models used in risk and credit decisions — including AI/ML models."
+        "question": "What is SR 26-2 and why does it matter for FinTech AI?",
+        "answer": "SR 26-2 is the Revised Guidance on Model Risk Management issued on April 17, 2026 by the Federal Reserve, OCC, and FDIC. It supersedes and replaces SR 11-7 (2011) and SR 21-8, and sets supervisory expectations for how banking organizations manage the risk of models used in risk and credit decisions — which includes AI/ML models. The Federal Reserve notes it is most relevant to banking organizations with over $30 billion in total assets."
       },
       {
         "question": "Can AI improve fraud detection accuracy beyond our current rules-based system?",
@@ -239,7 +239,7 @@
       },
       {
         "question": "Does ClickMasters have experience with financial services regulatory contexts?",
-        "answer": "Yes — ClickMasters builds FinTech AI with SR 11-7, FCRA, BSA/AML, and related regulatory contexts in mind, though legal compliance determinations should involve qualified legal counsel."
+        "answer": "Yes — ClickMasters builds FinTech AI with SR 26-2, FCRA, BSA/AML, and related regulatory contexts in mind, though legal compliance determinations should involve qualified legal counsel."
       },
       {
         "question": "What is the difference between rules-based and ML-based AML systems?",
@@ -266,8 +266,8 @@
 
   "references": [
     {
-      "label": "Federal Reserve SR 11-7: Model Risk Management Guidance",
-      "href": "https://www.federalreserve.gov/supervisionreg/srletters/sr1107a1.pdf",
+      "label": "SR 26-2: Revised Guidance on Model Risk Management",
+      "href": "https://www.federalreserve.gov/supervisionreg/srletters/SR2602.htm",
       "publisher": "Federal Reserve"
     },
     {

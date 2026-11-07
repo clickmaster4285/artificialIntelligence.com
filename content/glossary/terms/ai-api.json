@@ -270,12 +270,12 @@
   "references": [
     {
       "label": "OpenAI API Documentation",
-      "href": "https://platform.openai.com/docs",
+      "href": "https://developers.openai.com/api/docs",
       "publisher": "OpenAI"
     },
     {
       "label": "Anthropic Claude API Documentation",
-      "href": "https://docs.anthropic.com/claude/reference",
+      "href": "https://platform.claude.com/docs/en/api/overview",
       "publisher": "Anthropic"
     }
   ],
