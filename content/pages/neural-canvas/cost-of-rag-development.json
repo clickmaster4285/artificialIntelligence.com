@@ -277,7 +277,7 @@
           "links": [
             {
               "label": "Explore AI Model Fine-Tuning Services",
-              "href": "/ai-model-fine-tuning-services/"
+              "href": "/ai-model-fine-tuning/"
             }
           ]
         }
@@ -646,7 +646,7 @@
     {
       "title": "LLM Integration Services",
       "description": "Integrate leading language models into your existing products and workflows.",
-      "href": "/llm-integration-services/"
+      "href": "/llm-development-company/"
     },
     {
       "title": "LLM Development Company",
@@ -661,7 +661,7 @@
     {
       "title": "Cost of Machine Learning Development",
       "description": "Budgeting for custom ML model development and deployment.",
-      "href": "/cost-of-machine-learning-development/"
+      "href": "/machine-learning-model-development-cost/"
     },
     {
       "title": "AI Data Engineering Services",

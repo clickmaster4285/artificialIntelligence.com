@@ -278,12 +278,12 @@
   "references": [
     {
       "label": "OpenAI Structured Outputs Documentation",
-      "href": "https://platform.openai.com/docs/guides/structured-outputs",
+      "href": "https://developers.openai.com/api/docs/guides/structured-outputs",
       "publisher": "OpenAI"
     },
     {
       "label": "Anthropic Tool Use and JSON Mode Documentation",
-      "href": "https://docs.anthropic.com/claude/docs/tool-use",
+      "href": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview",
       "publisher": "Anthropic"
     }
   ],

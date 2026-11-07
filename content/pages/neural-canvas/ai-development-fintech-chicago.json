@@ -3,7 +3,7 @@
   "status": "published",
   "seo": {
     "title": "AI Development for FinTech Chicago | ClickMasters AI",
-    "description": "ClickMasters builds AI for Chicago FinTech — derivatives analytics, fraud detection, credit scoring, AML. SR 11-7 compliant. From $50K. 24-hour response.",
+    "description": "ClickMasters builds AI for Chicago FinTech — derivatives analytics, fraud detection, credit scoring, AML. SR 26-2 compliant. From $50K. 24-hour response.",
     "canonical": "/ai-development-fintech-chicago/",
     "primaryKeyword": "ai development fintech chicago",
     "secondaryKeywords": [
@@ -36,7 +36,7 @@
     "eyebrow": "Chicago FinTech AI Development",
     "title": "AI Development for FinTech — Chicago",
     "highlightedText": "Derivatives · Fraud Detection · Credit Scoring · AML · Insurance",
-    "description": "ClickMasters builds custom AI for Chicago's financial technology and financial services sector — derivatives and trading analytics, fraud detection and AML, credit risk modeling, insurance AI, and financial document intelligence — with SR 11-7 model validation documentation, FCRA adverse action compliance, and the CFTC/NFA regulatory awareness that Chicago's unique position as the US derivatives capital demands. Chicago's FinTech AI market is distinctive: unlike New York (which leans toward investment banking and asset management AI) or San Francisco (which leans toward consumer fintech), Chicago's AI demand is shaped by derivatives markets, futures exchanges, commodities trading, and a significant insurance concentration — AI use cases that few other cities share at Chicago's scale. Chicago FinTech AI from $50,000. SR 11-7 compliant. Fixed-price. Full IP. 24-hour response.",
+    "description": "ClickMasters builds custom AI for Chicago's financial technology and financial services sector — derivatives and trading analytics, fraud detection and AML, credit risk modeling, insurance AI, and financial document intelligence — with SR 26-2 model validation documentation, FCRA adverse action compliance, and the CFTC/NFA regulatory awareness that Chicago's unique position as the US derivatives capital demands. Chicago's FinTech AI market is distinctive: unlike New York (which leans toward investment banking and asset management AI) or San Francisco (which leans toward consumer fintech), Chicago's AI demand is shaped by derivatives markets, futures exchanges, commodities trading, and a significant insurance concentration — AI use cases that few other cities share at Chicago's scale. Chicago FinTech AI from $50,000. SR 26-2 compliant. Fixed-price. Full IP. 24-hour response.",
     "primaryCta": {
       "label": "Get a Free Chicago FinTech AI Consultation — 24-Hour Response",
       "href": "#cta",
@@ -46,7 +46,7 @@
       "label": "Explore AI for FinTech",
       "href": "/glossary/ai-for-fintech/"
     },
-    "trustText": "SR 11-7 · FCRA · CFTC/NFA aware · Fixed-price · Full IP · 24-hour response",
+    "trustText": "SR 26-2 · FCRA · CFTC/NFA aware · Fixed-price · Full IP · 24-hour response",
     "metrics": [
       {
         "value": "From $50,000",
@@ -54,7 +54,7 @@
         "description": "Derivatives · Fraud · Insurance"
       },
       {
-        "value": "CFTC · NFA · SR 11-7",
+        "value": "CFTC · NFA · SR 26-2",
         "label": "Regulatory compliance",
         "description": "Chicago-specific"
       },
@@ -105,7 +105,7 @@
         },
         {
           "title": "Credit Risk and Underwriting AI",
-          "description": "ML models for commercial and consumer credit risk scoring with FCRA adverse action reason codes, ECOA fair lending disparate impact testing, and SR 11-7 model validation documentation. Relevant to Chicago's substantial community banking sector, credit unions, and commercial lending operations. Typical cost: $55,000–$135,000 | Timeline: 14–22 weeks.",
+          "description": "ML models for commercial and consumer credit risk scoring with FCRA adverse action reason codes, ECOA fair lending disparate impact testing, and SR 26-2 model validation documentation. Relevant to Chicago's substantial community banking sector, credit unions, and commercial lending operations. Typical cost: $55,000–$135,000 | Timeline: 14–22 weeks.",
           "icon": "scale",
           "label": "Credit Risk",
           "metric": "$55K–$135K"
@@ -153,10 +153,10 @@
           "metric": "Regulation AT"
         },
         {
-          "title": "Federal Reserve / OCC (SR 11-7)",
-          "description": "Model risk management guidance applying to Chicago banks' ML models used in credit, fraud, and risk decisions. ClickMasters delivers SR 11-7 aligned model validation documentation as standard for all banking ML clients.",
+          "title": "Federal Reserve / OCC (SR 26-2)",
+          "description": "Model risk management guidance applying to Chicago banks' ML models used in credit, fraud, and risk decisions. ClickMasters delivers SR 26-2 aligned model validation documentation as standard for all banking ML clients.",
           "icon": "file-check",
-          "label": "SR 11-7",
+          "label": "SR 26-2",
           "metric": "Model validation"
         },
         {
@@ -228,7 +228,7 @@
             "project": "Fraud detection",
             "price": "$50,000 – $130,000",
             "timeline": "12–22 weeks",
-            "compliance": "BSA/AML, SR 11-7"
+            "compliance": "BSA/AML, SR 26-2"
           }
         },
         {
@@ -237,7 +237,7 @@
             "project": "Credit risk model + FCRA",
             "price": "$55,000 – $135,000",
             "timeline": "14–22 weeks",
-            "compliance": "SR 11-7, FCRA"
+            "compliance": "SR 26-2, FCRA"
           }
         },
         {
@@ -283,10 +283,10 @@
       "items": [
         {
           "title": "Chicago's financial firms have very specific regulatory expectations from their AI vendors — can ClickMasters meet them?",
-          "description": "ClickMasters delivers SR 11-7 model validation documentation, FCRA adverse action reason codes, CFTC algorithmic trading compliance awareness, and NFA reporting context — the regulatory specifics that Chicago's financial regulators and internal compliance teams require.",
+          "description": "ClickMasters delivers SR 26-2 model validation documentation, FCRA adverse action reason codes, CFTC algorithmic trading compliance awareness, and NFA reporting context — the regulatory specifics that Chicago's financial regulators and internal compliance teams require.",
           "icon": "message-circle",
           "label": "Regulatory compliance",
-          "metric": "CFTC · SR 11-7 · FCRA"
+          "metric": "CFTC · SR 26-2 · FCRA"
         },
         {
           "title": "How much does FinTech AI development cost in Chicago?",
@@ -330,7 +330,7 @@
           "answer": "Yes — risk analytics, margin calculation optimization, and position monitoring AI for futures clearing are ClickMasters capabilities applicable to Chicago's clearing and prime brokerage sector."
         },
         {
-          "question": "How does ClickMasters deliver SR 11-7 model validation documentation?",
+          "question": "How does ClickMasters deliver SR 26-2 model validation documentation?",
           "answer": "As standard deliverable for banking ML engagements — including validation methodology, champion/challenger test results, backtesting evidence, and performance monitoring design."
         },
         {
@@ -364,7 +364,7 @@
         "label": "Email Us Directly",
         "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
       },
-      "trustText": "Chicago FinTech AI from $45,000 | SR 11-7, FCRA, CFTC/NFA, Illinois DOI aware | Fixed-price | 24-hr response"
+      "trustText": "Chicago FinTech AI from $45,000 | SR 26-2, FCRA, CFTC/NFA, Illinois DOI aware | Fixed-price | 24-hr response"
     }
   ]
 }

@@ -1,0 +1,394 @@
+{
+  "slug": "responsible-ai-compliance",
+  "status": "published",
+  "seo": {
+    "title": "Responsible AI & Compliance Services | ClickMasters AI",
+    "description": "Responsible AI and compliance services: bias testing, explainability, AI governance, NIST AI RMF and EU AI Act readiness documentation. From $15K. Fixed-price.",
+    "canonical": "/responsible-ai-compliance/",
+    "primaryKeyword": "responsible ai compliance services",
+    "secondaryKeywords": [
+      "ai bias audit services",
+      "ai governance framework",
+      "eu ai act readiness",
+      "nist ai rmf alignment",
+      "ai explainability services"
+    ],
+    "noIndex": false,
+    "noFollow": false
+  },
+  "schema": {
+    "service": true,
+    "organization": true,
+    "breadcrumbs": true,
+    "faq": true
+  },
+  "appearance": {
+    "template": "neural-canvas",
+    "accent": "emerald",
+    "background": "neural-grid",
+    "grain": true,
+    "glow": true,
+    "scrollProgress": true,
+    "customCursor": true
+  },
+  "hero": {
+    "eyebrow": "Fair, Explainable, Accountable AI",
+    "title": "Responsible AI & Compliance Services",
+    "highlightedText": "Built In, Not Bolted On",
+    "description": "ClickMasters provides the technical side of responsible AI — bias testing and fairness audits, explainability integration, governance frameworks and the documentation regulators and auditors ask for. We work alongside your legal counsel: we produce tested implementations and evidence, while compliance determinations and legal strategy remain with qualified lawyers.",
+    "primaryCta": {
+      "label": "Get a Free Responsible AI Consultation",
+      "href": "#consultation",
+      "ariaLabel": "Get a free responsible AI consultation with 24-hour response"
+    },
+    "secondaryCta": {
+      "label": "Explore Our Services",
+      "href": "#capabilities"
+    },
+    "trustText": "Fixed-price · Tested implementations · Documentation for audit and board review",
+    "metrics": [
+      {
+        "value": "$30K–$80K",
+        "label": "Typical single-system engagement",
+        "description": "Bias testing + SHAP + governance"
+      },
+      {
+        "value": "$80K–$220K",
+        "label": "Full responsible AI program",
+        "description": "All applicable components"
+      },
+      {
+        "value": "24h",
+        "label": "Initial response",
+        "description": "Talk to an AI engineer"
+      }
+    ],
+    "visual": {
+      "type": "neural-sphere",
+      "label": "Responsible AI",
+      "modelNames": [
+        "Fairness",
+        "Explainability",
+        "Governance",
+        "Documentation",
+        "Monitoring"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "capabilities",
+      "type": "feature-grid",
+      "eyebrow": "What We Deliver",
+      "title": "Responsible AI work that produces evidence, not slogans",
+      "description": "Specific, documented technical analysis and tested implementations applied across the AI lifecycle.",
+      "tone": "default",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "bento",
+      "columns": 2,
+      "items": [
+        {
+          "title": "Bias Testing and Fairness Audits",
+          "description": "Statistical comparison of model outcomes across protected groups using standardized methods such as the 4/5ths rule, significance testing and effect sizes — with documented findings and remediation options.",
+          "icon": "chart",
+          "label": "Fairness",
+          "metric": "$20K–$55K · 6–12 weeks",
+          "link": {
+            "label": "What is AI bias?",
+            "href": "/glossary/ai-bias/"
+          }
+        },
+        {
+          "title": "Explainability Integration",
+          "description": "SHAP-based explanations wired into your models and workflows to support adverse-action reasoning, model validation and reviewer understanding.",
+          "icon": "search",
+          "label": "Explainability",
+          "metric": "$15K–$40K · 4–8 weeks",
+          "link": {
+            "label": "AI explainability tools explained",
+            "href": "/glossary/ai-explainability-tools/"
+          }
+        },
+        {
+          "title": "AI Governance Framework Design",
+          "description": "Policies, processes, roles and accountability for how AI systems are proposed, approved, monitored and retired across your organization.",
+          "icon": "layers",
+          "label": "Governance",
+          "metric": "$30K–$65K · 8–14 weeks",
+          "link": {
+            "label": "What is AI governance?",
+            "href": "/glossary/ai-governance/"
+          }
+        },
+        {
+          "title": "NIST AI RMF Alignment",
+          "description": "Assessment of your AI risk management practices against the NIST AI Risk Management Framework, with a prioritized gap-closure plan.",
+          "icon": "shield",
+          "label": "Risk Management",
+          "metric": "$25K–$60K · 6–12 weeks"
+        },
+        {
+          "title": "EU AI Act Readiness and Technical Documentation",
+          "description": "Readiness assessment for systems that may fall in high-risk categories, and preparation of the technical documentation package used in conformity assessment.",
+          "icon": "workflow",
+          "label": "EU Market",
+          "metric": "$30K–$85K · 8–14 weeks"
+        },
+        {
+          "title": "AI Incident Response Framework",
+          "description": "A defined process for detecting, escalating, investigating and remediating AI failures and harmful outputs.",
+          "icon": "bot",
+          "label": "Operations",
+          "metric": "$15K–$35K · 4–8 weeks",
+          "link": {
+            "label": "What is an AI incident response plan?",
+            "href": "/glossary/ai-incident-response-plan/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "responsible-ai-approach",
+      "type": "rich-text",
+      "eyebrow": "How We Work",
+      "title": "Responsible AI as a design requirement",
+      "tone": "surface",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Earlier is cheaper",
+          "paragraphs": [
+            "Retrofitting responsible AI after deployment typically costs 3–5× as much as building it in. We integrate fairness testing, explainability and documentation into development so issues are found before they reach customers."
+          ]
+        },
+        {
+          "heading": "Scope follows your obligations",
+          "paragraphs": [
+            "The right scope depends on which frameworks apply to your systems — sector rules such as HIPAA or FCRA, the EU AI Act, NYC Local Law 144 for automated employment decision tools, or voluntary alignment with the NIST AI RMF. Shared governance frameworks and documentation templates reduce the marginal cost for each additional system."
+          ]
+        },
+        {
+          "heading": "What we do not provide",
+          "paragraphs": [
+            "We do not make definitive regulatory compliance determinations or provide legal strategy. Those require qualified legal counsel; we supply the technical analysis, implementations and documentation that counsel and auditors rely on."
+          ],
+          "links": [
+            {
+              "label": "What is AI regulatory compliance?",
+              "href": "/glossary/ai-regulatory-compliance/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing-reference",
+      "type": "table",
+      "eyebrow": "Transparent Investment",
+      "title": "Responsible AI pricing reference",
+      "description": "Fixed-price ranges by component. Most single-system engagements combine two or three components.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "pricing",
+      "columns": [
+        {
+          "key": "component",
+          "label": "Component",
+          "align": "left",
+          "width": "40%"
+        },
+        {
+          "key": "cost",
+          "label": "Cost Range",
+          "align": "left",
+          "width": "30%"
+        },
+        {
+          "key": "timeline",
+          "label": "Timeline",
+          "align": "left",
+          "width": "30%"
+        }
+      ],
+      "rows": [
+        {
+          "id": "bias-audit",
+          "cells": {
+            "component": "AI bias testing and fairness audit",
+            "cost": "$20,000 – $55,000",
+            "timeline": "6–12 weeks"
+          },
+          "highlighted": true,
+          "badge": "Most common"
+        },
+        {
+          "id": "shap",
+          "cells": {
+            "component": "SHAP explainability integration",
+            "cost": "$15,000 – $40,000",
+            "timeline": "4–8 weeks"
+          }
+        },
+        {
+          "id": "governance",
+          "cells": {
+            "component": "AI governance framework design",
+            "cost": "$30,000 – $65,000",
+            "timeline": "8–14 weeks"
+          }
+        },
+        {
+          "id": "nist",
+          "cells": {
+            "component": "NIST AI RMF alignment assessment",
+            "cost": "$25,000 – $60,000",
+            "timeline": "6–12 weeks"
+          }
+        },
+        {
+          "id": "eu-readiness",
+          "cells": {
+            "component": "EU AI Act readiness assessment",
+            "cost": "$35,000 – $85,000",
+            "timeline": "8–14 weeks"
+          }
+        },
+        {
+          "id": "eu-docs",
+          "cells": {
+            "component": "EU AI Act technical documentation",
+            "cost": "$30,000 – $80,000",
+            "timeline": "8–14 weeks"
+          }
+        },
+        {
+          "id": "ll144",
+          "cells": {
+            "component": "NYC Local Law 144 bias audit",
+            "cost": "$20,000 – $50,000",
+            "timeline": "5–10 weeks"
+          }
+        },
+        {
+          "id": "model-risk",
+          "cells": {
+            "component": "SR 26-2 model risk documentation",
+            "cost": "$20,000 – $65,000",
+            "timeline": "4–10 weeks"
+          }
+        },
+        {
+          "id": "hipaa",
+          "cells": {
+            "component": "HIPAA AI compliance design",
+            "cost": "$15,000 – $40,000",
+            "timeline": "4–8 weeks"
+          }
+        },
+        {
+          "id": "full-program",
+          "cells": {
+            "component": "Responsible AI program (full scope)",
+            "cost": "$80,000 – $220,000",
+            "timeline": "16–32 weeks"
+          }
+        },
+        {
+          "id": "incident",
+          "cells": {
+            "component": "AI incident response framework",
+            "cost": "$15,000 – $35,000",
+            "timeline": "4–8 weeks"
+          }
+        }
+      ],
+      "note": "Ranges reflect ClickMasters' fixed-price technical engagement fees. Legal counsel and third-party conformity assessment are not included.",
+      "cta": {
+        "label": "See the full responsible AI cost breakdown",
+        "href": "/responsible-ai-compliance-cost/"
+      }
+    },
+    {
+      "id": "responsible-ai-faqs",
+      "type": "faq",
+      "eyebrow": "Frequently Asked",
+      "title": "Questions about responsible AI and compliance",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "variant": "indexed",
+      "items": [
+        {
+          "question": "How much does responsible AI compliance cost?",
+          "answer": "$20,000–$220,000 depending on regulatory scope and number of systems. Most single-system responsible AI engagements run $30,000–$80,000."
+        },
+        {
+          "question": "How long does responsible AI compliance take?",
+          "answer": "Individual components: 4–14 weeks. Full responsible AI programs: 16–32 weeks."
+        },
+        {
+          "question": "How does bias testing work?",
+          "answer": "Statistical tests compare prediction distributions across protected class groups using standardized methods — the 4/5ths rule, statistical significance testing and effect size measurement. Findings and remediation options are documented."
+        },
+        {
+          "question": "Can you audit AI systems we already run?",
+          "answer": "Yes — we assess the deployed model, test for disparate impact, evaluate explainability and produce a remediation priority report."
+        },
+        {
+          "question": "Do you provide EU AI Act compliance certification?",
+          "answer": "No. We prepare the technical documentation and implementation that EU AI Act compliance requires. Conformity assessment is conducted by notified bodies, and compliance determinations require qualified legal counsel."
+        },
+        {
+          "question": "We don't have regulatory obligations — do we still need this?",
+          "answer": "Voluntary NIST AI RMF alignment and internal governance frameworks ($25,000–$65,000) still reduce operational and reputational risk, and make later regulatory work cheaper."
+        }
+      ]
+    },
+    {
+      "id": "consultation",
+      "type": "cta",
+      "eyebrow": "Start With a Free Consultation",
+      "heading": "Understand your responsible AI scope",
+      "text": "Tell us which AI systems you run or plan to launch, where they are used and who they affect. An engineer will reply within one business day with the components that likely apply and a budget range.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "fade-scale",
+      "primaryCta": {
+        "label": "Get Your Free Responsible AI Consultation",
+        "href": "/contact/"
+      },
+      "secondaryCta": {
+        "label": "Email the Engineering Team",
+        "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
+      },
+      "contactEmail": "hello@clickmastersartificialintelligencecompany.com",
+      "variant": "orbital"
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "Responsible AI & Compliance Cost",
+      "description": "Detailed pricing by component and framework.",
+      "href": "/responsible-ai-compliance-cost/"
+    },
+    {
+      "title": "AI Consulting Services",
+      "description": "Strategy, discovery and governance advisory.",
+      "href": "/ai-consulting-services/"
+    },
+    {
+      "title": "Responsible AI Glossary Entry",
+      "description": "Principles and practices of responsible AI.",
+      "href": "/glossary/responsible-ai/"
+    },
+    {
+      "title": "AI Risk Assessment Glossary Entry",
+      "description": "Identifying and prioritizing AI risks.",
+      "href": "/glossary/ai-risk-assessment/"
+    }
+  ]
+}

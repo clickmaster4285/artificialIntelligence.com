@@ -274,8 +274,8 @@
       "publisher": "arXiv"
     },
     {
-      "label": "Knowledge Management AI Best Practices",
-      "href": "https://www.gartner.com/en/knowledge-management-ai",
+      "label": "Definition of Knowledge Management (Gartner Glossary)",
+      "href": "https://www.gartner.com/en/information-technology/glossary/km-knowledge-management",
       "publisher": "Gartner"
     }
   ],
@@ -291,7 +291,7 @@
     },
     {
       "label": "What is RAG?",
-      "href": "/glossary/rag-retrieval-augmented-generation/"
+      "href": "/glossary/retrieval-augmented-generation/"
     },
     {
       "label": "What is AI Document Summarization?",

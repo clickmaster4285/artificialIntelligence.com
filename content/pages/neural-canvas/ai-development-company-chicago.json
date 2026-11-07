@@ -98,7 +98,7 @@
         },
         {
           "title": "Machine Learning Model Development",
-          "description": "Custom classification, regression, forecasting, and anomaly detection models. SR 11-7 validation documentation standard for financial services clients. Pricing from $30,000.",
+          "description": "Custom classification, regression, forecasting, and anomaly detection models. SR 26-2 validation documentation standard for financial services clients. Pricing from $30,000.",
           "icon": "chart",
           "label": "ML models",
           "metric": "From $30K"
@@ -147,10 +147,10 @@
       "items": [
         {
           "title": "Financial Services (Chicago's Largest AI Market)",
-          "description": "The Chicago Board Options Exchange, CME Group, major banks, insurance holding companies, and thousands of trading and FinTech firms make Chicago one of the US's most AI-active financial markets. ClickMasters builds: fraud and anomaly detection for payment networks, trading platforms, and digital financial services; credit risk and underwriting models with FCRA adverse action reason codes and ECOA fair lending compliance; AML transaction monitoring with BSA/AML regulatory context; SR 11-7 aligned model validation documentation for OCC-regulated institutions; market risk and portfolio analytics for trading and investment management clients.",
+          "description": "The Chicago Board Options Exchange, CME Group, major banks, insurance holding companies, and thousands of trading and FinTech firms make Chicago one of the US's most AI-active financial markets. ClickMasters builds: fraud and anomaly detection for payment networks, trading platforms, and digital financial services; credit risk and underwriting models with FCRA adverse action reason codes and ECOA fair lending compliance; AML transaction monitoring with BSA/AML regulatory context; SR 26-2 aligned model validation documentation for OCC-regulated institutions; market risk and portfolio analytics for trading and investment management clients.",
           "icon": "building",
           "label": "FinTech",
-          "metric": "SR 11-7 · FCRA"
+          "metric": "SR 26-2 · FCRA"
         },
         {
           "title": "Healthcare and Life Sciences",
@@ -286,10 +286,10 @@
       "items": [
         {
           "title": "Industry-Specific Regulatory Expertise",
-          "description": "Chicago's dominant industries — financial services, healthcare, insurance — carry compliance requirements that generic AI development shops don't understand. ClickMasters integrates SR 11-7, HIPAA, FCRA, and CFTC compliance context into development methodology, not as afterthoughts.",
+          "description": "Chicago's dominant industries — financial services, healthcare, insurance — carry compliance requirements that generic AI development shops don't understand. ClickMasters integrates SR 26-2, HIPAA, FCRA, and CFTC compliance context into development methodology, not as afterthoughts.",
           "icon": "scale",
           "label": "Regulatory",
-          "metric": "SR 11-7 · HIPAA · FCRA"
+          "metric": "SR 26-2 · HIPAA · FCRA"
         },
         {
           "title": "Transparent Fixed-Price Contracts",
@@ -365,7 +365,7 @@
         },
         {
           "question": "Does ClickMasters work with Chicago financial services regulatory requirements?",
-          "answer": "Yes — SR 11-7 model validation, FCRA adverse action, CFTC reporting context, and FINRA communications compliance are all addressed in ClickMasters' financial services AI methodology."
+          "answer": "Yes — SR 26-2 model validation, FCRA adverse action, CFTC reporting context, and FINRA communications compliance are all addressed in ClickMasters' financial services AI methodology."
         },
         {
           "question": "Can ClickMasters handle Chicago manufacturing AI requirements including OT integration?",

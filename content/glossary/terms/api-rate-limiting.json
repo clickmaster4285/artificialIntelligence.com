@@ -270,12 +270,12 @@
   "references": [
     {
       "label": "OpenAI Rate Limits Documentation",
-      "href": "https://platform.openai.com/docs/guides/rate-limits",
+      "href": "https://developers.openai.com/api/docs/guides/rate-limits",
       "publisher": "OpenAI"
     },
     {
       "label": "Anthropic Rate Limits Documentation",
-      "href": "https://docs.anthropic.com/claude/docs/rate-limits",
+      "href": "https://platform.claude.com/docs/en/api/rate-limits",
       "publisher": "Anthropic"
     }
   ],

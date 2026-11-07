@@ -3,7 +3,7 @@
   "status": "published",
   "seo": {
     "title": "Machine Learning Consulting New York | ClickMasters AI",
-    "description": "ClickMasters provides ML consulting for New York enterprises — AI strategy, model validation, MLOps, SR 11-7 documentation. From $200/hr. 24-hour response.",
+    "description": "ClickMasters provides ML consulting for New York enterprises — AI strategy, model validation, MLOps, SR 26-2 documentation. From $200/hr. 24-hour response.",
     "canonical": "/machine-learning-consulting-new-york/",
     "primaryKeyword": "machine learning consulting new york",
     "secondaryKeywords": [
@@ -36,7 +36,7 @@
     "eyebrow": "New York ML Consulting",
     "title": "Machine Learning Consulting — New York",
     "highlightedText": "AI Strategy · Model Validation · MLOps · Fractional CAO",
-    "description": "ClickMasters provides machine learning and AI consulting for New York's enterprise and growth-stage organizations — AI strategy and roadmap development, ML model validation, MLOps infrastructure advisory, responsible AI governance, SR 11-7 model risk documentation for New York's financial sector, and technical architecture review — bringing engineering-credible AI advisory to a market that's been poorly served by strategy consultants who've never trained a model. From $200/hour. Fixed-price strategy engagements available. 24-hour response.",
+    "description": "ClickMasters provides machine learning and AI consulting for New York's enterprise and growth-stage organizations — AI strategy and roadmap development, ML model validation, MLOps infrastructure advisory, responsible AI governance, SR 26-2 model risk documentation for New York's financial sector, and technical architecture review — bringing engineering-credible AI advisory to a market that's been poorly served by strategy consultants who've never trained a model. From $200/hour. Fixed-price strategy engagements available. 24-hour response.",
     "primaryCta": {
       "label": "Get a Free ML Consulting Consultation — New York — 24-Hour Response",
       "href": "#cta",
@@ -46,7 +46,7 @@
       "label": "Explore AI Consulting Services",
       "href": "/ai-consulting-services/"
     },
-    "trustText": "Engineering-credible · Fixed-price strategy engagements · SR 11-7 depth · 24-hour response",
+    "trustText": "Engineering-credible · Fixed-price strategy engagements · SR 26-2 depth · 24-hour response",
     "metrics": [
       {
         "value": "From $200/hour",
@@ -54,7 +54,7 @@
         "description": "Strategy · Validation · Advisory"
       },
       {
-        "value": "SR 11-7 · HIPAA",
+        "value": "SR 26-2 · HIPAA",
         "label": "Regulatory expertise",
         "description": "Financial services depth"
       },
@@ -98,7 +98,7 @@
         },
         {
           "title": "ML Model Validation and Audit",
-          "description": "Independent technical review of existing or proposed ML models for New York's financial, healthcare, and regulated-industry clients. ClickMasters model validation delivers: statistical validation against representative test datasets; feature importance analysis and proxy variable screening (FCRA and fair lending); performance benchmarking against appropriate baselines; documentation meeting SR 11-7 Federal Reserve / OCC model risk management requirements; backtesting results for time-series models; monitoring design recommendations. Cost: $20,000–$65,000 | Timeline: 4–10 weeks | SR 11-7 documentation standard for NY banking.",
+          "description": "Independent technical review of existing or proposed ML models for New York's financial, healthcare, and regulated-industry clients. ClickMasters model validation delivers: statistical validation against representative test datasets; feature importance analysis and proxy variable screening (FCRA and fair lending); performance benchmarking against appropriate baselines; documentation meeting SR 26-2 Federal Reserve / OCC model risk management requirements; backtesting results for time-series models; monitoring design recommendations. Cost: $20,000–$65,000 | Timeline: 4–10 weeks | SR 26-2 documentation standard for NY banking.",
           "icon": "file-check",
           "label": "Model Validation",
           "metric": "$20K–$65K"
@@ -147,9 +147,9 @@
       "items": [
         {
           "title": "Financial Services Regulatory Depth",
-          "description": "New York banks and financial firms need ML advisors who understand SR 11-7 requirements, can produce validation documentation that passes OCC examination, and can assess whether a proposed ML model's design meets model risk management standards. This requires genuine technical depth — not generic AI strategy fluency.",
+          "description": "New York banks and financial firms need ML advisors who understand SR 26-2 requirements, can produce validation documentation that passes OCC examination, and can assess whether a proposed ML model's design meets model risk management standards. This requires genuine technical depth — not generic AI strategy fluency.",
           "icon": "scale",
-          "label": "SR 11-7 Depth",
+          "label": "SR 26-2 Depth",
           "metric": "OCC examination-ready"
         },
         {
@@ -210,7 +210,7 @@
         {
           "id": "validation",
           "cells": {
-            "engagement": "ML Model Validation (SR 11-7 scope)",
+            "engagement": "ML Model Validation (SR 26-2 scope)",
             "cost": "$20,000 – $65,000",
             "timeline": "4–10 weeks"
           }
@@ -271,7 +271,7 @@
       "items": [
         {
           "title": "Large consulting firms have more AI brand credibility — why ClickMasters?",
-          "description": "Large firms have more brand recognition; ClickMasters has more hands-on ML engineering depth available for each engagement. For New York organizations that need AI advisory connected to implementation reality — especially for regulated applications requiring SR 11-7 or HIPAA-compliant ML — technical depth matters more than brand.",
+          "description": "Large firms have more brand recognition; ClickMasters has more hands-on ML engineering depth available for each engagement. For New York organizations that need AI advisory connected to implementation reality — especially for regulated applications requiring SR 26-2 or HIPAA-compliant ML — technical depth matters more than brand.",
           "icon": "message-circle",
           "label": "Brand vs. Depth",
           "metric": "Engineering-credible"
@@ -284,10 +284,10 @@
           "metric": "$10K–$80K"
         },
         {
-          "title": "Can ClickMasters provide SR 11-7 model validation documentation for our New York bank?",
-          "description": "Yes — SR 11-7 aligned model validation is a specific ClickMasters consulting capability with substantial New York financial services client experience.",
+          "title": "Can ClickMasters provide SR 26-2 model validation documentation for our New York bank?",
+          "description": "Yes — SR 26-2 aligned model validation is a specific ClickMasters consulting capability with substantial New York financial services client experience.",
           "icon": "file-check",
-          "label": "SR 11-7",
+          "label": "SR 26-2",
           "metric": "Substantial experience"
         },
         {
@@ -340,7 +340,7 @@
       "type": "cta",
       "eyebrow": "Ready to Start",
       "title": "Ready to Engage ML Consulting for Your New York Organization?",
-      "description": "ClickMasters provides engineering-credible ML advisory for New York's most regulated and most demanding enterprises — with the SR 11-7, HIPAA, and technical depth that large consulting firms rarely provide.",
+      "description": "ClickMasters provides engineering-credible ML advisory for New York's most regulated and most demanding enterprises — with the SR 26-2, HIPAA, and technical depth that large consulting firms rarely provide.",
       "tone": "accent",
       "width": "wide",
       "animation": "fade",

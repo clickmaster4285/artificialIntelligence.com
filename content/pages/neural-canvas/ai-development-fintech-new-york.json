@@ -3,7 +3,7 @@
   "status": "published",
   "seo": {
     "title": "AI Development for FinTech New York | ClickMasters AI",
-    "description": "ClickMasters builds AI for New York FinTech — fraud detection, credit scoring, AML, LLM integration. SR 11-7 compliant. Projects from $40K. 24-hr response.",
+    "description": "ClickMasters builds AI for New York FinTech — fraud detection, credit scoring, AML, LLM integration. SR 26-2 compliant. Projects from $40K. 24-hr response.",
     "canonical": "/ai-development-fintech-new-york/",
     "primaryKeyword": "ai development fintech new york",
     "secondaryKeywords": [
@@ -36,7 +36,7 @@
     "eyebrow": "New York FinTech AI Development",
     "title": "AI Development for FinTech — New York",
     "highlightedText": "Fraud Detection · Credit Scoring · AML · LLM Integration",
-    "description": "ClickMasters builds custom AI for New York's financial technology sector — fraud detection, credit risk scoring, AML transaction monitoring, LLM integration for financial document intelligence, and algorithmic analytics — with SR 11-7 model validation documentation, FCRA adverse action compliance, and FINRA regulatory awareness built into every financial services AI engagement. New York is the US financial capital; ClickMasters is active across its FinTech ecosystem from early-stage lending platforms to the technology divisions of major Wall Street institutions. FinTech AI projects from $40,000. Fixed-price. Full IP. 24-hour response.",
+    "description": "ClickMasters builds custom AI for New York's financial technology sector — fraud detection, credit risk scoring, AML transaction monitoring, LLM integration for financial document intelligence, and algorithmic analytics — with SR 26-2 model validation documentation, FCRA adverse action compliance, and FINRA regulatory awareness built into every financial services AI engagement. New York is the US financial capital; ClickMasters is active across its FinTech ecosystem from early-stage lending platforms to the technology divisions of major Wall Street institutions. FinTech AI projects from $40,000. Fixed-price. Full IP. 24-hour response.",
     "primaryCta": {
       "label": "Get a Free FinTech AI Consultation — New York — 24-Hour Response",
       "href": "#cta",
@@ -46,7 +46,7 @@
       "label": "Explore AI for FinTech",
       "href": "/glossary/ai-for-fintech/"
     },
-    "trustText": "SR 11-7 · FCRA · AML · FINRA · Fixed-price · Full IP",
+    "trustText": "SR 26-2 · FCRA · AML · FINRA · Fixed-price · Full IP",
     "metrics": [
       {
         "value": "From $40,000",
@@ -54,7 +54,7 @@
         "description": "Fraud · Credit · AML"
       },
       {
-        "value": "SR 11-7 · FCRA",
+        "value": "SR 26-2 · FCRA",
         "label": "Regulatory compliance",
         "description": "OCC · Federal Reserve"
       },
@@ -146,10 +146,10 @@
       "columns": 3,
       "items": [
         {
-          "title": "Federal Reserve / OCC (SR 11-7)",
+          "title": "Federal Reserve / OCC (SR 26-2)",
           "description": "Model validation documentation, champion/challenger testing, backtesting, ongoing performance monitoring, and model risk committee review support — standard for any ML model used in credit, risk, or trading decisions at OCC-regulated institutions.",
           "icon": "file-check",
-          "label": "SR 11-7",
+          "label": "SR 26-2",
           "metric": "Model risk management"
         },
         {
@@ -259,7 +259,7 @@
         {
           "id": "sr11-7",
           "cells": {
-            "project": "SR 11-7 model validation documentation",
+            "project": "SR 26-2 model validation documentation",
             "price": "$20,000 – $50,000",
             "timeline": "4–8 weeks",
             "compliance": "Core service"
@@ -290,9 +290,9 @@
       "items": [
         {
           "title": "Our OCC examiners will scrutinize any AI model we deploy — how does ClickMasters handle this?",
-          "description": "ClickMasters builds the technical documentation SR 11-7 requires — validation methodology, backtesting results, performance monitoring design, and model risk categorization. Regulatory examination strategy should involve qualified counsel, but the technical evidence package is ClickMasters' deliverable.",
+          "description": "ClickMasters builds the technical documentation SR 26-2 requires — validation methodology, backtesting results, performance monitoring design, and model risk categorization. Regulatory examination strategy should involve qualified counsel, but the technical evidence package is ClickMasters' deliverable.",
           "icon": "message-circle",
-          "label": "SR 11-7",
+          "label": "SR 26-2",
           "metric": "Technical evidence package"
         },
         {
@@ -333,8 +333,8 @@
           "answer": "Yes — ClickMasters builds AI for New York DFS-regulated banks, insurers, and money transmitters with appropriate third-party risk management documentation."
         },
         {
-          "question": "Can ClickMasters provide SR 11-7 model risk documentation that will satisfy an OCC examination?",
-          "answer": "ClickMasters provides technically accurate model validation documentation aligned with SR 11-7 requirements. Regulatory examination strategy and legal determination of compliance remain with qualified financial services counsel."
+          "question": "Can ClickMasters provide SR 26-2 model risk documentation that will satisfy an OCC examination?",
+          "answer": "ClickMasters provides technically accurate model validation documentation aligned with SR 26-2 requirements. Regulatory examination strategy and legal determination of compliance remain with qualified financial services counsel."
         },
         {
           "question": "How do we handle FCRA adverse action requirements for our AI credit model?",
@@ -371,7 +371,7 @@
         "label": "Email Us Directly",
         "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
       },
-      "trustText": "FinTech AI from $40,000 | Fixed-price | Full IP | SR 11-7, FCRA, AML compliant | 24-hour response"
+      "trustText": "FinTech AI from $40,000 | Fixed-price | Full IP | SR 26-2, FCRA, AML compliant | 24-hour response"
     }
   ]
 }

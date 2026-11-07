@@ -96,7 +96,7 @@
           "metric": "$25K–$100K · 8–20 weeks",
           "link": {
             "label": "Explore LLM integration",
-            "href": "/llm-integration-services/"
+            "href": "/llm-development-company/"
           }
         },
         {
@@ -118,7 +118,7 @@
           "metric": "$15K–$60K · 4–12 weeks",
           "link": {
             "label": "Explore model fine-tuning",
-            "href": "/ai-model-fine-tuning-services/"
+            "href": "/ai-model-fine-tuning/"
           }
         },
         {
@@ -340,12 +340,12 @@
     {
       "title": "LLM Integration Services",
       "description": "Integrate large language models into your existing products and workflows.",
-      "href": "/llm-integration-services/"
+      "href": "/llm-development-company/"
     },
     {
       "title": "AI Model Fine-Tuning Services",
       "description": "Adapt language models for narrow domain-specific tasks.",
-      "href": "/ai-model-fine-tuning-services/"
+      "href": "/ai-model-fine-tuning/"
     },
     {
       "title": "RAG Development Services",

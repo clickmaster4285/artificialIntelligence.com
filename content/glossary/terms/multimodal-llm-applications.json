@@ -269,7 +269,7 @@
   "references": [
     {
       "label": "GPT-4V: Visual Capabilities and Applications",
-      "href": "https://platform.openai.com/docs/guides/vision",
+      "href": "https://developers.openai.com/api/docs/guides/images-vision",
       "publisher": "OpenAI"
     },
     {
@@ -282,7 +282,7 @@
   "additionalResources": [
     {
       "label": "LLM Integration Services",
-      "href": "/llm-integration-services/"
+      "href": "/llm-development-company/"
     },
     {
       "label": "What is a Vision-Language Model?",

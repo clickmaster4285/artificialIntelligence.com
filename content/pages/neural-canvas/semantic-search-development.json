@@ -1,0 +1,319 @@
+{
+  "slug": "semantic-search-development",
+  "status": "published",
+  "seo": {
+    "title": "Semantic Search Development | ClickMasters AI",
+    "description": "Semantic search development: embedding-based and hybrid search that finds content by meaning across documents, products and knowledge bases. Fixed-price, full IP.",
+    "canonical": "/semantic-search-development/",
+    "primaryKeyword": "semantic search development",
+    "secondaryKeywords": [
+      "semantic search development company",
+      "vector search development",
+      "hybrid search implementation",
+      "enterprise semantic search",
+      "ai powered search development"
+    ],
+    "noIndex": false,
+    "noFollow": false
+  },
+  "schema": {
+    "service": true,
+    "organization": true,
+    "breadcrumbs": true,
+    "faq": true
+  },
+  "appearance": {
+    "template": "neural-canvas",
+    "accent": "cyan",
+    "background": "neural-grid",
+    "grain": true,
+    "glow": true,
+    "scrollProgress": true,
+    "customCursor": true
+  },
+  "hero": {
+    "eyebrow": "Search That Understands Intent",
+    "title": "Semantic Search Development",
+    "highlightedText": "Find Meaning, Not Just Keywords",
+    "description": "ClickMasters builds semantic search that finds documents, products and answers by meaning — even when users and content use different words. We combine embedding models, vector stores and keyword retrieval into hybrid search tuned on your content and real queries, then integrate it into your website, product or internal tools.",
+    "primaryCta": {
+      "label": "Get a Free Semantic Search Consultation",
+      "href": "#consultation",
+      "ariaLabel": "Get a free semantic search development consultation with 24-hour response"
+    },
+    "secondaryCta": {
+      "label": "Explore Capabilities",
+      "href": "#capabilities"
+    },
+    "trustText": "Fixed-price · Full IP ownership · Measured relevance",
+    "metrics": [
+      {
+        "value": "$25K",
+        "label": "Starting investment",
+        "description": "For a semantic search platform"
+      },
+      {
+        "value": "8–16",
+        "label": "Weeks to launch",
+        "description": "For a semantic search platform"
+      },
+      {
+        "value": "24h",
+        "label": "Initial response",
+        "description": "Free consultation within one business day"
+      }
+    ],
+    "visual": {
+      "type": "neural-sphere",
+      "label": "Semantic search stack",
+      "modelNames": [
+        "Embeddings",
+        "Vector Store",
+        "BM25",
+        "Re-ranking",
+        "Evaluation"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "capabilities",
+      "type": "feature-grid",
+      "eyebrow": "What We Build",
+      "title": "Semantic search for documents, products and knowledge",
+      "description": "Search experiences that return the right result for what users mean.",
+      "tone": "default",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "bento",
+      "columns": 2,
+      "items": [
+        {
+          "title": "Semantic Search Platforms",
+          "description": "Embedding-based search over documents, knowledge bases and records, with ingestion pipelines that keep the index current as content changes.",
+          "icon": "search",
+          "label": "Semantic",
+          "metric": "$25K–$70K · 8–16 weeks",
+          "link": {
+            "label": "What is semantic search?",
+            "href": "/glossary/semantic-search/"
+          }
+        },
+        {
+          "title": "Hybrid Search (Vector + Keyword)",
+          "description": "Vector and BM25 keyword retrieval combined so exact identifiers, codes and names are found as reliably as concepts.",
+          "icon": "layers",
+          "label": "Hybrid",
+          "metric": "$35K–$80K · 10–16 weeks"
+        },
+        {
+          "title": "Re-ranking and Relevance Tuning",
+          "description": "Cross-encoder re-ranking, metadata filters and boosting rules tuned against an evaluation set of real queries.",
+          "icon": "chart",
+          "label": "Relevance",
+          "link": {
+            "label": "How re-ranking works",
+            "href": "/glossary/reranking/"
+          }
+        },
+        {
+          "title": "Product and Catalog Search",
+          "description": "Natural-language product discovery that understands attributes, synonyms and shopper intent.",
+          "icon": "sparkles",
+          "label": "eCommerce",
+          "link": {
+            "label": "eCommerce AI",
+            "href": "/ai-development/ecommerce/"
+          }
+        },
+        {
+          "title": "Search for RAG and Assistants",
+          "description": "The retrieval layer behind question-answering assistants — permission-aware, cited and measured.",
+          "icon": "database",
+          "label": "Retrieval",
+          "link": {
+            "label": "RAG development services",
+            "href": "/rag-development-services/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "search-engineering",
+      "type": "rich-text",
+      "eyebrow": "How We Engineer It",
+      "title": "Relevance you can measure",
+      "tone": "surface",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Embedding model selection",
+          "paragraphs": [
+            "We benchmark embedding models on your own content and queries rather than relying on public leaderboards, balancing relevance, latency and cost."
+          ],
+          "links": [
+            {
+              "label": "Embedding model selection explained",
+              "href": "/glossary/embedding-model-selection/"
+            }
+          ]
+        },
+        {
+          "heading": "Evaluation before launch",
+          "paragraphs": [
+            "A labeled set of real queries and expected results lets us measure retrieval quality objectively and compare configurations, then monitor it after launch."
+          ],
+          "links": [
+            {
+              "label": "Retrieval quality metrics",
+              "href": "/glossary/retrieval-quality-metrics/"
+            }
+          ]
+        },
+        {
+          "heading": "Access control and freshness",
+          "paragraphs": [
+            "Results respect user permissions, and incremental indexing keeps search current as documents are added, changed or removed."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing-reference",
+      "type": "table",
+      "eyebrow": "Transparent Investment",
+      "title": "Semantic search pricing reference",
+      "description": "Typical fixed-price ranges from our NLP and RAG pricing guides. Your final quote is fixed after discovery.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "pricing",
+      "columns": [
+        {
+          "key": "project",
+          "label": "Project Type",
+          "align": "left",
+          "width": "40%"
+        },
+        {
+          "key": "cost",
+          "label": "Cost Range",
+          "align": "left",
+          "width": "30%"
+        },
+        {
+          "key": "timeline",
+          "label": "Timeline",
+          "align": "left",
+          "width": "30%"
+        }
+      ],
+      "rows": [
+        {
+          "id": "semantic-platform",
+          "cells": {
+            "project": "Semantic search platform",
+            "cost": "$25,000 – $70,000",
+            "timeline": "8–16 weeks"
+          },
+          "highlighted": true,
+          "badge": "Most common"
+        },
+        {
+          "id": "hybrid-rag",
+          "cells": {
+            "project": "Hybrid search RAG (vector + keyword)",
+            "cost": "$35,000 – $80,000",
+            "timeline": "10–16 weeks"
+          }
+        }
+      ],
+      "note": "Ranges reflect ClickMasters' fixed-price project fees. Vector store and inference costs are separate and modeled during discovery.",
+      "cta": {
+        "label": "See the full NLP development cost breakdown",
+        "href": "/nlp-development-cost/"
+      }
+    },
+    {
+      "id": "semantic-search-faqs",
+      "type": "faq",
+      "eyebrow": "Frequently Asked",
+      "title": "Questions about semantic search development",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "variant": "indexed",
+      "items": [
+        {
+          "question": "What is semantic search?",
+          "answer": "Semantic search retrieves results based on meaning rather than exact keyword matches. Text is converted into embeddings — numeric representations of meaning — so a query can match relevant content even when it uses different words."
+        },
+        {
+          "question": "How much does semantic search development cost?",
+          "answer": "A semantic search platform typically costs $25,000–$70,000 and takes 8–16 weeks. Hybrid search combining vector and keyword retrieval for RAG runs $35,000–$80,000 over 10–16 weeks."
+        },
+        {
+          "question": "Does semantic search replace keyword search?",
+          "answer": "Usually not. Hybrid search combines both: semantic retrieval for meaning and keyword retrieval for exact terms such as part numbers, names and codes."
+        },
+        {
+          "question": "Can semantic search work with our existing search engine?",
+          "answer": "Often yes. Many teams add vector search alongside an existing keyword index rather than replacing it. We assess your current stack during discovery."
+        },
+        {
+          "question": "Who owns the search system?",
+          "answer": "You do — code, ingestion pipelines, indices, evaluation datasets and documentation are transferred at completion."
+        }
+      ]
+    },
+    {
+      "id": "consultation",
+      "type": "cta",
+      "eyebrow": "Start With a Free Consultation",
+      "heading": "Help people find what they mean",
+      "text": "Tell us what users search for and what they struggle to find today. An engineer will reply within one business day with an approach and budget range.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "fade-scale",
+      "primaryCta": {
+        "label": "Get Your Free Semantic Search Consultation",
+        "href": "/contact/"
+      },
+      "secondaryCta": {
+        "label": "Email the Engineering Team",
+        "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
+      },
+      "contactEmail": "hello@clickmastersartificialintelligencecompany.com",
+      "variant": "orbital"
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "RAG Development Services",
+      "description": "Grounded question answering over your knowledge.",
+      "href": "/rag-development-services/"
+    },
+    {
+      "title": "Natural Language Processing Services",
+      "description": "Classification, extraction, summarization and search.",
+      "href": "/natural-language-processing-services/"
+    },
+    {
+      "title": "NLP Development Cost",
+      "description": "Pricing for semantic search and other NLP projects.",
+      "href": "/nlp-development-cost/"
+    },
+    {
+      "title": "Vector Search Glossary Entry",
+      "description": "How similarity search over embeddings works.",
+      "href": "/glossary/vector-search/"
+    },
+    {
+      "title": "Semantic Search Glossary Entry",
+      "description": "Searching by meaning instead of keywords.",
+      "href": "/glossary/semantic-search/"
+    }
+  ]
+}

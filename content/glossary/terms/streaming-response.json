@@ -274,7 +274,7 @@
     },
     {
       "label": "OpenAI Streaming API Documentation",
-      "href": "https://platform.openai.com/docs/api-reference/streaming",
+      "href": "https://developers.openai.com/api/docs/guides/streaming-responses",
       "publisher": "OpenAI"
     }
   ],

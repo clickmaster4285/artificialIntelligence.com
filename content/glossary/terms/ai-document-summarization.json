@@ -272,8 +272,8 @@
       "publisher": "arXiv"
     },
     {
-      "label": "Abstractive Summarization: Best Practices and Challenges",
-      "href": "https://www.aclweb.org/anthology/summarization",
+      "label": "Get To The Point: Summarization with Pointer-Generator Networks",
+      "href": "https://aclanthology.org/P17-1099/",
       "publisher": "ACL"
     }
   ],
@@ -289,7 +289,7 @@
     },
     {
       "label": "What is RAG?",
-      "href": "/glossary/rag-retrieval-augmented-generation/"
+      "href": "/glossary/retrieval-augmented-generation/"
     },
     {
       "label": "What is Document Intelligence?",

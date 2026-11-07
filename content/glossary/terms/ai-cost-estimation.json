@@ -267,7 +267,7 @@
   "additionalResources": [
     {
       "label": "AI Cost Guide",
-      "href": "/ai-cost-guide/"
+      "href": "/ai-development-cost/"
     },
     {
       "label": "What is AI Model Deployment?",
@@ -285,7 +285,7 @@
     "description": "ClickMasters provides transparent, project-specific pricing — not generic estimates. From $15,000. Fixed-price. Full IP. 24-hour response.",
     "primaryLink": {
       "label": "View full cost guide",
-      "href": "/ai-cost-guide/"
+      "href": "/ai-development-cost/"
     },
     "secondaryLink": {
       "label": "Book your free consultation",

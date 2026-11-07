@@ -1,0 +1,366 @@
+{
+  "slug": "predictive-analytics-services",
+  "status": "published",
+  "seo": {
+    "title": "Predictive Analytics Services | ClickMasters AI",
+    "description": "Predictive analytics services: churn prediction, lead scoring, demand and revenue forecasting, fraud and risk models. Projects from $35K. Fixed-price, full IP.",
+    "canonical": "/predictive-analytics-services/",
+    "primaryKeyword": "predictive analytics services",
+    "secondaryKeywords": [
+      "predictive analytics company",
+      "predictive modeling services",
+      "churn prediction model",
+      "demand forecasting ai",
+      "predictive analytics consulting"
+    ],
+    "noIndex": false,
+    "noFollow": false
+  },
+  "schema": {
+    "service": true,
+    "organization": true,
+    "breadcrumbs": true,
+    "faq": true
+  },
+  "appearance": {
+    "template": "neural-canvas",
+    "accent": "emerald",
+    "background": "neural-grid",
+    "grain": true,
+    "glow": true,
+    "scrollProgress": true,
+    "customCursor": true
+  },
+  "hero": {
+    "eyebrow": "Decisions Driven by What Happens Next",
+    "title": "Predictive Analytics Services",
+    "highlightedText": "Churn · Demand · Risk",
+    "description": "ClickMasters builds predictive analytics systems that turn your historical data into forward-looking decisions — which customers are likely to churn, which leads will convert, how much inventory you will need, which transactions are fraudulent and which assets are close to failure. Predictions are delivered into the tools your teams already use, with drift monitoring and explainability where decisions require it.",
+    "primaryCta": {
+      "label": "Get a Free Predictive Analytics Consultation",
+      "href": "#consultation",
+      "ariaLabel": "Get a free predictive analytics consultation with 24-hour response"
+    },
+    "secondaryCta": {
+      "label": "Explore Use Cases",
+      "href": "#capabilities"
+    },
+    "trustText": "Fixed-price · Full IP ownership · Drift monitoring included",
+    "metrics": [
+      {
+        "value": "$35K–$100K",
+        "label": "Typical project cost",
+        "description": "Churn · Demand · Fraud"
+      },
+      {
+        "value": "10–18",
+        "label": "Weeks for a single use case",
+        "description": "With accessible data"
+      },
+      {
+        "value": "24h",
+        "label": "Initial response",
+        "description": "Talk to an AI engineer within one business day"
+      }
+    ],
+    "visual": {
+      "type": "neural-sphere",
+      "label": "Predictive analytics",
+      "modelNames": [
+        "Churn",
+        "Lead Scoring",
+        "Forecasting",
+        "Fraud",
+        "Risk"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "capabilities",
+      "type": "feature-grid",
+      "eyebrow": "Use Cases",
+      "title": "Predictive models for high-value business decisions",
+      "description": "Cost and timeline are driven primarily by data readiness, not model complexity.",
+      "tone": "default",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "bento",
+      "columns": 2,
+      "items": [
+        {
+          "title": "Customer Churn Prediction",
+          "description": "Identify at-risk customers early enough for retention teams to act, with the drivers behind each risk score.",
+          "icon": "chart",
+          "label": "Retention",
+          "metric": "$35K–$80K · 10–18 weeks"
+        },
+        {
+          "title": "B2B Lead Scoring",
+          "description": "Prioritize pipeline using CRM and engagement data so sales spends time on the accounts most likely to convert.",
+          "icon": "search",
+          "label": "Sales",
+          "metric": "$35K–$80K · 10–16 weeks"
+        },
+        {
+          "title": "Revenue and Demand Forecasting",
+          "description": "Revenue, sales and inventory demand forecasts by segment, channel and SKU, with prediction intervals for planning.",
+          "icon": "layers",
+          "label": "Forecasting",
+          "metric": "$40K–$100K · 10–20 weeks",
+          "link": {
+            "label": "What is time-series forecasting?",
+            "href": "/glossary/time-series-forecasting/"
+          }
+        },
+        {
+          "title": "Fraud Detection and Credit Risk",
+          "description": "Fraud and credit risk models built with the compliance documentation financial services require, including individual-level explanations.",
+          "icon": "shield",
+          "label": "Financial Risk",
+          "metric": "$50K–$130K · 12–22 weeks",
+          "link": {
+            "label": "AI for fintech",
+            "href": "/ai-development/fintech/"
+          }
+        },
+        {
+          "title": "Equipment Failure Prediction",
+          "description": "Predictive maintenance models on IoT and sensor data that flag assets likely to fail before unplanned downtime.",
+          "icon": "network",
+          "label": "Operations",
+          "metric": "$45K–$110K · 12–22 weeks"
+        },
+        {
+          "title": "Patient Risk Stratification",
+          "description": "HIPAA-compliant risk models integrated with EHR data to support care management prioritization.",
+          "icon": "brain",
+          "label": "Healthcare",
+          "metric": "$55K–$130K · 14–22 weeks",
+          "link": {
+            "label": "AI for healthcare",
+            "href": "/ai-development/healthcare/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "predictive-principles",
+      "type": "rich-text",
+      "eyebrow": "What Makes It Work",
+      "title": "Predictive analytics that stays accurate and trusted",
+      "tone": "surface",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Data readiness drives cost",
+          "paragraphs": [
+            "Unlike some AI categories, predictive analytics cost depends mostly on the quality, completeness and accessibility of your historical data. We assess it first so the estimate reflects reality."
+          ]
+        },
+        {
+          "heading": "Drift monitoring is standard",
+          "paragraphs": [
+            "When distribution shift or accuracy degradation exceeds a threshold, monitoring alerts your team for retraining. We build this into every system rather than selling it as an add-on."
+          ],
+          "links": [
+            {
+              "label": "What is model drift?",
+              "href": "/glossary/model-drift/"
+            }
+          ]
+        },
+        {
+          "heading": "Explainability where it is required",
+          "paragraphs": [
+            "Regulated contexts such as credit, employment and clinical decisions require individual-level explanations; we integrate SHAP as standard for these use cases."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing-reference",
+      "type": "table",
+      "eyebrow": "Transparent Investment",
+      "title": "Predictive analytics pricing reference",
+      "description": "Fixed-price ranges by use case.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "pricing",
+      "columns": [
+        {
+          "key": "usecase",
+          "label": "Use Case",
+          "align": "left",
+          "width": "40%"
+        },
+        {
+          "key": "cost",
+          "label": "Cost Range",
+          "align": "left",
+          "width": "30%"
+        },
+        {
+          "key": "timeline",
+          "label": "Timeline",
+          "align": "left",
+          "width": "30%"
+        }
+      ],
+      "rows": [
+        {
+          "id": "churn",
+          "cells": {
+            "usecase": "Customer churn prediction",
+            "cost": "$35,000 – $80,000",
+            "timeline": "10–18 weeks"
+          },
+          "highlighted": true,
+          "badge": "Most common"
+        },
+        {
+          "id": "lead-scoring",
+          "cells": {
+            "usecase": "B2B lead scoring",
+            "cost": "$35,000 – $80,000",
+            "timeline": "10–16 weeks"
+          }
+        },
+        {
+          "id": "revenue",
+          "cells": {
+            "usecase": "Revenue / sales forecasting",
+            "cost": "$40,000 – $90,000",
+            "timeline": "10–20 weeks"
+          }
+        },
+        {
+          "id": "demand",
+          "cells": {
+            "usecase": "Demand forecasting (inventory)",
+            "cost": "$45,000 – $100,000",
+            "timeline": "12–20 weeks"
+          }
+        },
+        {
+          "id": "fraud",
+          "cells": {
+            "usecase": "Fraud detection (financial)",
+            "cost": "$50,000 – $120,000",
+            "timeline": "12–22 weeks"
+          }
+        },
+        {
+          "id": "clv",
+          "cells": {
+            "usecase": "Customer lifetime value (CLV)",
+            "cost": "$40,000 – $90,000",
+            "timeline": "10–18 weeks"
+          }
+        },
+        {
+          "id": "credit",
+          "cells": {
+            "usecase": "Credit risk scoring",
+            "cost": "$55,000 – $130,000",
+            "timeline": "14–22 weeks"
+          }
+        },
+        {
+          "id": "platform",
+          "cells": {
+            "usecase": "Multi-model analytics platform",
+            "cost": "$100,000 – $300,000",
+            "timeline": "18–36 weeks"
+          }
+        }
+      ],
+      "note": "Ranges reflect ClickMasters' fixed-price project fees. Retraining, serving and monitoring costs are separate and modeled during discovery.",
+      "cta": {
+        "label": "See the full predictive analytics cost breakdown",
+        "href": "/predictive-analytics-cost/"
+      }
+    },
+    {
+      "id": "predictive-analytics-faqs",
+      "type": "faq",
+      "eyebrow": "Frequently Asked",
+      "title": "Questions about predictive analytics services",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "variant": "indexed",
+      "items": [
+        {
+          "question": "How much does predictive analytics development cost?",
+          "answer": "$30,000–$300,000. The most common enterprise projects — churn prediction, demand forecasting, fraud detection and lead scoring — typically run $35,000–$100,000."
+        },
+        {
+          "question": "How much historical data do we need?",
+          "answer": "It depends on the prediction target. Churn models typically need 12–24 months of history with several hundred churned examples; fraud models need enough historical fraud cases to learn rare events — typically 1,000+ labeled instances."
+        },
+        {
+          "question": "Is $30,000 enough for a useful system?",
+          "answer": "For a focused single use case such as lead scoring or basic churn with accessible, relatively clean data: yes. For regulated applications (credit, clinical) or complex multi-variable forecasting, budget $50,000–$100,000."
+        },
+        {
+          "question": "How accurate can predictive analytics be?",
+          "answer": "AUC-ROC of 0.75–0.90 is typical for well-built churn and lead scoring models with adequate data. We validate accuracy on your specific data before deployment."
+        },
+        {
+          "question": "How long does it take?",
+          "answer": "10–36 weeks depending on scope. A single use case with accessible data takes 10–18 weeks; a multi-model platform with compliance documentation takes 18–36 weeks."
+        },
+        {
+          "question": "What happens when predictions start to degrade?",
+          "answer": "Drift monitoring detects distribution shift or accuracy degradation beyond a threshold and alerts for retraining. It is built in as standard."
+        }
+      ]
+    },
+    {
+      "id": "consultation",
+      "type": "cta",
+      "eyebrow": "Start With a Free Consultation",
+      "heading": "Turn your historical data into forward-looking decisions",
+      "text": "Tell us which outcome you want to predict and what data you hold. An engineer will reply within one business day with a data readiness view and budget range.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "fade-scale",
+      "primaryCta": {
+        "label": "Get Your Free Predictive Analytics Consultation",
+        "href": "/contact/"
+      },
+      "secondaryCta": {
+        "label": "Email the Engineering Team",
+        "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
+      },
+      "contactEmail": "hello@clickmastersartificialintelligencecompany.com",
+      "variant": "orbital"
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "Predictive Analytics Cost",
+      "description": "Detailed pricing by predictive analytics use case.",
+      "href": "/predictive-analytics-cost/"
+    },
+    {
+      "title": "Machine Learning Model Development",
+      "description": "Custom production ML models built on your data.",
+      "href": "/machine-learning-model-development/"
+    },
+    {
+      "title": "MLOps Services",
+      "description": "Monitoring and retraining that keep predictions accurate.",
+      "href": "/ai-mlops-services/"
+    },
+    {
+      "title": "Predictive Analytics Glossary Entry",
+      "description": "What predictive analytics is and how it works.",
+      "href": "/glossary/predictive-analytics/"
+    }
+  ]
+}

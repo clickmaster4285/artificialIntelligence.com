@@ -175,7 +175,7 @@
             "project_type": "RAG with compliance documentation",
             "cost": "+$15,000 – $40,000",
             "timeline": "+3–6 weeks",
-            "driver": "HIPAA/SR 11-7/EU AI Act context"
+            "driver": "HIPAA/SR 26-2/EU AI Act context"
           }
         }
       ],
@@ -499,12 +499,12 @@
     {
       "title": "LLM Integration Services",
       "description": "Integrate large language models into your existing products and workflows.",
-      "href": "/llm-integration-services/"
+      "href": "/llm-development-company/"
     },
     {
       "title": "RAG Retrieval-Augmented Generation Glossary",
       "description": "Definitions of key RAG and retrieval terminology.",
-      "href": "/glossary/rag-retrieval-augmented-generation/"
+      "href": "/glossary/retrieval-augmented-generation/"
     },
     {
       "title": "Embedding Model Selection Glossary",

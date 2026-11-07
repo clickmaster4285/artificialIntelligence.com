@@ -269,7 +269,7 @@
   "references": [
     {
       "label": "MLflow Model Registry Documentation",
-      "href": "https://mlflow.org/docs/latest/model-registry.html",
+      "href": "https://mlflow.org/docs/latest/model-registry/",
       "publisher": "MLflow"
     },
     {

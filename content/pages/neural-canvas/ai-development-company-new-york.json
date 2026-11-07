@@ -105,7 +105,7 @@
         },
         {
           "title": "Machine Learning Model Development",
-          "description": "Custom classification, regression, forecasting, and anomaly detection models trained on your data — with production deployment, monitoring, and the SR 11-7-aligned validation documentation that New York's financial services clients require. Starting from $30,000 | Typical projects: $40,000–$100,000.",
+          "description": "Custom classification, regression, forecasting, and anomaly detection models trained on your data — with production deployment, monitoring, and the SR 26-2-aligned validation documentation that New York's financial services clients require. Starting from $30,000 | Typical projects: $40,000–$100,000.",
           "icon": "chart",
           "label": "ML models",
           "metric": "From $30K"
@@ -147,10 +147,10 @@
       "items": [
         {
           "title": "FinTech and Financial Services",
-          "description": "New York is the US financial services capital. ClickMasters builds: fraud detection and AML monitoring systems with Federal Reserve SR 11-7 model validation documentation; credit risk and underwriting models with FCRA adverse action reason code integration; algorithmic trading signal generation and portfolio analytics; financial document intelligence — earnings analysis, regulatory filing review, credit memo extraction. Compliance: SR 11-7, FCRA, ECOA, BSA/AML, New York DFS oversight context.",
+          "description": "New York is the US financial services capital. ClickMasters builds: fraud detection and AML monitoring systems with Federal Reserve SR 26-2 model validation documentation; credit risk and underwriting models with FCRA adverse action reason code integration; algorithmic trading signal generation and portfolio analytics; financial document intelligence — earnings analysis, regulatory filing review, credit memo extraction. Compliance: SR 26-2, FCRA, ECOA, BSA/AML, New York DFS oversight context.",
           "icon": "building",
           "label": "FinTech",
-          "metric": "SR 11-7 · FCRA"
+          "metric": "SR 26-2 · FCRA"
         },
         {
           "title": "Legal and LegalTech",
@@ -327,7 +327,7 @@
         },
         {
           "title": "How do we know ClickMasters understands New York's regulatory environment?",
-          "description": "ClickMasters builds FinTech AI with SR 11-7 and FCRA context, healthcare AI with HIPAA and FDA SaMD awareness, and legal AI with attorney-client privilege handling — these are requirements in our project methodology for New York's dominant industries.",
+          "description": "ClickMasters builds FinTech AI with SR 26-2 and FCRA context, healthcare AI with HIPAA and FDA SaMD awareness, and legal AI with attorney-client privilege handling — these are requirements in our project methodology for New York's dominant industries.",
           "icon": "scale",
           "label": "Regulatory expertise",
           "metric": "Native awareness"
@@ -340,10 +340,10 @@
           "metric": "Arranged as needed"
         },
         {
-          "title": "Can ClickMasters provide SR 11-7 model validation documentation?",
-          "description": "Yes — model validation documentation aligned with Federal Reserve SR 11-7 is standard for New York banking and financial services ML engagements.",
+          "title": "Can ClickMasters provide SR 26-2 model validation documentation?",
+          "description": "Yes — model validation documentation aligned with Federal Reserve SR 26-2 is standard for New York banking and financial services ML engagements.",
           "icon": "file-check",
-          "label": "SR 11-7",
+          "label": "SR 26-2",
           "metric": "Standard deliverable"
         }
       ]
@@ -371,8 +371,8 @@
           "answer": "Fraud detection, credit risk scoring, and document intelligence (for financial document processing) are ClickMasters' most common New York FinTech engagements."
         },
         {
-          "question": "Can ClickMasters provide SR 11-7 model validation documentation?",
-          "answer": "Yes — model validation documentation aligned with Federal Reserve SR 11-7 is standard for New York banking and financial services ML engagements."
+          "question": "Can ClickMasters provide SR 26-2 model validation documentation?",
+          "answer": "Yes — model validation documentation aligned with Federal Reserve SR 26-2 is standard for New York banking and financial services ML engagements."
         },
         {
           "question": "How do we get started with a New York AI development project?",

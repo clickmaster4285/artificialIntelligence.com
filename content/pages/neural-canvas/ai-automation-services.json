@@ -1,0 +1,345 @@
+{
+  "slug": "ai-automation-services",
+  "status": "published",
+  "seo": {
+    "title": "AI Automation Services | ClickMasters AI",
+    "description": "AI automation services: document processing, ticket triage, AP automation and agent workflows integrated with your ERP and CRM. From $15K. Fixed-price, full IP.",
+    "canonical": "/ai-automation-services/",
+    "primaryKeyword": "ai automation services",
+    "secondaryKeywords": [
+      "ai automation company",
+      "ai workflow automation",
+      "intelligent document processing",
+      "business process automation ai",
+      "ai agents for business automation"
+    ],
+    "noIndex": false,
+    "noFollow": false
+  },
+  "schema": {
+    "service": true,
+    "organization": true,
+    "breadcrumbs": true,
+    "faq": true
+  },
+  "appearance": {
+    "template": "neural-canvas",
+    "accent": "emerald",
+    "background": "neural-grid",
+    "grain": true,
+    "glow": true,
+    "scrollProgress": true,
+    "customCursor": true
+  },
+  "hero": {
+    "eyebrow": "Automation That Handles Real Exceptions",
+    "title": "AI Automation Services",
+    "highlightedText": "From $15K",
+    "description": "ClickMasters automates the document-heavy, judgment-heavy work that traditional rules-based automation cannot handle — reading invoices and contracts, triaging emails and tickets, generating reports and orchestrating multi-step processes across your systems. Every automation includes confidence thresholds, exception routing and human review, so your team stays in control of the cases that need it.",
+    "primaryCta": {
+      "label": "Get a Free Automation Assessment",
+      "href": "#consultation",
+      "ariaLabel": "Get a free AI automation assessment with 24-hour response"
+    },
+    "secondaryCta": {
+      "label": "See What We Automate",
+      "href": "#capabilities"
+    },
+    "trustText": "Fixed-price · Full IP ownership · Integrates with your ERP, CRM and helpdesk",
+    "metrics": [
+      {
+        "value": "$15K",
+        "label": "Starting investment",
+        "description": "For a single-workflow automation"
+      },
+      {
+        "value": "6–16",
+        "label": "Weeks to launch",
+        "description": "For most focused automations"
+      },
+      {
+        "value": "24h",
+        "label": "Initial response",
+        "description": "Free assessment within one business day"
+      }
+    ],
+    "visual": {
+      "type": "neural-sphere",
+      "label": "AI automation stack",
+      "modelNames": [
+        "Document AI",
+        "LLMs",
+        "Agents",
+        "APIs",
+        "Human Review"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "capabilities",
+      "type": "feature-grid",
+      "eyebrow": "What We Automate",
+      "title": "AI automation for the workflows rules engines cannot handle",
+      "description": "Unstructured inputs, variable formats and decisions that need context — the work that still lands on people's desks after RPA.",
+      "tone": "default",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "bento",
+      "columns": 2,
+      "items": [
+        {
+          "title": "Document Extraction and Processing",
+          "description": "Invoices, purchase orders, claims, applications and forms read by OCR and LLM extraction, validated against business rules and written to your systems of record.",
+          "icon": "layers",
+          "label": "Document AI",
+          "metric": "$15K–$55K · 6–14 weeks",
+          "link": {
+            "label": "What is intelligent document processing?",
+            "href": "/glossary/document-intelligence-idp/"
+          }
+        },
+        {
+          "title": "Email and Ticket Triage",
+          "description": "Inbound email and support tickets classified, prioritized, enriched and routed — with draft responses for agents and automatic resolution of routine requests.",
+          "icon": "bot",
+          "label": "Triage",
+          "metric": "$20K–$50K · 8–14 weeks"
+        },
+        {
+          "title": "Contract and Compliance Screening",
+          "description": "Key-term extraction, risk flagging and policy matching across contracts and compliance documents, with exception workflows for legal and compliance reviewers.",
+          "icon": "shield",
+          "label": "Risk",
+          "metric": "$30K–$85K · 10–18 weeks"
+        },
+        {
+          "title": "Report and Document Generation",
+          "description": "Recurring reports, summaries and customer communications generated from your data with approval workflows before anything is sent.",
+          "icon": "sparkles",
+          "label": "Generation",
+          "metric": "$20K–$55K · 8–14 weeks"
+        },
+        {
+          "title": "Multi-Step Agent Workflows",
+          "description": "AI agents that plan and execute multi-step processes across several systems via APIs, with explicit permissions, audit logs and human approval gates.",
+          "icon": "workflow",
+          "label": "Agents",
+          "metric": "$50K–$150K · 12–22 weeks",
+          "link": {
+            "label": "What is an agentic AI workflow?",
+            "href": "/glossary/agentic-ai-workflow/"
+          }
+        },
+        {
+          "title": "Enterprise Automation Platforms",
+          "description": "A shared automation platform — orchestration, connectors, monitoring and governance — that lets you roll out many workflows across departments.",
+          "icon": "network",
+          "label": "Platform",
+          "metric": "$120K–$400K · 18–36 weeks"
+        }
+      ]
+    },
+    {
+      "id": "automation-principles",
+      "type": "rich-text",
+      "eyebrow": "How We Engineer It",
+      "title": "Automation that is safe to trust with real operations",
+      "tone": "surface",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Confidence thresholds and exception routing",
+          "paragraphs": [
+            "Every extraction or decision carries a confidence score. High-confidence items flow straight through; low-confidence items and policy exceptions are routed to a reviewer with the evidence highlighted. Thresholds are tuned with your team against measured error rates."
+          ]
+        },
+        {
+          "heading": "Integration is most of the work",
+          "paragraphs": [
+            "The AI model is rarely the hardest part. Reliable automation depends on robust connectors to ERP, CRM, email, document stores and legacy systems — with retries, idempotency and rollback for write operations. We scope integrations explicitly so there are no surprises."
+          ]
+        },
+        {
+          "heading": "Measured, auditable results",
+          "paragraphs": [
+            "We baseline the current process — volume, handling time, error rate — before building, then report straight-through-processing rate, accuracy and time saved after launch. Every automated action is logged for audit."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing-reference",
+      "type": "table",
+      "eyebrow": "Transparent Investment",
+      "title": "AI automation pricing reference",
+      "description": "Typical fixed-price ranges by automation type. Integration complexity is the largest cost driver.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "pricing",
+      "columns": [
+        {
+          "key": "automation",
+          "label": "Automation Type",
+          "align": "left",
+          "width": "40%"
+        },
+        {
+          "key": "cost",
+          "label": "Cost Range",
+          "align": "left",
+          "width": "30%"
+        },
+        {
+          "key": "timeline",
+          "label": "Timeline",
+          "align": "left",
+          "width": "30%"
+        }
+      ],
+      "rows": [
+        {
+          "id": "doc-extraction",
+          "cells": {
+            "automation": "Document extraction (single document type)",
+            "cost": "$15,000 – $40,000",
+            "timeline": "6–12 weeks"
+          }
+        },
+        {
+          "id": "ap-processing",
+          "cells": {
+            "automation": "Invoice / AP processing automation",
+            "cost": "$20,000 – $55,000",
+            "timeline": "8–14 weeks"
+          },
+          "highlighted": true,
+          "badge": "Most common"
+        },
+        {
+          "id": "triage",
+          "cells": {
+            "automation": "Email / ticket triage and routing",
+            "cost": "$20,000 – $50,000",
+            "timeline": "8–14 weeks"
+          }
+        },
+        {
+          "id": "contracts",
+          "cells": {
+            "automation": "Contract processing pipeline",
+            "cost": "$30,000 – $75,000",
+            "timeline": "10–18 weeks"
+          }
+        },
+        {
+          "id": "orchestration",
+          "cells": {
+            "automation": "Multi-step process orchestration",
+            "cost": "$50,000 – $150,000",
+            "timeline": "12–22 weeks"
+          }
+        },
+        {
+          "id": "platform",
+          "cells": {
+            "automation": "Enterprise automation platform",
+            "cost": "$120,000 – $400,000",
+            "timeline": "18–36 weeks"
+          }
+        }
+      ],
+      "note": "Ranges reflect ClickMasters' fixed-price project fees. Ongoing document AI, LLM API and hosting costs are separate and modeled during discovery.",
+      "cta": {
+        "label": "See the full AI automation cost breakdown",
+        "href": "/ai-automation-cost/"
+      }
+    },
+    {
+      "id": "ai-automation-faqs",
+      "type": "faq",
+      "eyebrow": "Frequently Asked",
+      "title": "Questions about AI automation services",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "variant": "indexed",
+      "items": [
+        {
+          "question": "How is AI automation different from RPA?",
+          "answer": "RPA follows fixed rules and screen steps, so it breaks on unstructured inputs and format changes. AI automation uses models to read documents, understand language and make bounded judgments, which lets it handle variable inputs. The two are often combined: AI interprets the input, and APIs or RPA execute the action."
+        },
+        {
+          "question": "How much do AI automation services cost?",
+          "answer": "A focused single-workflow automation typically costs $15,000–$60,000. Multi-step orchestration runs $50,000–$150,000, and enterprise automation platforms $120,000–$400,000. Integration complexity is the biggest variable."
+        },
+        {
+          "question": "What happens when the AI is not sure?",
+          "answer": "Low-confidence results and policy exceptions are routed to a human reviewer with the relevant evidence highlighted. Reviewer corrections are logged and can be used to improve the system over time."
+        },
+        {
+          "question": "Which systems can you integrate with?",
+          "answer": "Common targets include SAP, Oracle and NetSuite ERPs, Salesforce and HubSpot CRMs, Microsoft 365 and Google Workspace, ServiceNow and Zendesk, SharePoint and cloud storage, plus legacy systems via ETL or screen automation where no API exists."
+        },
+        {
+          "question": "How quickly will we see ROI?",
+          "answer": "We baseline the current process before building so ROI is measurable. High-volume workflows such as AP processing or ticket triage are usually the fastest to pay back; we give a project-specific estimate during discovery."
+        },
+        {
+          "question": "Is our data secure?",
+          "answer": "We deploy in your cloud account or on-premise where required, use enterprise model endpoints that do not train on your data, and apply role-based access, encryption and audit logging."
+        }
+      ]
+    },
+    {
+      "id": "consultation",
+      "type": "cta",
+      "eyebrow": "Start With a Free Assessment",
+      "heading": "Identify the workflow worth automating first",
+      "text": "Tell us which process consumes the most manual effort. An engineer will reply within one business day with an assessment of automation potential, approach and budget range.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "fade-scale",
+      "primaryCta": {
+        "label": "Get Your Free Automation Assessment",
+        "href": "/contact/"
+      },
+      "secondaryCta": {
+        "label": "Email the Engineering Team",
+        "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
+      },
+      "contactEmail": "hello@clickmastersartificialintelligencecompany.com",
+      "variant": "orbital"
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "AI Automation Cost",
+      "description": "Detailed pricing by automation type and integration.",
+      "href": "/ai-automation-cost/"
+    },
+    {
+      "title": "AI Agent Development Cost",
+      "description": "What multi-step AI agent systems cost to build.",
+      "href": "/ai-agent-development-cost/"
+    },
+    {
+      "title": "Custom AI Development",
+      "description": "Custom ML, LLM and vision systems built around your data.",
+      "href": "/custom-ai-development/"
+    },
+    {
+      "title": "AI Workflow Automation Glossary Entry",
+      "description": "How AI automates multi-step business workflows.",
+      "href": "/glossary/ai-workflow-automation/"
+    },
+    {
+      "title": "Intelligent Document Processing Glossary Entry",
+      "description": "Extracting structured data from documents with AI.",
+      "href": "/glossary/document-intelligence-idp/"
+    }
+  ]
+}

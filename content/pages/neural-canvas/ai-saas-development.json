@@ -1,0 +1,337 @@
+{
+  "slug": "ai-saas-development",
+  "status": "published",
+  "seo": {
+    "title": "AI SaaS Development Services | ClickMasters AI",
+    "description": "AI SaaS development: multi-tenant AI products with tenant data isolation, usage metering, billing and AI cost controls. MVPs from $40K. Fixed-price, full IP.",
+    "canonical": "/ai-saas-development/",
+    "primaryKeyword": "ai saas development",
+    "secondaryKeywords": [
+      "ai saas development company",
+      "ai saas product development",
+      "build ai saas mvp",
+      "multi-tenant ai platform development",
+      "vertical ai saas development"
+    ],
+    "noIndex": false,
+    "noFollow": false
+  },
+  "schema": {
+    "service": true,
+    "organization": true,
+    "breadcrumbs": true,
+    "faq": true
+  },
+  "appearance": {
+    "template": "neural-canvas",
+    "accent": "rose",
+    "background": "neural-grid",
+    "grain": true,
+    "glow": true,
+    "scrollProgress": true,
+    "customCursor": true
+  },
+  "hero": {
+    "eyebrow": "AI-Native Products, Built to Scale",
+    "title": "AI SaaS Development Services",
+    "highlightedText": "MVPs From $40K",
+    "description": "ClickMasters builds AI SaaS products from first MVP to multi-tenant platform — the AI capability your customers pay for, plus the product foundations around it: authentication, tenant data isolation, usage metering, billing, admin tooling and AI cost controls. We engineer for the problems unique to AI SaaS, where inference costs scale with usage and one tenant's data must never surface in another tenant's answers.",
+    "primaryCta": {
+      "label": "Get a Free AI SaaS Consultation",
+      "href": "#consultation",
+      "ariaLabel": "Get a free AI SaaS development consultation with 24-hour response"
+    },
+    "secondaryCta": {
+      "label": "Explore What We Build",
+      "href": "#capabilities"
+    },
+    "trustText": "Fixed-price · Full IP ownership · Founder- and enterprise-friendly",
+    "metrics": [
+      {
+        "value": "$40K",
+        "label": "Starting investment",
+        "description": "For a focused AI SaaS MVP"
+      },
+      {
+        "value": "12–20",
+        "label": "Weeks to MVP",
+        "description": "Single core AI feature"
+      },
+      {
+        "value": "24h",
+        "label": "Initial response",
+        "description": "Free consultation within one business day"
+      }
+    ],
+    "visual": {
+      "type": "neural-sphere",
+      "label": "AI SaaS stack",
+      "modelNames": [
+        "LLMs",
+        "RAG",
+        "Agents",
+        "Multi-Tenant",
+        "Billing"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "capabilities",
+      "type": "feature-grid",
+      "eyebrow": "What We Build",
+      "title": "AI SaaS products, from MVP to enterprise platform",
+      "description": "We build the AI core and the SaaS foundations together, so the product is ready for real customers — not just a demo.",
+      "tone": "default",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "bento",
+      "columns": 2,
+      "items": [
+        {
+          "title": "AI SaaS MVPs",
+          "description": "One core AI feature with authentication, basic multi-tenancy, subscription billing and an admin console — enough to sell, learn and iterate.",
+          "icon": "sparkles",
+          "label": "MVP",
+          "metric": "$40K–$90K · 12–20 weeks"
+        },
+        {
+          "title": "Per-Tenant Knowledge and RAG",
+          "description": "Each customer uploads their own documents into an isolated knowledge base with namespace-level separation, ingestion UI and permission-aware retrieval.",
+          "icon": "database",
+          "label": "Tenant Isolation",
+          "metric": "$65K–$150K · 14–26 weeks"
+        },
+        {
+          "title": "Agent-Powered Workflow Products",
+          "description": "SaaS products where AI agents execute multi-step tasks for users through integrations, with approvals, audit trails and per-tenant tool permissions.",
+          "icon": "workflow",
+          "label": "Agents",
+          "metric": "$80K–$200K · 16–30 weeks"
+        },
+        {
+          "title": "AI Document Processing SaaS",
+          "description": "Upload-extract-review products for invoices, contracts, claims or applications, with configurable schemas per customer and export integrations.",
+          "icon": "layers",
+          "label": "Document AI",
+          "metric": "$55K–$140K · 14–24 weeks"
+        },
+        {
+          "title": "AI Analytics and BI Products",
+          "description": "Natural-language querying over customer data, automated insights and chart generation with guardrails on generated SQL.",
+          "icon": "chart",
+          "label": "Analytics",
+          "metric": "$60K–$150K · 14–26 weeks"
+        },
+        {
+          "title": "Vertical and Enterprise AI Platforms",
+          "description": "Full-featured products for a target industry, or multi-use enterprise AI platforms with SSO, governance, audit and data residency.",
+          "icon": "cloud",
+          "label": "Platform",
+          "metric": "$100K–$500K+ · 18–42 weeks"
+        }
+      ]
+    },
+    {
+      "id": "ai-saas-architecture",
+      "type": "rich-text",
+      "eyebrow": "Architecture",
+      "title": "The engineering problems unique to AI SaaS",
+      "tone": "surface",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Tenant data isolation",
+          "paragraphs": [
+            "In AI products, isolation failures are not just access-control bugs — a shared index or prompt context can leak one customer's data into another's answer. We enforce isolation at the storage, retrieval and prompt layers and test for cross-tenant leakage."
+          ]
+        },
+        {
+          "heading": "Unit economics and inference cost",
+          "paragraphs": [
+            "Every user action can incur model cost. We meter usage per tenant, route requests to the least expensive model that meets quality, cache aggressively and align pricing tiers with real inference cost so margins hold as you grow."
+          ]
+        },
+        {
+          "heading": "Quality you can measure release to release",
+          "paragraphs": [
+            "Evaluation datasets and automated regression tests run whenever prompts, models or retrieval change, so product updates do not silently degrade answer quality for existing customers."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing-reference",
+      "type": "table",
+      "eyebrow": "Transparent Investment",
+      "title": "AI SaaS development pricing reference",
+      "description": "Typical fixed-price ranges by product scope. Your final quote is fixed after discovery.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "pricing",
+      "columns": [
+        {
+          "key": "scope",
+          "label": "Product Scope",
+          "align": "left",
+          "width": "40%"
+        },
+        {
+          "key": "cost",
+          "label": "Cost Range",
+          "align": "left",
+          "width": "30%"
+        },
+        {
+          "key": "timeline",
+          "label": "Timeline",
+          "align": "left",
+          "width": "30%"
+        }
+      ],
+      "rows": [
+        {
+          "id": "mvp",
+          "cells": {
+            "scope": "AI SaaS MVP (single AI feature, basic multi-tenancy)",
+            "cost": "$40,000 – $90,000",
+            "timeline": "12–20 weeks"
+          },
+          "highlighted": true,
+          "badge": "Most common"
+        },
+        {
+          "id": "tenant-rag",
+          "cells": {
+            "scope": "AI SaaS with per-tenant RAG knowledge bases",
+            "cost": "$65,000 – $150,000",
+            "timeline": "14–26 weeks"
+          }
+        },
+        {
+          "id": "agent-saas",
+          "cells": {
+            "scope": "AI SaaS with AI agent workflow",
+            "cost": "$80,000 – $200,000",
+            "timeline": "16–30 weeks"
+          }
+        },
+        {
+          "id": "doc-saas",
+          "cells": {
+            "scope": "AI document processing SaaS",
+            "cost": "$55,000 – $140,000",
+            "timeline": "14–24 weeks"
+          }
+        },
+        {
+          "id": "vertical",
+          "cells": {
+            "scope": "Vertical AI SaaS (full product)",
+            "cost": "$100,000 – $300,000",
+            "timeline": "18–36 weeks"
+          }
+        },
+        {
+          "id": "enterprise",
+          "cells": {
+            "scope": "Enterprise AI platform (multi-use, multi-tenant)",
+            "cost": "$200,000 – $500,000+",
+            "timeline": "24–42 weeks"
+          }
+        }
+      ],
+      "note": "Ranges reflect ClickMasters' fixed-price project fees. Hosting, model API and vector database costs are separate and modeled during discovery.",
+      "cta": {
+        "label": "See the full AI SaaS cost breakdown",
+        "href": "/ai-saas-development-cost/"
+      }
+    },
+    {
+      "id": "ai-saas-faqs",
+      "type": "faq",
+      "eyebrow": "Frequently Asked",
+      "title": "Questions about AI SaaS development",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "variant": "indexed",
+      "items": [
+        {
+          "question": "How much does it cost to build an AI SaaS product?",
+          "answer": "A focused AI SaaS MVP with one core AI feature, basic multi-tenancy and billing typically costs $40,000–$90,000. Products with per-tenant knowledge bases or agent workflows run $65,000–$200,000, and full vertical or enterprise platforms $100,000–$500,000+."
+        },
+        {
+          "question": "How long does an AI SaaS MVP take?",
+          "answer": "Most MVPs launch in 12–20 weeks, including discovery, the AI core, authentication, billing and an admin console."
+        },
+        {
+          "question": "How do you prevent one customer's data appearing in another's results?",
+          "answer": "We isolate tenant data at the storage, vector index and prompt-construction layers, scope every retrieval to the requesting tenant, and include cross-tenant leakage tests in the automated test suite."
+        },
+        {
+          "question": "How do you keep AI costs from destroying margins?",
+          "answer": "Per-tenant usage metering, model routing to cheaper models where quality allows, caching, token budgets and pricing tiers aligned with inference cost. We model unit economics during discovery."
+        },
+        {
+          "question": "Can you build on top of OpenAI, Anthropic or open-weight models?",
+          "answer": "Yes. We are model-agnostic and often design a provider abstraction so you can switch or combine models as prices and capabilities change."
+        },
+        {
+          "question": "Do we own the product code?",
+          "answer": "Yes — full IP transfer of all source code, infrastructure configuration, evaluation datasets and documentation."
+        }
+      ]
+    },
+    {
+      "id": "consultation",
+      "type": "cta",
+      "eyebrow": "Start With a Free Consultation",
+      "heading": "Turn your AI product idea into a scoped build plan",
+      "text": "Share your product concept and target customers. An engineer will reply within one business day with MVP scope recommendations, architecture notes and a budget range.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "fade-scale",
+      "primaryCta": {
+        "label": "Get Your Free AI SaaS Consultation",
+        "href": "/contact/"
+      },
+      "secondaryCta": {
+        "label": "Email the Engineering Team",
+        "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
+      },
+      "contactEmail": "hello@clickmastersartificialintelligencecompany.com",
+      "variant": "orbital"
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "AI SaaS Development Cost",
+      "description": "Detailed pricing by AI SaaS product scope.",
+      "href": "/ai-saas-development-cost/"
+    },
+    {
+      "title": "AI API Development",
+      "description": "Secure, versioned APIs for AI capabilities.",
+      "href": "/ai-api-development/"
+    },
+    {
+      "title": "Generative AI Development",
+      "description": "Text, image and synthetic data generation systems.",
+      "href": "/generative-ai-development/"
+    },
+    {
+      "title": "AI SaaS Glossary Entry",
+      "description": "What makes a SaaS product AI-native.",
+      "href": "/glossary/ai-saas/"
+    },
+    {
+      "title": "Custom AI Development",
+      "description": "Custom ML, LLM and vision systems built around your data.",
+      "href": "/custom-ai-development/"
+    }
+  ]
+}

@@ -155,7 +155,7 @@
         {
           "heading": "7. Regulatory Documentation Requirements",
           "paragraphs": [
-            "SR 11-7 model risk management (US banking), FDA Software as a Medical Device documentation (healthcare AI), and EU AI Act technical documentation (high-risk AI systems) require documentation of model architecture, training data, validation methodology, and ongoing monitoring. Vendor platforms typically don't provide this level of technical documentation."
+            "SR 26-2 model risk management (US banking), FDA Software as a Medical Device documentation (healthcare AI), and EU AI Act technical documentation (high-risk AI systems) require documentation of model architecture, training data, validation methodology, and ongoing monitoring. Vendor platforms typically don't provide this level of technical documentation."
           ]
         }
       ]
@@ -458,7 +458,7 @@
     {
       "title": "LLM Integration Services",
       "description": "Integrate large language models into your existing products and workflows.",
-      "href": "/llm-integration-services/"
+      "href": "/llm-development-company/"
     },
     {
       "title": "AI Proof of Concept Glossary",

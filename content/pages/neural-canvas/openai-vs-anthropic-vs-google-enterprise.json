@@ -43,7 +43,7 @@
     },
     "secondaryCta": {
       "label": "Explore LLM Integration Services",
-      "href": "/llm-integration-services/"
+      "href": "/llm-development-company/"
     },
     "trustText": "Provider-agnostic · Evidence-based recommendations · USA-based engineers",
     "metrics": [
@@ -577,7 +577,7 @@
     {
       "title": "LLM Integration Services",
       "description": "Integrate large language models into your existing products and workflows.",
-      "href": "/llm-integration-services/"
+      "href": "/llm-development-company/"
     },
     {
       "title": "Custom AI Development",

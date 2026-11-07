@@ -268,7 +268,7 @@
   "references": [
     {
       "label": "OWASP Top 10 for LLM Applications",
-      "href": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+      "href": "https://genai.owasp.org/llm-top-10/",
       "publisher": "OWASP"
     },
     {

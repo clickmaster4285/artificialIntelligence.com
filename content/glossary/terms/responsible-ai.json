@@ -62,7 +62,7 @@
             },
             {
               "label": "Explainability (XAI)",
-              "value": "Making AI decisions interpretable enough for meaningful audit, regulatory review, or user understanding where consequential decisions are involved. [→ See Model Explainability](/glossary/model-explainability-xai/)"
+              "value": "Making AI decisions interpretable enough for meaningful audit, regulatory review, or user understanding where consequential decisions are involved. [→ See AI Explainability Tools](/glossary/ai-explainability-tools/)"
             },
             {
               "label": "Risk Assessment",

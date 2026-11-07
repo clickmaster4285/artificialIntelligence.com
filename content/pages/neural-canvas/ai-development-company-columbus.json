@@ -46,7 +46,7 @@
       "label": "Explore Custom AI Development",
       "href": "/custom-ai-development/"
     },
-    "trustText": "SR 11-7, HIPAA · Fashion Retail AI · Fixed-price · Full IP · Eastern Time · 24-hour response",
+    "trustText": "SR 26-2, HIPAA · Fashion Retail AI · Fixed-price · Full IP · Eastern Time · 24-hour response",
     "metrics": [
       {
         "value": "From $20,000",
@@ -98,7 +98,7 @@
         },
         {
           "title": "Financial Services AI",
-          "description": "Fraud detection, credit risk, and financial analytics for Columbus's major banking operations — with SR 11-7 model validation for OCC-regulated banking clients. From $45,000.",
+          "description": "Fraud detection, credit risk, and financial analytics for Columbus's major banking operations — with SR 26-2 model validation for OCC-regulated banking clients. From $45,000.",
           "icon": "building",
           "label": "Financial Services",
           "metric": "From $45K"
@@ -147,7 +147,7 @@
       "items": [
         {
           "title": "Financial Services (JPMorgan Chase's Operations Capital)",
-          "description": "Columbus hosts JPMorgan Chase's largest operational campus — tens of thousands of employees in card services, auto finance, retail banking operations, and technology. Nationwide Insurance (Columbus HQ) and Huntington Bancshares (Columbus HQ) round out a significant financial services concentration. Consumer credit and fraud detection: ML for JPMorgan's card and auto lending operations, Nationwide's insurance products, and Huntington's retail banking — with SR 11-7 validation and FCRA compliance. Financial document processing: AI automation for the enormous volume of financial documents that Columbus's banking and insurance operations process. Insurance underwriting and claims: ML for Nationwide's property, casualty, and life insurance underwriting and claims automation.",
+          "description": "Columbus hosts JPMorgan Chase's largest operational campus — tens of thousands of employees in card services, auto finance, retail banking operations, and technology. Nationwide Insurance (Columbus HQ) and Huntington Bancshares (Columbus HQ) round out a significant financial services concentration. Consumer credit and fraud detection: ML for JPMorgan's card and auto lending operations, Nationwide's insurance products, and Huntington's retail banking — with SR 26-2 validation and FCRA compliance. Financial document processing: AI automation for the enormous volume of financial documents that Columbus's banking and insurance operations process. Insurance underwriting and claims: ML for Nationwide's property, casualty, and life insurance underwriting and claims automation.",
           "icon": "building",
           "label": "Financial Services",
           "metric": "JPMorgan · Nationwide"
@@ -362,7 +362,7 @@
         },
         {
           "title": "How much does AI development cost in Columbus?",
-          "description": "From $20,000 for focused projects; most enterprise engagements run $35,000–$135,000. Financial services AI with SR 11-7 documentation scope at the higher end.",
+          "description": "From $20,000 for focused projects; most enterprise engagements run $35,000–$135,000. Financial services AI with SR 26-2 documentation scope at the higher end.",
           "icon": "dollar-sign",
           "label": "Cost",
           "metric": "$20K–$135K"
@@ -394,8 +394,8 @@
       "animation": "stagger",
       "items": [
         {
-          "question": "Can ClickMasters build ML for financial services clients in Columbus with SR 11-7 requirements?",
-          "answer": "Yes — SR 11-7 aligned model validation documentation is standard for Columbus banking and insurance ML engagements."
+          "question": "Can ClickMasters build ML for financial services clients in Columbus with SR 26-2 requirements?",
+          "answer": "Yes — SR 26-2 aligned model validation documentation is standard for Columbus banking and insurance ML engagements."
         },
         {
           "question": "Can ClickMasters build retail demand forecasting for Columbus fashion brands?",
@@ -436,7 +436,7 @@
         "label": "Email Us Directly",
         "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
       },
-      "trustText": "AI development from $20,000 | Fixed-price | Full IP | SR 11-7, HIPAA | Fashion Retail AI | Eastern Time | 24-hr response"
+      "trustText": "AI development from $20,000 | Fixed-price | Full IP | SR 26-2, HIPAA | Fashion Retail AI | Eastern Time | 24-hr response"
     }
   ]
 }

@@ -1,0 +1,363 @@
+{
+  "slug": "natural-language-processing-services",
+  "status": "published",
+  "seo": {
+    "title": "Natural Language Processing Services | ClickMasters AI",
+    "description": "NLP services: text classification, named entity recognition, sentiment analysis, information extraction and summarization built on your data. From $20K. Fixed-price.",
+    "canonical": "/natural-language-processing-services/",
+    "primaryKeyword": "natural language processing services",
+    "secondaryKeywords": [
+      "nlp development services",
+      "nlp development company",
+      "custom nlp solutions",
+      "text classification development",
+      "named entity recognition development"
+    ],
+    "noIndex": false,
+    "noFollow": false
+  },
+  "schema": {
+    "service": true,
+    "organization": true,
+    "breadcrumbs": true,
+    "faq": true
+  },
+  "appearance": {
+    "template": "neural-canvas",
+    "accent": "blue",
+    "background": "neural-grid",
+    "grain": true,
+    "glow": true,
+    "scrollProgress": true,
+    "customCursor": true
+  },
+  "hero": {
+    "eyebrow": "Language Understanding at Production Scale",
+    "title": "Natural Language Processing Services",
+    "highlightedText": "From $20K",
+    "description": "ClickMasters builds custom NLP systems that classify, extract, summarize and search text across your documents, tickets, emails and reviews. We choose between fine-tuned models and LLM-based approaches based on accuracy, volume and cost — so the system is accurate enough to trust and affordable to run at your scale.",
+    "primaryCta": {
+      "label": "Get a Free NLP Consultation",
+      "href": "#consultation",
+      "ariaLabel": "Get a free natural language processing consultation with 24-hour response"
+    },
+    "secondaryCta": {
+      "label": "Explore NLP Capabilities",
+      "href": "#capabilities"
+    },
+    "trustText": "Fixed-price · Full IP ownership · Fine-tuned or LLM-based — whichever fits",
+    "metrics": [
+      {
+        "value": "$20K–$250K",
+        "label": "Development cost",
+        "description": "Classification · NER · Extraction"
+      },
+      {
+        "value": "$20K–$70K",
+        "label": "Most common range",
+        "description": "Classification, NER and sentiment projects"
+      },
+      {
+        "value": "24h",
+        "label": "Initial response",
+        "description": "Free consultation within one business day"
+      }
+    ],
+    "visual": {
+      "type": "neural-sphere",
+      "label": "NLP stack",
+      "modelNames": [
+        "Classification",
+        "NER",
+        "Sentiment",
+        "Extraction",
+        "LLMs"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "capabilities",
+      "type": "feature-grid",
+      "eyebrow": "What We Build",
+      "title": "NLP systems for the text your business runs on",
+      "description": "From routing a single inbox to an enterprise platform processing millions of documents.",
+      "tone": "default",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "bento",
+      "columns": 2,
+      "items": [
+        {
+          "title": "Text and Document Classification",
+          "description": "Binary, multi-class and large-scale document classification for routing, tagging, prioritization and compliance screening.",
+          "icon": "layers",
+          "label": "Classification",
+          "metric": "$20K–$70K · 6–16 weeks"
+        },
+        {
+          "title": "Named Entity Recognition",
+          "description": "Custom entity types — parties, products, amounts, dates, clinical or legal terms — extracted reliably from your domain's text.",
+          "icon": "search",
+          "label": "NER",
+          "metric": "$25K–$65K · 8–14 weeks",
+          "link": {
+            "label": "What is named entity recognition?",
+            "href": "/glossary/named-entity-recognition-ner/"
+          }
+        },
+        {
+          "title": "Sentiment and Aspect Analysis",
+          "description": "Standard and aspect-based sentiment analysis for reviews, surveys, support conversations and social channels.",
+          "icon": "chart",
+          "label": "Sentiment",
+          "metric": "$20K–$65K · 6–14 weeks",
+          "link": {
+            "label": "Sentiment analysis services",
+            "href": "/sentiment-analysis-services/"
+          }
+        },
+        {
+          "title": "Information Extraction and Form Parsing",
+          "description": "Structured data pulled from contracts, forms, invoices and reports into your systems, with schema validation.",
+          "icon": "database",
+          "label": "Extraction",
+          "metric": "$30K–$80K · 10–18 weeks"
+        },
+        {
+          "title": "Summarization and Semantic Search",
+          "description": "Length-controlled, factually grounded summaries and meaning-based search across large document collections.",
+          "icon": "sparkles",
+          "label": "Understanding",
+          "metric": "$25K–$70K · 8–16 weeks",
+          "link": {
+            "label": "Semantic search development",
+            "href": "/semantic-search-development/"
+          }
+        },
+        {
+          "title": "Enterprise NLP Platforms",
+          "description": "Multi-task NLP platforms that serve classification, extraction and search to many teams from shared infrastructure.",
+          "icon": "network",
+          "label": "Platform",
+          "metric": "$80K–$250K · 16–30 weeks"
+        }
+      ]
+    },
+    {
+      "id": "nlp-architecture",
+      "type": "rich-text",
+      "eyebrow": "Architecture Choice",
+      "title": "Fine-tuned models or LLMs — chosen on accuracy and cost",
+      "tone": "surface",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "When fine-tuned models win",
+          "paragraphs": [
+            "For high-volume, well-defined tasks, a fine-tuned model is usually cheaper to run and easier to control. At around 100,000 documents a month, fine-tuned inference infrastructure runs roughly $200 a month, versus roughly $5,000 a month with GPT-4o."
+          ]
+        },
+        {
+          "heading": "When LLM-based NLP wins",
+          "paragraphs": [
+            "For complex or rapidly changing tasks, low volumes, or when labeled training data is scarce, LLM-based NLP reaches production faster. Smaller models such as GPT-4o mini can keep per-document costs low."
+          ]
+        },
+        {
+          "heading": "Measured before launch",
+          "paragraphs": [
+            "Every system is validated on a held-out evaluation set using precision, recall and task-specific metrics, then monitored in production for drift."
+          ],
+          "links": [
+            {
+              "label": "Precision and recall explained",
+              "href": "/glossary/precision-and-recall/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing-reference",
+      "type": "table",
+      "eyebrow": "Transparent Investment",
+      "title": "NLP development pricing reference",
+      "description": "Typical fixed-price ranges by NLP project type. Your final quote is fixed after discovery.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "pricing",
+      "columns": [
+        {
+          "key": "project",
+          "label": "NLP Project Type",
+          "align": "left",
+          "width": "40%"
+        },
+        {
+          "key": "cost",
+          "label": "Cost Range",
+          "align": "left",
+          "width": "30%"
+        },
+        {
+          "key": "timeline",
+          "label": "Timeline",
+          "align": "left",
+          "width": "30%"
+        }
+      ],
+      "rows": [
+        {
+          "id": "binary",
+          "cells": {
+            "project": "Binary text classification",
+            "cost": "$20,000 – $45,000",
+            "timeline": "6–12 weeks"
+          }
+        },
+        {
+          "id": "multi-class",
+          "cells": {
+            "project": "Multi-class classification (5–20 categories)",
+            "cost": "$25,000 – $60,000",
+            "timeline": "8–14 weeks"
+          },
+          "highlighted": true,
+          "badge": "Most common"
+        },
+        {
+          "id": "ner",
+          "cells": {
+            "project": "Named entity recognition (NER)",
+            "cost": "$25,000 – $65,000",
+            "timeline": "8–14 weeks"
+          }
+        },
+        {
+          "id": "extraction",
+          "cells": {
+            "project": "Information extraction / form parsing",
+            "cost": "$30,000 – $80,000",
+            "timeline": "10–18 weeks"
+          }
+        },
+        {
+          "id": "summarization",
+          "cells": {
+            "project": "Text summarization system",
+            "cost": "$25,000 – $65,000",
+            "timeline": "8–14 weeks"
+          }
+        },
+        {
+          "id": "llm-nlp",
+          "cells": {
+            "project": "LLM-based NLP (GPT-4/Claude, complex tasks)",
+            "cost": "$20,000 – $90,000",
+            "timeline": "8–18 weeks"
+          }
+        },
+        {
+          "id": "platform",
+          "cells": {
+            "project": "Enterprise NLP platform (multi-task)",
+            "cost": "$80,000 – $250,000",
+            "timeline": "16–30 weeks"
+          }
+        }
+      ],
+      "note": "Ranges reflect ClickMasters' fixed-price project fees. Inference, vector store and monitoring costs are separate and modeled during discovery.",
+      "cta": {
+        "label": "See the full NLP development cost breakdown",
+        "href": "/nlp-development-cost/"
+      }
+    },
+    {
+      "id": "nlp-faqs",
+      "type": "faq",
+      "eyebrow": "Frequently Asked",
+      "title": "Questions about NLP services",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "variant": "indexed",
+      "items": [
+        {
+          "question": "What are natural language processing services?",
+          "answer": "NLP services design and build software that understands text — classifying it, extracting entities and fields, measuring sentiment, summarizing it or searching it by meaning — and integrate that capability into your workflows and systems."
+        },
+        {
+          "question": "How much does custom NLP development cost?",
+          "answer": "Custom NLP development costs $20,000–$250,000. The most common projects — text classification, named entity recognition and sentiment analysis — run $20,000–$70,000. Enterprise multi-task platforms run $80,000–$250,000."
+        },
+        {
+          "question": "How long does an NLP project take?",
+          "answer": "Most focused NLP projects take 6–18 weeks depending on the task. Enterprise NLP platforms take 16–30 weeks."
+        },
+        {
+          "question": "Should we use a fine-tuned model or an LLM API?",
+          "answer": "It depends on volume and task complexity. At high volume, fine-tuned models are usually far cheaper to run; for complex tasks, low volume or limited training data, LLM-based approaches reach production faster. We model both during discovery."
+        },
+        {
+          "question": "Do we need labeled training data?",
+          "answer": "Fine-tuned models need labeled examples; we assess what you have and can run annotation with documented guidelines. LLM-based approaches can often start with few or no labeled examples, plus an evaluation set."
+        },
+        {
+          "question": "Who owns the NLP models?",
+          "answer": "You do — model weights, training and inference code, labeled datasets and documentation are transferred at completion."
+        }
+      ]
+    },
+    {
+      "id": "consultation",
+      "type": "cta",
+      "eyebrow": "Start With a Free Consultation",
+      "heading": "Turn unstructured text into structured, usable data",
+      "text": "Describe the text you need to process and what you need from it. An engineer will reply within one business day with an approach and budget range.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "fade-scale",
+      "primaryCta": {
+        "label": "Get Your Free NLP Consultation",
+        "href": "/contact/"
+      },
+      "secondaryCta": {
+        "label": "Email the Engineering Team",
+        "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
+      },
+      "contactEmail": "hello@clickmastersartificialintelligencecompany.com",
+      "variant": "orbital"
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "NLP Development Cost",
+      "description": "Detailed NLP pricing by project type and volume.",
+      "href": "/nlp-development-cost/"
+    },
+    {
+      "title": "Sentiment Analysis Services",
+      "description": "Standard and aspect-based sentiment analysis.",
+      "href": "/sentiment-analysis-services/"
+    },
+    {
+      "title": "Semantic Search Development",
+      "description": "Meaning-based search over your content.",
+      "href": "/semantic-search-development/"
+    },
+    {
+      "title": "LLM Development Company",
+      "description": "Production LLM integration, RAG and fine-tuning.",
+      "href": "/llm-development-company/"
+    },
+    {
+      "title": "Natural Language Processing Glossary Entry",
+      "description": "How computers process and understand human language.",
+      "href": "/glossary/natural-language-processing/"
+    }
+  ]
+}

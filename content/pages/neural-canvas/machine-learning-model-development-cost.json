@@ -161,7 +161,7 @@
           }
         }
       ],
-      "note": "Ranges reflect ClickMasters' fixed-price project fees. Compliance documentation (SR 11-7, HIPAA, FCRA) adds 15–50% for regulated industries.",
+      "note": "Ranges reflect ClickMasters' fixed-price project fees. Compliance documentation (SR 26-2, HIPAA, FCRA) adds 15–50% for regulated industries.",
       "cta": {
         "label": "Get a Fixed Quote for Your ML Project",
         "href": "#consultation"
@@ -186,7 +186,7 @@
           "bullets": [
             "Standard ($25K–$40K): Single prediction target, existing labeled data, standard ML stack (XGBoost/LightGBM), FastAPI endpoint, basic dashboard, 2–3 months monitoring",
             "Complex ($40K–$65K): Multi-feature from 3–6 data sources, custom data pipeline, explainability (SHAP), A/B testing framework, CRM/ERP integration",
-            "Enterprise ($65K–$90K): FCRA adverse action codes, ECOA disparate impact testing, SR 11-7 documentation, audit trail, MLOps with drift detection"
+            "Enterprise ($65K–$90K): FCRA adverse action codes, ECOA disparate impact testing, SR 26-2 documentation, audit trail, MLOps with drift detection"
           ]
         },
         {
@@ -263,7 +263,7 @@
         },
         {
           "title": "2. Compliance & Documentation",
-          "description": "ML compliance requirements add 25–50% to basic model cost: SR 11-7 validation ($15K–$35K), FCRA adverse action codes ($8K–$18K), FDA SaMD ($20K–$50K), HIPAA BAA ($8K–$18K), ECOA disparate impact ($6K–$14K).",
+          "description": "ML compliance requirements add 25–50% to basic model cost: SR 26-2 validation ($15K–$35K), FCRA adverse action codes ($8K–$18K), FDA SaMD ($20K–$50K), HIPAA BAA ($8K–$18K), ECOA disparate impact ($6K–$14K).",
           "icon": "shield",
           "label": "Regulatory",
           "metric": "+25–50%"
@@ -431,7 +431,7 @@
             "2. Is the price fixed or time-and-materials?",
             "3. Do we own all IP and model weights at project close?",
             "4. What happens if the model doesn't meet performance targets?",
-            "5. Do you have experience with our compliance requirements (FCRA, HIPAA, SR 11-7)?",
+            "5. Do you have experience with our compliance requirements (FCRA, HIPAA, SR 26-2)?",
             "6. Can you provide references from similar ML projects?"
           ]
         },
@@ -542,7 +542,7 @@
     {
       "title": "AI Model Fine-Tuning Services",
       "description": "Adapt foundation models for narrow domain-specific tasks.",
-      "href": "/ai-model-fine-tuning-services/"
+      "href": "/ai-model-fine-tuning/"
     },
     {
       "title": "AI Consulting Services",
@@ -552,7 +552,7 @@
     {
       "title": "Machine Learning Glossary",
       "description": "Definitions of key machine learning terms and concepts.",
-      "href": "/glossary/machine-learning/"
+      "href": "/glossary/machine-learning-model/"
     }
   ]
 }

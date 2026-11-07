@@ -233,7 +233,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free NYC AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-development-cost/', '/ai-consulting/new-york/']
+    internalLinks: ['/custom-ai-development/', '/ai-development-cost/', '/machine-learning-consulting-new-york/']
   },
 
   // ============================================
@@ -344,7 +344,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free SF AI Architecture Review',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-app-development-company/', '/ai-agent-development-company/', '/ai-saas-development-company/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/custom-ai-development/', '/ai-agent-development-company/', '/ai-saas-development/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -449,7 +449,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free LA AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/generative-ai-development-company/', '/ai-agent-development-company/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/generative-ai-development/', '/ai-agent-development-company/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -505,7 +505,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
         {
           title: 'Financial Services AI — From Trading Floors to Community Banks',
           description: 'Chicago\'s financial services AI market is uniquely bifurcated between the ultra-low-latency, high-performance trading AI that CME\'s ecosystem requires and the standard enterprise financial services AI (fraud detection, underwriting, compliance) that Northern Trust, Chase, and Discover require. For the trading ecosystem: ClickMasters builds market microstructure AI (order flow prediction, market impact models, execution optimization), risk management AI (real-time portfolio VaR calculation, stress testing models, margin optimization), and alpha signal research infrastructure (feature engineering and ML model backtesting pipelines for quantitative trading strategies). This is specialized work requiring deep knowledge of derivatives market structure, exchange protocols (CME MDP 3.0, CBOE LiveVol), and the latency constraints of algorithmic trading applications. For the broader financial services sector: fraud detection at scale, credit underwriting AI, insurance AI (Allstate\'s claims prediction, CNA\'s risk assessment, Zurich\'s actuarial ML), and wealth management personalization.',
-          keyFeatures: ['Low-latency trading AI', 'Market microstructure', 'SR 11-7 model risk management', 'ECOA/Regulation B compliance']
+          keyFeatures: ['Low-latency trading AI', 'Market microstructure', 'SR 26-2 model risk management', 'ECOA/Regulation B compliance']
         },
         {
           title: 'Healthcare AI — Northwestern, Rush, and the Chicago Health System Landscape',
@@ -556,7 +556,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Chicago AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-development/fintech/', '/ai-development/healthcare/', '/ai-development/manufacturing/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-development/fintech/', '/ai-development/healthcare/', '/ai-development/manufacturing/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -660,7 +660,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Boston AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-development/healthcare/', '/rag-development-services/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-development/healthcare/', '/rag-development-services/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -766,7 +766,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Seattle AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-agent-development-company/', '/rag-development-services/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-agent-development-company/', '/rag-development-services/', '/ai-development-cost/']
   },
     // ============================================
   // 7. AUSTIN
@@ -876,7 +876,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Austin AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-consulting-company/', '/generative-ai-development-company/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-consulting-services/', '/generative-ai-development/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -986,7 +986,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Dallas AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-development/fintech/', '/ai-development/healthcare/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-development/fintech/', '/ai-development/healthcare/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -1096,7 +1096,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Denver AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-consulting-company/', '/generative-ai-development-company/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-consulting-services/', '/generative-ai-development/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -1206,7 +1206,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Atlanta AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-development/fintech/', '/ai-development/healthcare/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-development/fintech/', '/ai-development/healthcare/', '/ai-development-cost/']
   },
   // ============================================
   // 11. HOUSTON
@@ -1324,7 +1324,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Houston AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/machine-learning-development-company/', '/ai-development/healthcare/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/machine-learning-model-development/', '/ai-development/healthcare/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -1434,7 +1434,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free DC AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-consulting-company/', '/ai-development/healthcare/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-consulting-services/', '/ai-development/healthcare/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -1487,7 +1487,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       items: [
         {
           title: 'AI for Toronto\'s Financial Services Sector',
-          description: 'Toronto\'s Big 5 banks and the broader Canadian financial services ecosystem present unique AI opportunities that ClickMasters serves with specific expertise. OSFI model risk management: Canada\'s Office of the Superintendent of Financial Institutions has published model risk management guidance (OSFI E-23 Integrity and Security of Internal Ratings-Based Systems and SR 11-7 equivalent) that governs AI models used in credit decisions, risk management, and financial reporting. ClickMasters produces model governance documentation (Model Overview, Validation Report, Ongoing Monitoring Plan) designed to satisfy OSFI examiner expectations. PIPEDA compliance for AI: Canada\'s Personal Information Protection and Electronic Documents Act (PIPEDA) — and its provincial equivalents (Quebec Law 25, Alberta PIPA, BC PIPA) — requires that organizations obtain meaningful consent for collecting personal information, limit collection to stated purposes, and maintain appropriate security safeguards. Canadian FinTech AI use cases: Fraud detection (real-time transaction monitoring calibrated to Canadian payment networks — Interac e-Transfer, Mastercard, Visa), credit scoring (alternative data models for Canadian credit products with OSFI-appropriate documentation), AML compliance (BSA/AML-equivalent Canadian regulatory requirements under FINTRAC), and customer service AI (multilingual customer service covering both English and French for Canadian regulatory requirements).',
+          description: 'Toronto\'s Big 5 banks and the broader Canadian financial services ecosystem present unique AI opportunities that ClickMasters serves with specific expertise. OSFI model risk management: Canada\'s Office of the Superintendent of Financial Institutions has published model risk management guidance (OSFI E-23 Integrity and Security of Internal Ratings-Based Systems and SR 26-2 equivalent) that governs AI models used in credit decisions, risk management, and financial reporting. ClickMasters produces model governance documentation (Model Overview, Validation Report, Ongoing Monitoring Plan) designed to satisfy OSFI examiner expectations. PIPEDA compliance for AI: Canada\'s Personal Information Protection and Electronic Documents Act (PIPEDA) — and its provincial equivalents (Quebec Law 25, Alberta PIPA, BC PIPA) — requires that organizations obtain meaningful consent for collecting personal information, limit collection to stated purposes, and maintain appropriate security safeguards. Canadian FinTech AI use cases: Fraud detection (real-time transaction monitoring calibrated to Canadian payment networks — Interac e-Transfer, Mastercard, Visa), credit scoring (alternative data models for Canadian credit products with OSFI-appropriate documentation), AML compliance (BSA/AML-equivalent Canadian regulatory requirements under FINTRAC), and customer service AI (multilingual customer service covering both English and French for Canadian regulatory requirements).',
           keyFeatures: ['OSFI model governance', 'PIPEDA compliance', 'Canadian FinTech AI', 'Bilingual EN/FR capability']
         },
         {
@@ -1538,7 +1538,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Toronto AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-development/fintech/', '/ai-development/healthcare/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-development/fintech/', '/ai-development/healthcare/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -1642,7 +1642,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Miami AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-development/fintech/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-development/fintech/', '/ai-development-cost/']
   },
     // ============================================
   // 15. PHOENIX
@@ -1742,7 +1742,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Phoenix AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-development/fintech/', '/ai-development/healthcare/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-development/fintech/', '/ai-development/healthcare/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -1843,7 +1843,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Portland AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-development-company/seattle/', '/ai-development/healthcare/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-development-company/seattle/', '/ai-development/healthcare/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -1944,7 +1944,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Minneapolis AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-development/healthcare/', '/ai-development/fintech/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-development/healthcare/', '/ai-development/fintech/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -2044,7 +2044,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Vancouver AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-development-company/toronto/', '/ai-development/healthcare/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-development-company/toronto/', '/ai-development/healthcare/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -2145,7 +2145,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free San Diego AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-development/healthcare/', '/ai-development-company/los-angeles/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-development/healthcare/', '/ai-development-company/los-angeles/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -2246,7 +2246,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Calgary AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-development-company/vancouver/', '/ai-development-company/toronto/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-development-company/vancouver/', '/ai-development-company/toronto/', '/ai-development-cost/']
   },
     // ============================================
   // 21. NASHVILLE
@@ -2346,7 +2346,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Nashville AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-development/healthcare/', '/machine-learning-development-company/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-development/healthcare/', '/machine-learning-model-development/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -2446,7 +2446,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Raleigh-Durham AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-development/healthcare/', '/ai-development-company/charlotte/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-development/healthcare/', '/ai-development-company-charlotte/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -2546,7 +2546,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Las Vegas AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-chatbot-development-company/', '/ai-recommendation-engine-development/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-chatbot-development/', '/ai-recommendation-engine-development/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -2646,7 +2646,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Salt Lake City AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-development-company/denver/', '/ai-development/fintech/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-development-company/denver/', '/ai-development/fintech/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -2745,7 +2745,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Detroit AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-development/manufacturing/', '/computer-vision-development-company/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-development/manufacturing/', '/computer-vision-development/', '/ai-development-cost/']
   },
     // ============================================
   // 33. SACRAMENTO
@@ -2844,7 +2844,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Sacramento AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-development/agriculture/', '/ai-development/healthcare/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-development/agriculture/', '/ai-development/healthcare/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -2944,7 +2944,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free St Louis AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-development/healthcare/', '/ai-development-company/kansas-city/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-development/healthcare/', '/ai-development-company-kansas-city/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -3044,7 +3044,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Tampa AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-development/healthcare/', '/ai-development/fintech/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-development/healthcare/', '/ai-development/fintech/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -3130,8 +3130,8 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
         answer: 'Yes. HIPAA-compliant healthcare AI with Epic integration for all three Cincinnati health systems is within ClickMasters\' standard healthcare AI scope.'
       },
       {
-        question: 'Do you produce SR 11-7 model risk management documentation for Fifth Third?',
-        answer: 'Yes. OCC SR 11-7 compliant model documentation (development documentation, validation report, monitoring plan, model inventory elements) for Fifth Third Bancorp-adjacent financial services AI engagements is a standard ClickMasters deliverable.'
+        question: 'Do you produce SR 26-2 model risk management documentation for Fifth Third?',
+        answer: 'Yes. OCC SR 26-2 compliant model documentation (development documentation, validation report, monitoring plan, model inventory elements) for Fifth Third Bancorp-adjacent financial services AI engagements is a standard ClickMasters deliverable.'
       },
       {
         question: 'What is the engagement model for Cincinnati AI projects?',
@@ -3140,11 +3140,11 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
     ],
     cta: {
       title: 'Start Your Cincinnati AI Project',
-      description: 'ClickMasters responds to every Cincinnati inquiry within 24 business hours. Eastern timezone. P&G consumer insights supply chain AI. Kroger 84.51° scale retail analytics. HIPAA Epic for Cincinnati Children\'s UC Health TriHealth. Fifth Third SR 11-7. Published pricing from $20,000. Fixed-price milestone contracts. Full IP transfer.',
+      description: 'ClickMasters responds to every Cincinnati inquiry within 24 business hours. Eastern timezone. P&G consumer insights supply chain AI. Kroger 84.51° scale retail analytics. HIPAA Epic for Cincinnati Children\'s UC Health TriHealth. Fifth Third SR 26-2. Published pricing from $20,000. Fixed-price milestone contracts. Full IP transfer.',
       ctaText: 'Book Your Free Cincinnati AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-development/healthcare/', '/ai-development-company/cleveland/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-development/healthcare/', '/ai-development-company-columbus/', '/ai-development-cost/']
   },
 
   // ============================================
@@ -3244,7 +3244,7 @@ const ALL_LOCATION_PAGE_DATA: Record<string, LocationPageData> = {
       ctaText: 'Book Your Free Montreal AI Consultation',
       ctaLink: '/contact'
     },
-    internalLinks: ['/custom-ai-development-company/', '/ai-development-company/toronto/', '/ai-development-company/vancouver/', '/ai-development-cost/']
+    internalLinks: ['/custom-ai-development/', '/ai-development-company/toronto/', '/ai-development-company/vancouver/', '/ai-development-cost/']
   }
 };
 

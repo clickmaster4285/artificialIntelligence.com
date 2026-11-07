@@ -598,7 +598,7 @@
     {
       "title": "AI Computer Vision Services",
       "description": "Build computer vision models that see, detect, and classify.",
-      "href": "/ai-computer-vision-services/"
+      "href": "/computer-vision-development/"
     },
     {
       "title": "AI Data Engineering Services",
@@ -608,12 +608,12 @@
     {
       "title": "Machine Learning Development Company",
       "description": "Custom ML models built for production performance.",
-      "href": "/machine-learning-development-company/"
+      "href": "/machine-learning-model-development/"
     },
     {
       "title": "AI Model Fine-Tuning Services",
       "description": "Adapt models for narrow domain-specific tasks.",
-      "href": "/ai-model-fine-tuning-services/"
+      "href": "/ai-model-fine-tuning/"
     },
     {
       "title": "AI Development Cost",
@@ -623,7 +623,7 @@
     {
       "title": "AI NLP Development Services",
       "description": "Natural language processing models for text and document AI.",
-      "href": "/ai-nlp-development-services/"
+      "href": "/natural-language-processing-services/"
     }
   ]
 }

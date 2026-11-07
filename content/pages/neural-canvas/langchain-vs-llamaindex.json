@@ -43,7 +43,7 @@
     },
     "secondaryCta": {
       "label": "Explore LLM Integration Services",
-      "href": "/llm-integration-services/"
+      "href": "/llm-development-company/"
     },
     "trustText": "Framework-agnostic · Evidence-based recommendations · USA-based engineers",
     "metrics": [
@@ -503,7 +503,7 @@
     {
       "title": "LLM Integration Services",
       "description": "Integrate large language models into your existing products and workflows.",
-      "href": "/llm-integration-services/"
+      "href": "/llm-development-company/"
     },
     {
       "title": "RAG Development Services",
@@ -518,7 +518,7 @@
     {
       "title": "RAG Retrieval-Augmented Generation Glossary",
       "description": "Definitions of key RAG and retrieval terminology.",
-      "href": "/glossary/rag-retrieval-augmented-generation/"
+      "href": "/glossary/retrieval-augmented-generation/"
     },
     {
       "title": "AI Agent Glossary",

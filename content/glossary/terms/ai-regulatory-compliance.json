@@ -7,8 +7,8 @@
   "letter": "C",
   "category": "AI Governance",
   "shortDefinition": "Ensuring AI systems meet applicable laws including the EU AI Act, GDPR, HIPAA, and sector-specific rules.",
-  "definition": "AI regulatory compliance is the practice of ensuring AI systems meet applicable legal and regulatory requirements — spanning general data protection laws (GDPR, CCPA), sector-specific regulations (HIPAA for healthcare, SR 11-7 for banking model risk, FCRA for credit decisions), and the emerging AI-specific regulatory frameworks (EU AI Act, emerging US state AI laws) that are creating explicit obligations for how AI systems must be developed, validated, documented, and monitored. AI regulatory compliance is evolving rapidly, with requirements that didn't exist three years ago now applying to a growing range of AI applications.",
-  "introduction": "AI regulatory compliance is the practice of ensuring AI systems meet applicable legal and regulatory requirements — spanning general data protection laws (GDPR, CCPA), sector-specific regulations (HIPAA for healthcare, SR 11-7 for banking model risk, FCRA for credit decisions), and the emerging AI-specific regulatory frameworks (EU AI Act, emerging US state AI laws) that are creating explicit obligations for how AI systems must be developed, validated, documented, and monitored. AI regulatory compliance is evolving rapidly, with requirements that didn't exist three years ago now applying to a growing range of AI applications.",
+  "definition": "AI regulatory compliance is the practice of ensuring AI systems meet applicable legal and regulatory requirements — spanning general data protection laws (GDPR, CCPA), sector-specific regulations (HIPAA for healthcare, SR 26-2 for banking model risk, FCRA for credit decisions), and the emerging AI-specific regulatory frameworks (EU AI Act, emerging US state AI laws) that are creating explicit obligations for how AI systems must be developed, validated, documented, and monitored. AI regulatory compliance is evolving rapidly, with requirements that didn't exist three years ago now applying to a growing range of AI applications.",
+  "introduction": "AI regulatory compliance is the practice of ensuring AI systems meet applicable legal and regulatory requirements — spanning general data protection laws (GDPR, CCPA), sector-specific regulations (HIPAA for healthcare, SR 26-2 for banking model risk, FCRA for credit decisions), and the emerging AI-specific regulatory frameworks (EU AI Act, emerging US state AI laws) that are creating explicit obligations for how AI systems must be developed, validated, documented, and monitored. AI regulatory compliance is evolving rapidly, with requirements that didn't exist three years ago now applying to a growing range of AI applications.",
   "featured": true,
   "aliases": [
     "ARC",
@@ -39,11 +39,11 @@
       "id": "key-regulatory-frameworks",
       "eyebrow": "Core frameworks",
       "title": "The key regulatory frameworks affecting AI systems",
-      "description": "EU AI Act, GDPR, HIPAA, SR 11-7, and CCPA/CPRA impose distinct requirements on AI systems.",
+      "description": "EU AI Act, GDPR, HIPAA, SR 26-2, and CCPA/CPRA impose distinct requirements on AI systems.",
       "content": [
         {
           "type": "paragraph",
-          "text": "EU AI Act — the most comprehensive AI-specific regulation globally, categorizing AI systems by risk level and imposing requirements ranging from disclosure (for lower-risk systems) to conformity assessment, bias testing, and ongoing monitoring (for high-risk systems). Applies to organizations using AI systems in the EU market regardless of where the AI is developed. GDPR — applies to AI processing personal data about EU individuals, including specific provisions on automated decision-making and the right to explanation for algorithmically-driven decisions. HIPAA — applies to AI systems processing protected health information, including AI diagnostic, risk scoring, and clinical decision support tools. SR 11-7 / OCC model risk management guidance — US banking regulators' framework for model validation and governance, increasingly applied to AI/ML models used in credit, fraud, and risk decisions. CCPA/CPRA — California data privacy law with AI-specific implications for automated decision-making."
+          "text": "EU AI Act — the most comprehensive AI-specific regulation globally, categorizing AI systems by risk level and imposing requirements ranging from disclosure (for lower-risk systems) to conformity assessment, bias testing, and ongoing monitoring (for high-risk systems). Applies to organizations using AI systems in the EU market regardless of where the AI is developed. GDPR — applies to AI processing personal data about EU individuals, including specific provisions on automated decision-making and the right to explanation for algorithmically-driven decisions. HIPAA — applies to AI systems processing protected health information, including AI diagnostic, risk scoring, and clinical decision support tools. SR 26-2 / OCC model risk management guidance — US banking regulators' framework for model validation and governance, increasingly applied to AI/ML models used in credit, fraud, and risk decisions. CCPA/CPRA — California data privacy law with AI-specific implications for automated decision-making."
         },
         {
           "type": "bullet-list",
@@ -51,7 +51,7 @@
             "EU AI Act — risk-based classification, conformity assessment, bias testing.",
             "GDPR — automated decision-making, right to explanation.",
             "HIPAA — protected health information, diagnostic and clinical tools.",
-            "SR 11-7 — model validation and governance for banking AI.",
+            "SR 26-2 — model validation and governance for banking AI.",
             "CCPA/CPRA — California privacy with AI decision-making implications."
           ]
         },
@@ -222,7 +222,7 @@
         "answer": "High-risk AI systems (defined by the act based on use case category) face requirements including conformity assessment, bias testing and mitigation, logging and auditability, human oversight provisions, and ongoing monitoring — ClickMasters is not a law firm and recommends legal consultation for your specific system's classification and obligations."
       },
       {
-        "question": "Does SR 11-7 model risk management guidance apply to AI/ML models?",
+        "question": "Does SR 26-2 model risk management guidance apply to AI/ML models?",
         "answer": "Yes — US banking regulators have explicitly extended model risk management guidance to AI/ML models, including requirements for model validation, documentation, and ongoing performance monitoring."
       },
       {

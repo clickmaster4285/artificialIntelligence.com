@@ -1,0 +1,373 @@
+{
+  "slug": "ai-consulting-services",
+  "status": "published",
+  "seo": {
+    "title": "AI Consulting Services | ClickMasters AI",
+    "description": "AI consulting services: opportunity assessments, AI strategy, discovery, technical advisory and fractional Chief AI Officer. From $15K fixed-price or $200–$400/hr.",
+    "canonical": "/ai-consulting-services/",
+    "primaryKeyword": "ai consulting services",
+    "secondaryKeywords": [
+      "ai consulting company",
+      "ai strategy consulting",
+      "ai roadmap consulting",
+      "fractional chief ai officer",
+      "ai discovery engagement"
+    ],
+    "noIndex": false,
+    "noFollow": false
+  },
+  "schema": {
+    "service": true,
+    "organization": true,
+    "breadcrumbs": true,
+    "faq": true
+  },
+  "appearance": {
+    "template": "neural-canvas",
+    "accent": "blue",
+    "background": "neural-grid",
+    "grain": true,
+    "glow": true,
+    "scrollProgress": true,
+    "customCursor": true
+  },
+  "hero": {
+    "eyebrow": "Strategy From Engineers Who Build",
+    "title": "AI Consulting Services",
+    "highlightedText": "Fixed-Price From $15K",
+    "description": "ClickMasters helps leadership teams decide where AI will pay off, what it will cost and how to get it into production. Our consultants are practitioners who build production AI systems, so every recommendation is grounded in what can actually be implemented — and every engagement has a fixed price and defined deliverables, not open-ended hourly billing.",
+    "primaryCta": {
+      "label": "Get a Free Consulting Proposal",
+      "href": "#consultation",
+      "ariaLabel": "Get a free AI consulting proposal with 24-hour response"
+    },
+    "secondaryCta": {
+      "label": "Explore Engagement Types",
+      "href": "#capabilities"
+    },
+    "trustText": "Fixed-price engagements · Published rates · Standalone or before development",
+    "metrics": [
+      {
+        "value": "$15K",
+        "label": "Starting investment",
+        "description": "For focused AI opportunity assessment"
+      },
+      {
+        "value": "$200–$400",
+        "label": "Hourly rate",
+        "description": "For boutique AI consulting"
+      },
+      {
+        "value": "24h",
+        "label": "Initial response",
+        "description": "Free proposal within one business day"
+      }
+    ],
+    "visual": {
+      "type": "neural-sphere",
+      "label": "AI consulting",
+      "modelNames": [
+        "Strategy",
+        "Discovery",
+        "Roadmap",
+        "Advisory",
+        "Governance"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "capabilities",
+      "type": "feature-grid",
+      "eyebrow": "Engagement Types",
+      "title": "AI consulting engagements with defined deliverables",
+      "description": "Choose the engagement that matches your decision — from a single initiative to an enterprise-wide AI program.",
+      "tone": "default",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "bento",
+      "columns": 2,
+      "items": [
+        {
+          "title": "AI Opportunity Assessment",
+          "description": "Opportunity identification across 2–4 business units, a prioritized use-case list with ROI estimates, a technology landscape review and a build/buy/partner framework, presented to executives.",
+          "icon": "search",
+          "label": "Where to Start",
+          "metric": "$15K–$25K · 4–6 weeks",
+          "link": {
+            "label": "What is an AI readiness assessment?",
+            "href": "/glossary/ai-readiness-assessment/"
+          }
+        },
+        {
+          "title": "AI Strategy and Roadmap",
+          "description": "Cross-functional assessment, current-state infrastructure review, vendor evaluation framework, sequenced roadmap and business cases for your top 3–5 investments.",
+          "icon": "chart",
+          "label": "Strategy",
+          "metric": "$25K–$40K · 8–12 weeks",
+          "link": {
+            "label": "What is an AI strategy roadmap?",
+            "href": "/glossary/ai-strategy-roadmap/"
+          }
+        },
+        {
+          "title": "Enterprise AI Transformation Roadmap",
+          "description": "Organization-wide scope with ML maturity assessment, data and AI governance framework, program architecture, vendor RFP support and board materials.",
+          "icon": "network",
+          "label": "Enterprise",
+          "metric": "$40K–$60K · 12–20 weeks"
+        },
+        {
+          "title": "Discovery for a Specific Initiative",
+          "description": "Data audit, use-case validation, architecture recommendation, risk identification and a fixed-price development proposal for the validated scope.",
+          "icon": "layers",
+          "label": "Pre-Development",
+          "metric": "$15K–$35K · 3–8 weeks"
+        },
+        {
+          "title": "Technical Advisory",
+          "description": "Part-time senior guidance: code and architecture review, monthly strategy sessions, model review and validation, and direct access for technical questions.",
+          "icon": "code",
+          "label": "Ongoing",
+          "metric": "$8K–$12K/mo · 8–15 hrs/month"
+        },
+        {
+          "title": "Fractional Chief AI Officer",
+          "description": "AI program oversight, technical leadership, recruitment support, board presentations and vendor negotiation support.",
+          "icon": "brain",
+          "label": "Leadership",
+          "metric": "$15K–$25K/mo · 20–30 hrs/month"
+        }
+      ]
+    },
+    {
+      "id": "consulting-vs-development",
+      "type": "rich-text",
+      "eyebrow": "Choosing the Engagement",
+      "title": "AI consulting, discovery or development?",
+      "tone": "surface",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Start with consulting if",
+          "paragraphs": [
+            "You are not sure which AI projects to prioritize, you need an internal business case for AI investment, you need an independent assessment of AI systems already running, or you need expert guidance on vendor selection."
+          ]
+        },
+        {
+          "heading": "Start with discovery if",
+          "paragraphs": [
+            "You know the business problem but need to validate the AI approach, want a fixed-price development contract but need to define scope first, or have concerns about data quality or access."
+          ]
+        },
+        {
+          "heading": "Start with development if",
+          "paragraphs": [
+            "You know what you want to build, you have executive alignment and budget, your data situation is understood, and you need a production system rather than a strategy document."
+          ],
+          "links": [
+            {
+              "label": "Explore custom AI development",
+              "href": "/custom-ai-development/"
+            }
+          ]
+        },
+        {
+          "heading": "Why fixed-price consulting",
+          "paragraphs": [
+            "Time-and-materials billing gives clients no protection against scope creep. Every ClickMasters consulting engagement has a fixed total price with defined deliverables; if it takes longer than planned, we absorb the additional time."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing-reference",
+      "type": "table",
+      "eyebrow": "Published Rates",
+      "title": "AI consulting pricing reference",
+      "description": "Engagement types and fixed-price ranges. Discovery investment is credited against development fees if you proceed.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "pricing",
+      "columns": [
+        {
+          "key": "engagement",
+          "label": "Engagement Type",
+          "align": "left",
+          "width": "40%"
+        },
+        {
+          "key": "cost",
+          "label": "Cost Range",
+          "align": "left",
+          "width": "30%"
+        },
+        {
+          "key": "duration",
+          "label": "Duration",
+          "align": "left",
+          "width": "30%"
+        }
+      ],
+      "rows": [
+        {
+          "id": "opportunity",
+          "cells": {
+            "engagement": "AI opportunity assessment",
+            "cost": "$15,000 – $25,000",
+            "duration": "4–6 weeks"
+          },
+          "highlighted": true,
+          "badge": "Most common"
+        },
+        {
+          "id": "strategy",
+          "cells": {
+            "engagement": "Full AI strategy engagement",
+            "cost": "$25,000 – $40,000",
+            "duration": "8–12 weeks"
+          }
+        },
+        {
+          "id": "transformation",
+          "cells": {
+            "engagement": "Enterprise AI transformation roadmap",
+            "cost": "$40,000 – $60,000",
+            "duration": "12–20 weeks"
+          }
+        },
+        {
+          "id": "discovery-single",
+          "cells": {
+            "engagement": "Discovery (single initiative)",
+            "cost": "$15,000 – $20,000",
+            "duration": "3–4 weeks"
+          }
+        },
+        {
+          "id": "discovery-enterprise",
+          "cells": {
+            "engagement": "Discovery (enterprise-scale)",
+            "cost": "$20,000 – $35,000",
+            "duration": "4–8 weeks"
+          }
+        },
+        {
+          "id": "advisory",
+          "cells": {
+            "engagement": "Technical advisory (part-time)",
+            "cost": "$8,000 – $12,000/mo",
+            "duration": "8–15 hours/month"
+          }
+        },
+        {
+          "id": "fractional-caio",
+          "cells": {
+            "engagement": "Fractional Chief AI Officer",
+            "cost": "$15,000 – $25,000/mo",
+            "duration": "20–30 hours/month"
+          }
+        },
+        {
+          "id": "hourly",
+          "cells": {
+            "engagement": "Hourly advisory",
+            "cost": "$200 – $400/hr",
+            "duration": "As needed"
+          }
+        }
+      ],
+      "note": "All structured engagements are fixed-price with defined deliverables.",
+      "cta": {
+        "label": "See the full AI consulting cost guide",
+        "href": "/ai-consulting-cost/"
+      }
+    },
+    {
+      "id": "ai-consulting-faqs",
+      "type": "faq",
+      "eyebrow": "Frequently Asked",
+      "title": "Questions about AI consulting services",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "variant": "indexed",
+      "items": [
+        {
+          "question": "How much does AI consulting cost?",
+          "answer": "$200–$400/hr for boutique AI consultants and $15,000–$60,000 for structured project engagements. Big Four enterprise strategy engagements typically run $100,000–$500,000+."
+        },
+        {
+          "question": "How long does an AI consulting engagement take?",
+          "answer": "3–20 weeks for strategy and roadmap work. Discovery engagements: 3–6 weeks. Retainer advisory is ongoing monthly."
+        },
+        {
+          "question": "Do you provide AI consulting without development?",
+          "answer": "Yes — strategy, discovery and advisory engagements are available as standalone services without committing to ClickMasters for development."
+        },
+        {
+          "question": "What does a ClickMasters AI Discovery include?",
+          "answer": "Data audit, use-case validation, architecture recommendation, risk identification and a fixed-price development proposal for the validated project scope. Discovery clients who proceed to development receive credit for the Discovery investment."
+        },
+        {
+          "question": "What's the difference between hourly advisory and a fixed-price engagement?",
+          "answer": "Hourly advisory ($200–$400/hr) suits ad hoc questions and light-touch ongoing guidance. Fixed-price engagements suit a defined scope with a specific deliverable and give you cost certainty upfront."
+        },
+        {
+          "question": "Is AI consulting worth the investment?",
+          "answer": "For organizations making $200K+ AI investment decisions, a strategy engagement that prevents a bad vendor choice or the wrong AI approach usually pays for itself. With smaller AI budgets, a lighter-weight approach with vendor input is often enough — we will tell you which applies."
+        }
+      ]
+    },
+    {
+      "id": "consultation",
+      "type": "cta",
+      "eyebrow": "Start With a Free Proposal",
+      "heading": "Get a fixed-price proposal for your AI decision",
+      "text": "Tell us the decision you need to make or the initiative you want to validate. A senior practitioner will reply within one business day with a recommended engagement and fixed price.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "fade-scale",
+      "primaryCta": {
+        "label": "Get Your Free Consulting Proposal",
+        "href": "/contact/"
+      },
+      "secondaryCta": {
+        "label": "Email the Team",
+        "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
+      },
+      "contactEmail": "hello@clickmastersartificialintelligencecompany.com",
+      "variant": "orbital"
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "AI Consulting Cost",
+      "description": "Engagement types, rates and comparisons.",
+      "href": "/ai-consulting-cost/"
+    },
+    {
+      "title": "Build vs. Buy AI",
+      "description": "How to decide between custom AI and off-the-shelf tools.",
+      "href": "/build-vs-buy-ai/"
+    },
+    {
+      "title": "Custom AI Development",
+      "description": "Custom ML, LLM and vision systems built around your data.",
+      "href": "/custom-ai-development/"
+    },
+    {
+      "title": "AI Strategy Roadmap Glossary Entry",
+      "description": "What an AI strategy roadmap contains.",
+      "href": "/glossary/ai-strategy-roadmap/"
+    },
+    {
+      "title": "AI Vendor Evaluation Glossary Entry",
+      "description": "How to evaluate AI vendors and partners.",
+      "href": "/glossary/ai-vendor-evaluation/"
+    }
+  ]
+}

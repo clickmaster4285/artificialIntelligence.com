@@ -276,7 +276,7 @@
   "additionalResources": [
     {
       "label": "AI Cost Guide",
-      "href": "/ai-cost-guide/"
+      "href": "/ai-development-cost/"
     },
     {
       "label": "What is Model Benchmarking?",

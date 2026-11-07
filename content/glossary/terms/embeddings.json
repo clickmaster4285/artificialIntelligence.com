@@ -275,7 +275,7 @@
     },
     {
       "label": "OpenAI Embeddings API Documentation",
-      "href": "https://platform.openai.com/docs/guides/embeddings",
+      "href": "https://developers.openai.com/api/docs/guides/embeddings",
       "publisher": "OpenAI"
     }
   ],
@@ -291,7 +291,7 @@
     },
     {
       "label": "What is RAG? (Retrieval-Augmented Generation)",
-      "href": "/glossary/rag-retrieval-augmented-generation/"
+      "href": "/glossary/retrieval-augmented-generation/"
     }
   ],
 
