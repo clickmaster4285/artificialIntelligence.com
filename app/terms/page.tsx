@@ -5,13 +5,20 @@ import { ContactDetails } from "@/components/site/ContactDetails";
 import { SitePage } from "@/components/site/SitePage";
 import { COMPANY } from "@/lib/company";
 import { pageAlternates } from "@/lib/site";
+import { withEditedPageSeo } from "@/lib/cms/erp-edits";
 
-export const metadata: Metadata = {
+const pageMetadata: Metadata = {
   title: "Website Terms of Use | ClickMasters",
   description:
     "Terms for using the ClickMasters Artificial Intelligence Company website.",
   alternates: pageAlternates("/terms"),
 };
+
+export const revalidate = 60;
+
+export async function generateMetadata(): Promise<Metadata> {
+  return withEditedPageSeo("/terms", pageMetadata);
+}
 
 export default function TermsPage() {
   return (

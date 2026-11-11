@@ -1,6 +1,5 @@
 // app/ai-development-company/[slug]/page.tsx
 import React from 'react';
-import { notFound } from 'next/navigation';
 import { PageLayout } from '@/components/locations/PageLayout';
 import { BreadcrumbTrail, RelatedPages } from '@/components/site/PageContextLinks';
 import {
@@ -20,12 +19,19 @@ import {
   getLocationPageDataBySlug 
 } from '@/data/ai-development-company-pages-data';
 import { pageAlternates } from '@/lib/site';
+import CmsRoute, { cmsRouteMetadata } from '@/components/cms/CmsRoute';
+import { withEditedPageSeo } from '@/lib/cms/erp-edits';
+import { getCmsPages } from '@/lib/cms/cms';
 
 export async function generateStaticParams() {
-  const slugs = getAllLocationPageSlugs();
-  return slugs.map((slug) => ({
-    slug,
-  }));
+  const codeSlugs = getAllLocationPageSlugs();
+  const cmsSlugs = (await getCmsPages())
+    .map((page) => page.slug)
+    .filter((path) => path.split('/').filter(Boolean).length === 2)
+    .filter((path) => path.toLowerCase().startsWith('/ai-development-company/'))
+    .map((path) => path.split('/').filter(Boolean)[1])
+    .filter((slug) => !codeSlugs.some((codeSlug) => codeSlug.toLowerCase() === slug.toLowerCase()));
+  return [...codeSlugs, ...cmsSlugs].map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
@@ -33,17 +39,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const location = getLocationPageDataBySlug(slug);
   
   if (!location) {
-    return {
-      title: 'Location Not Found',
-      description: 'The requested location page could not be found.',
-    };
+    return cmsRouteMetadata(`/ai-development-company/${slug}`);
   }
 
-  return {
+  return withEditedPageSeo(`/ai-development-company/${slug}`, {
     title: location.meta.title,
     description: location.meta.description,
     alternates: pageAlternates(location.meta.slug),
-  };
+  });
 }
 
 export default async function LocationPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -51,7 +54,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
   const location = getLocationPageDataBySlug(slug);
 
   if (!location) {
-    notFound();
+    return <CmsRoute path={`/ai-development-company/${slug}`} />;
   }
 
   const locationName = location.h1.split(' — ')[0].replace('AI Development Company in ', '');

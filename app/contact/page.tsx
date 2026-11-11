@@ -5,13 +5,20 @@ import { ContactDetails } from "@/components/site/ContactDetails";
 import { SitePage } from "@/components/site/SitePage";
 import { COMPANY } from "@/lib/company";
 import { pageAlternates } from "@/lib/site";
+import { withEditedPageSeo } from "@/lib/cms/erp-edits";
 
-export const metadata: Metadata = {
+const pageMetadata: Metadata = {
   title: "Contact the ClickMasters AI Studio",
   description:
     "Email ClickMasters or call the UK, US, or Pakistan number. A senior engineer replies from this domain.",
   alternates: pageAlternates("/contact"),
 };
+
+export const revalidate = 60;
+
+export async function generateMetadata(): Promise<Metadata> {
+  return withEditedPageSeo("/contact", pageMetadata);
+}
 
 export default function ContactPage() {
   return (

@@ -6,15 +6,49 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { ServiceDropdownNav } from '@/components/services/ServiceDropdownNav';
 import { LocationDropdownNav } from '@/components/locations/LocationDropdownNav';
 
 interface NavbarProps {
   className?: string;
+  cmsNavigation?: CmsNavItem[];
+  siteName?: string;
+  logo?: string;
 }
 
-export function Navbar({ className }: NavbarProps) {
+type CmsNavItem = {
+  id: string;
+  label: string;
+  url: string;
+  target: string;
+  children: CmsNavItem[];
+};
+
+function CmsNavLink({
+  item,
+  className,
+  onClick,
+}: {
+  item: CmsNavItem;
+  className: string;
+  onClick?: () => void;
+}) {
+  const props = {
+    className,
+    target: item.target,
+    rel: item.target === '_blank' ? 'noopener noreferrer' : undefined,
+    onClick,
+  };
+  return item.url.startsWith('/') ? (
+    <Link href={item.url} {...props}>{item.label}</Link>
+  ) : (
+    <a href={item.url} {...props}>{item.label}</a>
+  );
+}
+
+export function Navbar({ className, cmsNavigation, siteName, logo }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -43,6 +77,7 @@ export function Navbar({ className }: NavbarProps) {
     { name: 'About', href: '/about' },
     { name: 'Careers', href: '/careers' },
   ];
+  const cmsLinks = cmsNavigation?.length ? cmsNavigation : null;
 
   return (
     <motion.nav
@@ -58,19 +93,43 @@ export function Navbar({ className }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link 
+          <Link
             href="/" 
             className="text-2xl font-bold tracking-tight text-white hover:opacity-80 transition-opacity flex-shrink-0 group"
           >
+            {logo ? (
+              <Image src={logo} alt={siteName || 'ClickMasters'} width={180} height={48} unoptimized className="h-10 w-auto object-contain" />
+            ) : (
             <span className="relative">
-              ClickMasters
+              {siteName || 'ClickMasters'}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-violet-400 to-violet-600 group-hover:w-full transition-all duration-500"></span>
             </span>
+            )}
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden xl:flex items-center justify-center gap-6 2xl:gap-8 flex-1">
-            {navLinks.map((link) => (
+            {cmsLinks ? cmsLinks.map((link) => (
+              <div key={link.id} className="group relative">
+                <CmsNavLink
+                  item={link}
+                  className="relative text-sm font-medium text-white/80 hover:text-white transition-colors"
+                />
+                {link.children.length > 0 && (
+                  <div className="absolute left-0 top-full hidden min-w-48 pt-3 group-hover:block group-focus-within:block">
+                    <div className="border border-white/10 bg-black/95 p-3 shadow-xl">
+                      {link.children.map((child) => (
+                        <CmsNavLink
+                          key={child.id}
+                          item={child}
+                          className="block px-3 py-2 text-sm text-white/80 hover:text-white"
+                        />
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )) : navLinks.map((link) => (
               <div key={link.name} className="relative">
                 {link.hasDropdown && link.dropdownType === 'services' ? (
                   <ServiceDropdownNav />
@@ -139,7 +198,23 @@ export function Navbar({ className }: NavbarProps) {
             className="xl:hidden bg-black/95 backdrop-blur-xl border-t border-white/5 overflow-hidden"
           >
             <div className="px-6 py-6 space-y-4">
-              {navLinks.map((link) => (
+              {cmsLinks ? cmsLinks.map((link) => (
+                <div key={link.id}>
+                  <CmsNavLink
+                    item={link}
+                    className="block text-sm font-medium text-white/80 hover:text-white transition-colors py-2"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  />
+                  {link.children.map((child) => (
+                    <CmsNavLink
+                      key={child.id}
+                      item={child}
+                      className="block pl-4 text-sm text-white/60 hover:text-white py-2"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    />
+                  ))}
+                </div>
+              )) : navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}

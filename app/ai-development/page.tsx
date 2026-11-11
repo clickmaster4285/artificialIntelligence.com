@@ -13,8 +13,9 @@ import { ServiceDropdownNav } from '@/components/services/ServiceDropdownNav';
 import { CrawlableIndex } from '@/components/site/PageContextLinks';
 import { generateServiceSchema } from '@/lib/schema';
 import { fallbackSiteUrl, pageAlternates } from '@/lib/site';
+import { withEditedPageSeo } from '@/lib/cms/erp-edits';
 
-export const metadata = {
+const pageMetadata = {
   title: aiDevelopmentLandingData.meta.title,
   description: aiDevelopmentLandingData.meta.description,
   keywords: [
@@ -23,6 +24,12 @@ export const metadata = {
   ].join(', '),
   alternates: pageAlternates(aiDevelopmentLandingData.meta.slug),
 };
+
+export const revalidate = 60;
+
+export async function generateMetadata() {
+  return withEditedPageSeo('/ai-development', pageMetadata);
+}
 
 export default async function AIDevelopmentLandingPage() {
   const pageData = aiDevelopmentLandingData;

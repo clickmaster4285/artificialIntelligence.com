@@ -1,6 +1,5 @@
 // src/app/ai-development/[slug]/page.tsx
 
-import { notFound } from 'next/navigation';
 import { getPageDataBySlug, getAllPageSlugs } from '@/data/ai-development-pages-data';
 import { ServiceLayout } from '@/components/services/layout';
 import { ServiceHero } from '@/components/services/Hero';
@@ -16,6 +15,9 @@ import { BreadcrumbTrail, RelatedPages } from '@/components/site/PageContextLink
 import { generateServiceSchema } from '@/lib/schema';
 import { serviceBreadcrumbs, serviceRelatedLinks } from '@/lib/related-content';
 import { fallbackSiteUrl, pageAlternates } from '@/lib/site';
+import CmsRoute, { cmsRouteMetadata } from '@/components/cms/CmsRoute';
+import { withEditedPageSeo } from '@/lib/cms/erp-edits';
+import { getCmsPages } from '@/lib/cms/cms';
 
 interface PageProps {
   params: Promise<{
@@ -24,10 +26,14 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  const slugs = getAllPageSlugs();
-  return slugs.map((slug) => ({
-    slug: slug,
-  }));
+  const codeSlugs = getAllPageSlugs();
+  const cmsSlugs = (await getCmsPages())
+    .map((page) => page.slug)
+    .filter((path) => path.split('/').filter(Boolean).length === 2)
+    .filter((path) => path.toLowerCase().startsWith('/ai-development/'))
+    .map((path) => path.split('/').filter(Boolean)[1])
+    .filter((slug) => !codeSlugs.some((codeSlug) => codeSlug.toLowerCase() === slug.toLowerCase()));
+  return [...codeSlugs, ...cmsSlugs].map((slug) => ({ slug }));
 }
 
 export default async function AIDevelopmentSubPage({ params }: PageProps) {
@@ -35,7 +41,7 @@ export default async function AIDevelopmentSubPage({ params }: PageProps) {
   const pageData = getPageDataBySlug(slug);
 
   if (!pageData) {
-    notFound();
+    return <CmsRoute path={`/ai-development/${slug}`} />;
   }
 
   const siteUrl = fallbackSiteUrl();
@@ -77,13 +83,10 @@ export async function generateMetadata({ params }: PageProps) {
   const pageData = getPageDataBySlug(slug);
 
   if (!pageData) {
-    return {
-      title: 'Page Not Found',
-      description: 'The page you are looking for does not exist.',
-    };
+    return cmsRouteMetadata(`/ai-development/${slug}`);
   }
 
-  return {
+  return withEditedPageSeo(`/ai-development/${slug}`, {
     title: pageData.meta.title,
     description: pageData.meta.description,
     keywords: [pageData.meta.primaryKW, ...pageData.meta.secondaryKWs].join(', '),
@@ -94,5 +97,5 @@ export async function generateMetadata({ params }: PageProps) {
       type: 'website',
     },
     alternates: pageAlternates(pageData.meta.slug),
-  };
+  });
 }

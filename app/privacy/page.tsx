@@ -5,13 +5,20 @@ import { ContactDetails } from "@/components/site/ContactDetails";
 import { SitePage } from "@/components/site/SitePage";
 import { COMPANY } from "@/lib/company";
 import { pageAlternates } from "@/lib/site";
+import { withEditedPageSeo } from "@/lib/cms/erp-edits";
 
-export const metadata: Metadata = {
+const pageMetadata: Metadata = {
   title: "Privacy Notice | ClickMasters AI",
   description:
     "How ClickMasters Artificial Intelligence Company collects, uses and deletes information submitted through this website.",
   alternates: pageAlternates("/privacy"),
 };
+
+export const revalidate = 60;
+
+export async function generateMetadata(): Promise<Metadata> {
+  return withEditedPageSeo("/privacy", pageMetadata);
+}
 
 export default function PrivacyPage() {
   return (
