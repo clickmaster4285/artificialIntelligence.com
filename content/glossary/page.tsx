@@ -29,6 +29,7 @@ import { GlossaryHero } from "@/content/glossary/GlossaryHero";
 import { GlossaryExplorer } from "@/content/glossary/GlossaryExplorer";
 
 import { absoluteUrl, fallbackSiteUrl, pageAlternates } from "@/lib/site";
+import { withEditedPageSeo } from "@/lib/cms/erp-edits";
 
 /* =========================================================
    TYPES
@@ -84,7 +85,7 @@ export async function generateMetadata({
     return Boolean(first && first.trim());
   });
 
-  return {
+  return withEditedPageSeo("/glossary", {
     title: glossaryLandingConfig.seo.title,
     description: glossaryLandingConfig.seo.description,
     keywords: glossaryLandingConfig.seo.keywords,
@@ -109,7 +110,7 @@ export async function generateMetadata({
         ? [glossaryLandingConfig.seo.ogImage]
         : undefined,
     },
-  };
+  });
 }
 
 /* =========================================================

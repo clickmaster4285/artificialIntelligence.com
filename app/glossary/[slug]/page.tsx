@@ -3,10 +3,6 @@ import type {
 } from "next";
 
 import {
-  notFound,
-} from "next/navigation";
-
-import {
   getAdjacentGlossaryTerms,
   getAllGlossarySlugs,
   getGlossaryTermBySlug,
@@ -17,6 +13,9 @@ import { GlossaryDetailPage } from "@/content/glossary/GlossaryDetailPage";
 
 import { companyLogoUrl } from "@/lib/company";
 import { fallbackSiteUrl, pageAlternates, absoluteUrl } from "@/lib/site";
+import CmsRoute, { cmsRouteMetadata } from "@/components/cms/CmsRoute";
+import { getCmsPages } from "@/lib/cms/cms";
+import { withEditedPageSeo } from "@/lib/cms/erp-edits";
 
 /* =========================================================
    TYPES
@@ -36,7 +35,7 @@ interface GlossaryDetailRouteProps {
  * Glossary terms are generated at build time. A new term is available
  * after the next build, which keeps these pages on the static cache.
  */
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 /* =========================================================
    HELPERS
@@ -55,12 +54,15 @@ function serializeSchema(
    STATIC PARAMS
 ========================================================= */
 
-export function generateStaticParams() {
-  return getAllGlossarySlugs().map(
-    (slug) => ({
-      slug,
-    }),
-  );
+export async function generateStaticParams() {
+  const knownSlugs = getAllGlossarySlugs();
+  const cmsSlugs = (await getCmsPages())
+    .map((page) => page.slug)
+    .filter((path) => path.split("/").filter(Boolean).length === 2)
+    .filter((path) => path.toLowerCase().startsWith("/glossary/"))
+    .map((path) => path.split("/").filter(Boolean)[1])
+    .filter((slug) => !knownSlugs.includes(slug));
+  return [...new Set([...knownSlugs, ...cmsSlugs])].map((slug) => ({ slug }));
 }
 
 /* =========================================================
@@ -76,18 +78,10 @@ export async function generateMetadata({
     getGlossaryTermBySlug(slug);
 
   if (!term) {
-    return {
-      title: "Glossary Term Not Found",
-      description:
-        "The requested glossary term could not be found.",
-      robots: {
-        index: false,
-        follow: false,
-      },
-    };
+    return cmsRouteMetadata(`/glossary/${slug}`);
   }
 
-  return {
+  return withEditedPageSeo(`/glossary/${slug}`, {
     title: term.seo.title,
 
     description:
@@ -145,7 +139,7 @@ export async function generateMetadata({
         term.seo.ogImage || "/logo.png",
       ],
     },
-  };
+  });
 }
 
 /* =========================================================
@@ -348,7 +342,7 @@ export default async function GlossaryDetailRoute({
     getGlossaryTermBySlug(slug);
 
   if (!term) {
-    notFound();
+    return <CmsRoute path={`/glossary/${slug}`} />;
   }
 
   const relatedTerms =

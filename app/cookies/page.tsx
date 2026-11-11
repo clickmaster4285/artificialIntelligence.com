@@ -4,13 +4,20 @@ import Link from "next/link";
 import { SitePage } from "@/components/site/SitePage";
 import { COMPANY } from "@/lib/company";
 import { pageAlternates } from "@/lib/site";
+import { withEditedPageSeo } from "@/lib/cms/erp-edits";
 
-export const metadata: Metadata = {
+const pageMetadata: Metadata = {
   title: "Cookie Notice for ClickMasters AI",
   description:
     "Cookies used by the ClickMasters Artificial Intelligence Company website.",
   alternates: pageAlternates("/cookies"),
 };
+
+export const revalidate = 60;
+
+export async function generateMetadata(): Promise<Metadata> {
+  return withEditedPageSeo("/cookies", pageMetadata);
+}
 
 export default function CookiesPage() {
   return (

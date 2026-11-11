@@ -6,6 +6,14 @@ import Image from "next/image";
 import { ContactDetails } from "@/components/site/ContactDetails";
 import { COMPANY } from "@/lib/company";
 
+type CmsFooterItem = {
+  id: string;
+  label: string;
+  url: string;
+  target: string;
+  children: CmsFooterItem[];
+};
+
 const columns = [
   {
     title: "Services",
@@ -35,7 +43,22 @@ const columns = [
   },
 ];
 
-export function HugeFooter() {
+export function HugeFooter({ cmsNavigation }: { cmsNavigation?: CmsFooterItem[] }) {
+  const footerColumns = cmsNavigation?.length
+    ? cmsNavigation.map((item) => ({
+        title: item.label,
+        links: item.children.length
+          ? [{ label: item.label, href: item.url, target: item.target }, ...item.children.map((child) => ({
+              label: child.label,
+              href: child.url,
+              target: child.target,
+            }))]
+          : [{ label: item.label, href: item.url, target: item.target }],
+      }))
+    : columns.map((column) => ({
+        ...column,
+        links: column.links.map((link) => ({ ...link, target: "_self" })),
+      }));
   return (
     <footer className="relative px-6 md:px-12 pt-24 md:pt-32 pb-10 border-t border-border/30">
       <div className="max-w-7xl mx-auto">
@@ -134,7 +157,7 @@ export function HugeFooter() {
             </div>
           </div>
 
-          {columns.map((col) => (
+          {footerColumns.map((col) => (
             <div key={col.title}>
               <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-5">
                 {col.title}
@@ -145,6 +168,8 @@ export function HugeFooter() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
+                      target={link.target}
+                      rel={link.target === "_blank" ? "noopener noreferrer" : undefined}
                       className="text-sm text-foreground/80 hover:text-foreground transition-colors"
                     >
                       {link.label}

@@ -3,13 +3,20 @@ import Link from "next/link";
 
 import { SitePage } from "@/components/site/SitePage";
 import { pageAlternates } from "@/lib/site";
+import { withEditedPageSeo } from "@/lib/cms/erp-edits";
 
-export const metadata: Metadata = {
+const pageMetadata: Metadata = {
   title: "How a ClickMasters Project Works",
   description:
     "The ClickMasters delivery process, from discovery and architecture through launch and support.",
   alternates: pageAlternates("/process"),
 };
+
+export const revalidate = 60;
+
+export async function generateMetadata(): Promise<Metadata> {
+  return withEditedPageSeo("/process", pageMetadata);
+}
 
 const steps = [
   {

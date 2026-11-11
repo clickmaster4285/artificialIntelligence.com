@@ -2,8 +2,6 @@ import type {
   Metadata,
 } from "next";
 
-import { notFound } from "next/navigation";
-
 import { DynamicPageTemplate } from "@/components/dynamic-pages/DynamicPageTemplate";
 
 import {
@@ -23,6 +21,9 @@ import {
   fallbackSiteUrl,
   pageAlternates,
 } from "@/lib/site";
+import { getCmsPages } from "@/lib/cms/cms";
+import { cmsRouteMetadata, default as CmsRoute } from "@/components/cms/CmsRoute";
+import { withEditedPageSeo } from "@/lib/cms/erp-edits";
 
 /* =========================================================
    TYPES
@@ -39,17 +40,12 @@ interface DynamicPageProps {
 ========================================================= */
 
 /**
- * Only slugs returned by generateStaticParams are valid.
- *
- * Unknown root-level slugs return a real 404 instead of
- * attempting to generate a page at runtime.
+ * Code-owned slugs are prerendered; unknown root-level paths are checked
+ * against the ERP and remain a normal 404 when no published page exists.
  */
-export const dynamicParams = false;
+export const dynamicParams = true;
 
-/**
- * JSON content changes become available after the next build.
- */
-export const revalidate = false;
+export const revalidate = 60;
 
 /* =========================================================
    STATIC PAGE GENERATION
@@ -66,12 +62,30 @@ export const revalidate = false;
  *
  * /llm-development-company/
  */
-export function generateStaticParams() {
-  return getAllPublishedSlugs()
+export async function generateStaticParams() {
+  const codeOwnedRootPaths = new Set([
+    "about",
+    "ai-development",
+    "ai-development-company",
+    "careers",
+    "contact",
+    "cookies",
+    "glossary",
+    "privacy",
+    "process",
+    "terms",
+    "work",
+  ]);
+  const codeSlugs = getAllPublishedSlugs()
     .filter((slug) => !isDuplicateFlatCityPage(slug))
-    .map((slug) => ({
-      slug,
-    }));
+    .map((slug) => ({ slug }));
+  const codeSlugSet = new Set(codeSlugs.map(({ slug }) => slug.toLowerCase()));
+  const cmsSlugs = (await getCmsPages())
+    .filter((page) => page.slug.split("/").filter(Boolean).length === 1)
+    .map((page) => page.slug.slice(1))
+    .filter((slug) => !codeSlugSet.has(slug.toLowerCase()) && !codeOwnedRootPaths.has(slug.toLowerCase()))
+    .map((slug) => ({ slug }));
+  return [...codeSlugs, ...cmsSlugs];
 }
 
 /* =========================================================
@@ -87,17 +101,7 @@ export async function generateMetadata({
     getPublishedPageBySlug(slug);
 
   if (!page) {
-    return {
-      title: "Page Not Found",
-
-      description:
-        "The requested page could not be found.",
-
-      robots: {
-        index: false,
-        follow: false,
-      },
-    };
+    return cmsRouteMetadata(`/${slug}`);
   }
 
   const siteUrl = fallbackSiteUrl();
@@ -117,7 +121,7 @@ export async function generateMetadata({
         ]
       : undefined;
 
-  return {
+  return withEditedPageSeo(`/${slug}`, {
     title: page.seo.title,
 
     description:
@@ -197,7 +201,7 @@ export async function generateMetadata({
 
     category:
       "Artificial Intelligence",
-  };
+  });
 }
 
 /* =========================================================
@@ -213,7 +217,7 @@ export default async function DynamicRootPage({
     getPublishedPageBySlug(slug);
 
   if (!page) {
-    notFound();
+    return <CmsRoute path={`/${slug}`} />;
   }
 
   const siteUrl = fallbackSiteUrl();

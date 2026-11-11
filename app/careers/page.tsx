@@ -4,13 +4,20 @@ import Link from "next/link";
 import { SitePage } from "@/components/site/SitePage";
 import { COMPANY } from "@/lib/company";
 import { pageAlternates } from "@/lib/site";
+import { withEditedPageSeo } from "@/lib/cms/erp-edits";
 
-export const metadata: Metadata = {
+const pageMetadata: Metadata = {
   title: "Careers at ClickMasters AI Studio",
   description:
     "How to apply to ClickMasters Artificial Intelligence Company. Send work you can walk through, not a generic portfolio dump.",
   alternates: pageAlternates("/careers"),
 };
+
+export const revalidate = 60;
+
+export async function generateMetadata(): Promise<Metadata> {
+  return withEditedPageSeo("/careers", pageMetadata);
+}
 
 export default function CareersPage() {
   return (

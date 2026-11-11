@@ -18,6 +18,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+## ERP CMS
+
+Set `CMS_API_URL` to the ERP's public HTTPS API origin in `.env.local` or your deployment environment. Keep `CMS_SITE_DOMAIN` set to `clickmastersartificialintelligencecompany.com`. CMS requests are optional and cached for 60 seconds; if the ERP is unavailable, code-owned pages continue to render normally. In production, also set `PUBLIC_CACHE_SECONDS=60` in the ERP backend environment.
+
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More

@@ -6,6 +6,7 @@ import { getAllPageSlugs } from "@/data/ai-development-pages-data";
 import { getAllPublishedPages } from "@/lib/dynamic-pages/page-loader";
 import { isDuplicateFlatCityPage } from "@/lib/duplicate-city-urls";
 import { getRequestSiteUrl } from "@/lib/site";
+import { getCmsPages } from "@/lib/cms/cms";
 
 const STATIC_PATHS = [
   "/",
@@ -58,6 +59,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   for (const term of getPublishedGlossaryTerms()) {
     if (term.seo?.noIndex) continue;
     addPath(paths, `/glossary/${term.slug}`);
+  }
+
+  for (const page of await getCmsPages()) {
+    if (page.noindex) continue;
+    addPath(paths, page.slug);
   }
 
   const lastModified = new Date();

@@ -10,12 +10,19 @@ import { StatsSection } from '@/components/locations/sections/Stats';
 import { pageAlternates } from '@/lib/site';
 import { getAllLocationPageData } from '@/data/ai-development-company-pages-data';
 import { CrawlableIndex } from '@/components/site/PageContextLinks';
+import { withEditedPageSeo } from '@/lib/cms/erp-edits';
 
-export const metadata = {
+const pageMetadata = {
   title: 'AI Development Company | ClickMasters AI',
   description: 'AI development company with locations across USA and Canada. Custom AI, RAG systems, LLM integration & AI agents. Fixed-price. Free consultation.',
   alternates: pageAlternates('/ai-development-company/'),
 };
+
+export const revalidate = 60;
+
+export async function generateMetadata() {
+  return withEditedPageSeo('/ai-development-company', pageMetadata);
+}
 
 export default function LocationOverviewPage() {
   return (
