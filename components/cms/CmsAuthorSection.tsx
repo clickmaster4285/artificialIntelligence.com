@@ -22,14 +22,14 @@ export default function CmsAuthorSection({ data }: { data: CmsAuthorData }) {
   return (
     <section className="bg-paper py-10 md:py-14">
       <div className="mx-auto max-w-[90vw] md:max-w-[84vw] px-4 md:px-6">
-        <div className="max-w-3xl mx-auto border border-border bg-secondary/40 p-6 md:p-8 flex flex-col sm:flex-row gap-6">
+        <div className="max-w-3xl mx-auto border border-border bg-card rounded-2xl p-6 md:p-8 flex flex-col sm:flex-row gap-6">
           <div className="shrink-0">
             {data.image ? (
               <div className="relative size-20 overflow-hidden rounded-full border border-border">
                 <Image src={data.image} alt={data.name} fill unoptimized sizes="80px" className="object-cover" />
               </div>
             ) : (
-              <div className="size-20 rounded-full bg-ink text-white flex items-center justify-center display text-2xl">
+              <div className="size-20 rounded-full bg-brand text-white flex items-center justify-center display text-2xl">
                 {initials}
               </div>
             )}

@@ -37,7 +37,7 @@ export function safeImage(url: string): string {
   return /^https?:\/\//i.test(url) ? url : "";
 }
 
-export function button(c: Content, prefix: "primary" | "secondary") {
+export function button(c: Content, prefix: "primary" | "secondary" | "button") {
   const text = pick(c, `${prefix}Label`, `${prefix}Button`);
   const link = safeHref(pick(c, `${prefix}Url`, `${prefix}Link`));
   return text && link ? { text, link } : undefined;

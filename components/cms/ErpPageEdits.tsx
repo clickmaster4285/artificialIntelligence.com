@@ -32,6 +32,15 @@ const MAX_WAIT_FOR_DOM_MS = 1500;
 const API = '/api/erp-edits';
 const LIVE_API = '/api/cms-live';
 const LIVE_POLL_MS = 4000;
+// Live refreshes allowed per path for the same server version. Stops a loop if
+// the server keeps answering with an old page (e.g. a CDN in front of it).
+const MAX_REFRESHES_PER_VERSION = 3;
+
+/** What this tab shows: the CMS page version, "404", or null for code-owned pages. */
+function renderedVersion(): string | null {
+  if (document.querySelector('[data-not-found]')) return '404';
+  return document.querySelector<HTMLElement>('.cms-page[data-cms-version]')?.dataset.cmsVersion ?? null;
+}
 
 const warn = (...args: unknown[]) => {
   if (process.env.NODE_ENV !== 'production') console.warn('[erp-edits]', ...args);
@@ -344,6 +353,7 @@ function useLiveCmsUpdates(pathname: string, onChange: () => void) {
     let timer: ReturnType<typeof setTimeout> | undefined;
     let stopped = false;
     let inFlight = false;
+    const refreshes = new Map<string, number>();
 
     const schedule = () => {
       clearTimeout(timer);
@@ -354,13 +364,20 @@ function useLiveCmsUpdates(pathname: string, onChange: () => void) {
       if (stopped || inFlight) return;
       inFlight = true;
       try {
-        const json = await getJson(`${LIVE_API}?path=${encodeURIComponent(path)}`);
+        const rendered = renderedVersion();
+        const query = `path=${encodeURIComponent(path)}${rendered ? `&rendered=${encodeURIComponent(rendered)}` : ''}`;
+        const json = await getJson(`${LIVE_API}?${query}`);
         if (stopped) return;
         const version = typeof json.version === 'string' ? json.version : null;
         // `expired`: the server cache was behind, so what is on screen is too.
         const changed = json.expired === true || (version !== null && known !== null && version !== known);
         if (version !== null) known = version;
-        if (changed) onChange();
+        const key = version ?? '';
+        const count = refreshes.get(key) ?? 0;
+        if (changed && count < MAX_REFRESHES_PER_VERSION) {
+          refreshes.set(key, count + 1);
+          onChange();
+        }
       } catch (error) {
         warn('live update check failed', error);
       } finally {

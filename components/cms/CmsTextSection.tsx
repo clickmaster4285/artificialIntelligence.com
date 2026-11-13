@@ -13,7 +13,7 @@ export default function CmsTextSection({ data }: { data: CmsTextData }) {
   const paragraphs = (data.body ?? "").split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
 
   return (
-    <section className="bg-paper py-16 md:py-24 border-t border-gray-200">
+    <section className="bg-paper py-16 md:py-24 border-t border-border">
       <div className="mx-auto max-w-[90vw] md:max-w-[84vw] px-4 md:px-6">
         <div className="max-w-3xl">
           {data.eyebrow && (

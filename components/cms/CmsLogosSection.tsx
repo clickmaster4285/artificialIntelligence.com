@@ -5,7 +5,7 @@ type CmsLogo = { image?: string; name?: string; url?: string };
 // "Trusted by" strip (CMS "logos"): logo images, or the name as text.
 export default function CmsLogosSection({ data }: { data: { heading?: string; items: CmsLogo[] } }) {
   return (
-    <section className="bg-paper py-10 md:py-16 border-y border-gray-200">
+    <section className="bg-paper py-10 md:py-16 border-y border-border">
       <div className="mx-auto max-w-[90vw] md:max-w-[84vw] px-4 md:px-6">
         {data.heading && (
           <p className="eyebrow text-muted-foreground text-xs md:text-sm text-center mb-8">{data.heading}</p>

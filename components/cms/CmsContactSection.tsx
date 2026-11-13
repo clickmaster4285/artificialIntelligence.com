@@ -23,7 +23,7 @@ export default function CmsContactSection({ data }: { data: CmsContactData }) {
   ].filter(Boolean) as { label: string; value: string; href?: string }[];
 
   return (
-    <section className="bg-paper py-12 md:py-24 border-t border-gray-200">
+    <section className="bg-paper py-12 md:py-24 border-t border-border">
       <div className="mx-auto max-w-[90vw] md:max-w-[84vw] px-4 md:px-6 grid md:grid-cols-2 gap-8 md:gap-12 items-start">
         <div>
           {data.heading && (
@@ -36,7 +36,7 @@ export default function CmsContactSection({ data }: { data: CmsContactData }) {
           {data.description && <p className="text-base md:text-lg text-muted-foreground mt-4 max-w-md">{data.description}</p>}
           <Link
             href="/contact"
-            className="inline-flex mt-8 bg-ink text-white text-sm px-6 py-3 hover:bg-brand transition-colors items-center gap-2"
+            className="cms-btn mt-8"
           >
             {data.buttonLabel || "Contact us"} <span>›</span>
           </Link>

@@ -11,8 +11,8 @@ export default function CmsTeamSection({ data }: { data: { heading?: string; des
         <CmsSectionHeading heading={data.heading} description={data.description} />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {data.items.map((m, i) => (
-            <div key={i} className="border border-border">
-              <div className="relative aspect-[4/5] bg-secondary flex items-center justify-center overflow-hidden">
+            <div key={i} className="overflow-hidden rounded-2xl border border-border bg-card">
+              <div className="relative aspect-[4/5] bg-muted flex items-center justify-center overflow-hidden">
                 {m.image ? (
                   <Image src={m.image} alt={m.name} fill unoptimized sizes="(min-width: 1024px) 28vw, (min-width: 640px) 45vw, 90vw" className="object-cover" />
                 ) : (

@@ -329,43 +329,174 @@
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
 }
 
+/* ------------------------------------------------------------------
+   CMS pages (components/cms). Follow the site's dark theme; a section
+   with background "light" flips to a light palette, "primary" and
+   "gradient" sections use the brand colour with inverted buttons.
+------------------------------------------------------------------- */
+
+.cms-page {
+  --brand: var(--primary);
+  --ink: var(--foreground);
+  --paper: var(--background);
+  --muted-foreground: oklch(0.74 0.01 286);
+  --border: oklch(1 0 0 / 10%);
+  --cms-btn-bg: var(--brand);
+  --cms-btn-fg: #fff;
+  color: var(--foreground);
+}
+
+.cms-page .display {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.08;
+}
+
+.cms-page .display-italic {
+  font-style: normal;
+}
+
+.cms-page .eyebrow {
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.cms-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid color-mix(in oklab, var(--brand) 45%, transparent);
+  background: color-mix(in oklab, var(--brand) 12%, transparent);
+  color: var(--brand);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.cms-hero-bg .cms-eyebrow {
+  color: #fff;
+  border-color: rgb(255 255 255 / 0.35);
+  background: rgb(255 255 255 / 0.1);
+}
+
+.cms-btn,
+.cms-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  padding: 0.85rem 1.6rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: transform 150ms ease, background-color 150ms ease, opacity 150ms ease, border-color 150ms ease;
+}
+
+.cms-btn {
+  background: var(--cms-btn-bg);
+  color: var(--cms-btn-fg);
+  box-shadow: 0 8px 30px -10px color-mix(in oklab, var(--cms-btn-bg) 70%, transparent);
+}
+
+.cms-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.cms-btn-outline {
+  border: 1px solid color-mix(in oklab, currentColor 30%, transparent);
+  color: inherit;
+}
+
+.cms-btn-outline:hover {
+  border-color: currentColor;
+}
+
+.cms-hero-split {
+  background: radial-gradient(45% 70% at 78% 50%, color-mix(in oklab, var(--brand) 16%, transparent), transparent 70%);
+}
+
+.cms-cta {
+  border-block: 1px solid var(--border);
+  background: radial-gradient(60% 120% at 50% 0%, color-mix(in oklab, var(--brand) 18%, transparent), transparent);
+}
+
+.cms-page details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Section padding from the CMS (paddingY), scaled down on small screens. */
+.cms-section {
+  padding-top: var(--cms-pt, 0);
+  padding-bottom: var(--cms-pb, 0);
+}
+
+@media (max-width: 767px) {
+  .cms-section {
+    padding-top: calc(var(--cms-pt, 0px) * 0.55);
+    padding-bottom: calc(var(--cms-pb, 0px) * 0.55);
+  }
+}
+
 .cms-section[data-has-padding="true"] > section {
   padding-block: 0 !important;
 }
 
-.cms-page {
-  --brand: var(--primary);
-  --ink: #111;
-  --ink-soft: #3f3f46;
-  --ink-mute: #52525b;
-  --paper: #fff;
-  color: var(--ink);
+/* A full-bleed background hero owns its padding so the image fills the section. */
+.cms-section[data-cms-section="hero"][data-layout="background"] {
+  padding: 0;
 }
 
-.cms-section[data-background] > section {
-  background-color: transparent !important;
+.cms-section[data-cms-section="hero"][data-layout="background"] > section {
+  padding-block: 0 !important;
+}
+
+.cms-section[data-background] > section:not(.cms-hero-split),
+.cms-section[data-background] .cms-cta {
+  background: transparent !important;
+}
+
+.cms-section[data-background="muted"] {
+  background-color: oklch(0.11 0 0);
+}
+
+.cms-section[data-background="dark"] {
+  background-color: #050506;
+}
+
+.cms-section[data-background="primary"],
+.cms-section[data-background="gradient"] {
+  color: #fff;
+  --ink: #fff;
+  --brand: #fff;
+  --muted-foreground: rgb(255 255 255 / 0.78);
+  --border: rgb(255 255 255 / 0.22);
+  --card: rgb(255 255 255 / 0.08);
+  --cms-btn-bg: #fff;
+  --cms-btn-fg: var(--primary);
 }
 
 .cms-section[data-background="primary"] {
   background-color: var(--primary);
 }
 
-.cms-section[data-background="muted"] {
-  background-color: var(--muted);
-}
-
-.cms-section[data-background="dark"] {
-  background-color: #09090b;
-  color: #fff;
-  --ink: #fff;
-  --ink-soft: rgb(255 255 255 / 0.8);
-  --ink-mute: rgb(255 255 255 / 0.65);
-  --paper: #09090b;
+.cms-section[data-background="gradient"] {
+  background: linear-gradient(135deg, var(--primary), color-mix(in oklab, var(--primary) 35%, #050506));
 }
 
 .cms-section[data-background="light"] {
-  background-color: #fff;
+  background-color: #fafafa;
   color: #111;
+  --ink: #111;
+  --paper: #fafafa;
+  --foreground: #111;
+  --muted: #f0f0f2;
+  --muted-foreground: #52525b;
+  --card: #fff;
+  --border: rgb(0 0 0 / 0.1);
 }
 
 .cms-section[data-width] > section > div:first-child {
@@ -377,7 +508,11 @@
 }
 
 .cms-section[data-width="wide"] > section > div:first-child {
-  max-width: 84vw !important;
+  max-width: min(84vw, 88rem) !important;
+}
+
+.cms-section[data-width="superWide"] > section > div:first-child {
+  max-width: 92vw !important;
 }
 
 .cms-section[data-width="full"] > section > div:first-child {
@@ -398,6 +533,16 @@
   animation: cms-fade-in 650ms ease-out both;
 }
 
+.cms-section[data-motion="slide-in"] {
+  animation: cms-slide-in 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+/* Grid items fade in one after another. Content is never hidden without
+   animation support (opacity is only animated, not set). */
+.cms-stagger {
+  animation: cms-fade-up 600ms ease-out both;
+}
+
 @keyframes cms-fade-up {
   from {
     opacity: 0;
@@ -414,8 +559,20 @@
   to { opacity: 1; }
 }
 
+@keyframes cms-slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .cms-section[data-motion] {
+  .cms-section[data-motion],
+  .cms-stagger {
     animation: none;
   }
 }

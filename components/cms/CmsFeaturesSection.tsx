@@ -1,7 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
-
 import { Marker, splitHeading } from "./CmsShared";
 
 type CmsFeatureItem = { icon?: string; title: string; description?: string; url?: string; linkLabel?: string };
@@ -25,7 +23,7 @@ export default function CmsFeaturesSection({ data }: { data: CmsFeaturesData }) 
       <div className="mx-auto max-w-[90vw] md:max-w-[84vw] px-4 md:px-6">
         {data.eyebrow && (
           <div className="flex items-center w-full gap-3 md:gap-4 mb-8 md:mb-12">
-            <div className="flex-1 h-px bg-black/10" />
+            <div className="flex-1 h-px bg-border" />
             <span className="eyebrow text-muted-foreground whitespace-nowrap text-xs md:text-sm">
               {data.eyebrow}
             </span>
@@ -48,7 +46,7 @@ export default function CmsFeaturesSection({ data }: { data: CmsFeaturesData }) 
         )}
 
         <div
-          className="cms-feature-grid grid grid-cols-1 sm:grid-cols-2 gap-px bg-border border border-border"
+          className="cms-feature-grid grid grid-cols-1 sm:grid-cols-2 gap-4"
           style={
             {
               "--cms-columns": Math.min(Math.max(data.columns ?? 3, 1), 6),
@@ -56,13 +54,10 @@ export default function CmsFeaturesSection({ data }: { data: CmsFeaturesData }) 
           }
         >
           {data.items.map((item, i) => (
-            <motion.div
+            <div
               key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.05 }}
-              className="bg-paper p-8 group hover:bg-ink hover:text-white transition-colors duration-500"
+              className="cms-stagger group rounded-2xl border border-border bg-card p-7 transition-colors duration-300 hover:border-brand/50"
+              style={{ animationDelay: `${i * 70}ms` }}
             >
               <div className="flex items-center justify-between py-4">
                 <Marker n={String(i + 1).padStart(2, "0")} />
@@ -70,19 +65,19 @@ export default function CmsFeaturesSection({ data }: { data: CmsFeaturesData }) 
               </div>
               <h3 className="display text-2xl md:text-3xl mb-3">{item.title}</h3>
               {item.description && (
-                <p className="text-sm md:text-md text-muted-foreground group-hover:text-white/70 leading-relaxed">
+                <p className="text-sm md:text-md text-muted-foreground leading-relaxed">
                   {item.description}
                 </p>
               )}
               {item.url && (
                 <a
                   href={item.url}
-                  className="inline-block mt-4 text-sm font-medium text-brand group-hover:text-white transition-colors"
+                  className="inline-block mt-4 text-sm font-medium text-brand transition-colors"
                 >
                   {item.linkLabel || "Learn more"} ›
                 </a>
               )}
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
