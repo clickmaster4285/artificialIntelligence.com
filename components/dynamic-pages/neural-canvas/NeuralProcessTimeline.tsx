@@ -580,7 +580,7 @@ export function NeuralProcessTimeline({
               Scroll through each phase to
               explore the decisions,
               deliverables and quality gates
-              behind a production LLM system.
+              along the way.
             </MotionReveal>
           </div>
         </div>

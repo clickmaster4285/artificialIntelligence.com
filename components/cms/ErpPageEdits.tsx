@@ -39,7 +39,7 @@ const MAX_REFRESHES_PER_VERSION = 3;
 /** What this tab shows: the CMS page version, "404", or null for code-owned pages. */
 function renderedVersion(): string | null {
   if (document.querySelector('[data-not-found]')) return '404';
-  return document.querySelector<HTMLElement>('.cms-page[data-cms-version]')?.dataset.cmsVersion ?? null;
+  return document.querySelector<HTMLElement>('[data-cms-page][data-cms-version]')?.dataset.cmsVersion ?? null;
 }
 
 const warn = (...args: unknown[]) => {
