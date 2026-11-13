@@ -19,17 +19,17 @@ export default function CmsPricingSection({ data }: { data: { heading?: string; 
           {data.items.map((plan, i) => (
             <div
               key={i}
-              className={`flex flex-col p-6 md:p-8 border ${plan.featured ? "bg-ink text-white border-ink" : "bg-paper border-border"}`}
+              className={`flex flex-col rounded-2xl p-6 md:p-8 border ${plan.featured ? "bg-card border-brand shadow-[0_0_0_1px_var(--brand)]" : "bg-card border-border"}`}
             >
               <h3 className="eyebrow text-brand text-sm">{plan.name}</h3>
               {plan.price && (
                 <div className="mt-4 flex items-baseline gap-1">
                   <span className="display text-5xl">{plan.price}</span>
-                  {plan.period && <span className={plan.featured ? "text-white/60" : "text-muted-foreground"}>{plan.period}</span>}
+                  {plan.period && <span className={"text-muted-foreground"}>{plan.period}</span>}
                 </div>
               )}
               {plan.description && (
-                <p className={`text-sm mt-3 ${plan.featured ? "text-white/70" : "text-muted-foreground"}`}>{plan.description}</p>
+                <p className={`text-sm mt-3 ${"text-muted-foreground"}`}>{plan.description}</p>
               )}
               {plan.features.length > 0 && (
                 <ul className="mt-6 space-y-2 text-sm flex-1">
@@ -44,9 +44,7 @@ export default function CmsPricingSection({ data }: { data: { heading?: string; 
               {plan.cta && (
                 <a
                   href={plan.cta.link}
-                  className={`mt-8 text-sm px-5 py-3 text-center transition-colors ${
-                    plan.featured ? "bg-brand text-white hover:bg-white hover:text-ink" : "bg-ink text-white hover:bg-brand"
-                  }`}
+                  className={`mt-8 ${plan.featured ? "cms-btn" : "cms-btn-outline"}`}
                 >
                   {plan.cta.text} <span>›</span>
                 </a>

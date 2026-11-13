@@ -32,7 +32,7 @@ export default function CmsVideoSection({ data }: { data: { heading?: string; de
     <section className="bg-paper py-12 md:py-24">
       <div className="mx-auto max-w-[90vw] md:max-w-[84vw] px-4 md:px-6">
         <CmsSectionHeading heading={data.heading} description={data.description} />
-        <div className="relative aspect-video w-full max-w-5xl mx-auto border border-border bg-ink">
+        <div className="relative aspect-video w-full max-w-5xl mx-auto overflow-hidden rounded-2xl border border-border bg-black">
           <iframe
             src={data.embedUrl}
             title={data.heading || "Video"}

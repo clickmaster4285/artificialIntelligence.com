@@ -4,7 +4,7 @@ type CmsMilestone = { date?: string; title: string; description?: string };
 
 export default function CmsTimelineSection({ data }: { data: { heading?: string; description?: string; items: CmsMilestone[] } }) {
   return (
-    <section className="bg-paper py-12 md:py-24 border-t border-gray-200">
+    <section className="bg-paper py-12 md:py-24 border-t border-border">
       <div className="mx-auto max-w-[90vw] md:max-w-[84vw] px-4 md:px-6">
         <CmsSectionHeading heading={data.heading} description={data.description} />
         <ol className="border-l border-border ml-2 max-w-3xl">

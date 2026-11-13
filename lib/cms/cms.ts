@@ -1,5 +1,6 @@
 import "server-only";
 
+import { createHash } from "node:crypto";
 import type { Metadata } from "next";
 import { pageAlternates } from "@/lib/site";
 
@@ -270,6 +271,20 @@ export async function cmsLiveSnapshot(path: string, fresh: boolean) {
     fetchCmsPage(path, fresh),
   ]);
   return { config, page };
+}
+
+/**
+ * Short fingerprint of a CMS page's content. CmsRoute stamps it on the page
+ * (data-cms-version) and /api/cms-live returns the current one, so the browser
+ * can tell when what it is showing is out of date. `noindex` is left out
+ * because getCmsPage may adjust it from the pages list.
+ */
+export function cmsPageVersion(page: CmsPage | null): string | null {
+  if (!page) return null;
+  return createHash("sha1")
+    .update(JSON.stringify({ ...page, noindex: false }))
+    .digest("base64url")
+    .slice(0, 16);
 }
 
 export async function getCmsSiteConfig(): Promise<CmsSiteConfig | null> {

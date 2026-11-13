@@ -30,7 +30,7 @@ export default function CmsBentoSection({
           {data.items.map((item, index) => (
             <article
               key={`${item.title}-${index}`}
-              className={`relative isolate flex min-h-56 flex-col justify-end overflow-hidden rounded-2xl bg-ink p-6 text-white md:p-8 ${spanClasses[item.span ?? ""] ?? ""}`}
+              className={`relative isolate flex min-h-56 flex-col justify-end overflow-hidden rounded-2xl bg-zinc-900 p-6 text-white md:p-8 ${spanClasses[item.span ?? ""] ?? ""}`}
             >
               {item.image && (
                 <>

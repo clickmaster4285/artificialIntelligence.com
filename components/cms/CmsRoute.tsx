@@ -4,7 +4,7 @@
 // routes for slugs they don't own. No per-page code: path in, page out.
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { buildCmsMetadata, getCmsPage } from "@/lib/cms/cms";
+import { buildCmsMetadata, cmsPageVersion, getCmsPage } from "@/lib/cms/cms";
 import { withEditedPageSeo } from "@/lib/cms/erp-edits";
 import CmsSectionRenderer from "./CmsSectionRenderer";
 import CmsRichText from "./CmsRichText";
@@ -29,7 +29,7 @@ export default async function CmsRoute({ path }: { path: string }) {
     ...(page.designColors.secondary ? { "--secondary": page.designColors.secondary } : {}),
   } as CSSProperties;
   return (
-    <div className="cms-page" style={colors}>
+    <div className="cms-page" data-cms-version={cmsPageVersion(page) ?? undefined} style={colors}>
       {page.customCode.css && <style>{page.customCode.css}</style>}
       <CmsSectionRenderer page={page} />
       {page.customCode.html && <CmsRichText html={page.customCode.html} />}

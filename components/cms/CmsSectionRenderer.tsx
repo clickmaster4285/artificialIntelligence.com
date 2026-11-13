@@ -110,6 +110,7 @@ function renderSection(section: CmsSection, page: CmsPage) {
             eyebrow: pick(c, "eyebrow", "subtitle"),
             heading: headline,
             layout: typeof section.settings.layout === "string" ? section.settings.layout : undefined,
+            overlay: typeof section.settings.overlay === "string" ? section.settings.overlay : undefined,
             description: pick(c, "description"),
             meta: pick(c, "meta"),
             image,
@@ -155,7 +156,8 @@ function renderSection(section: CmsSection, page: CmsPage) {
             image,
             alt: pick(c, "alt"),
             caption: pick(c, "caption"),
-            cta: button(c, "primary"),
+            cta: button(c, "primary") ?? button(c, "button"),
+            imageFirst: section.settings.imagePosition === "left",
           }}
         />
       );
@@ -290,11 +292,11 @@ function renderSection(section: CmsSection, page: CmsPage) {
       const description = pick(c, "description");
       if (!heading && !description) return null;
       return (
-        <section className="bg-paper py-12 md:py-24 border-t border-gray-200">
+        <section className="bg-paper py-12 md:py-24">
           <div className="mx-auto max-w-3xl px-4 md:px-6 text-center">
             {heading && <h2 className="display text-3xl sm:text-4xl md:text-5xl">{heading}</h2>}
             {description && <p className="mt-4 text-base md:text-lg text-muted-foreground">{description}</p>}
-            <Link href="/contact" className="inline-flex mt-8 bg-ink text-white text-sm px-6 py-3 hover:bg-brand transition-colors">
+            <Link href="/contact" className="cms-btn mt-8">
               {pick(c, "buttonLabel") || "Get in touch"}
             </Link>
           </div>
@@ -320,9 +322,12 @@ function renderSection(section: CmsSection, page: CmsPage) {
             )}
             <div className="mt-8 divide-y divide-border border-y border-border">
               {list.map((item, index) => (
-                <details key={`${item.question}-${index}`} className="py-5">
-                  <summary className="cursor-pointer font-medium">{item.question}</summary>
-                  <p className="mt-3 text-muted-foreground leading-relaxed">{item.answer}</p>
+                <details key={`${item.question}-${index}`} className="cms-faq group py-5">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-base font-medium md:text-lg">
+                    {item.question}
+                    <span aria-hidden className="text-2xl leading-none text-brand transition-transform group-open:rotate-45">+</span>
+                  </summary>
+                  <p className="mt-3 max-w-2xl text-muted-foreground leading-relaxed">{item.answer}</p>
                 </details>
               ))}
             </div>
@@ -337,25 +342,25 @@ function renderSection(section: CmsSection, page: CmsPage) {
       const cta = button(c, "primary");
       if (!heading) return null;
       const secondaryCta = button(c, "secondary");
-      const renderCta = (link: { text: string; link: string }) =>
+      const renderCta = (link: { text: string; link: string }, className: string) =>
         link.link.startsWith("/") ? (
-          <Link className="inline-flex border border-current px-5 py-3 text-sm hover:opacity-80" href={link.link}>
+          <Link className={className} href={link.link}>
             {link.text}
           </Link>
         ) : (
-          <a className="inline-flex border border-current px-5 py-3 text-sm hover:opacity-80" href={link.link} rel="noopener noreferrer">
+          <a className={className} href={link.link} rel="noopener noreferrer">
             {link.text}
           </a>
         );
       return (
-        <section className="bg-ink text-white py-12 md:py-24">
+        <section className="cms-cta py-12 md:py-24">
           <div className="mx-auto max-w-4xl px-4 md:px-6 text-center">
-            <h2 className="display text-3xl sm:text-4xl md:text-5xl">{heading}</h2>
-            {description && <p className="mx-auto mt-4 max-w-2xl text-white/70">{description}</p>}
+            <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl">{heading}</h2>
+            {description && <p className="mx-auto mt-4 max-w-2xl text-muted-foreground md:text-lg">{description}</p>}
             {(cta || secondaryCta) && (
               <div className="mt-8 flex flex-wrap justify-center gap-3">
-                {cta && renderCta(cta)}
-                {secondaryCta && renderCta(secondaryCta)}
+                {cta && renderCta(cta, "cms-btn")}
+                {secondaryCta && renderCta(secondaryCta, "cms-btn-outline")}
               </div>
             )}
           </div>
@@ -374,7 +379,7 @@ export default function CmsSectionRenderer({ page }: { page: CmsPage }) {
       {page.sections.map((section) => {
         if (!KNOWN_TYPES.has(section.type)) return null;
         const content = renderSection(section, page);
-        const background = ["primary", "muted", "dark", "light"].includes(
+        const background = ["primary", "muted", "dark", "light", "gradient"].includes(
           String(section.settings.background),
         )
           ? String(section.settings.background)
@@ -384,20 +389,21 @@ export default function CmsSectionRenderer({ page }: { page: CmsPage }) {
           : null;
         const top = typeof paddingY?.[0] === "number" ? paddingY[0] : undefined;
         const bottom = typeof paddingY?.[1] === "number" ? paddingY[1] : undefined;
-        const styles: React.CSSProperties = {};
-        if (top !== undefined && top >= 0 && top <= 500) styles.paddingTop = top;
-        if (bottom !== undefined && bottom >= 0 && bottom <= 500) styles.paddingBottom = bottom;
+        // Padding goes through CSS variables so globals.css can scale it down on phones.
+        const styles: Record<string, string | number> = {};
+        if (top !== undefined && top >= 0 && top <= 500) styles["--cms-pt"] = `${top}px`;
+        if (bottom !== undefined && bottom >= 0 && bottom <= 500) styles["--cms-pb"] = `${bottom}px`;
         for (const [rawProperty, rawValue] of Object.entries(section.styles)) {
           if (typeof rawValue !== "string") continue;
           const property = rawProperty.replace(/[A-Z]/g, (letter) => `-${letter.toLowerCase()}`).toLowerCase();
           if (isSafeStyle(property, rawValue)) {
-            (styles as Record<string, string | number>)[property] = rawValue;
+            styles[property] = rawValue;
           }
         }
         const hasPadding = top !== undefined || bottom !== undefined;
         const motion =
           typeof section.settings.motion === "string" &&
-          ["fade-up", "fade-in"].includes(section.settings.motion)
+          ["fade-up", "fade-in", "slide-in"].includes(section.settings.motion)
             ? section.settings.motion
             : undefined;
         return (
@@ -406,11 +412,11 @@ export default function CmsSectionRenderer({ page }: { page: CmsPage }) {
             className="cms-section"
             data-cms-section={section.type}
             data-layout={typeof section.settings.layout === "string" ? section.settings.layout : undefined}
-            data-width={["narrow", "wide", "full"].includes(String(section.settings.width)) ? section.settings.width : undefined}
+            data-width={["narrow", "wide", "superWide", "full"].includes(String(section.settings.width)) ? section.settings.width : undefined}
             data-background={background}
             data-has-padding={hasPadding || undefined}
             data-motion={motion}
-            style={styles}
+            style={styles as React.CSSProperties}
           >
             {content ?? (section.settings.required === true ? <section aria-label={pick(section.content, "heading") || section.type} /> : null)}
           </div>

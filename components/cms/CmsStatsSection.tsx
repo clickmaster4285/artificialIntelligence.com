@@ -11,7 +11,7 @@ export default function CmsStatsSection({ data }: { data: CmsStatsData }) {
   const { head, tail } = splitHeading(data.heading ?? "");
 
   return (
-    <section className="bg-paper py-12 md:py-20 border-t border-gray-200">
+    <section className="bg-paper py-12 md:py-20 border-t border-border">
       <div className="mx-auto max-w-[90vw] md:max-w-[84vw] px-4 md:px-6">
         {data.heading && (
           <h2 className="display text-4xl sm:text-5xl md:text-6xl mb-4">

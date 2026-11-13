@@ -22,7 +22,7 @@ export default function CmsPostsSection({ data }: { data: CmsPostsData }) {
   const { head, tail } = splitHeading(data.heading ?? "");
 
   return (
-    <section className="bg-paper py-12 md:py-24 border-t border-gray-200">
+    <section className="bg-paper py-12 md:py-24 border-t border-border">
       <div className="mx-auto max-w-[90vw] md:max-w-[84vw] px-4 md:px-6">
         {(data.heading || data.description) && (
           <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
@@ -44,7 +44,7 @@ export default function CmsPostsSection({ data }: { data: CmsPostsData }) {
             const internal = post.url.startsWith("/");
             const card = (
               <>
-                <div className="relative aspect-[16/10] overflow-hidden bg-secondary">
+                <div className="relative aspect-[16/10] overflow-hidden bg-muted">
                   {post.image && (
                     <Image
                       src={post.image}
@@ -68,7 +68,7 @@ export default function CmsPostsSection({ data }: { data: CmsPostsData }) {
                 </div>
               </>
             );
-            const className = "group block border border-border bg-paper hover:border-brand/40 transition-colors";
+            const className = "group block overflow-hidden rounded-2xl border border-border bg-card hover:border-brand/50 transition-colors";
             return internal ? (
               <Link key={i} href={post.url} className={className}>{card}</Link>
             ) : (
