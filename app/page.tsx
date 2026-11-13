@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 
 import { HomeExperience } from "@/components/landingPage/HomeExperience";
-import { pageAlternates } from "@/lib/site";
+import { pageAlternates, SITE_DESCRIPTION, SITE_TITLE } from "@/lib/site";
 import { withEditedPageSeo } from "@/lib/cms/erp-edits";
 
 const pageMetadata: Metadata = {
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
   alternates: pageAlternates("/"),
 };
 

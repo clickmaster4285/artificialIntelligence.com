@@ -5,7 +5,7 @@
 // (components/cms/ErpPageEdits.tsx) through the app/api/erp-edits proxy; the
 // server only uses the SEO fields (withEditedPageSeo).
 import type { Metadata } from 'next';
-import { pageAlternates } from '@/lib/site';
+import { pageAlternates, pathnameFromCanonical, SITE_OG_NAME } from '@/lib/site';
 import { cmsPublicBase } from '@/lib/cms/cms';
 import { normalizeEditPath, parseErpSections, type ErpEdit } from '@/lib/cms/erp-edits-shared';
 
@@ -178,10 +178,52 @@ export async function editsLiveSnapshot(path: string, fresh: boolean) {
 }
 
 /**
+ * Fills og:title / og:description / og:url / og:site_name from the page's own
+ * title, description and canonical wherever the route (or an ERP edit) left
+ * them unset. Values the route sets explicitly always win.
+ */
+function withOpenGraphDefaults(metadata: Metadata): Metadata {
+  const title = typeof metadata.title === 'string' ? metadata.title : undefined;
+  const description = metadata.description ?? undefined;
+  if (!title && !description) return metadata;
+  const canonical = metadata.alternates?.canonical;
+  const openGraph = {
+    type: 'website',
+    siteName: SITE_OG_NAME,
+    ...(title ? { title } : {}),
+    ...(description ? { description } : {}),
+    ...(typeof canonical === 'string' ? { url: canonical } : {}),
+    ...metadata.openGraph,
+  } as NonNullable<Metadata['openGraph']>;
+  // og:url must equal the canonical. Several routes pass slugs with a trailing
+  // slash ("/ai-development/x/"), which 308-redirects and mismatches the
+  // canonical that pageAlternates() normalises.
+  if (typeof openGraph.url === 'string') {
+    openGraph.url = normalizeOgUrl(openGraph.url);
+  }
+  return { ...metadata, openGraph };
+}
+
+function normalizeOgUrl(url: string): string {
+  if (url.startsWith('/')) return pathnameFromCanonical(url);
+  try {
+    const parsed = new URL(url);
+    const pathname = pathnameFromCanonical(parsed.pathname);
+    return pathname === '/' ? parsed.origin : `${parsed.origin}${pathname}`;
+  } catch {
+    return url;
+  }
+}
+
+/**
  * Overlays an edited page's SEO fields on a route's own metadata. Only fields
  * the edited page actually sets are replaced; everything else is untouched.
  */
 export async function withEditedPageSeo(path: string, metadata: Metadata): Promise<Metadata> {
+  return withOpenGraphDefaults(await overlayEditedPageSeo(path, metadata));
+}
+
+async function overlayEditedPageSeo(path: string, metadata: Metadata): Promise<Metadata> {
   const page = await getEditedPage(path);
   if (!page) return metadata;
   const { seo } = page;

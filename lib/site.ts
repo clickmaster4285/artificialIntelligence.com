@@ -64,6 +64,16 @@ export function siteUrlForHost(host: string | null | undefined): string {
 
 export const SITE_URL = fallbackSiteUrl();
 
+/**
+ * Brand-level SEO defaults. These are code-owned on purpose: the CMS
+ * `website.name` is an internal admin label ("Artificial Development
+ * company") and must not become the document title or the header brand.
+ */
+export const SITE_TITLE = "ClickMasters | AI Development Company";
+export const SITE_DESCRIPTION =
+  "ClickMasters designs and builds AI products, web platforms, and mobile software for production teams.";
+export const SITE_OG_NAME = "ClickMasters Artificial Intelligence Company";
+
 /** Origin for the request host, so each AI domain canonicalises to itself. */
 export const getRequestSiteUrl = cache(async (): Promise<string> => {
   try {
