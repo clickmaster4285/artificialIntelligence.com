@@ -675,12 +675,9 @@ export function NeuralRichTextSection({
             {/* Sticky section heading */}
             <div className="relative">
               <div className="lg:sticky lg:top-32">
-                <div
-                  className={cn(
-                    usesFaqTightHeading &&
-                      "-mb-16 sm:-mb-14 lg:-mb-56",
-                  )}
-                >
+                {/* No negative bottom margin here: it pulled the
+                    "Scroll to explore" hint up over the heading. */}
+                <div>
                   <SectionHeading
                     eyebrow={
                       section.eyebrow

@@ -342,20 +342,24 @@ export function TextMaskReveal({
     );
   }
 
+  // The in-view check watches the outer box, not the moving text. Hidden, the
+  // text sits fully below this overflow-hidden box, and the browser reports a
+  // fully clipped element as "not in view", so watching it directly meant the
+  // reveal often never fired and headings stayed invisible.
   return (
-    <div
+    <motion.div
       className={`overflow-hidden ${
         className ?? ""
       }`}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{
+        once,
+        amount,
+      }}
     >
       <motion.div
         variants={createRevealVariants("mask")}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{
-          once,
-          amount,
-        }}
         transition={{
           delay,
           duration,
@@ -364,6 +368,6 @@ export function TextMaskReveal({
       >
         {children}
       </motion.div>
-    </div>
+    </motion.div>
   );
 }
