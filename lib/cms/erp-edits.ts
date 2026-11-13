@@ -120,7 +120,7 @@ let lastFailureAt = 0;
 // `fresh: true` skips the cache and asks the ERP directly. Used by
 // /api/erp-edits (the edits the browser applies), so a publish shows on the
 // very next page view. Server-rendered metadata keeps the cache, so pages
-// stay static; /api/erp-revalidate clears it on publish.
+// stay static; /api/cms-live expires it as soon as a change is published.
 type FetchOptions = { fresh?: boolean };
 
 /** Normalized paths ("/a/b", home "/") that have published edits. Empty on any error. */
@@ -161,6 +161,20 @@ export async function getEditedPage(
     if (isDev) console.warn(`[erp-edits] failed to fetch edited page ${slug}:`, error);
     return null;
   }
+}
+
+/**
+ * Published edits for a path, read from the cache or, with `fresh`, straight
+ * from the ERP. Unlike getEditedPage this throws on errors (no backoff, no
+ * null fallback) so /api/cms-live never mistakes an outage for a change.
+ */
+export async function editsLiveSnapshot(path: string, fresh: boolean) {
+  if (!base()) return null;
+  const slug = normalizeEditPath(path);
+  const paths = await fetchEditedPaths(fresh);
+  const summary = isSafeEditPath(slug) ? paths.find((item) => item.slug === slug) : undefined;
+  const page = summary ? await fetchEditedPage(slug, fresh) : null;
+  return { paths, page };
 }
 
 /**

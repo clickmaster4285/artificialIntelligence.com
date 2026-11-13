@@ -5,6 +5,11 @@
 // the root layout so it covers code-owned and CMS pages, on first load and on
 // every client-side navigation. Renders nothing.
 //
+// Live updates: while the tab is visible it polls /api/cms-live for the current
+// path. When the CRM publishes a change, it reverts the applied edits, calls
+// router.refresh() (the server has already expired its cache, so the refresh
+// returns the new content) and re-applies the fresh edits — no page reload.
+//
 // React safety: every change is recorded and reverted in the layout-effect
 // cleanup. React runs that cleanup during the commit's mutation phase, and this
 // component sits before <main> in <body>, so the DOM is back to the shape React
@@ -12,8 +17,8 @@
 // hide (display: none), moved nodes go back to their original parent and
 // sibling, and copies (data-erp-clone) are removed, so React's tree is never
 // left inconsistent and no copy leaks into the next page.
-import { usePathname } from 'next/navigation';
-import { useLayoutEffect } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
+import { useEffect, useLayoutEffect, useState, useTransition } from 'react';
 import {
   isCopySelector,
   isSafeStyle,
@@ -25,6 +30,8 @@ const CACHE_TTL_MS = 60_000;
 const MAX_HIDE_MS = 1500;
 const MAX_WAIT_FOR_DOM_MS = 1500;
 const API = '/api/erp-edits';
+const LIVE_API = '/api/cms-live';
+const LIVE_POLL_MS = 4000;
 
 const warn = (...args: unknown[]) => {
   if (process.env.NODE_ENV !== 'production') console.warn('[erp-edits]', ...args);
@@ -72,6 +79,12 @@ function pageEdits(path: string): Promise<ErpEdit[]> {
   promise.then((value) => (entry.value = value)).catch(() => editsCache.delete(path));
   editsCache.set(path, entry);
   return promise;
+}
+
+/** Forget cached edits so the next lookup asks the server again. */
+function clearEditsCache() {
+  pathsCache = null;
+  editsCache.clear();
 }
 
 // Start loading the list as soon as the client bundle runs.
@@ -319,11 +332,82 @@ function hideMain(): () => void {
 
 /* ------------------------------- component ------------------------------ */
 
+/**
+ * Polls /api/cms-live for the current path and calls `onChange` when the CRM
+ * has published something new. Pauses while the tab is hidden and checks
+ * immediately when it becomes visible again.
+ */
+function useLiveCmsUpdates(pathname: string, onChange: () => void) {
+  useEffect(() => {
+    const path = normalizeEditPath(pathname);
+    let known: string | null = null;
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    let stopped = false;
+    let inFlight = false;
+
+    const schedule = () => {
+      clearTimeout(timer);
+      if (!stopped && document.visibilityState === 'visible') timer = setTimeout(poll, LIVE_POLL_MS);
+    };
+
+    async function poll() {
+      if (stopped || inFlight) return;
+      inFlight = true;
+      try {
+        const json = await getJson(`${LIVE_API}?path=${encodeURIComponent(path)}`);
+        if (stopped) return;
+        const version = typeof json.version === 'string' ? json.version : null;
+        // `expired`: the server cache was behind, so what is on screen is too.
+        const changed = json.expired === true || (version !== null && known !== null && version !== known);
+        if (version !== null) known = version;
+        if (changed) onChange();
+      } catch (error) {
+        warn('live update check failed', error);
+      } finally {
+        inFlight = false;
+        schedule();
+      }
+    }
+
+    const onVisible = () => {
+      if (document.visibilityState === 'visible') poll();
+      else clearTimeout(timer);
+    };
+
+    poll();
+    document.addEventListener('visibilitychange', onVisible);
+    window.addEventListener('focus', onVisible);
+    return () => {
+      stopped = true;
+      clearTimeout(timer);
+      document.removeEventListener('visibilitychange', onVisible);
+      window.removeEventListener('focus', onVisible);
+    };
+  }, [pathname, onChange]);
+}
+
 export default function ErpPageEdits() {
-  const pathname = usePathname();
+  const pathname = usePathname() ?? '/';
+  const router = useRouter();
+  // Bumped after a live refresh so the edits are fetched and applied again.
+  const [revision, setRevision] = useState(0);
+  // True while router.refresh() is in flight; edits stay reverted meanwhile so
+  // React patches the server's new markup into the DOM shape it expects.
+  const [refreshing, startRefresh] = useTransition();
+
+  const [onLiveChange] = useState(() => () => {
+    clearEditsCache();
+    startRefresh(() => {
+      setRevision((value) => value + 1);
+      router.refresh();
+    });
+  });
+
+  useLiveCmsUpdates(pathname, onLiveChange);
 
   useLayoutEffect(() => {
-    const path = normalizeEditPath(pathname ?? '/');
+    if (refreshing) return;
+    const path = normalizeEditPath(pathname);
     const session = new EditSession();
     let cancelled = false;
     let reveal = () => {};
@@ -354,7 +438,7 @@ export default function ErpPageEdits() {
       reveal();
       session.revert();
     };
-  }, [pathname]);
+  }, [pathname, revision, refreshing]);
 
   return null;
 }

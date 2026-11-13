@@ -134,9 +134,9 @@ function urlForPath(path: string) {
   return `${base}/pages/${segments.map(encodeURIComponent).join("/")}`;
 }
 
-async function getJson(url: string): Promise<unknown | null> {
+async function getJson(url: string, fresh = false): Promise<unknown | null> {
   const response = await fetch(url, {
-    ...(isDev
+    ...(isDev || fresh
       ? { cache: "no-store" as const }
       : {
           next: {
@@ -196,10 +196,10 @@ function parseNavigation(raw: unknown, depth = 0): CmsNavigationItem[] {
     .filter((item): item is CmsNavigationItem => item !== null);
 }
 
-async function fetchCmsSiteConfig(): Promise<CmsSiteConfig | null> {
+async function fetchCmsSiteConfig(fresh = false): Promise<CmsSiteConfig | null> {
   const base = apiBase();
   if (!base) return null;
-  const json = await getJson(base);
+  const json = await getJson(base, fresh);
   if (!json) return null;
   const data = obj(obj(json).data);
   const website = obj(data.website);
@@ -247,14 +247,29 @@ async function fetchCmsPages(): Promise<CmsPageSummary[]> {
     .filter((page): page is CmsPageSummary => page !== null);
 }
 
-async function fetchCmsPage(slug: string): Promise<CmsPage | null> {
+async function fetchCmsPage(slug: string, fresh = false): Promise<CmsPage | null> {
   const url = urlForPath(slug);
   if (!url) return null;
-  const json = await getJson(url);
+  const json = await getJson(url, fresh);
   if (!json) return null;
-  const page = parsePage(obj(obj(json).data).page);
-  if (!page) throw new Error("ERP returned an invalid page payload");
-  return page;
+  // A payload without a page (e.g. "/" resolves to the pages list endpoint)
+  // means there is no CMS page at this path.
+  return parsePage(obj(obj(json).data).page);
+}
+
+/**
+ * Everything the CMS contributes to a path (site config + the page itself),
+ * read from the cache or, with `fresh`, straight from the ERP. Throws when the
+ * ERP is unreachable so callers never mistake an outage for a change.
+ * Used by /api/cms-live to detect published changes.
+ */
+export async function cmsLiveSnapshot(path: string, fresh: boolean) {
+  if (!isConfigured()) return null;
+  const [config, page] = await Promise.all([
+    fetchCmsSiteConfig(fresh),
+    fetchCmsPage(path, fresh),
+  ]);
+  return { config, page };
 }
 
 export async function getCmsSiteConfig(): Promise<CmsSiteConfig | null> {
