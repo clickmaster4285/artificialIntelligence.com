@@ -8,6 +8,7 @@ export interface AIPageData {
     primaryKW: string;
     secondaryKWs: string[];
   };
+  
   h1: string;
   hero: {
     tagline: string;
