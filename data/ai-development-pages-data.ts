@@ -8,6 +8,7 @@ export interface AIPageData {
     primaryKW: string;
     secondaryKWs: string[];
   };
+  
   h1: string;
   hero: {
     tagline: string;
@@ -2334,8 +2335,8 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
   // ============================================
   manufacturing: {
     meta: {
-      title: 'AI Development for Manufacturing | Industrial AI | ClickMasters',
-      description: 'AI development for manufacturing from $35K. Computer vision quality inspection, predictive maintenance, process optimization & demand forecasting. Fixed-price.',
+      title: 'Manufacturing AI Development | Industrial AI | ClickMasters',
+      description: 'AI development for manufacturing from $35K: computer vision quality inspection, predictive maintenance, process optimization and demand forecasting.',
       slug: '/ai-development/manufacturing/',
       primaryKW: 'ai development manufacturing',
       secondaryKWs: ['manufacturing ai', 'industrial ai development', 'ai quality inspection', 'predictive maintenance ai'],

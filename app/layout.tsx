@@ -10,7 +10,12 @@ import { HugeFooter } from "@/components/landingPage/HugeFooter";
 import ErpPageEdits from "@/components/cms/ErpPageEdits";
 import { getCmsSiteConfig } from "@/lib/cms/cms";
 import { generateSiteJsonLd } from "@/lib/schema";
-import { fallbackSiteUrl, pageAlternates } from "@/lib/site";
+import {
+  fallbackSiteUrl,
+  pageAlternates,
+  SITE_DESCRIPTION,
+  SITE_TITLE,
+} from "@/lib/site";
 
 const inter = Inter({ subsets: ["latin"] });
 const siteUrl = fallbackSiteUrl();
@@ -19,9 +24,9 @@ export async function generateMetadata(): Promise<Metadata> {
   const config = await getCmsSiteConfig();
   return {
     metadataBase: new URL(siteUrl),
-    title: config?.website.name || "ClickMasters - AI Development Company",
-    description:
-      "ClickMasters designs and builds AI products, web platforms, and mobile software for production teams.",
+    // Code-owned: the CMS website name is an admin label, not the brand title.
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
     alternates: pageAlternates("/"),
     icons: {
       icon: config?.website.favicon || "/favicon.ico",
@@ -65,7 +70,6 @@ export default async function RootLayout({
         {/* Navbar - Fixed at top */}
         <Navbar
           cmsNavigation={config?.navigation.header}
-          siteName={config?.website.name}
           logo={config?.website.logo}
         />
 
