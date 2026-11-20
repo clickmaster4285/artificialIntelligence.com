@@ -3,6 +3,7 @@
 import type { Metadata } from "next";
 import type { CSSProperties } from "react";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { Navbar } from "@/components/landingPage/Navbar";
 import { GlobalLeadForm } from "@/components/landingPage/GlobalLeadForm";
@@ -58,6 +59,17 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} min-h-screen flex flex-col`} style={theme}>
+        {/* Google Tag Manager */}
+        <Script id="gtm-datalayer" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());`}
+        </Script>
+        <Script
+          id="gtm-script"
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-WGVQJ7VS"
+          strategy="afterInteractive"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
